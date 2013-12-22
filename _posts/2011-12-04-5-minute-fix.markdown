@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "The 5 minute fix"
+date: 2011-12-04T00:53:00+01:00
+categories: 
+---
+
+Sometimes, instead of learning something, I will just search stackoverflow. When I've been using stackoverflow much, I'm feeling stupid. I'm not learning anything. For instance: I've been having some troubles grasping knockout. The problem have been that I've been surfing to stackoverflow for a quick fix instead of taking time to read the knockout documentation. It's such an easy way out that I'm seriously considering to only use it when I really need it.
+<div style="clear: both;"></div>

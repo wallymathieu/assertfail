@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "less css"
+date: 2010-09-07T21:23:00+02:00
+categories: css ruby
+---
+
+I really recommend this. How do you read really complex css? How do you refactor complex css rules? The answers is:<br>
+http://lesscss.org/<br><br>
+There is a port of this to .net. The site associated with it is down though. You might find the source on github however ;)
+<div style="clear: both;"></div>

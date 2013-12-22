@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "jquery"
+date: 2009-04-09T00:17:00+02:00
+categories: javascript jquery
+---
+
+I've come to admire the simplicity and style of jquery. There are some cons to it's approach of using context (as can be seen as this in the for instance "each"):<br>jQuery("#table tr").each(function(){<br>  jQuery(this).DoStuffPlugin();<br>});<br>This wreaks havoc with some object oriented programming techniques:<br>var classSmurf = function(){<br> this.name = "smurfette";<br> this.SmurfAround = function(){ alert("Smurf: "+<span style="font-weight: bold;">this</span>.name); }<br>};<br>This is a simplified example that is broken by jquery's use of context. There is a simple work around for this:<br>var classSmurf = function(){<br>  this.name = "smurfette";<br><span style="font-weight: bold;"> var that = this;</span><br>  this.SmurfAround = function(){ alert("Smurf: "+<span style="font-weight: bold;">that</span>.name); }<br>};<br><br>But don't take me wrong. I love jquery. It's really easy to use. A designer (with some css and html knowledge) can learn how to use it. That shows how easy it is to work with.
+<div style="clear: both;"></div>

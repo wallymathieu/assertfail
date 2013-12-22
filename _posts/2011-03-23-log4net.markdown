@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "log4net"
+date: 2011-03-23T22:08:00+01:00
+categories: log xml
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+For parsing log4j files there are some alternatives:<br><ol style="text-align: left;">
+<li>
+<a href="http://logging.apache.org/chainsaw/index.html">Chainsaw</a> (java gui). If the links dead, note that it should be part of log4j.</li>
+<li>Similar to chainsaw but in .net: <a href="http://github.com/wallymathieu/log4net-logviewer">logviewer</a>.</li>
+<li>
+<a href="http://log2console.codeplex.com/">Log2Console</a> looks pretty sweet. It has some positive comments.</li>
+</ol>
+On the logviewer page you find a sample configuration for using "log4net.Layout.XmlLayoutSchemaLog4j". Note that the log4net xmllayout should be parse:able by logviewer as well.<br><br>
+Both <a href="http://nlog-project.org/">NLog</a> and <a href="http://logging.apache.org/log4net/">Log4Net</a> can log to the log4j layout.</div>
+<div style="clear: both;"></div>

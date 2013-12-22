@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "x86 / 64"
+date: 2011-04-28T15:09:00+02:00
+categories: build
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+On a 64 bit environment it's very important to make sure that all your projects have the same platform target. When creating console applications, the default is x86, that means that it's easy to get something that give you weird errors.</div>
+<div style="clear: both;"></div>

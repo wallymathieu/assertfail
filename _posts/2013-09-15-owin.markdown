@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "OWIN"
+date: 2013-09-15T09:08:00+02:00
+categories: asp.net owin
+---
+
+Microsoft has added owin support for asp.net. This is exciting since it can yield different web servers. Why is this a good thing? It could mean that it gets easier to self host a local only web server, that you can host an asp.net site in different environments.
+<div style="clear: both;"></div>

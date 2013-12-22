@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "web api's"
+date: 2009-07-18T20:00:00+02:00
+categories: greasemonkey javascript
+---
+
+<span><span><span style="font-size:130%;"><span style="font-weight: bold;">Local procedure calls</span></span><br>Given the scripting nature of the web non-obfuscated javascript code presents itself to the technical user almost as a public API. You can try it out yourself by writing:<br></span></span><div>
+<span><span><blockquote>for (x in document){console.log(x);}</blockquote>in your browser javascript console. For more persistent changes to a sites behavior tools like </span></span><span><span>Greasemonkey can be used.</span></span> Last.fm and Spotify have done some integration by releasing a <a href="https://www.spotify.com/blog/archives/2008/12/18/spotify-scrobbles/">Greasemonkey script for last.fm</a>.<br>
+</div>
+<span><span><br><span style="font-size:130%;"><span style="font-weight: bold;">Remote procedure calls</span></span><br>By using <a href="http://www.fiddler2.com/fiddler2/">fiddler</a> or Firefox Firebug you can watch the client/server interaction (ajax calls made by a modern web app). The stateless nature of the web and ajax calls promotes a simple design of this "API". This means that programming/scripting against your site can be easily done by, hopefully authorized, users.</span></span><br><br><span style="font-size:130%;"><span style="font-weight: bold;">Conclusion</span></span><br>Modern web applications have a natural interface for that might yield a plugin-like api unintended by the applications developers. If you're developing/maintaining a web app, try searching for it on <a href="http://userscripts.org/">userscripts</a>. If your app is used by a wide group of people, then you might be surprised with what you find.
+<div style="clear: both;"></div>
