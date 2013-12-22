@@ -9,4 +9,9 @@ layout: bootstrap
 <div class="post">
 {{ content }}
 </div>
+  <h3>Categories</h3>
+  {% for cat in page.categories %}
+    <li>{{ cat }}</li>
+  {% endfor %}
+
 </div>

@@ -49,3 +49,17 @@ footer {
     width: 50%; /* 6 columns */
   }
 }
+
+.navbar .container{
+  background-image: url('/img/top_image_abstract.jpg');
+}
+
+.navbar .container .navbar-brand{
+    background: rgb(60, 60, 60);
+    background: rgba(60, 60, 60, .5);
+}
+
+.navbar .container .nav{
+    background: rgb(60, 60, 60);
+    background: rgba(60, 60, 60, .7);
+}
