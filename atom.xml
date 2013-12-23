@@ -4,9 +4,9 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>Your Website</title>
-  <link href="http://example.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://example.com/atom.xml"/>
+  <title>Assert Fail</title>
+  <link href="http://assertfail.gewalli.se/"/>
+  <link type="application/atom+xml" rel="self" href="http://assertfail.gewalli.se/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://assertfail.gewalli.se/</id>
   <author>
@@ -23,7 +23,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
     <name>Oskar Gewalli</name>
-      <uri>http://gewalli.se/</uri>
+      <uri>https://twitter.com/ozzymcduff/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
