@@ -1,3 +1,13 @@
 name: Assert Fail
 markdown: redcarpet
 pygments: true
+auto: true
+
+ftp_host: 'ws11.surftown.se'
+ftp_dir: '/assertfail.gewalli.se'
+ftp_passive: false
+
+# optional
+ftp_port: 21                  # default 21
+ftp_username: 'gewalli'     # default read from stdin
+ftp_password: 'dotf162dryt' # default read from stdin
