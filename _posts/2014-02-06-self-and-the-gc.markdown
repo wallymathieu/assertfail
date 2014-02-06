@@ -2,7 +2,7 @@
 layout: post
 title:  "Self and the gc"
 date: 2014-02-06T18:59:00+01:00
-categories: javascript
+categories: javascript knockout
 ---
 
 For many projects I've been using the pattern:
