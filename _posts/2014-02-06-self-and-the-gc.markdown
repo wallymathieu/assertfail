@@ -28,7 +28,7 @@ For a knockout js site you could use the pattern:
 
 Knockout sends the appropriate context to callbacks from the view (for instance the DOM click handlers). This makes the above construction work mostly fine. This depends of course of the scope of the knockout view (changed by "with").
 
-
+This might not be true for every app. My coworker [Peter](https://github.com/2hdddg) found that it depends on the amount of objects. It might be that the browser (chrome) have some limits to the amount of graph traversal that is allowed to identify entities to be garbage collected.
 
 
 
