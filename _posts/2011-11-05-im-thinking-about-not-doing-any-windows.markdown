@@ -2,7 +2,7 @@
 layout: post
 title:  "I'm thinking about not doing any windows hobby projects anymore"
 date: 2011-11-05T14:17:00+01:00
-categories: visual studio windows
+categories: visual_studio windows
 ---
 
 While WPF is nice and resharper + visual studio is awesome it's just to painful to develop on a remote machine.<br><br>

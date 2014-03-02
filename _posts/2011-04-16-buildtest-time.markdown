@@ -2,7 +2,7 @@
 layout: post
 title:  "Build/test time"
 date: 2011-04-16T23:17:00+02:00
-categories: build unit-test visual studio
+categories: build unit-test visual_studio
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

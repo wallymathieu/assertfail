@@ -2,7 +2,7 @@
 layout: post
 title:  "What's wrong with SharePoint"
 date: 2010-11-27T00:17:00+01:00
-categories: configuration sharepoint unit-test visual studio whats wrong
+categories: configuration sharepoint unit-test visual_studio whats_wrong
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

@@ -2,7 +2,7 @@
 layout: post
 title:  "vs2010 express"
 date: 2012-03-10T21:18:00+01:00
-categories: visual studio
+categories: visual_studio
 ---
 
 It's possible to open several projects in the vs2010 express edition. This means that it can be a viable alternative to monodevelop for doing .net programming at home. Exciting news!
