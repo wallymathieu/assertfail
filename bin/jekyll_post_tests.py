@@ -29,7 +29,6 @@ class JekyllPostTest(unittest.TestCase):
 layout: post
 title: A pretty title
 date: 2014-04-09T12:30:00+01:00
-categories:
 ---
 
 

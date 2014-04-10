@@ -85,13 +85,24 @@ def yaml_file(title, date, tags):
     f.append('title: ' + title + '\n')
     f.append('date: ' + format_for_date_field(date) + '\n')
 
-    f.append('categories:\n')
     if tags:
-        f.append('tags:\n')
+        f.append('categories:\n')
         for tag in tags:
             f.append('- ' + tag + '\n')
     f.append('---\n\n\n')
     return ''.join(f)
+
+def format_title(title):
+    dash_title = title.replace(' ','-')
+    
+    # clean up any special characters from the dash-title
+    temp_title = '';
+    for char in dash_title:
+        if char.isalnum() or char == '-':
+            temp_title += char
+    dash_title = temp_title
+    return dash_title
+
 
 def main():
     # parse the arguments
@@ -100,7 +111,7 @@ def main():
     parser.add_argument('-D', '--Dir', help='specify the directory (relative or absolute) that the file should be written to.')
     parser.add_argument('-d', '--date', help='specify the post date in the format YYYY-MM-DD, otherwise today is the default date.')
     parser.add_argument('-n', '--name', help='specify the name of the post file instead of the automatically generated one. It is a best practice for the words to be separated by hyphens. Also note that the given name will be prepended with the date so as to conform to Jekyll naming requirements.')
-    parser.add_argument('-t', '--tags', help='specify a set of tags for the post separated by spaces with the entire set wrapped in quotes (e.g. "tag1 tag2 tag3").')
+    parser.add_argument('-c', '--categories', help='specify a set of categories for the post separated by spaces with the entire set wrapped in quotes (e.g. "tag1 tag2 tag3").')
     parser.add_argument('-w', '--write', action="store_true",
         help='signals if this file should be opened for writing after creation')
     args = parser.parse_args()
@@ -109,16 +120,9 @@ def main():
     # exchange spaces for dashes
     dash_title = ''
     if args.name:
-        dash_title = args.name.replace(' ','-')
+        dash_title = format_title(args.name)
     else:
-        dash_title = title.replace(' ','-')
-
-    # clean up any special characters from the dash-title
-    temp_title = '';
-    for char in dash_title:
-        if char.isalnum() or char == '-':
-            temp_title += char
-    dash_title = temp_title
+        dash_title = format_title(title)
 
     date = today_or_parse_input(args.date)
 
