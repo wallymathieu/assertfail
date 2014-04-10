@@ -3,7 +3,7 @@ markdown: redcarpet
 pygments: true
 encoding: utf-8
 
-exclude: [Gemfile, Gemfile.lock, send.sh]
+exclude: [Gemfile, Gemfile.lock, bin]
 
 ftp_host: 'ws11.surftown.se'
 ftp_dir: '/assertfail.gewalli.se'
