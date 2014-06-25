@@ -111,7 +111,7 @@ def main():
     parser.add_argument('-D', '--Dir', help='specify the directory (relative or absolute) that the file should be written to.')
     parser.add_argument('-d', '--date', help='specify the post date in the format YYYY-MM-DD, otherwise today is the default date.')
     parser.add_argument('-n', '--name', help='specify the name of the post file instead of the automatically generated one. It is a best practice for the words to be separated by hyphens. Also note that the given name will be prepended with the date so as to conform to Jekyll naming requirements.')
-    parser.add_argument('-c', '--categories', help='specify a set of categories for the post separated by spaces with the entire set wrapped in quotes (e.g. "tag1 tag2 tag3").')
+    parser.add_argument('-t', '--tags', help='specify a set of tags for the post separated by spaces with the entire set wrapped in quotes (e.g. "tag1 tag2 tag3").')
     parser.add_argument('-w', '--write', action="store_true",
         help='signals if this file should be opened for writing after creation')
     args = parser.parse_args()
