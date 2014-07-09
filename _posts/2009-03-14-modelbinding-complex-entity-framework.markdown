@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post386
 title:  "Modelbinding a complex entity framework/Linq to Sql model to asp.net mvc"
 date: 2009-03-14T06:41:00+01:00
 categories: asp.net mvc c# Entity Framework Linq to Sql
