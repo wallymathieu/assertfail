@@ -1,6 +1,8 @@
+# glynn,
+# jekyll
 name: Assert Fail
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 encoding: utf-8
 
 exclude: [Gemfile, Gemfile.lock, bin]
