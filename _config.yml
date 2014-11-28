@@ -5,7 +5,7 @@ markdown: redcarpet
 highlighter: pygments
 encoding: utf-8
 
-exclude: [Gemfile, Gemfile.lock, bin]
+exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project]
 
 ftp_host: 'ws11.surftown.se'
 ftp_dir: '/assertfail.gewalli.se'
