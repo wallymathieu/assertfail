@@ -14,4 +14,3 @@ ftp_passive: false
 # optional
 ftp_port: 21                  # default 21
 ftp_username: 'gewalli'     # default read from stdin
-ftp_password: 'dotf162dryt' # default read from stdin
