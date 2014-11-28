@@ -6,11 +6,3 @@ highlighter: pygments
 encoding: utf-8
 
 exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project]
-
-ftp_host: 'ws11.surftown.se'
-ftp_dir: '/assertfail.gewalli.se'
-ftp_passive: false
-
-# optional
-ftp_port: 21                  # default 21
-ftp_username: 'gewalli'     # default read from stdin
