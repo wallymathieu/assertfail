@@ -1,1 +1,1 @@
-rvm 2.1.0 do jekyll build
+jekyll build
