@@ -2,7 +2,7 @@
 layout: post
 title:  "Different breed of programmers"
 date: 2010-07-19T21:46:00+02:00
-categories: c# lint programming unit-test
+categories: programming c# lint unit-test
 ---
 
 After talking to a few of my colleges I'm thinking of the different kind of programmers needed for different projects, for different aspects of projects.  <br><br>

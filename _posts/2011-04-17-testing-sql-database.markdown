@@ -2,7 +2,7 @@
 layout: post
 title:  "Testing SQL database"
 date: 2011-04-17T15:40:00+02:00
-categories: db integration test migrations
+categories: db integration_test migrations
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

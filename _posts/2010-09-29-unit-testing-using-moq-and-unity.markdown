@@ -2,7 +2,7 @@
 layout: post
 title:  "Unit testing using Moq and Unity Container"
 date: 2010-09-29T20:07:00+02:00
-categories: c# dependency injection moq unit-test unity
+categories: dependency_injection c# moq unit-test unity
 ---
 
 I have had troubles writing unit tests for classes with a lot of dependencies. The reason for this is that the initialization of the state for my test code would look like:<br>

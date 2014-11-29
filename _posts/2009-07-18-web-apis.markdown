@@ -2,7 +2,7 @@
 layout: post
 title:  "web api's"
 date: 2009-07-18T20:00:00+02:00
-categories: greasemonkey javascript
+categories: javascript greasemonkey
 ---
 
 <span><span><span style="font-size:130%;"><span style="font-weight: bold;">Local procedure calls</span></span><br>Given the scripting nature of the web non-obfuscated javascript code presents itself to the technical user almost as a public API. You can try it out yourself by writing:<br></span></span><div>

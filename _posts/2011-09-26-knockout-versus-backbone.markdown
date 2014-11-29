@@ -2,7 +2,7 @@
 layout: post
 title:  "Knockout versus Backbone"
 date: 2011-09-26T20:58:00+02:00
-categories: backbone javascript knockout
+categories: javascript knockout backbone
 ---
 
 The question has an answer: <a href="http://stackoverflow.com/questions/5112899/knockout-js-vs-backbone-js-vs">knockout js vs backbone js</a><br>

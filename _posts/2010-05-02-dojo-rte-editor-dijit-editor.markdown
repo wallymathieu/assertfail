@@ -2,7 +2,7 @@
 layout: post
 title:  "Dojo RTE editor (dijit Editor)"
 date: 2010-05-02T11:43:00+02:00
-categories: codeignite dojo javascript RTE
+categories: javascript codeignite dojo
 ---
 
 Finished upgrading an old site to use dojo and codeignite. In order to simplify things I added the RTE editor in order to simplify the code. There is no need to add logic related to the content on the page so html-content is preferable.<br><br>

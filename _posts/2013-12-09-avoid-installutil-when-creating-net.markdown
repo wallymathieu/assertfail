@@ -2,7 +2,7 @@
 layout: post
 title:  "Avoid installutil when creating .net services"
 date: 2013-12-09T13:22:00+01:00
-categories: services windows
+categories: windows services 
 ---
 
 There is a perfectly good solution for installing services:<br><blockquote class="tr_bq">
