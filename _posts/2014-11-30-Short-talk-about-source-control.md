@@ -68,9 +68,6 @@ There are several providers of git hosting. The ones I've been using are the fol
 - [CodePlex](https://www.codeplex.com/)
 - Versioning for development code on [Dropbox](http://stackoverflow.com/questions/1960799/using-git-and-dropbox-together-effectively)?
 
-But there are Or use one of several different open source self hosting alternatives.
-
-
-
+But there are several others. You could also self host with [Gitblit](http://gitblit.com/) or [GitLab](https://about.gitlab.com/) or others.
 
 
