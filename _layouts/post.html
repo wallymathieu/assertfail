@@ -1,17 +1,11 @@
 ---
 layout: minimal
 ---
-<div class="row row-offcanvas row-offcanvas-right" >
-    <div class="jumbotron">
-        <h2>{{ page.title }}</h2>
-        <p class="meta">{{ page.date | date_to_string }}</p>
-    </div>
-<div class="post">
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
 {{ content }}
-</div>
-  <h3>Categories</h3>
-  {% for cat in page.tags %}
-    <li>{{ cat }}</li>
-  {% endfor %}
+<h3>Tags</h3>
+{% for cat in page.tags %}
+<li>{{ cat }}</li>
+{% endfor %}
 
-</div>
