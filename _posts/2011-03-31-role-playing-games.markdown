@@ -2,7 +2,7 @@
 layout: post
 title:  "Role Playing games"
 date: 2011-03-31T21:47:00+02:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

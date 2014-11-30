@@ -2,7 +2,7 @@
 layout: post
 title:  "Avoid batch files"
 date: 2012-02-17T20:36:00+01:00
-categories: powershell windows
+tags: powershell windows
 ---
 
 When programming on windows, you will sometimes need to execute batch files. It might seem like a good idea to do something simple in a batch file. This is the time you should realize that it it's a slippery slope. Dont go there.<br><br>

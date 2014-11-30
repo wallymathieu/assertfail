@@ -2,7 +2,7 @@
 layout: post
 title:  "File upload"
 date: 2012-02-22T21:00:00+01:00
-categories: javascript
+tags: javascript
 ---
 
 The alternatives right now (2012-02-22):<br><br><ol>

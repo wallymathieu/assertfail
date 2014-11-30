@@ -2,7 +2,7 @@
 layout: post
 title:  "Technology and music"
 date: 2012-06-03T21:08:00+02:00
-categories: music
+tags: music
 ---
 
 <h4>

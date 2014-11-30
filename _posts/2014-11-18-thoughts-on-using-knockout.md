@@ -2,7 +2,7 @@
 layout: post
 title: Thoughts on using knockout for the last years
 date: 2014-11-18T21:11:43+01:00
-categories: javascript knockout
+tags: javascript knockout
 ---
 
 It feels very much like the next step after jquery+templates. The nice part is that this enables you to choose your own strategy. For instance only using small amounts of code and regular forms. It requires a lot of decisions about structure decided already in a lot of js mvvm frameworks. These frameworks look like rails for client-side coding. Great for certain types of problems, but requires learning how to use it. Like always, if you can accept the limitations you get a boon. The big problem is that it's hard to know such things in advance. For small apps jquery might be best. For larger single page like applications you should evaluate the larger frameworks.

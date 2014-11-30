@@ -2,7 +2,7 @@
 layout: post
 title:  "Commerce Server in the future"
 date: 2011-01-28T23:58:00+01:00
-categories: azure commerce_server
+tags: azure commerce_server
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

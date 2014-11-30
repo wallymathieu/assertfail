@@ -2,7 +2,7 @@
 layout: post
 title:  "Public/protected/private fail?"
 date: 2010-12-12T11:33:00+01:00
-categories: visual_studio c#
+tags: visual_studio c#
 ---
 
 How many times are you writing these keywords? For many of the things I write I don't feel that these keywords add to the readability of the code. It would be sweet to be able to specify on for example assembly level the default visibility of your code. Or perhaps some short version of the keywords? <br><br>

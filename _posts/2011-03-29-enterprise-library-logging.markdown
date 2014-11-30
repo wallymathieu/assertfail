@@ -2,7 +2,7 @@
 layout: post
 title:  "Enterprise library logging"
 date: 2011-03-29T22:54:00+02:00
-categories: log
+tags: log
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

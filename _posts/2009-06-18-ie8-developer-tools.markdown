@@ -2,7 +2,7 @@
 layout: post
 title:  "IE8 Developer tools"
 date: 2009-06-18T09:50:00+02:00
-categories: firebug ie8
+tags: firebug ie8
 ---
 
 <span><span>As noted in twitter IE8 has a new "developer tools" that is accessible by the key F12. Also they have included:</span></span><div><span><span>console.log</span></span></div>

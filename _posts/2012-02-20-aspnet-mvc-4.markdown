@@ -2,7 +2,7 @@
 layout: post
 title:  "asp.net mvc 4"
 date: 2012-02-20T21:40:00+01:00
-categories: asp.net_mvc migrations
+tags: asp.net_mvc migrations
 ---
 
 asp.net mvc 4 has been <a href="http://weblogs.asp.net/scottgu/archive/2012/02/19/asp-net-mvc-4-beta.aspx">released to beta</a>. The exciting news here is websockets. Migrations for entity framework could help people realize the usefulness the technique.

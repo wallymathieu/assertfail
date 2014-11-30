@@ -2,7 +2,7 @@
 layout: post
 title:  "Implementing Dispose method in .net"
 date: 2011-09-25T21:30:00+02:00
-categories: c# memory_management
+tags: c# memory_management
 ---
 
 <span class="Apple-style-span" style="font-size: large;">Dispose</span><br>

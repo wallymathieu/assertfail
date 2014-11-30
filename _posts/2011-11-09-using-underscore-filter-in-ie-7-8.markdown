@@ -2,7 +2,7 @@
 layout: post
 title:  "using underscore filter in IE 7 & 8"
 date: 2011-11-09T21:00:00+01:00
-categories: ie7 ie8 underscore
+tags: ie7 ie8 underscore
 ---
 
 Array.prototype.filter seems to be slightly off in IE7-8. It looks like they have added support for standard array functions. That is, it looks like there is a prototype for this in IE7-8 mode in IE9. The problem is that the filter prototype does not work exactly as expected in underscore.<br><br>

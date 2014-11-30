@@ -2,7 +2,7 @@
 layout: post
 title: Installing build server
 date: 2014-11-28T11:11:37+02:00
-categories: teamcity sql-server
+tags: teamcity sql-server
 ---
 
 So, for the N-th time I'm helping out by configuring a build server. This time it was a bit different since we where restoring an old build teamcity server and agent from a crashed server.

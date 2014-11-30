@@ -2,7 +2,7 @@
 layout: post
 title:  "HOWTO write something FAST that works!"
 date: 2011-04-03T15:18:00+02:00
-categories: unit-test
+tags: unit-test
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

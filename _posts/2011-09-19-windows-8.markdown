@@ -2,7 +2,7 @@
 layout: post
 title:  "Windows 8"
 date: 2011-09-19T22:26:00+02:00
-categories: windows
+tags: windows
 ---
 
 I like the look of windows 8. For touch devices it will be sweet. What confounds me is that the start menu is replaced by the "Metro" application launcher. That sounds exceedingly annoying when on standard hardware. Where is the love for an ordinary PC?<br><br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "TIL quickly open a file in visual studio"
 date: 2011-12-30T09:40:00+01:00
-categories: 
+tags: 
 ---
 
 Press ctrl+d<br>

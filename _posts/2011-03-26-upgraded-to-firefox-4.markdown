@@ -2,7 +2,7 @@
 layout: post
 title:  "Upgraded to firefox 4"
 date: 2011-03-26T11:13:00+01:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

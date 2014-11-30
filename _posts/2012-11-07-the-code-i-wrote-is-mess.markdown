@@ -2,7 +2,7 @@
 layout: post
 title:  "The code I wrote is a mess"
 date: 2012-11-07T00:14:00+01:00
-categories: 
+tags: 
 ---
 
 Many times when you return to code that you have written you will swear and be annoyed with your lack of foresight.<br><br>

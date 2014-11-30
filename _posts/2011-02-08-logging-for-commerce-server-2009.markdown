@@ -2,7 +2,7 @@
 layout: post
 title:  "Logging for Commerce Server 2009"
 date: 2011-02-08T21:23:00+01:00
-categories: commerce_server log
+tags: commerce_server log
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

@@ -2,7 +2,7 @@
 layout: post
 title:  "Metro style revolution"
 date: 2012-01-29T14:14:00+01:00
-categories: 
+tags: 
 ---
 
 The more I think about the <a href="http://msdn.microsoft.com/en-us/windows/apps/br229512">metro style</a>, it sounds really revolutionary for microsoft design. I've started looking at how the new windows phone style looks. It looks more modern than the other themes for smart phones. Probably because it's not been used as much.<br><br>

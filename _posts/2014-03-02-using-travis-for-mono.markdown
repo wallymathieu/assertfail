@@ -2,7 +2,7 @@
 layout: post
 title:  "Using travis for mono"
 date: 2014-03-02T12:24:00+01:00
-categories: c# mono albacore rake
+tags: c# mono albacore rake
 ---
 
 In order to setup ci for open source targeting c# projects I looked into using travis. There is a solution on [stackoverflow](http://stackoverflow.com/questions/16751772/how-do-i-use-travis-ci-with-c-sharp-or-f). The post got me started. Turns out that there are some problems with using nuget packages for mono using xbuild (Path.Combine in the msbuild file NuGet.targets is not supported yet). I patched [NuGet.targets](https://github.com/wallymathieu/isop/blob/master/src/.nuget/NuGet.targets) to accept parameters (thus I can supply the correct paths using albacore).

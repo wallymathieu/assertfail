@@ -2,7 +2,7 @@
 layout: post
 title:  "git under cygwin dies trying to remap dll"
 date: 2012-04-20T09:38:00+02:00
-categories: cygwin git msysgit
+tags: cygwin git msysgit
 ---
 
 <h3>

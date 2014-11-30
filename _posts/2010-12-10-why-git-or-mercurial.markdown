@@ -2,7 +2,7 @@
 layout: post
 title:  "Why git or mercurial?"
 date: 2010-12-10T23:21:00+01:00
-categories: git mercurial
+tags: git mercurial
 ---
 
 I've played around with branching and merging in git. It looks like a useful tool. <br><br>

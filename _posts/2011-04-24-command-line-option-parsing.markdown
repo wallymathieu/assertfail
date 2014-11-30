@@ -2,7 +2,7 @@
 layout: post
 title:  "Command line option parsing"
 date: 2011-04-24T20:10:00+02:00
-categories: c# cli
+tags: c# cli
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

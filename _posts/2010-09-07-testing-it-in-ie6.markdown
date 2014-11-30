@@ -2,7 +2,7 @@
 layout: post
 title:  "Testing it in ie6?"
 date: 2010-09-07T10:51:00+02:00
-categories: ie6
+tags: ie6
 ---
 
 This program has helped me greatly. Not that I approve of IE6 or anything...<br><a href="http://www.my-debugbar.com/wiki/IETester/HomePage%20">http://www.my-debugbar.com/wiki/IETester/HomePage </a><br><br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "less css"
 date: 2010-09-07T21:23:00+02:00
-categories: css ruby
+tags: css ruby
 ---
 
 I really recommend this. How do you read really complex css? How do you refactor complex css rules? The answers is:<br>

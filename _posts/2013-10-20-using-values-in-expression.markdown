@@ -2,7 +2,7 @@
 layout: post
 title:  "Using values in expression"
 date: 2013-10-20T11:47:00+02:00
-categories: c#
+tags: c#
 ---
 
 I've done some small tests while writing the library to handle <a href="https://www.nuget.org/packages/With/">readonly objects in c#.</a> Turns out that getting the value of a sub expression can be costly (since you have to compile the expression and execute). When just setting one property there can be a performance benefit of using the following syntax:<br><blockquote class="tr_bq">

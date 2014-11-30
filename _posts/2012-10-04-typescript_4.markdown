@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript"
 date: 2012-10-04T14:37:00+02:00
-categories: javascript
+tags: javascript
 ---
 
 Why is Typescript more interesting than coffeescript and similar constructs? Typescript is an extension of the javascript language. If you avoid the syntactic sugar for classes and modules in typescript, but it still can be very helpful (perhaps a sweet addition to jshint). It avoids the <a href="http://ryanflorence.com/2011/case-against-coffeescript/">assembler of the web</a> problems.<br><br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Why should you make your new developers use ruby?"
 date: 2012-10-09T00:42:00+02:00
-categories: ruby
+tags: ruby
 ---
 
 The impression I've gotten from working with ruby is that it's generally fun to work with. One of my coworkers who has about a year of experience told me:<br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Should the Membership provider be made obsolete?"
 date: 2009-07-14T22:36:00+02:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

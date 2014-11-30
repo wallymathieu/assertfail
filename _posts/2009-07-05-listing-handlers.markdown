@@ -2,7 +2,7 @@
 layout: post
 title:  "Listing handlers"
 date: 2009-07-05T14:56:00+02:00
-categories: javascript jquery
+tags: javascript jquery
 ---
 
 <div>I'm using a lot of jquery these days. One thing that troubled while trying to hunt down a wierd bug was how to find the event listeners for an element. You can read about it here:</div>

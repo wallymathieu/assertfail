@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple calculator for smartphones?"
 date: 2010-01-03T00:23:00+01:00
-categories: 
+tags: 
 ---
 
 I'm using an iphone, but the calculator is somewhat limited. I want something a bit more like the <a href="http://en.wikipedia.org/wiki/TI-85">calculator</a> that I used in school. Perhaps one approach is to use a simple page:<br><br>

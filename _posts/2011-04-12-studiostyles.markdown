@@ -2,7 +2,7 @@
 layout: post
 title:  "studiostyles"
 date: 2011-04-12T17:20:00+02:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

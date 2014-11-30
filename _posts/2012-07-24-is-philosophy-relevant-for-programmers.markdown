@@ -2,7 +2,7 @@
 layout: post
 title:  "Is philosophy relevant for programmers?"
 date: 2012-07-24T20:30:00+02:00
-categories: 
+tags: 
 ---
 
 <br>

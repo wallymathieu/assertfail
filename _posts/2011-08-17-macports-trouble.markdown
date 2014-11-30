@@ -2,7 +2,7 @@
 layout: post
 title:  "Macports trouble"
 date: 2011-08-17T20:47:00+02:00
-categories: osx bash macports
+tags: osx bash macports
 ---
 
 In order to upgrade only a subset of the outdated packages for macports:<br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Number of tests"
 date: 2011-03-27T23:20:00+02:00
-categories: unit-test
+tags: unit-test
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

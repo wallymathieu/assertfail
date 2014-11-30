@@ -2,7 +2,7 @@
 layout: post
 title:  "Refactoring in ruby"
 date: 2013-09-04T22:07:00+02:00
-categories: ruby unit-test
+tags: ruby unit-test
 ---
 
 We have written a lot of ruby code in the project I'm currently working in. There is a lot of code to help manage, build and schedule the program. We started out simple enough. Just one folder with helper scripts. After 2 years we have built up support for a wide variety of tasks.<br><h3>

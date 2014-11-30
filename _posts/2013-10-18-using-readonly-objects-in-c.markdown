@@ -2,7 +2,7 @@
 layout: post
 title:  "Using readonly objects in c#"
 date: 2013-10-18T19:39:00+02:00
-categories: c#
+tags: c#
 ---
 
 One thing I like about f# is the ability to use readonly objects in a way that does not require a lot of code. I've done a small lib inspired by this ability of f#: <a href="https://github.com/wallymathieu/with">with</a><br><br>

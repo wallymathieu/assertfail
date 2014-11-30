@@ -2,7 +2,7 @@
 layout: post
 title:  "Akihabara"
 date: 2010-05-24T23:16:00+02:00
-categories: 
+tags: 
 ---
 
 It looks like pretty amazing stuff. A 2d game tool/engine written in javascript using html 5:<br>

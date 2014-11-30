@@ -2,7 +2,7 @@
 layout: post
 title:  "MsTest mature enough?"
 date: 2011-04-01T21:44:00+02:00
-categories: unit-test
+tags: unit-test
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging javascript in Firefox"
 date: 2009-07-18T20:17:00+02:00
-categories: javascript debugging
+tags: javascript debugging
 ---
 
 How do you debug code in Firefox? The answer is that you use one of two eminent plugins:<br><ul>

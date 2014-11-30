@@ -2,7 +2,7 @@
 layout: post
 title:  "Visual studio 2012 all caps"
 date: 2012-08-16T17:43:00+02:00
-categories: visual_studio
+tags: visual_studio
 ---
 
 We are waiting for VS2012. What will impact work experience most will probably be the user interface changes as described in: <a href="http://blogs.msdn.com/b/visualstudio/archive/2012/05/08/visual-studio-11-user-interface-updates-coming-in-rc.aspx">Visual Studio 11 User Interface Updates Coming in RC</a><br><br>

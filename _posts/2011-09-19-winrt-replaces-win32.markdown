@@ -2,7 +2,7 @@
 layout: post
 title:  "WinRT replaces win32"
 date: 2011-09-19T22:21:00+02:00
-categories: c++ windows winrt
+tags: c++ windows winrt
 ---
 
 Sounds interesting to hear about the new WinRT api:s for windows. Reading up on it WinRT are COM objects in contrast to the Win32 architecture.<br>

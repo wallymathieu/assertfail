@@ -2,7 +2,7 @@
 layout: post
 title:  "Spending hours on trying to figure out why it does not check"
 date: 2012-07-31T09:36:00+02:00
-categories: javascript knockout
+tags: javascript knockout
 ---
 
 Yesterday I spent hours trying to figure out why a checkbox did not get checked (visually). When debugging the knockout code, it was clear that the DOM elements got checked. They did not update visually until another checkbox got checked. I tried other methods of checking the checkbox (both setAttribute and jquery) to no affect. What was even weirder is that it works the same in both chrome and IE.<br><br>

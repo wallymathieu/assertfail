@@ -2,7 +2,7 @@
 layout: post
 title:  "Isop infers parameters"
 date: 2013-09-21T09:13:00+02:00
-categories: cli option
+tags: cli option
 ---
 
 Command line tools should do what people expect. It's a bit chaotic to navigate how to parse command line parameters since there are many conventions.<br><br><ul>

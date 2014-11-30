@@ -2,7 +2,7 @@
 layout: post
 title:  "Refusing to work with a technology or a tool"
 date: 2012-06-10T14:21:00+02:00
-categories: programming
+tags: programming
 ---
 
 <h2>

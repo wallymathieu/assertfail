@@ -2,7 +2,7 @@
 layout: post
 title:  "Parsing system diagnostics xml format"
 date: 2011-03-24T21:45:00+01:00
-categories: log xml
+tags: log xml
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

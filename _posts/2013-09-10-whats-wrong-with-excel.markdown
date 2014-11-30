@@ -2,7 +2,7 @@
 layout: post
 title:  "What's wrong with spreadsheets?"
 date: 2013-09-10T20:23:00+02:00
-categories: spreadsheet
+tags: spreadsheet
 ---
 
 <div style="font-family: '.Helvetica NeueUI'; font-size: 18px; line-height: 24px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.296875); -webkit-composition-fill-color: rgba(130, 98, 83, 0.0976563); -webkit-composition-frame-color: rgba(191, 107, 82, 0.496094); "><b>Whats good about spreadsheets?</b></div>

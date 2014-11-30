@@ -2,7 +2,7 @@
 layout: post
 title:  "Writing rubyish c# or porting ruby code to c#"
 date: 2013-10-27T15:41:00+01:00
-categories: c# ruby
+tags: c# ruby
 ---
 
 Since I liked the ruby version for parsing <a href="https://github.com/sstephenson/global_phone">phone numbers</a>, I ported it to c#. In order to avoid having to rewrite to much I did the following:<br><br><ol>

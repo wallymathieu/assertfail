@@ -2,7 +2,7 @@
 layout: post
 title:  "XML build files are obsolete"
 date: 2010-11-20T17:59:00+01:00
-categories: ironruby msbuild rake
+tags: ironruby msbuild rake
 ---
 
 Why using a build system like Ruby rake or some other next generation tool (<a href="https://github.com/JamesKovacs/psake">psake</a> looks promising) to build your .net application or library? <br><br>

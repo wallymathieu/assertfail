@@ -2,7 +2,7 @@
 layout: post
 title:  "Whats wrong with Commerce Server 2009"
 date: 2011-01-26T19:00:00+01:00
-categories: whats_wrong commerce_server 
+tags: whats_wrong commerce_server 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

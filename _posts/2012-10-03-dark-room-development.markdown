@@ -2,7 +2,7 @@
 layout: post
 title:  "Dark-room development"
 date: 2012-10-03T08:24:00+02:00
-categories: windows
+tags: windows
 ---
 
 One of the fears is that <a href="http://www.codinghorror.com/blog/2012/10/the-pc-is-over.html">the days of PC is considered over</a>. That we there will be a massive shift towards a reduction of the interface. Some have pointed out that the start screen on <a href="http://www.youtube.com/watch?v=X0fsyb-ttcw">Windows 8: It's Almost Not Terrible</a>. Gartner sums it up <a href="http://www.theregister.co.uk/2012/07/23/gartner_windows_8_review/">in a word: Bad</a> for desktops (however he also says that it's very fine on touch device).<br><br>

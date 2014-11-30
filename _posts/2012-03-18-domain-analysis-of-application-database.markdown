@@ -2,7 +2,7 @@
 layout: post
 title:  "Domain analysis of an application database"
 date: 2012-03-18T13:32:00+01:00
-categories: db ddd
+tags: db ddd
 ---
 
 A relational database is not only a source of content. It can also be used as a mine for domain information related to domain of an application that uses that database. The schema, if it is well maintained, will give you an overview of the problem domain. If the schema is not well maintained, you can factor out the conventions used in that particular database for relations and create a patched schema with the real relations. As you generate a graph of the database you can start filtering out some of the details (important for business logic) but not for the big picture. Some of the things you can get from the graph will be trivial. It might also give you a better understanding of the big picture. By plotting this graph, you can get a overview helpful for identifying subdomains.<br><br>

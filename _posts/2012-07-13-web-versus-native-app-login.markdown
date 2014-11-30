@@ -2,7 +2,7 @@
 layout: post
 title:  "Web versus native app login"
 date: 2012-07-13T16:53:00+02:00
-categories: 
+tags: 
 ---
 
 What are the most important differences between native applications and web applications (for mail, rss et.c.) when it comes to login?<br><br>

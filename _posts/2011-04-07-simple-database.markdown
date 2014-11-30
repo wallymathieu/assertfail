@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple database"
 date: 2011-04-07T07:00:00+02:00
-categories: db
+tags: db
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

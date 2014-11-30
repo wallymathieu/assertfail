@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple object oriented javascript"
 date: 2010-07-30T09:48:00+02:00
-categories: javascript jquery
+tags: javascript jquery
 ---
 
 The jQuery approach is to avoid object orientation. This is an excellent way of avoiding bloat for small javascript hacks. If you're starting to build javascript heavy applications then you might need to start organizing your code. The first thing you should learn is how to write jQuery plugins. Later on you will need to learn some simple object orientation. Here's how:<br><blockquote class="tr_bq">

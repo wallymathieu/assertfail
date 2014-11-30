@@ -2,7 +2,7 @@
 layout: post
 title:  ".net dll inspection"
 date: 2011-03-22T22:19:00+01:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

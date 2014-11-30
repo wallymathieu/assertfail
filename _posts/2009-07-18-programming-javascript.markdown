@@ -2,7 +2,7 @@
 layout: post
 title:  "Programming javascript"
 date: 2009-07-18T18:40:00+02:00
-categories: javascript jquery lint
+tags: javascript jquery lint
 ---
 
 In the first course in computer science we (students) received the following words of wisdom from the lecturer:<br>Above anything avoid javascript.<br><br><span style="font-weight: bold;font-size:130%;">Pure javascript</span><br>A few years later I started working as a programmer (late 2005) the need to do certain small things arose; impossible without the use of javascript. One of my coworkers showed me how to add some bits of extra functionality that the users needed (easier user interface). Later on there was a need for drag and drop in the browser. I implemented this by using code from another coworker. I updated an editor for presenting study programs. I feel that that experience is a failure. It took me at least 2-3 weeks to get something that wasn't decent enough. I tried to write good code, but failed. Both the server-side and client-side code is a mess. Fortunately this code is rendered obsolete by the fact that the system I worked on contains more information and therefore can generate such presentations without any manual  editing. What I am trying to say: That coding experience sucked.<br><br><span style="font-weight: bold;font-size:130%;">Javascript library: jQuery</span><br>Fast forward to 2009. I've started working in a team developing what can best be described as an advanced editor (specialized for one purpose) on the web. Enter jQuery: Rich text editing, ajax, items that can be saved without the whole form being submitted, et.c.. The weirdness of developing javascript almost gone:<br><ul>

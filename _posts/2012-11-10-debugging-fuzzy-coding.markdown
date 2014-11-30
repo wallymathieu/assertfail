@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging fuzzy coding"
 date: 2012-11-10T18:11:00+01:00
-categories: programming
+tags: programming
 ---
 
 As a programmer it is easy to adopt a view of the world in light of our experience. The workings of the world starts to look as something out of the matrix. This has some funny consequences:<br>

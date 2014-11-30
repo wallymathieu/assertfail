@@ -2,7 +2,7 @@
 layout: post
 title:  "MVVM Plus Conductor with Knockout js"
 date: 2011-12-01T17:34:00+01:00
-categories: javascript knockout crossroads
+tags: javascript knockout crossroads
 ---
 
 A better fit in the browser world for knockout than MVC is to have something like a controller. A class responsibe for being an endpoint for routes. This is natuarally coupled with the responsibility of changing between screens. Since controller is such a loaded word, lets simply call it conductor.<br><br>

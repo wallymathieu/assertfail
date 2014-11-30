@@ -2,7 +2,7 @@
 layout: post
 title:  "Continuous code coverage"
 date: 2012-02-19T17:54:00+01:00
-categories: javascript code_coverage
+tags: javascript code_coverage
 ---
 
 What if we could do a continuous code coverage? That is, while debugging and testing the app, storing the coverage information. A first version would consider lines that are not changed as covered if they have been executed during previous runs. This could be a sort of blunt tool to help isolate code that should be flagged either for removal, for code review, automatic or manual testing.<br><br>

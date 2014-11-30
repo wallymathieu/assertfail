@@ -2,7 +2,7 @@
 layout: post
 title:  "jQuery"
 date: 2011-05-04T19:00:00+02:00
-categories: javascript jquery
+tags: javascript jquery
 ---
 
 They have already gotten around to release jQuery 1.6. Looks like a lot of improvements :)

@@ -2,7 +2,7 @@
 layout: post
 title:  "x86 / 64"
 date: 2011-04-28T15:09:00+02:00
-categories: build
+tags: build
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

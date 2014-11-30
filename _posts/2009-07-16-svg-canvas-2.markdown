@@ -2,7 +2,7 @@
 layout: post
 title:  "svg canvas 2"
 date: 2009-07-16T09:35:00+02:00
-categories: javascript jquery svg
+tags: javascript jquery svg
 ---
 
 A colleague told me about another initiative for graphics on the web. It turns out that John Resig has written a <a href="http://processingjs.org/">library</a> for this.

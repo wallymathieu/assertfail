@@ -2,7 +2,7 @@
 layout: post
 title:  "Is agile a developer-centric scam?"
 date: 2012-07-15T16:25:00+02:00
-categories: agile
+tags: agile
 ---
 
 <br><span style="background-color: white;"><a href="http://adtmag.com/articles/2012/07/13/report-says-agile-a-scam.aspx">This article</a> tells of a report where they suspect agile of being developer-centric scam in order for developers to avoid unwanted tasks:</span><br><blockquote class="tr_bq">

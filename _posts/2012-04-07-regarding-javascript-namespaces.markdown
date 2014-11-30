@@ -2,7 +2,7 @@
 layout: post
 title:  "Regarding javascript namespaces"
 date: 2012-04-07T09:22:00+02:00
-categories: javascript
+tags: javascript
 ---
 
 <br>

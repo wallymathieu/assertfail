@@ -2,7 +2,7 @@
 layout: post
 title:  "Why automated tests?"
 date: 2011-03-31T23:14:00+02:00
-categories: unit-test
+tags: unit-test
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

@@ -2,7 +2,7 @@
 layout: post
 title:  "Migrations"
 date: 2011-04-15T21:49:00+02:00
-categories: migrations sql
+tags: migrations sql
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple noise on the arduino"
 date: 2011-10-02T21:04:00+02:00
-categories: arduino music sound
+tags: arduino music sound
 ---
 
 Inspired by the <a href="http://www.motherboard.tv/2011/9/29/minimalism-worship-these-sweet-loops-were-made-with-only-one-line-of-code">minimalists</a> I tried this out on the arduino:<br><br><br>

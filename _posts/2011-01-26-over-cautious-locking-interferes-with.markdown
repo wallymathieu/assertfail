@@ -2,7 +2,7 @@
 layout: post
 title:  "Over-cautious locking interferes with work"
 date: 2011-01-26T22:52:00+01:00
-categories: 
+tags: 
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">
