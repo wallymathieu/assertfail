@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 """
 jekyll-post - this is a simple script that will create and initialize a new
@@ -138,8 +138,8 @@ def main():
     # check if the desired file already exists
     if os.path.exists(filename):
         # file already exists, abort the program
-        print filename + ' already exists.'
-        print 'Jekyll post NOT created.'
+        print(filename + ' already exists.')
+        print('Jekyll post NOT created.')
         sys.exit(1)
 
     # collect any tags included in the args
@@ -157,14 +157,14 @@ def main():
         finally:
             f.close()
     except IOError:
-        print 'Issue writing to Jekyll post file.'
+        print('Issue writing to Jekyll post file.')
 
     # if write flag is on, then try to open file with vi
     if args.write:
         subprocess.call(['vim', filename])
 
     # print confirmation statement
-    print 'New Jekyll post "' + title + '" has been created -- ' + filename
+    print( 'New Jekyll post "' + title + '" has been created -- ' + filename)
 
 if __name__ == '__main__':
     main()
