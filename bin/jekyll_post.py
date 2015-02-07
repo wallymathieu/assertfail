@@ -39,7 +39,7 @@ import os.path
 import sys
 import time
 
-from dateutil.tz import tzlocal
+#from dateutil.tz import tzlocal
 
 DEFAULT_EXT = 'md'
 
@@ -62,7 +62,7 @@ def today_or_parse_input(input):
     if input:
         date = datetime.datetime.strptime(input, '%Y-%m-%d')
     else: # use today's date
-        date = datetime.datetime.now(tzlocal())
+        date = datetime.datetime.now()
     return date
 
 def get_z_delta(input):
