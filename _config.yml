@@ -5,4 +5,4 @@ markdown: redcarpet
 highlighter: pygments
 encoding: utf-8
 
-exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project]
+exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project, requirements.txt]
