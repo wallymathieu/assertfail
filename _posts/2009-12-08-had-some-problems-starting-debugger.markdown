@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title: "Trouble starting the debugger with IE8 installed"
 date: 2009-12-08T20:22:00+01:00
 tags: 
 ---
