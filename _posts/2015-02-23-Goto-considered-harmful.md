@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Goto considered harmful
-date: 2015-03-00T34:47:11+01:00
+date: 2015-02-23T00:30:11+01:00
 ---
 
 Dijkstra wrote the [following](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html). I agree with his reasoning.
