@@ -8,5 +8,4 @@ The use of many assemblies has an appeal from an architectural standpoint. In or
 
 The problem is if you separate your code into many assemblies to early before you know the interdependencies between different subdomains. You can easily get a lot of code and extra assemblies due to subdomains that need to know much about each other. I like the reasoning in [Martin Fowlers post](http://martinfowler.com/bliki/MonolithFirst.html): That you should wait until you know more.
 
-Sometimes, the best thing is to start with a new library or dll. Starting out a bit greenfield when you start develop something new (something of sufficient size and with sufficiently small amount of knowledge about the existing code).
-
+Sometimes, the best thing is to start with a new library or dll. Starting out a bit greenfield when you start develop something new (something of sufficient size and with sufficiently small amount of knowledge about the existing code). It's like applying the single responsibility principle on a larger scale.
