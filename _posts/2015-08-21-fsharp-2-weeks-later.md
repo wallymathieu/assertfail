@@ -32,4 +32,5 @@ What is kind of annoying about the language (and tools related to it)
  - Gui tooling is still a bit alpha (the command line version works great)
  - It's easy to create a f# project where you need to manually edit the fsproj file in order to get it to work on mono and windows (this was a problem in the early days of NuGet)
  - Almost all the library methods in .net becomes a tuple parameter in f#, this is a bit confusing since it looks like an ordinary function call in c#
+ - Exposing f# Option on your types makes it harder to interact with your f# code from c#
 
