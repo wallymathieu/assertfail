@@ -6,27 +6,31 @@ date: 2015-08-21T17:17:39+02:00
 
 Since I've been without an assingment I've had the time to look into f# more.
 
-Where did I find material?
+## Where did I find material?
 
  - [fsharpforfunandprofit](http://fsharpforfunandprofit.com/)
  - [functional programming on slack](http://fpchat.com/)
  - stackoverflow
 
-Things I've found that delighted me:
+## Why did I start looking into f# again?
+
+ I share the office with [Fredrik Forssen](https://github.com/wastaz). I find his love of f# inspiring.
+
+## Things I've found that delighted me:
 
  - Less ceremony to declare classes, records, methods and functions (when you get used to how you write it)
  - Easier to compose things (for instance if you want to create a chain in order to use many different classes together for an import)
  - Monad and macro support (and yes, I know that these things can very easily be abused)
  - Package manager and Build tool that works well together ([paket](https://github.com/fsprojects/Paket) and [fake](https://github.com/fsharp/FAKE)).
- - Records defined in f# are like hand coded readonly structs with IEquatable and IComparable implemented
+ - Records defined in f# are like hand coded readonly classes with IEquatable and IComparable implemented
 
-I've previously found the following sweet when looking at the language:
+## I've previously found the following sweet when looking at the language:
 
  - Immutable by default
  - Language construct to create a clone of a record but with different values for some fields
  - Language construct to match more than hard coded strings, enums and integers
 
-What is kind of annoying about the language (and tools related to it)
+## What is kind of annoying about the language (and tools related to it)
 
  - If you forget to add an equals sign to a type or module declaration you get weird compiler errors
  - Gui tooling is still a bit alpha (the command line version works great)
