@@ -38,3 +38,11 @@ Since I've been without an assingment I've had the time to look into f# more.
  - Almost all the library methods in .net becomes a tuple parameter in f#, this is a bit confusing since it looks like an ordinary function call in c#
  - Exposing f# Option on your types makes it harder to interact with your f# code from c#
 
+```
+    using OptionalUrl = Microsoft.FSharp.Core.FSharpOption<Customers.Url>;
+    ...
+       var customer = new Customer(
+          ...
+          pictureUri: OptionalUrl.Some(new Url("http://someurl.com/something?some=asd"))
+       );
+```
