@@ -20,7 +20,7 @@ Since I've been without an assingment I've had the time to look into f# more.
 
  - Less ceremony to declare classes, records, methods and functions (when you get used to how you write it)
  - Easier to compose things (for instance if you want to create a chain in order to use many different classes together for an import)
- - Monad and macro support (and yes, I know that these things can very easily be abused)
+ - Monad support (and yes, I know that these things can very easily be abused)
  - Package manager and Build tool that works well together ([paket](https://github.com/fsprojects/Paket) and [fake](https://github.com/fsharp/FAKE)).
  - Records defined in f# are like hand coded readonly classes with IEquatable and IComparable implemented
 
