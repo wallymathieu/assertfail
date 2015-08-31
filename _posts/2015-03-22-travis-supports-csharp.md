@@ -2,6 +2,7 @@
 layout: post
 title: travis supports csharp
 date: 2015-03-22T20:16:19+01:00
+tags: c#
 ---
 
 I've used travis to test c# projects for a few years now. It has been a bit of a pain to get it working (read custom ppa or setting language to objective c and downloading and installing package intended for xamarin studio).
