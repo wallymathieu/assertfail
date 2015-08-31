@@ -2,6 +2,7 @@
 layout: post
 title: Build tools and package managers for .net
 date: 2015-08-27T12:49:54+02:00
+tags: rake paket gulp grunt fake
 ---
 
 # What criteria do I use
