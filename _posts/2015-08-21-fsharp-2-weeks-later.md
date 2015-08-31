@@ -2,6 +2,7 @@
 layout: post
 title: fsharp 2 weeks later
 date: 2015-08-21T17:17:39+02:00
+tags: f#
 ---
 
 Since I've been without an assingment I've had the time to look into f# more.
