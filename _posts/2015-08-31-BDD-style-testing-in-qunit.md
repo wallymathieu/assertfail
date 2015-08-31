@@ -2,6 +2,7 @@
 layout: post
 title: BDD style testing in qunit
 date: 2015-08-31T10:52:38+02:00
+tags: bdd javascript
 ---
 
 Before the vacation I was working with [Karl Adriansson](https://twitter.com/HerrAdriansson) on a project as the front end programmer. I helped get a front end javascript parts back on track. While doing this, Karl and one of the testers supplied me with specifications from the requirements. Since the specifications where very detailed, It was very easy to transform them into sort of BDD style tests:
