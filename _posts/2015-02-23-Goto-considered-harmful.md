@@ -130,6 +130,6 @@ This translates into:
 	}
 
 
-The main thing is the usage, not the keyword. Goto is an easy target because it's famous for being bad. This is cargo cult programming. It's easy to write an unreadable mess in many ways.
+The main thing is the usage, not the keyword. Goto is an easy target because it's famous for being bad. This is cargo cult programming. It's easy to write an unreadable mess in many ways. In the above examples it might be due to the fact that it's difficult to follow how the state of the context will be for any line.
 
 The important thing to ask yourself is why is some code harder to read? How do you write readable code? How do you write good texts?
