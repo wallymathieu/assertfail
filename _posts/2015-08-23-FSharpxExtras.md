@@ -2,6 +2,7 @@
 layout: post
 title: FSharpx.Extras
 date: 2015-08-23T20:44:46+02:00
+tags: f#
 ---
 
 Turns out that there is a simpler way of dealing with optional values in c#.
