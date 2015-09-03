@@ -49,7 +49,7 @@ If you are doing windows only work, then this tool is valid.
 
 ### The Cake is alive? 
 
-There are many different c# build tools. The most popular right now looks to be Cake. You don't have to install cscript in order to Cake or Nake, but can download a .net exe from NuGet. You can use this exe to execute build script files. Sake is installed via chocolatey. Cake looks more mature now, so it can be an option for developers mostly familiar with c#.
+There are many different c# build tools. The most popular right now looks to be [Cake](https://github.com/cake-build/cake). You don't have to install cscript in order to [Cake](https://github.com/cake-build/cake) or [Nake](https://github.com/yevhen/Nake), but can download a .net exe from NuGet. You can use this exe to execute build script files. [Sake](https://github.com/sakeproject/sake) is installed via chocolatey. Cake looks more mature now, so it can be an option for developers mostly familiar with c#.
 
 I've not tried Cake that much, so I don't know how well it handles under mono. 
 
