@@ -7,7 +7,7 @@ tags: rake paket gulp grunt fake
 
 # What criteria do I use
 
-I prefer for the build tool to work on both \*nix and windows. I do some of the .net coding on os x.
+I prefer for the build tool to work on both \*nix and windows. I do some of the .net coding on os x. The build systems mentioned here are all related to working with .net (and all except psake work in \*nix).
 
 # If you are coding .net
 
