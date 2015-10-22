@@ -7,7 +7,7 @@ tags: ruby
 
 Instead of using:
 ```
-$:.unshift File.dirname(FILE)
+$:.unshift File.dirname(__FILE__)
 ```
 to add a folder to the path, a better way inside your ruby code is to use:
 ```
