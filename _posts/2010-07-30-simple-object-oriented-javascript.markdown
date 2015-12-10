@@ -10,7 +10,7 @@ The jQuery approach is to avoid object orientation. This is an excellent way of 
 ```javascript
 function TigerType(name){
     var that = this; this.name = name; this.sound = "growl!";
-    this.roar = function(){ return that.sound; };<br>
+    this.roar = function(){ return that.sound; };
 }
 var tigerInstance = new TigerType();
 alert(tigerInstance.roar());
