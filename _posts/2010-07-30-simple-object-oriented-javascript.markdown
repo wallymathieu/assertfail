@@ -8,8 +8,8 @@ tags: javascript jquery
 The jQuery approach is to avoid object orientation. This is an excellent way of avoiding bloat for small javascript hacks. If you're starting to build javascript heavy applications then you might need to start organizing your code. The first thing you should learn is how to write jQuery plugins. Later on you will need to learn some simple object orientation. Here's how:
 ```javascript
 function TigerType(name){
-    var that = this; this.name = name; this.sound = "growl!";
-    this.roar = function(){ return that.sound; };<br>
+    var that = this; this.name = name; this.sound = "growl!";
+    this.roar = function(){ return that.sound; };<br>
 }
 var tigerInstance = new TigerType();
 alert(tigerInstance.roar());
@@ -19,9 +19,9 @@ So what about inheritance? The simple solution is to use call or apply.
 
 ```javascript
 function TigerWithTeethType(name){
-    var that = this;
-    TigerType.call(this,name);
-    this.bite = function(){ /*some code to bite the programmer ;)*/ };
+    var that = this;
+    TigerType.call(this,name);
+    this.bite = function(){ /*some code to bite the programmer ;)*/ };
 }
 ```
 Since TigerType is a function, call and apply can be used to execute it with the "this" of TigerWithTeethType. This way has the advantage of being simple and jQuery safe.
