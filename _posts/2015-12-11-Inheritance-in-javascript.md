@@ -2,6 +2,7 @@
 layout: post
 title: Inheritance in javascript
 date: 2015-12-11T17:06:44+01:00
+tags: javascript
 ---
 
 # How do you inherit from a "class" in javascript
