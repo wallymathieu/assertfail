@@ -97,3 +97,7 @@ This can be done as a post processing step in your grunt or gulp with logic simi
    return "namespace."+gr+" = fucntion namespace_"+gr+"(";
  });
 ```
+
+## Using pure prototype inheritance
+
+If you are using a library that does the right thing when it comes to "this", then you can add methods to the prototype instead of "this" as a captured variable named "self".
