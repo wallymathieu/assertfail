@@ -31,6 +31,10 @@ Less technical answer:
 
 The dev team are familiar with SVN and have an effective work flow in that tool.
 
+## Why not use SVN?
+
+When you branch. It's actually simpler to merge using git svn ... but that adds the additional complexity of having to use git svn with svn. This can be ok if someone on the team can be assigned as an integrator that does the merges.
+
 ## Why use Git (or mercurial et.c.)?
 
 Can be an easy sourcesafe like experience if you are a single developer. If you have lots of developer, it's easier to work together using git.
