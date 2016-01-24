@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cleaning your work area!
+title: Clean your work area!
 date: 2016-01-24T07:34:44+01:00
 ---
 
