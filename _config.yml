@@ -1,7 +1,7 @@
 # glynn,
 # jekyll
 name: Assert Fail
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 encoding: utf-8
 

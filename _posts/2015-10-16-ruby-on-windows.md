@@ -8,13 +8,13 @@ I've had some trouble installing gems on windows instances using ```bundle insta
 
 While this fix is correct, a quick and dirty approach is to make sure that your gem files have source http instead of https:
 
-```ruby
+~~~ ruby
 # A sample Gemfile
 source "http://rubygems.org"
 
 gem 'albacore'
 gem 'nuget_helper'
-```
+~~~
 
 This means that the communication to download gems from rubygems is not private.
 

@@ -18,9 +18,9 @@ We took that directory and zip:ed it. Minus the cache, since windows zip freaked
 
 We made sure to set the system Environment variable:
 
-```
+~~~
 TEAMCITY_DATA_PATH
-```
+~~~
 
 to where we want teamcity to keep the data.
 
@@ -53,10 +53,10 @@ You need the SDK.
 
 I noticed that some of the builds where failing due to missing AL.exe (assembly linker). I installed the SDK associated with the version of windows installed Win2008. I forgot to check the error message closer. It was complaining about not finding "v8.0A" if you look at the error message. I had installed an earlier version if you look at the registry settings.
 
-```
+~~~
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(2863,5): error MSB3086: 
   Task could not find "AL.exe" using the SdkToolsPath "" or the registry key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86". Make sure the SdkToolsPath is set and the tool exists in the correct processor specific location under the SdkToolsPath and that the Microsoft Windows SDK is installed 
-```
+~~~
 
 So I needed to install another SDK, the one called "Windows 8 SDK".
 
@@ -64,10 +64,10 @@ The names of the SDK's are a bit confusing.
 
 Another project tried to build a web site. It was failing due to missing an imported msbuild targets file.
 
-```
+~~~
 WebSite.csproj(190,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\WebApplications\Microsoft.WebApplication.targets"
  was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
-```
+~~~
 
 The common solution here is to copy the targets for web applications from a developer machine in order to get these targets. They really should be part of a nuget package or available as a separate download.
 
@@ -75,9 +75,9 @@ The common solution here is to copy the targets for web applications from a deve
 
 Next day we ran into trouble with using port 80 for teamcity. Probably because the machine had slept during the night ;) . Turns out "system" is binding on port 80:
 
-```
+~~~
 Powershell> netstat -anbo  | where {$_.contains("80")}
-```
+~~~
 
 When we searched to find some answer we found [stackoverflow](http://stackoverflow.com/questions/12492025/windows-8-nt-kernel-and-system-using-port-80).
 Turns out "World Wide Web Publishing Service" is listening on port 80.

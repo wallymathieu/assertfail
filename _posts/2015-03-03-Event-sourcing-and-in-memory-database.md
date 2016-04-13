@@ -13,7 +13,7 @@ OrigoDb is a bit easier to setup compared to NEvent store. NEvent store is more 
 
 Since OrigoDb assumes that you want help with making absolutely sure that your in memory data is not corrupted by a assignment of on an object you need to interact with the it in a slightly different manner (from [OrigoDb CustomerDataTests](https://github.com/wallymathieu/origodb-studies/blob/master/Tests/CustomerDataTests.cs#L28) ):
 
-```
+~~~ c#
         [Test]
         public void CanGetCustomerByFirstname()
         {
@@ -23,7 +23,7 @@ Since OrigoDb assumes that you want help with making absolutely sure that your i
                 .ToList());
             Assert.AreEqual(3, customers.Count);
         }
-```
+~~~
 
 Storing your events in an append manner on the filesystem is the easiest approach. Use of readonly objects simplifies things (easier to make sure that the data does not diverge). Perhaps a usecase for [With](https://github.com/wallymathieu/with/blob/master/src/Tests/With/Clone_an_instance_into_the_same_type.cs)?
 

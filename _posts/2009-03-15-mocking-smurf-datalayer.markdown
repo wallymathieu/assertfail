@@ -1,5 +1,5 @@
 ---
-layout: post386
+layout: post
 title:  "Mocking smurf datalayer"
 date: 2009-03-15T09:16:00+01:00
 tags: c# mocking moq rhino unit-test

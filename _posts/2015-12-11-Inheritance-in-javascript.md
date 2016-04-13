@@ -9,7 +9,7 @@ tags: javascript
 
 Especially if you have a class that is a mix of constructor function and prototype methods and properties.
 
-```javascript
+~~~ javascript
 "use strict";
 function getSeq(start){
  return function next(){
@@ -38,7 +38,7 @@ function Mammal(name){
 Mammal.prototype.says = function(){ // but we can still add functions by adding to the prototype
     return this.saying || '';
 };
-```
+~~~
 
 ## Some notes about the above code
 
@@ -48,13 +48,13 @@ By modifying the prototype you can always add methods even if the object itself 
 
 ## How do you create an instance of this "class"?
 
-```javascript
+~~~ javascript
 var m = new Mammal('Missan');
-```
+~~~
 
 ## How do we inherit from this "class"?
 
-```javascript
+~~~ javascript
 "use strict";
 function Feline(name){
     var self = this;
@@ -73,30 +73,30 @@ function Cat(name){
 
 Cat.prototype = Object.create(Feline.prototype);
 Cat.prototype.constructor = Cat;
-```
+~~~
 
 ## Naming of javascript classes
 
 Note that when you write: 
 
-```javascript
+~~~ javascript
 namespace.Name = function (){ } 
-```
+~~~
 
 This becomes an anonymous function (in many browsers). In order to give it a name we need to write it like:
 
-```javascript
+~~~ javascript
 namespace.Name = function namespace_Name(){ } 
-```
+~~~
 
 This can be done as a post processing step in your grunt or gulp with logic similar to the following:
 
-```javascript
+~~~ javascript
 "namespace.FunctionName = function() {};".replace(
  /namespace.([^ ]+) *\= *function *\(/, function (str, gr){
    return "namespace."+gr+" = fucntion namespace_"+gr+"(";
  });
-```
+~~~
 
 ## Using pure prototype inheritance
 

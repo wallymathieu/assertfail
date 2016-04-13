@@ -9,17 +9,17 @@ tags: javascript knockout
 
 What does a computed expression like this:
 
-```js
+~~~ javascript
 this.isBusy = ko.computed(function() {
     return self._isBusy() || self._queryIsBusy();
 });
-```
+~~~
 
 have to do with
 
-```html
+~~~ html
 <div data-bind="visible: _isBusy() || _queryIsBusy()" ></div>
-```
+~~~
 
 Internally knockout creates a computed out of an expression in a bindinghandler. Ko does not parse the expression in the html above to register the variables _isBusy or _queryIsBusy.
 
@@ -29,37 +29,37 @@ What does this mean for your code?
 
 If you have something below but want to move the logic to your class from the view:
 
-```html
+~~~ html
 <div data-bind="visible: _isBusy() || _queryIsBusy()" ></div>
-```
+~~~
 
 You have two main options:
 
 Option 1
 
-```js
+~~~ javascript
 Object.defineProperty(self, 'isBusy', {
     get: function() {
            return _isBusy() || _queryIsBusy();
     }
 });
-```
+~~~
 
-```html
+~~~ html
 <div data-bind="visible:isBusy" ></div>
-```
+~~~
 
 Option 2 
 
-```js
+~~~ javascript
 this.isBusy = function() {
     return _isBusy() || _queryIsBusy();
 };
-```
+~~~
 
-```html
+~~~ html
 <div data-bind="visible:isBusy()" ></div>
-```
+~~~
 Notice '()'
 
 ## Life cycle
