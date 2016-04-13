@@ -2,7 +2,7 @@
 # jekyll
 name: Assert Fail
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 encoding: utf-8
 
 exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project, requirements.txt]
