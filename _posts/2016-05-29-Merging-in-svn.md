@@ -15,7 +15,6 @@ git svn clone -r 10327 --username=oskar.gewalli http://company.com/scm/svn/Proje
 ```
 
 In order to fetch changes I did:
-
 ```
 git svn rebase 
 ```
