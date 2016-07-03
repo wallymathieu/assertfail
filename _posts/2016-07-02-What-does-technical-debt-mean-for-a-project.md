@@ -17,11 +17,13 @@ Estimation: There is a risk that after something looks implemented, there are Y 
 
 If nothing is done to pay off technical debt, you have a situation where after an issue A1 you have Y bugs. Each bug takes an average X amount of time to resolve. After each bugfix there is a risk of a new bug. Since the technical debt is not repaid, we see that the average time X will increase. It means that you have a similar situation as when a person with a loan allows the interest rate to accumulate (ie debt increases).
 
-## How do achieve profitability in a project with high technical debt?
+## How do you achieve profitability in a project with high technical debt?
 
-Lower customer requirements in existing parts of the system. If lack people that can hold off customer demands for changes in existing parts (requirements that entail greater complexity), customer requirements will drive increased costs.
+Lower customer requirements in existing parts of the system. If you lack people that can hold off customer demands for changes in existing parts (requirements that entail greater complexity), customer requirements will drive increased costs.
 
 Build separate modules where technical debt can be kept low. However, this can mean that the greatest cost (time spent) will be related to integration code (code to connect between things) between to connect modules of low technical debt with modules of high technical debt. However as long as you avoid changing modules with high technical debt, you can avoid cost increases.
+
+Hire people that take a long term view (see the section about how to handle technical debt) in order to pay of the loan over time. Together with the developers, make sure that they create a long term plan for how to reduce the debt.
 
 ## What does technical debt mean for people working in the project?
 
@@ -33,6 +35,8 @@ The complexity and difficulties to deliver, can along with demands for quick del
 - Automatic testing to reduce the likelihood of regression
 - Requirements management: ensure that the requirements reduce complexity (eg by having a dialogue to arrive at simpler solutions)
 - By identifying the problem through different tools and working to isolate or remove the parts of the code that need to be changed due to customer requirements
+- [Refactor](http://martinfowler.com/books/refactoring.html) parts that are covered by tests
+- Create new modules that [strangle old parts of the system](http://www.martinfowler.com/bliki/StranglerApplication.html)
 
 ### How do you identify the problem?
 
