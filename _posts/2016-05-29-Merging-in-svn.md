@@ -2,6 +2,7 @@
 layout: post
 title: Merging in svn
 date: 2016-05-29T13:46:21+02:00
+tags: svn
 ---
 
 While working as a consultant at a company that uses svn, I needed to keep a branch in sync with the master branch. This turns out to be a lot of work.

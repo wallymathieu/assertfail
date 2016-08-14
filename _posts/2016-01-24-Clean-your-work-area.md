@@ -2,6 +2,7 @@
 layout: post
 title: Clean your work area!
 date: 2016-01-24T07:34:44+01:00
+tags: meta
 ---
 
 When in the kitchen, how are you behaving to old dishes? Do you make space in order to have space to cook the food? After finished cooking the food, do you leave dirty dishes to the next day?

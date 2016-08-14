@@ -2,6 +2,7 @@
 layout: post
 title: Common enterprise architectures
 date: 2016-06-03T20:24:52+02:00
+tags: meta
 ---
 
 Some patterns I've usually encountered while working code bases written by .net developers. You can also read more on [msdn](https://msdn.microsoft.com/en-us/library/ee658117.aspx).

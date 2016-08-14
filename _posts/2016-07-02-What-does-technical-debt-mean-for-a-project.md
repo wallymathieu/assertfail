@@ -2,6 +2,7 @@
 layout: post
 title: What does technical debt mean for a project?
 date: 2016-07-02T08:20:29+02:00
+tags: meta
 ---
 
 
