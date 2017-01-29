@@ -104,3 +104,20 @@ script:
 ...
 ```
 
+## Update
+
+Note that the version I referenced while trying out the install documentation is higher than the version I tried out. Trimming the yml resulted in the following travis yml:
+
+```
+language: csharp
+sudo: false
+dist: trusty
+dotnet: 1.0.0-preview2.1-003177
+mono:
+  - latest
+os:
+  - linux
+script: 
+...
+```
+
