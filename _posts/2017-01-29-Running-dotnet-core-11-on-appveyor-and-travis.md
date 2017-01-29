@@ -4,7 +4,7 @@ title: Running dotnet core 1.1 on appveyor and travis
 date: 2017-01-29T09:05:29+01:00
 ---
 
-I wanted to see the state of EntityFramework on core. Turns out that it works on other platforms than Windows! NHibernate worked on mono as well as Windows, and now Entity Framework has caught up with that. However, EF Core is still somewhat limited as a ORM. This should not matter much if you are writingrelatively simple SQL (LINQ) and have few relationships (so that you have less of a need for more advanced constructs). Many business apps do fall into this category if the requirements are made simple and clear (one source of complexity is fuzzy requirements leading to confused code).
+I wanted to see the state of EntityFramework on core. Turns out that it works on other platforms than Windows! NHibernate worked on mono as well as Windows, and now Entity Framework has caught up with that. However, EF Core is still somewhat limited as a ORM. This should not matter much if you are writing relatively simple SQL (LINQ) and have few relationships (so that you have less of a need for more advanced constructs). Many business apps do fall into this category if the requirements are made simple and clear (one source of complexity is fuzzy requirements leading to confused code).
 
 ## appveyor
 
