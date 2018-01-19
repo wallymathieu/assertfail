@@ -2,6 +2,7 @@
 layout: post
 title: Dotnet core a year later
 date: 2018-01-19T21:21:06+01:00
+tags: asp.net core mvc dotnet
 ---
 
 We asked the other developers in December 2016 what they wanted to work on. They said that they wanted to work on [dotnet core](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md) and [MVC](https://github.com/aspnet/Mvc). I was a bit hesitant at first since that would imply using something relatively new to base the business on. [A cowoker](https://github.com/tfsjohan) at the time did inject that he was using it in production already.
