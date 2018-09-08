@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fsharp 2 weeks later
+title: f# 2 weeks later
 date: 2015-08-21T17:17:39+02:00
 tags: f#
 ---
@@ -39,7 +39,7 @@ Since I've been without an assingment I've had the time to look into f# more.
  - Almost all the library methods in .net becomes a tuple parameter in f#, this is a bit confusing since it looks like an ordinary function call in c#
  - Exposing f# Option on your types makes it harder to interact with your f# code from c#
 
-~~~ f#
+~~~ c#
     using OptionalUrl = Microsoft.FSharp.Core.FSharpOption<Customers.Url>;
     ...
        var customer = new Customer(
