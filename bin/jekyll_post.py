@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 """
 jekyll-post - this is a simple script that will create and initialize a new
