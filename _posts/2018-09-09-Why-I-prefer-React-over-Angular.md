@@ -6,7 +6,7 @@ tags: javascript angularjs react
 ---
 
  - I've found that my coworkers have an easier time grokking React than Angular: React contains fewer concepts than Angular.
- - Angular can sometimes make implementation of custom behaviors require a lot of deep knownledge (of Angular). For instance when implementing custom dropdown or checkbox.
+ - Angular can sometimes make implementation of custom behaviors require a lot of deep knownledge (of Angular). For instance when implementing a custom dropdown or a checkbox.
  - If you are cheeky, you could say:
     >Angular is a somewhat over engineered platform, while React is sometimes used to create over engineered apps.
 
