@@ -12,7 +12,7 @@ Some patterns I've usually encountered while working code bases written by .net 
 Usually you find classes with postfix name like:
 
 - Repository : List like interface for working with persisted data. Usually state of fetched objects is tracked, so you can do ```customerContext.Save()``` to persist changes to objects.
-- Service : An object that contains domain logic, but does not have a life of it's own (using instead entities). 
+- [Service](https://en.wikipedia.org/wiki/Service_(systems_architecture))  
 
 ### Related concepts
 
