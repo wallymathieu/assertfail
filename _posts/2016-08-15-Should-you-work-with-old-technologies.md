@@ -21,7 +21,7 @@ New tech may shift how you develop. For instance javascript performance improvem
 
 ### Writing new libraries
 
-Working in mature technologies can mean that the trailblazers have solved many of the problems. What's left is to try to get patches for potentially unmaintained libraries. If you are one of the trailblazers you can increase your market value by providing a library that many people use (thus people get to know your name). 
+Working in mature technologies can mean that the trailblazers have solved many of the problems. What's left is to try to get patches for potentially unmaintained libraries. If you are one of the trailblazers you can increase your market value by providing a library that many people use (thus people get to know your name). You will need to market the library in order to gain attract developers to write pull requests and contribute issues. Good way of marketing a library is to present it during meetups or conferences.
 
 ## Why should a coder avoid untested technologies?
 
@@ -35,6 +35,5 @@ If the new technology is radically different from the old (angular vs jQuery), t
 
 ### Trailblazer moving on to greener pastures
 
-A trailblazer might want to move on to the next language after creating a few new library. Or if the technology becomes somewhat popular (without people that want to help out) the maintainer might not have enough time on their hands to support the library.
+A trailblazer might want to move on to the next language after creating a few new library. Or if the technology becomes somewhat popular (without people that want to help out) the maintainer might not have enough time on their hands to support the library. This means that some libraries might become abandoned. Talk with the original author, sometimes they can be convinced to pass on the keys to NuGet, github et.c. as long as you are willing to help maintain the lib and review pull requests.
 
-Libraries with a know community are much safer choices. 
