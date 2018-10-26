@@ -34,3 +34,5 @@ public class SomeClass
     }
 }
 ```
+
+The reason for this style of syntax is due to the fact that compiling expressions are potentially expensive, why you'd want to have a similar pattern as compiled regex.
