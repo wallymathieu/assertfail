@@ -5,10 +5,13 @@ layout: minimal
 <p class="meta">{{ page.date | date_to_string }}</p>
 {{ content }}
 <h3>Tags</h3>
+<ul class="tagList">
 {% for cat in page.tags %}
 <li>{{ cat }}</li>
 {% endfor %}
+</ul>
+<br>
 <p>
 Comments or errors?
-<a href="https://github.com/wallymathieu/wallymathieu.github.io/tree/master/{{page.path}}">Fork post and do a pull request on github</a>
+<a href="https://github.com/wallymathieu/wallymathieu.github.io/tree/master/{{page.path}}">Fork this post and do a pull request on github</a>
 </p>
