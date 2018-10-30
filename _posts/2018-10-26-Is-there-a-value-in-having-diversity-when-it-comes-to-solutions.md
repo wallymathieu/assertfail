@@ -43,7 +43,7 @@ Note however, if you write mobile apps or desktop applications, you can do that 
 
 How do you hire ok frontend web people? You go with JavaScript (since that's the mainstream web frontend language right now). 
 
-How do you hire ok backend people? You go with Java, PHP or C# (since they are the mainstream backend languages right now).
+How do you hire ok backend people? You go with Java, Python, C# or even PHP (since they are the mainstream backend languages right now).
 
 How do you find great developers? One way is to go a bit niche. Interested developers will want to learn new things. If you have 'cool' tech you can attract some of these guys.  
 
