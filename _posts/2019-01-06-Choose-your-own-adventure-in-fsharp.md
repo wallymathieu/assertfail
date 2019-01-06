@@ -5,13 +5,36 @@ date: 2019-01-06T10:32:39+01:00
 tags: f# c# code-style
 ---
 
-When you start out on f#
+When you start out on f# your first thought might be:
 
-## Start from the basics
+```f#
+let square x = x * x
 
-In order to write beautiful F# you should first learn to follow the [F# design guidelines](http://fsharp.org/specs/component-design-guidelines/).
+let sumOfSquares n =
+   [1..n]
+   |> List.map square
+   |> List.sum
+```
+hey, that sort of looks like:
+```c#
+public static class Utils
+{
+   public static int SumOfSquares(int n)
+   {
+      return Enumerable.Range(1, n)
+         .Select(i => i * i)
+         .Sum();
+   }
+}
+```
+Examples from [F# for fun and profit: Sum of squares](https://fsharpforfunandprofit.com/posts/fvsc-sum-of-squares/).
 
-Take it easy, let it sink in. Some of the guideline suggestions are in line with what you already know when it comes to programming. Once you have learned the guidelines, you can use your [poetic license](https://en.wikipedia.org/wiki/Artistic_license) to bend the rules. There is also an excellent source of knowledge about functional programming called [F# for fun and profit](https://fsharpforfunandprofit.com).
+At a first glance, f# looks sort like slightly different style of c#, where instead of using extension methods you use static methods. Turns out that that's not all there is to f#.
+
+
+## Let's start from the basics
+
+There is also an excellent source of knowledge about functional programming called [F# for fun and profit](https://fsharpforfunandprofit.com).
 
 ## Overlap of c# and f# coding
 
@@ -152,6 +175,12 @@ YoLo isn't really a library, it's really a small file that gives you a bit of ex
 ### [F#+](https://github.com/fsprojects/FSharpPlus)
 
 My personal favorite. It's a rejection of the assumption that [f# cannot express higher level of abstractions](https://forums.fsharp.org/t/does-f-have-a-future/237). By using for instance monad transformers you can get the same functionality (combinations of computation expressions) as in ExtCore but without having to manually code it.
+
+## Beatiful F#
+
+In order to write beautiful F# you should first learn to follow the [F# design guidelines](http://fsharp.org/specs/component-design-guidelines/).
+
+Take it easy, let it sink in. Some of the guideline suggestions are in line with what you already know when it comes to programming. Once you have learned the guidelines, you can use your [poetic license](https://en.wikipedia.org/wiki/Artistic_license) to bend the rules.
 
 ## Conclusion
 
