@@ -113,17 +113,6 @@ Even though you need some attributes to configure endpoints, you can get a lot o
 
 The default for asp.net mvc is to use Newtonsoft.Json. It's not hard to plug in another serializer.
 
-## Build scripts
-
-The main way of writing f# build scripts is to use
-[FAKE](https://github.com/fsharp/fake). After the introduction of .net core cli tooling, there has been less need for build scripts when you have few requirements. Note that FAKE inspired [Cake](https://cakebuild.net).
-
-## Package management
-
-I've many times used paket to get around some issues with NuGet. Perhaps due to the competition .net core cli tooling now works OK for relatively simple projects. Paket has historically been better at dealing with code bases that contains a large amount of projects.
-
-You should definitelly consider using paket if you have a complicated dependency graph.
-
 ## What about testing your code?
 
 ### Main branches
@@ -159,7 +148,7 @@ When it comes to then add property based testing I've mostly used FsCheck.
 
 ## Going deeper down the rabbit hole!
 
-Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste. There are a couple of different libraries that can help you by containing useful additions.
+Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste. There are a couple of different libraries that can help you reduce your own infrastructure code.
 
 ### [F#X Extras](https://github.com/fsprojects/FSharpx.Extras)
 
@@ -176,12 +165,6 @@ YoLo isn't really a library, it's really a small file that gives you a bit of ex
 ### [F#+](https://github.com/fsprojects/FSharpPlus)
 
 My personal favorite. It's a rejection of the assumption that [f# cannot express higher level of abstractions](https://forums.fsharp.org/t/does-f-have-a-future/237). By using for instance monad transformers you can get the same functionality (combinations of computation expressions) as in ExtCore but without having to manually code it.
-
-## Beatiful F#
-
-In order to write beautiful F# you should first learn to follow the [F# design guidelines](http://fsharp.org/specs/component-design-guidelines/).
-
-Take it easy, let it sink in. Some of the guideline suggestions are in line with what you already know when it comes to programming. Once you have learned the guidelines, you can use your [poetic license](https://en.wikipedia.org/wiki/Artistic_license) to bend the rules.
 
 ## Conclusion
 
