@@ -90,6 +90,17 @@ Even though you need some attributes to configure endpoints, you can get a lot o
 
 The default for asp.net mvc is to use Newtonsoft.Json. It's not hard to plug in another serializer.
 
+## Build scripts
+
+The main way of writing f# build scripts is to use
+[FAKE](https://github.com/fsharp/fake). After the introduction of .net core cli tooling, there has been less need for build scripts when you have few requirements. Note that FAKE inspired [Cake](https://cakebuild.net).
+
+## Package management
+
+I've many times used paket to get around some issues with NuGet. Perhaps due to the competition .net core cli tooling now works OK for relatively simple projects. Paket has historically been better at dealing with code bases that contains a large amount of projects.
+
+You should definitelly consider using paket if you have a complicated dependency graph.
+
 ## What about testing your code?
 
 ### Main branches
@@ -142,3 +153,6 @@ YoLo isn't really a library, it's really a small file that gives you a bit of ex
 
 My personal favorite. It's a rejection of the assumption that [f# cannot express higher level of abstractions](https://forums.fsharp.org/t/does-f-have-a-future/237). By using for instance monad transformers you can get the same functionality (combinations of computation expressions) as in ExtCore but without having to manually code it.
 
+## Conclusion
+
+F# has a rich eco system of tools and frameworks. It can be a useful tool in order to deal with complexity or just to write something quick. There are many paths that you can take get where you need to go.
