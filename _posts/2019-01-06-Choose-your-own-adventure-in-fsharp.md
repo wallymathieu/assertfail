@@ -11,7 +11,7 @@ When you start out on f#
 
 In order to write beautiful F# you should first learn to follow the [F# design guidelines](http://fsharp.org/specs/component-design-guidelines/).
 
-Take it easy, let it sink in. Some of the guideline suggestions are in line with what you already know when it comes to programming. Once you have learned the guidelines, you can use your [poetic license](https://en.wikipedia.org/wiki/Artistic_license) to bend the rules.
+Take it easy, let it sink in. Some of the guideline suggestions are in line with what you already know when it comes to programming. Once you have learned the guidelines, you can use your [poetic license](https://en.wikipedia.org/wiki/Artistic_license) to bend the rules. There is also an excellent source of knowledge about functional programming called [F# for fun and profit](https://fsharpforfunandprofit.com).
 
 ## Overlap of c# and f# coding
 
@@ -90,7 +90,39 @@ Even though you need some attributes to configure endpoints, you can get a lot o
 
 The default for asp.net mvc is to use Newtonsoft.Json. It's not hard to plug in another serializer.
 
-## Going deeper down the rabbit hole?
+## What about testing your code?
+
+### Main branches
+
+There are two main paths of f# testing (that I've seen). One is the *Unit style testing frameworks, the other is composable testing frameworks.
+
+#### *Unit
+
+ - [NUnit](https://nunit.org) classic unit testing framework for .net.
+ - [XUnit](https://xunit.github.io) is rearchitected testing framework by some of the original team from NUnit made to make unit testing more accessible and safe (i.e. trying to steer away from antipatterns).
+
+ If you go down this path you should check out [FsUnit](https://fsprojects.github.io/FsUnit/) that provides some extensions to make testing in f# more enjoyable.
+
+ XUnit will feel very familiar due to the popularity of *Unit style libraries.
+
+#### Composable testing
+
+ - [Expecto](https://github.com/haf/expecto) forked from [Fuchu](https://github.com/mausch/Fuchu) and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
+
+I'm somewhat ambivilent to if I prefer XUnit or composable testing.
+
+### Going further down the test track
+
+#### Property based testing
+
+In property based testing you define the conditions for test data and let generators create that data to check your code against. These style of testing frameworks are excellent to combine with your existing testing.
+
+ - [FsCheck](https://fscheck.github.io/FsCheck/)
+ - [Hedgehog](https://github.com/hedgehogqa/fsharp-hedgehog)
+
+When it comes to then add property based testing I've mostly used FsCheck.
+
+## Going deeper down the rabbit hole!
 
 Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste.
 
