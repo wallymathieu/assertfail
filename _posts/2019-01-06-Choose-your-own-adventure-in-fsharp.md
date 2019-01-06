@@ -39,8 +39,7 @@ Some constructs that are easy to use in c# need more work or make for weird f#
  - Bit fiddling (this is also possible in f#, but also more verbose)
  - Goto (generally seen as an antipattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
  - Deep type hierarchies (generally seen as an antipattern and in f# the language tries to steer you away from these patterns, though in certain cases they can be useful)
- - Null values (generally seen as an antipattern, f# tries to steer you away from using null values, c# 8 let's you go in the same direction)
- - Code generation (due to type providers, there is less need for it in f#) 
+ - Code generation (due to type providers, there is less need for it in f#)
  - Implicit type conversions (generally seen as an antipattern, you can explicitly use [implicit operator](https://github.com/fsprojects/FSharpPlus/blob/35eb4c1b0646e4e07701c48ea4b2bdef2067caa5/src/FSharpPlus/Operators.fs#L717-L718) in f#)
 
 There is also a certain mainstream appeal of c style languages, why you might choose to code in c# despite being fluent in f#. I'm not fluent enough in VB.net to know when to use that language.
@@ -49,4 +48,37 @@ There is also a certain mainstream appeal of c style languages, why you might ch
 
 Let's say that you go start with a server or service (and worry about client or web code later).
 
-There is a smörgåsbord of frameworks to choose from. 
+### Web framework overview
+
+There is a smörgåsbord of web frameworks to choose from.
+
+ - Suave : Oldie but goodie. Some old idiosyncrasies. Need some love and major version with breaking changes removing cruft.
+ - Giraffe : in the style of Suave but with better performance (not as composable due to usage of Task over Async)
+ - Freya : Using custom computation expressions as builders. Based on webmachine. Need some love and new major version removing cruft.
+ - Frank : Recently overhauled. Frank together with Freya and Suave are the oldest f# web frameworks. Using computation expression as builder.
+ - Saturn : Relatively new to the block. Using custom computation expressions as builders. Based on Pheonix and MVC patterns.
+ - asp.net MVC : There is a heavy use of attributes in MVC.
+ - based on [IApplicationBuilder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder?view=aspnetcore-2.1) or OWIN: OWIN is considered dead at this point, but it played an essential role in influencing some of the work that went into asp.net core. You can compose your API in a slightly rough style by leveraging these abstractions.
+
+The question about web framework can also be phrased as, what kind of style do you like? Roughly there are five categories.
+
+### Function composition based : Suave, Giraffe
+
+My personal favorite. I like being able to compose API out of function building blocks. It's both abstract and low level at the same time.
+
+### Webmachine based : Freya
+
+Focus here is on being true to the HTTP spec. The [webmachine diagram](https://github.com/webmachine/webmachine/wiki/Diagram) is used by people to teach themselves about HTTP.
+
+### CE as builder[s] : Frank, Saturn
+
+Frank is a kind of small library that is probably good enough for many use cases. Saturn strives to be a batteries included framework.
+
+### Object oriented : asp.net MVC
+
+Even though you need some attributes to configure endpoints, you can get a lot of mileage from [TaskBuilder.fs](https://github.com/rspeele/TaskBuilder.fs) and the fact that you need less code to take in dependency injection parameters. F# shows that it can be a nice object oriented language
+
+### Bring your own abstractions: IApplicationBuilder
+
+You can create your own abstractions on top of `Map`, `MapWhen` and `Run`. You can also choose to be more to the metal in order to avoid abstractions.
+
