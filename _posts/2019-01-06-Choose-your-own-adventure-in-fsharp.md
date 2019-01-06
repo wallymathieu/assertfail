@@ -52,12 +52,12 @@ Let's say that you go start with a server or service (and worry about client or 
 
 There is a smörgåsbord of web frameworks to choose from.
 
- - Suave : Oldie but goodie. Some old idiosyncrasies. Need some love and major version with breaking changes removing cruft.
- - Giraffe : in the style of Suave but with better performance (not as composable due to usage of Task over Async)
- - Freya : Using custom computation expressions as builders. Based on webmachine. Need some love and new major version removing cruft.
- - Frank : Recently overhauled. Frank together with Freya and Suave are the oldest f# web frameworks. Using computation expression as builder.
+ - [Suave](https://suave.io) : Oldie but goodie. Some old idiosyncrasies. Need some love and major version with breaking changes removing cruft.
+ - [Giraffe](https://github.com/giraffe-fsharp/Giraffe) : in the style of Suave but with better performance (not as composable due to usage of Task over Async)
+ - [Freya](https://freya.io) : Using custom computation expressions as builders. Based on webmachine. Need some love and new major version removing cruft.
+ - [Frank](https://github.com/panesofglass/frank) : Recently overhauled. Frank together with Freya and Suave are the oldest f# web frameworks. Using computation expression as builder.
  - Saturn : Relatively new to the block. Using custom computation expressions as builders. Based on Pheonix and MVC patterns.
- - asp.net MVC : There is a heavy use of attributes in MVC.
+ - [asp.net MVC](https://github.com/aspnet/AspNetCore) : MVC is the most common .net run of the mill object oriented web MVC framework.
  - based on [IApplicationBuilder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder?view=aspnetcore-2.1) or OWIN: OWIN is considered dead at this point, but it played an essential role in influencing some of the work that went into asp.net core. You can compose your API in a slightly rough style by leveraging these abstractions.
 
 The question about web framework can also be phrased as, what kind of style do you like? Roughly there are five categories.
