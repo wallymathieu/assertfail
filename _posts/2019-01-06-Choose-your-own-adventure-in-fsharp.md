@@ -64,21 +64,49 @@ The question about web framework can also be phrased as, what kind of style do y
 
 ### Function composition based : Suave, Giraffe
 
-My personal favorite. I like being able to compose API out of function building blocks. It's both abstract and low level at the same time.
+My personal favorite. I like being able to compose API out of function building blocks. It's both abstract and low level at the same time. Might not be appropriate for larger teams, but fits well with microservices.
+
+Giraffe is bundled with [Newtonsoft.Json](https://www.newtonsoft.com/json) for serialization. Suave uses [DataContractJsonSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.json.datacontractjsonserializer?view=netframework-4.7.2) for serialization. Both of the libraries make it very easy to plug in your own choice of Json framework.
+
+Personally I prefer to plug in [Fleece](https://github.com/mausch/Fleece) with [FSharp.Data](https://www.nuget.org/packages/Fleece.FSharpData/).
+
+### Bring your own abstractions: IApplicationBuilder
+
+Another one of my favorites. You can create your own abstractions on top of `Map`, `MapWhen` and `Run`. You can also choose to be more to the metal in order to avoid abstractions. This can be excellent in order to teach programmers about how the details of web services (or when there is little need of abstractions).
 
 ### Webmachine based : Freya
 
 Focus here is on being true to the HTTP spec. The [webmachine diagram](https://github.com/webmachine/webmachine/wiki/Diagram) is used by people to teach themselves about HTTP.
 
+The Freya tutorial points you in the direction of [Chiron](http://github.com/xyncro/chiron) (from the same github organization).
+
 ### CE as builder[s] : Frank, Saturn
 
 Frank is a kind of small library that is probably good enough for many use cases. Saturn strives to be a batteries included framework.
 
-### Object oriented : asp.net MVC
+### Object oriented : ASP.NET MVC
 
-Even though you need some attributes to configure endpoints, you can get a lot of mileage from [TaskBuilder.fs](https://github.com/rspeele/TaskBuilder.fs) and the fact that you need less code to take in dependency injection parameters. F# shows that it can be a nice object oriented language
+Even though you need some attributes to configure endpoints, you can get a lot of mileage from [TaskBuilder.fs](https://github.com/rspeele/TaskBuilder.fs) and the fact that you need less code to take in dependency injection parameters. F# shows that it can be a nice object oriented language.
 
-### Bring your own abstractions: IApplicationBuilder
+The default for asp.net mvc is to use Newtonsoft.Json. It's not hard to plug in another serializer.
 
-You can create your own abstractions on top of `Map`, `MapWhen` and `Run`. You can also choose to be more to the metal in order to avoid abstractions.
+## Going deeper down the rabbit hole?
+
+Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste.
+
+### [F#X Extras](https://github.com/fsprojects/FSharpx.Extras)
+
+Contains a lot of helpful various utilities. Note monoid as [an abstract class](https://github.com/fsprojects/FSharpx.Extras/blob/d51ce763762b1e277f679d01b76504da00a67b6b/src/FSharpx.Extras/Monoid.fs#L11-L12). It's under the stewardship of [fsprojects](https://github.com/fsprojects/) so accepts pull requests even though the original authors are not as involved.
+
+### [ExtCore](https://github.com/jack-pappas/ExtCore)
+
+ExtCore contains among other things combinations of computation expressions.
+
+### [YoLo](https://github.com/haf/yolo)
+
+YoLo isn't really a library, it's really a small file that gives you a bit of extra useful methods. Used by Suave to provide some common utilities for base components of f# like `Option`, `Result` and `Choice`.
+
+### [F#+](https://github.com/fsprojects/FSharpPlus)
+
+My personal favorite. It's a rejection of the assumption that [f# cannot express higher level of abstractions](https://forums.fsharp.org/t/does-f-have-a-future/237). By using for instance monad transformers you can get the same functionality (combinations of computation expressions) as in ExtCore but without having to manually code it.
 
