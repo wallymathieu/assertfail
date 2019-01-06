@@ -141,9 +141,10 @@ There are two main paths of f# testing (that I've seen). One is the *Unit style 
 
 #### Composable testing
 
- - [Expecto](https://github.com/haf/expecto) forked from [Fuchu](https://github.com/mausch/Fuchu) and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
+ - [Fuchu](https://github.com/mausch/Fuchu)
+ - [Expecto](https://github.com/haf/expecto) forked from Fuchu and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
 
-I'm somewhat ambivilent to if I prefer XUnit or composable testing.
+I'm somewhat ambivalent to XUnit vs composable testing.
 
 ### Going further down the test track
 
@@ -158,7 +159,7 @@ When it comes to then add property based testing I've mostly used FsCheck.
 
 ## Going deeper down the rabbit hole!
 
-Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste.
+Say that you have gotten your feet wet and tasted some of the functional goodness of f#. Going further down you want to start to use some library to remove some of the copy paste. There are a couple of different libraries that can help you by containing useful additions.
 
 ### [F#X Extras](https://github.com/fsprojects/FSharpx.Extras)
 
@@ -184,4 +185,4 @@ Take it easy, let it sink in. Some of the guideline suggestions are in line with
 
 ## Conclusion
 
-F# has a rich eco system of tools and frameworks. It can be a useful tool in order to deal with complexity or just to write something quick. There are many paths that you can take get where you need to go.
+F# has a rich eco system of tools and frameworks. It can be a useful tool in order to deal with complexity or just to write something quick using some f# scripts. There are many paths that you can take to get where you need to go.
