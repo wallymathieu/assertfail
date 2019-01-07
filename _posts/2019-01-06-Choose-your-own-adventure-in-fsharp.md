@@ -59,7 +59,6 @@ Some constructs that are easy to use in f# need more work or make for weird c#.
 Some constructs that are easy to use in c# need more work or make for weird f#
 
  - Unsafe code, Native pointers (it's possible in f#, but is more verbose)
- - Bit fiddling (this is also possible in f#, but also more verbose)
  - Goto (generally seen as an antipattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
  - Deep type hierarchies (generally seen as an antipattern and in f# the language tries to steer you away from these patterns, though in certain cases they can be useful)
  - Code generation (due to type providers, there is less need for it in f#)
