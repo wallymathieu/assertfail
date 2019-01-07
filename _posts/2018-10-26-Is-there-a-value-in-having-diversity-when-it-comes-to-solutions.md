@@ -17,7 +17,7 @@ In programming we often have a drive towards standardization.
 ## Having different styles/architectures/programming language?
 
 Since different software components suite different purposes, they should have style suited for different application / purpose.
-When you use components from different companies and open source initiatives, they will not fit your style: they can help you deliver, so don't ignore things that don't fit your style (since they can help you deliver).
+When you use components from different companies and open source initiatives, they will not fit your style: they can help you deliver.
 
 ### One language to rule them all
 
