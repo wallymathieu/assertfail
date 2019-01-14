@@ -32,6 +32,4 @@ Our next stumbling block was that there was a requirement that we could have a s
 
 ## Conclusions
 
-In hindsight, building such a solution on Identity Server turned out to be something of a mistake. My best bet right now is that Identity Server is more useful for server to server communication or when you want an OAUTH provider (and you are OK with the opinions of Identity Server). Another alternative is to relax one of the above requirements and use the Identity Server `site` as API gateway to internal services.
-
-Another approach would have been sign JWT tokens directly without going through Identity Server. The tokens returned to the user could then have been validated by the services. The CTO at that time expressed a wish for the developers to use OAuth in order to be ready for native app development and to use an industry standard instead of something more homegrown.
+The assumption that we didn't need senior developers was faulty. Once we deviated from the assumptions made by Identity Server, we had to involve senior developers in order to implement the business requirements using a mix of OAUTH and other protocols.
