@@ -18,6 +18,10 @@ Note that all of these favour single threaded style of execution.
 
 If you read [Programming paradigms for dummies: what every programmer should know](https://blog.acolyer.org/2019/01/25/programming-paradigms-for-dummies-what-every-programmer-should-know/) you will note that most the concepts are unfamiliar to the working programmer.
 
-We have seen some shift in frameworks embracing concepts in mainstream frameworks
+We have seen some shift in frameworks embracing concepts
+
+ - type system
+ - promise
+ -
 
 However, mainstream programming easily goes down the cargo cult train. We see some
