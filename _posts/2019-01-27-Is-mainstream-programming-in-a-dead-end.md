@@ -25,3 +25,6 @@ We have seen some shift in frameworks embracing concepts
  -
 
 However, mainstream programming easily goes down the cargo cult train. We see some
+
+
+https://www.erlang-solutions.com/blog/let-s-talkconcurrency-with-joe-armstrong.html
