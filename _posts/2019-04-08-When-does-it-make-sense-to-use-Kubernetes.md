@@ -11,11 +11,15 @@ There is a certain level of complexity associated with Kubernetes. Depending on 
 
 ## The good
 
-What does Kubernetes give you? It offers an environment for hosting docker services that is more portable between vendors. It allows you to run an environment locally mimicking your production environment.
+What does Kubernetes give you? It offers an environment for hosting docker services that is more portable between vendors. It allows you to run an environment locally mimicking your production environment. You are able to gradually roll out new versions of services and scale them according to need.
 
 ## My Guess
 
 I would guesstimate that if you have a few services (say 5-10) without a network topology and your scaling needs fits a single computer, then kubernetes is probably overkill. While if you want or plan to host a multitude of different services then the complexity looks justified.
+
+- You have a lot of service/site/job deliverables that work well as docker images
+- You want the infrastructure to help maintain uptime and roll out deployments
+- You estimate that Kubernetes will be prevalent in the future and want in on it now
 
 ## Similar Alternatives
 
