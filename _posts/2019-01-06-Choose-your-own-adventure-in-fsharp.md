@@ -15,7 +15,9 @@ let sumOfSquares n =
    |> List.map square
    |> List.sum
 ```
+
 hey, that sort of looks like:
+
 ```c#
 public static class Utils
 {
@@ -27,10 +29,10 @@ public static class Utils
    }
 }
 ```
+
 Examples from [F# for fun and profit: Sum of squares](https://fsharpforfunandprofit.com/posts/fvsc-sum-of-squares/).
 
 At a first glance, f# looks sort like slightly different style of c#, where instead of using extension methods you use static methods. Turns out that that's not all there is to f#.
-
 
 ## Let's start from the basics
 
@@ -40,29 +42,29 @@ There is also an excellent source of knowledge about functional programming call
 
 There are some points to being happy in f#. For instance there is an intersection of styles for f# and c# where both languages are nice to use:
 
- - Lightly functional style ( `Select` or `seq.map`, `Where` or `seq.filter`, pure functions, named types instead of using `string`, `int`, `int64`, `Dictionary<string,object>` et.c., lambda expressions)
- - Simple Object Orientated code (i.e. no deep type hierarchies)
- - Mutable constructs
+- Lightly functional style ( `Select` or `seq.map`, `Where` or `seq.filter`, pure functions, named types instead of using `string`, `int`, `int64`, `Dictionary<string,object>` et.c., lambda expressions)
+- Simple Object Orientated code (i.e. no deep type hierarchies)
+- Mutable constructs
 
 ### Prefer f# over c# in the case when ...
 
 Some constructs that are easy to use in f# need more work or make for weird c#.
 
- - Immutable constructs (f# tries to steer you into immutable by default and has constructs to help you). In c# you need something like [With](https://github.com/wallymathieu/with) or [Immutable Object Graph](https://github.com/AArnott/ImmutableObjectGraph)
- - Computation expressions (builders that can help you write composable abstractions)
- - Discriminated unions (in c# your best bet is to look at [OneOf](https://github.com/mcintyre321/OneOf) or use [FSharpX](https://github.com/fsprojects/FSharpx.Extras/blob/master/src/FSharpx.Extras/CSharpCompat.fs#L297))
- - Type providers (in c# it's better to generate source code using something like t4 templates, though that can become cludgy)
- - [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters) (can be used to avoid using reflection)
+- Immutable constructs (f# tries to steer you into immutable by default and has constructs to help you). In c# you need something like [With](https://github.com/wallymathieu/with) or [Immutable Object Graph](https://github.com/AArnott/ImmutableObjectGraph)
+- Computation expressions (builders that can help you write composable abstractions)
+- Discriminated unions (in c# your best bet is to look at [OneOf](https://github.com/mcintyre321/OneOf) or use [FSharpX](https://github.com/fsprojects/FSharpx.Extras/blob/master/src/FSharpx.Extras/CSharpCompat.fs#L297))
+- Type providers (in c# it's better to generate source code using something like t4 templates, though that can become cludgy)
+- [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters) (can be used to avoid using reflection)
 
 ### Prefer c# over f# in the case when ...
 
 Some constructs that are easy to use in c# need more work or make for weird f#
 
- - Unsafe code, Native pointers (it's possible in f#, but is more verbose)
- - Goto (generally seen as an antipattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
- - Deep type hierarchies (generally seen as an antipattern and in f# the language tries to steer you away from these patterns, though in certain cases they can be useful)
- - Code generation (due to type providers, there is less need for it in f#)
- - Implicit type conversions (generally seen as an antipattern, you can explicitly use [implicit operator](https://github.com/fsprojects/FSharpPlus/blob/35eb4c1b0646e4e07701c48ea4b2bdef2067caa5/src/FSharpPlus/Operators.fs#L717-L718) in f#)
+- Unsafe code, Native pointers (it's possible in f#, but is more verbose)
+- Goto (generally seen as an antipattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
+- Deep type hierarchies (generally seen as an antipattern and in f# the language tries to steer you away from these patterns, though in certain cases they can be useful)
+- Code generation (due to type providers, there is less need for it in f#)
+- Implicit type conversions (generally seen as an antipattern, you can explicitly use [implicit operator](https://github.com/fsprojects/FSharpPlus/blob/35eb4c1b0646e4e07701c48ea4b2bdef2067caa5/src/FSharpPlus/Operators.fs#L717-L718) in f#)
 
 There is also a certain mainstream appeal of c style languages, why you might choose to code in c# despite being fluent in f#. I'm not fluent enough in VB.net to know when to use that language.
 
@@ -74,13 +76,13 @@ Let's say that you go start with a server or service (and worry about client or 
 
 There is a smörgåsbord of web frameworks to choose from.
 
- - [Suave](https://suave.io) : Oldie but goodie. Some old idiosyncrasies. Need some love and major version with breaking changes removing cruft.
- - [Giraffe](https://github.com/giraffe-fsharp/Giraffe) : in the style of Suave but with better performance (not as composable due to usage of Task over Async)
- - [Freya](https://freya.io) : Using custom computation expressions as builders. Based on webmachine. Need some love and new major version removing cruft.
- - [Frank](https://github.com/panesofglass/frank) : Recently overhauled. Frank together with Freya and Suave are the oldest f# web frameworks. Using computation expression as builder.
- - [Saturn](https://saturnframework.org) : Relatively new to the block. Using custom computation expressions as builders. Based on Pheonix and MVC patterns.
- - [asp.net MVC](https://github.com/aspnet/AspNetCore) : MVC is the most common .net run of the mill object oriented web MVC framework.
- - based on [IApplicationBuilder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder?view=aspnetcore-2.1) or OWIN: OWIN is considered dead at this point, but it played an essential role in influencing some of the work that went into asp.net core. You can compose your API in a slightly rough style by leveraging these abstractions.
+- [Suave](https://suave.io) : Oldie but goodie. Some old idiosyncrasies. Need some love and major version with breaking changes removing cruft.
+- [Giraffe](https://github.com/giraffe-fsharp/Giraffe) : in the style of Suave but with better performance (not as composable due to usage of Task over Async)
+- [Freya](https://freya.io) : Using custom computation expressions as builders. Based on webmachine. Need some love and new major version removing cruft.
+- [Frank](https://github.com/panesofglass/frank) : Recently overhauled. Frank together with Freya and Suave are the oldest f# web frameworks. Using computation expression as builder.
+- [Saturn](https://saturnframework.org) : Relatively new to the block. Using custom computation expressions as builders. Based on Pheonix and MVC patterns.
+- [asp.net MVC](https://github.com/aspnet/AspNetCore) : MVC is the most common .net run of the mill object oriented web MVC framework.
+- based on [IApplicationBuilder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder?view=aspnetcore-2.1) or OWIN: OWIN is considered dead at this point, but it played an essential role in influencing some of the work that went into asp.net core. You can compose your API in a slightly rough style by leveraging these abstractions.
 
 The question about web framework can also be phrased as, what kind of style do you like? Roughly there are five categories.
 
@@ -120,8 +122,8 @@ There are two main paths of f# testing (that I've seen). One is the *Unit style 
 
 #### *Unit
 
- - [NUnit](https://nunit.org) classic unit testing framework for .net.
- - [XUnit](https://xunit.github.io) is rearchitected testing framework by some of the original team from NUnit made to make unit testing more accessible and safe (i.e. trying to steer away from antipatterns).
+- [NUnit](https://nunit.org) classic unit testing framework for .net.
+- [XUnit](https://xunit.github.io) is rearchitected testing framework by some of the original team from NUnit made to make unit testing more accessible and safe (i.e. trying to steer away from antipatterns).
 
  If you go down this path you should check out [FsUnit](https://fsprojects.github.io/FsUnit/) that provides some extensions to make testing in f# more enjoyable.
 
@@ -129,8 +131,8 @@ There are two main paths of f# testing (that I've seen). One is the *Unit style 
 
 #### Composable testing
 
- - [Fuchu](https://github.com/mausch/Fuchu)
- - [Expecto](https://github.com/haf/expecto) forked from Fuchu and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
+- [Fuchu](https://github.com/mausch/Fuchu)
+- [Expecto](https://github.com/haf/expecto) forked from Fuchu and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
 
 I'm somewhat ambivalent to XUnit vs composable testing.
 
@@ -140,8 +142,8 @@ I'm somewhat ambivalent to XUnit vs composable testing.
 
 In property based testing you define the conditions for test data and let generators create that data to check your code against. These style of testing frameworks are excellent to combine with your existing testing.
 
- - [FsCheck](https://fscheck.github.io/FsCheck/)
- - [Hedgehog](https://github.com/hedgehogqa/fsharp-hedgehog)
+- [FsCheck](https://fscheck.github.io/FsCheck/)
+- [Hedgehog](https://github.com/hedgehogqa/fsharp-hedgehog)
 
 When it comes to then add property based testing I've mostly used FsCheck.
 

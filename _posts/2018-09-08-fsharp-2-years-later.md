@@ -7,7 +7,7 @@ tags: f#
 
 ## What's the lure of f#?
 
-The main lure of f# is that it's a surprisingly competent [ML](https://en.wikipedia.org/wiki/ML_(programming_language)) style language that transcends some of the limitations of [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language). 
+The main lure of f# is that it's a surprisingly competent [ML](https://en.wikipedia.org/wiki/ML_(programming_language)) style language that transcends some of the limitations of [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language).
 
 From my point of view, the main distinguishing feature for f# is [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters). It's a feature you don't want to see in business code (same as reflection in c#), but something that enables libraries to take f# to [the next level](https://github.com/fsprojects/FSharpPlus). Compare this to [type classes](http://learnyouahaskell.com/types-and-typeclasses) in Haskell and what is called [functors](https://v1.realworldocaml.org/v1/en/html/functors.html) in OCaml.
 
@@ -19,7 +19,7 @@ From my point of view, the main distinguishing feature for f# is [Statically Res
 
 ## What has been annoying?
 
-Personally most of the pain points have been in dealing with .net core. 
+Personally most of the pain points have been in dealing with .net core.
 
  - Type providers have recently (2018/05/08) [been fixed to work in .net core](https://blogs.msdn.microsoft.com/dotnet/2018/05/08/f-language-and-tools-update-for-visual-studio-2017-version-15-7/).
  - Using libraries intended to be consumed in c# that uses `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Options` requires ceremony to use.
