@@ -20,7 +20,7 @@ Some of the features otherwise found in C# (and perhaps Kotlin) has ended up in 
 - [Lambdas](https://www.baeldung.com/java-8-functional-interfaces)
 - Bread and butter collection operations are nicer by using [java.util.stream](https://www.baeldung.com/java-8-streams-introduction)
 - There is local variable type inference with `var` in Java 10
-- In more modern Java you can write `try (T res=new Res()){ ... }` to automatically dispose `res` if res [implements interface AutoCloseable](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html).
+- In more modern Java you can write `try (T instance=new ExpensiveResource()){ ... }` to automatically dispose an instance that [implements the AutoCloseable interface](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html).
 
 In c# we have seen the following:
 
