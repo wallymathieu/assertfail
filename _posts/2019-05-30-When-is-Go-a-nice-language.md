@@ -11,7 +11,7 @@ Many years ago I met Douglas Crockford. At that point I was looking into low lev
 
 - If you make a JVM language with goto people will start coding web apps in it.
 
-The comment was in a way prophetic since that's sort of what has happened with Go. 
+The comment was in a way prophetic since that's sort of what has happened with Go.
 
 ## The good
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java vs C#
-date: 2019-06-15T17:17:10+02:00
+date: 2019-06-15T19:37:10+02:00
 tags: java c#
 ---
 
