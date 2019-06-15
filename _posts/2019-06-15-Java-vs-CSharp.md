@@ -15,16 +15,16 @@ For the last few years we have seen .net becoming a truer cross platform languag
 
 #### Language Features
 
-Some of the features otherwise found in C# (and perhaps Kotlin) has ended up in Java:
+Some of the features we know and love in C# is nowadays also part of modern Java:
 
-- [Lambdas](https://www.baeldung.com/java-8-functional-interfaces)
-- Bread and butter collection operations are nicer by using [java.util.stream](https://www.baeldung.com/java-8-streams-introduction)
+- The ability to create a small lambda simplifies many programming tasks why the [functional interfaces in Java 8](https://www.baeldung.com/java-8-functional-interfaces) is a nice addition.
+- Many of the bread and butter collection operations seen as [extension methods](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable?redirectedfrom=MSDN&view=netframework-4.8#methods) in .net are available by using [java.util.stream](https://www.baeldung.com/java-8-streams-introduction)
 - There is local variable type inference with `var` in Java 10
 - In more modern Java you can write `try (T instance=new ExpensiveResource()){ ... }` to automatically dispose an instance that [implements the AutoCloseable interface](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html).
 
-In c# we have seen the following:
+In the C# corner we are waiting on C# 8 for:
 
-- [Default interface implementation](https://devblogs.microsoft.com/dotnet/default-implementations-in-interfaces/)
+- [Default interface implementation](https://devblogs.microsoft.com/dotnet/default-implementations-in-interfaces/) that we have seen used in Java since Java 8.
 
 We see that Java uses standard generic class `Optional<>` with methods while c# uses `?.` and `??` operators and uses `Nullable<>` for value types.
 
