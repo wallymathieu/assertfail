@@ -54,7 +54,7 @@ Checked exceptions cause some boilerplate code that becomes a bit more manageabl
 
 ### Similarities
 
-Validation in Java is similar to validation in .net. Both ecosystems have attribute based validation.
+There [is validation in Java](https://hibernate.org/validator/documentation/getting-started/) similar to the familiar attribute based validation in .net.
 
 There are popular MVC frameworks for both. [Spring](https://spring.io/) should feel familiar to anyone using asp.net MVC.
 
