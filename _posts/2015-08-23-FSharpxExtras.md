@@ -9,10 +9,9 @@ Turns out that there is a simpler way of dealing with optional values in c#.
 
 Include FSharpx.Extras to your c# project and then you can do the following:
 
-    optionalValue.Match( 
+    optionalValue.Match(
         ifSome: value => ProcessValue(value),
         ifNone: () => NoValueToProcess()
     );
 
 Thanks to extension methods in this library. There are extension methods for other common discriminated unions as well.
-

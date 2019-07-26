@@ -19,4 +19,3 @@ test("PROJ-783", function (){
 Note that I've taken the specification from [wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development) in order to have a meaningful sample. We used the convention of writing the jira id as the test name in order to know from where the specification came.
 
 Since we are using ordinary language constructs (methods that take parameters), the level of abstraction here is relatively low. Many of the helper methods can in many cases be reused since you might have many specifications related to the same subdomain. Some of the helper methods will only be used once. In some cases you might want to drop some of the prefixes in order to avoid to much duplication.
-

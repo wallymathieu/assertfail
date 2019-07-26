@@ -2,16 +2,17 @@
 layout: post
 title: Why global installation of packages?
 date: 2015-02-07T08:35:37+01:00
-tags: 
+tags:
 ---
 
 What do I mean when I say?
+
 - System level package / Global package: Package installed so that it is available for every program on the system
-- Local package: Package installed into sub folder of project and only available to that project 
+- Local package: Package installed into sub folder of project and only available to that project
 
 Timeline
 
-- [dpkg 1994](http://anonscm.debian.org/gitweb/?p=dpkg/dpkg.git;a=blob;f=scripts/perl-dpkg.pl;h=ba70fc5f570ed2cd3661a505f642aa85d2295ab5;hb=1b80fb16c22db72457d7a456ffbf1f70a8dfc0a5) 
+- [dpkg 1994](http://anonscm.debian.org/gitweb/?p=dpkg/dpkg.git;a=blob;f=scripts/perl-dpkg.pl;h=ba70fc5f570ed2cd3661a505f642aa85d2295ab5;hb=1b80fb16c22db72457d7a456ffbf1f70a8dfc0a5)
 - [cpan, uploaded packages from 1995](http://web.archive.org/web/20000816230719/http://www.cpan.org/modules/01modules.index.html)
 - [jar 1996](http://en.wikibooks.org/wiki/Java_Programming/History)
 - [debian release with apt 1999](http://dictionary.sensagent.com/advanced+packaging+tool/en-en/)

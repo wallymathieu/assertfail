@@ -18,9 +18,10 @@ In a similar sense you might want to store data about your customers in order to
 If you are a single dev.
 
 ### Why not?
+
 Technical answer:
 
-* Does the single file based database accessed using file system sound scary when hosted on network share? It is! 
+* Does the single file based database accessed using file system sound scary when hosted on network share? It is!
 * Sourcesafe is not [supported](http://blogs.msdn.com/b/ukmsdn/archive/2011/01/04/end-of-support-for-visual-sourcesafe.aspx) anymore.
 
 Less technical answer:
@@ -39,7 +40,7 @@ When you branch. It's actually simpler to merge using git svn ... but that adds 
 
 Can be an easy sourcesafe like experience if you are a single developer. If you have lots of developer, it's easier to work together using git.
 
-When mentioning git, you cant avoid mentioning github. Git is version control. Github is hosting for that version control. Github has added some nice features as well. 
+When mentioning git, you cant avoid mentioning github. Git is version control. Github is hosting for that version control. Github has added some nice features as well.
 
 ### Distributed source control?
 
@@ -55,7 +56,7 @@ In many closed source project you pay for support and eventual bug fixes. In an 
 
 Any public library hosted on github can be forked if you have a github account.
 
-Why is this sweet? Most of the time the devs behind the library does not care that much about fixing stuff relevant for you. If you fork the library and fix the problem you can send a Pull request with the changes. They might be rejected. They might be ignored. If you are lucky the devs will give you hints to improve the code (this improves the code and your skills). 
+Why is this sweet? Most of the time the devs behind the library does not care that much about fixing stuff relevant for you. If you fork the library and fix the problem you can send a Pull request with the changes. They might be rejected. They might be ignored. If you are lucky the devs will give you hints to improve the code (this improves the code and your skills).
 
 ## Usability of git?
 
@@ -64,13 +65,14 @@ The command line version of git can be a bit complicated. However, when used by 
 A more advanced gui is the [Atlassian SourceTree](http://www.sourcetreeapp.com/).
 
 ## Hosting your code
+
 There are several providers of git hosting. The ones I've been using are the following:
 
-- [Github](https://github.com/)
-- [TFS](http://blogs.msdn.com/b/mvpawardprogram/archive/2013/11/13/git-for-tfs-2013.aspx)
-- [BitBucket](https://bitbucket.org)
-- [CodePlex](https://www.codeplex.com/)
-- Versioning for development code on [Dropbox](http://stackoverflow.com/questions/1960799/using-git-and-dropbox-together-effectively)?
+* [Github](https://github.com/)
+* [TFS](http://blogs.msdn.com/b/mvpawardprogram/archive/2013/11/13/git-for-tfs-2013.aspx)
+* [BitBucket](https://bitbucket.org)
+* [CodePlex](https://www.codeplex.com/)
+* Versioning for development code on [Dropbox](http://stackoverflow.com/questions/1960799/using-git-and-dropbox-together-effectively)?
 
 But there are several others. You could also self host with [Gitblit](http://gitblit.com/) or [GitLab](https://about.gitlab.com/) or others.
 

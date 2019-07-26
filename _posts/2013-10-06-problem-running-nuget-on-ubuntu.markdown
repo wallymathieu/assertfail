@@ -7,7 +7,7 @@ tags: c# nuget
 
 I had some trouble running NuGet on ubuntu. I'm running an Ubuntu server. Turns out that you need to install certificates:
 
-```
+```bash
 mozroots –import –sync
 ```
 
