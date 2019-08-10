@@ -14,6 +14,10 @@ A webhook can be good enough. It all depends on your architecture and business s
 
 A message queue is good for dealing with asynchronous messages not expected to be dealt with immediately. A message queue does not work well for request/response scenarios.
 
+### Internal use
+
+Since you typically need less infrastructure code to mediate between parts when not in a distributed topology you can define such interfaces and infrastructure directly in your business code or use frameworks such as [MediatR](https://github.com/jbogard/MediatR). You can use it when you don't need to have separate deployments of your system parts.
+
 ### PUB/SUB
 
 One of the neat things with having a properly architected publish/subscribe is that you can decouple parts of your system. You can for instance use message systems with routing in order to have many consumers for selected messages or events. Products that fit the bill are:
