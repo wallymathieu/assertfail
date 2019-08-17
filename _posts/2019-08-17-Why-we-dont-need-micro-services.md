@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Why we don't need message queues
-date: 2019-08-14T11:02:01+02:00
+title: Why we don't need micro services
+date: 2019-08-17T11:02:01+02:00
 ---
 
-If the system you are developing is intended to be delivered by a single team (or a single backend team), there might be less need for a decomposed solution. This also applies if you are starting out on something relatively small and don't have the operations setup for doing micro services.
+## Plugins
+
+If the system you are developing is intended to be delivered by a single team (or a single backend team), there might be less need for a decomposed solution where parts can be deployed separately. This also applies if you are starting out on something relatively small and don't have the operations setup for doing micro services.
 
 If you still will want to structure your code in separate parts with clear API boundries between them you can define request/response, publish:
 
@@ -36,8 +38,25 @@ If you still will want to structure your code in separate parts with clear API b
 
 The above interface is from the [MediatR](https://github.com/jbogard/MediatR) framework, but should be fairly trivial to implement on your own.
 
-How would you wire up such a solution?
+How would you wire up such a solution? My instinct would be to use plugin architecture to be able to load the different parts into a main project:
 
 - In [SimplCommerce](https://github.com/simplcommerce/SimplCommerce) they use `TryLoadModuleAssembly` or `Assembly.Load`
 - In for instance [Jenkins](https://jenkins.io/) you have the ability to write [plugins](https://wiki.jenkins.io/display/JENKINS/Plugin+tutorial).
 - [MEF](https://docs.microsoft.com/en-us/dotnet/framework/mef/) is used by Lucene.net in order to create docs plugins
+- CMS systems usually support plugins in order to extend the functionality. See [Wordpress plugins](https://wordpress.org/plugins/) or [Sharepoint addin](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+
+If we contrast microservices to plugins what do we find?
+
+Plugins usually need to follow the package versions and language restrictions of the host runtime.
+
+There isn't always a natural way to test plugins in isolation, while for a http service you can use curl.
+
+There is an operations overhead for using several deployments (though that can be negligible depending on your solution).
+
+## Serverless
+
+As we see on [martinfowler](https://martinfowler.com/articles/serverless.html) this type of solution can be thought of as a style of microservices solution.
+
+We see that there is vendor specific solutions and open source versions in this space. The most interesting things I've seen here are open source implementations of serverless on top of Kubernetes.
+
+By going serverless you can avoid some of the operations aspects of microservices (especially if you go with a cloud provider solution).
