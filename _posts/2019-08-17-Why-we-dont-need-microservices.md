@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Why we don't need micro services
+title: Why we don't need microservices
 date: 2019-08-17T10:02:01+02:00
 ---
 
 ## Single deployment
 
-If the system you are developing is intended to be delivered by a single team (or a single backend team), there might be less need for a decomposed solution where parts can be deployed separately. This also applies if you are starting out on something relatively small and don't have the operations setup for doing micro services.
+If the system you are developing is intended to be delivered by a single team (or a single backend team), there might be less need for a decomposed solution where parts can be deployed separately. This also applies if you are starting out on something relatively small and don't have the operations setup for doing microservices.
 
 If you still will want to structure your code in separate parts with clear API boundries between them you can define request/response, publish:
 
