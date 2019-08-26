@@ -76,10 +76,6 @@ Lets define it as a monolith composed of modular parts in order to structure it 
 
 See for instance [kgrzybek modular monolith](https://github.com/kgrzybek/modular-monolith-with-ddd)
 
-### Towards distributed monolith
-
-A monolithic application in a single repository that is deployed as many different services with different roles. Could also be that you have a system that has very tight coupling between many components making it easier to merge everything into one repository sooner or later.
-
 ### Towards functionservices
 
 Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the defninitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps serverless hosting solutions will help solidify this style.
