@@ -49,10 +49,39 @@ She then mentions Jet.com's guidelines:
 - It’s a short script file with well-defined inputs and outputs.
 - It should be an application of the Single Responsibility Principle, applied at the service level.
 
+### As seen on github
+
+Note for instance some of the styles presented in the these examples:
+
+- [Microsofts eShop on containers](https://github.com/dotnet-architecture/eShopOnContainers)
+- [Google Hipster shop](https://github.com/GoogleCloudPlatform/microservices-demo)
+
 ## The future of microservices
 
 We can expect there to be different types of standardization efforts of microservices solutions. The definition of a service and microservice has deep meaning for the type of solution you can realize. Different people will sell their view of what it is and tell you that "you are doing it wrong" in order to sell consulting/tools/hosting et.c..
 
-My personal view is that you should *decide for yourself* what you think a microservice is.
+### Towards Angular vs React
 
 Some sources have bigger influence than others in certain contexts, that means that different definitions can be considered decided more correct depending on the company.
+
+Thus one potential possibility is that some organizations decides on bunch of patterns and tools that then becomes extremely popular. Compare with what has happened on the frontend side with Angular and React providing a ready made solution that tells you how you should build your app.
+
+Kubernetes seems to have made a huge impact on the microservices world and hosting providers. The big question is if we will see any big contenders in the future.
+
+### Towards modular monolith
+
+Lets define it as a monolith composed of modular parts in order to structure it in a way to make development clearer. We will probably see more work towards this style of architecture due to pain around one way of defining "microservices".
+
+See for instance [kgrzybek modular monolith](https://github.com/kgrzybek/modular-monolith-with-ddd)
+
+### Towards distributed monolith
+
+A monolithic application in a single repository that is deployed as many different services with different roles. Could also be that you have a system that has very tight coupling between many components making it easier to merge everything into one repository sooner or later.
+
+### Towards functionservices
+
+Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the defninitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps serverless hosting solutions will help solidify this style.
+
+## Conclusion
+
+Expect further confusion around the concept. We will probably see the emergence of "modular monolith" or other architectural patterns that are defined in opposition of some definition of "microservices". Some tools and patterns might become very popular creating a few competing solutions.
