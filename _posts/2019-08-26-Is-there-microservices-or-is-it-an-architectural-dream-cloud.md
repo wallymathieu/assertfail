@@ -8,18 +8,20 @@ date: 2019-08-26T13:22:44+03:00
 
 There isn't a clear definition of microservices architecture unless you pick one persons strongly held beleif. This can mean that what someone considers microservices, someone else considers to be something else.
 
-### From [martinfowler.com](https://martinfowler.com/articles/microservices.html)
+To summarize a few of the available characterizations and definitions:
+
+### [James Levis and Martin Fowler](https://martinfowler.com/articles/microservices.html)
 
 - organization around business capability
 - automated deployment
 - intelligence in the endpoints, not the transport
 - decentralized control of languages and data
 
-### From [jimmybogard.com](https://jimmybogard.com/my-microservices-faq/)
+### [Jimmy Bogard](https://jimmybogard.com/my-microservices-faq/)
 
 > A microservice is a service with a design focus towards the smallest autonomous boundary.
 
-### From [Gartner](https://www.gartner.com/en/documents/3898871/working-with-data-in-a-microservices-architecture)
+### [Gartner](https://www.gartner.com/en/documents/3898871/working-with-data-in-a-microservices-architecture)
 
 The characterization is that microservices are
 
@@ -27,15 +29,15 @@ The characterization is that microservices are
 - loosely coupled
 - control all access to their data
 
-### From [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/?_ga=2.66845933.273541594.1566813515-782116681.1564161587)
+### [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/?_ga=2.66845933.273541594.1566813515-782116681.1564161587)
 
 > Microservices are small, autonomous services that work together.
 
-### From [Smartbear](https://smartbear.com/solutions/microservices/)
+### [Smartbear](https://smartbear.com/solutions/microservices/)
 
 > focus on building single-function modules with well-defined interfaces and operations
 
-### From [Rachel Reese](https://www.codemag.com/Article/1611071/Case-Study-Writing-Microservices-with-F)
+### [Rachel Reese](https://www.codemag.com/Article/1611071/Case-Study-Writing-Microservices-with-F)
 
 She mentions that there are the following guidelines around such services:
 
