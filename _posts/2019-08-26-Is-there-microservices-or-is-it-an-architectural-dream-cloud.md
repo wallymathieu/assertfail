@@ -90,10 +90,12 @@ It's harder to keep a big system consistent with new patterns compared to keepin
 
 ## What problems does microservices not solve
 
-- Microservices on their own do not solve how to componentize a system.
-- Microservices do not solve scaling or uptime issues.
+- How to componentize a system
+- Scaling or uptime issues
+- Spaghetti code
+- Sliced toast bread
 
-In order to solve these problems you need to architect your system in such a way that these issues are feasible to address.
+In order to solve these problems you need to architect your system\[s\] in such a way that these issues are feasible to address.
 
 ## Conclusion
 
