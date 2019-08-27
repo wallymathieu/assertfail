@@ -29,7 +29,7 @@ The characterization is that microservices are
 - loosely coupled
 - control all access to their data
 
-### [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/?_ga=2.66845933.273541594.1566813515-782116681.1564161587)
+### [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/)
 
 > Microservices are small, autonomous services that work together.
 
@@ -78,8 +78,25 @@ See for instance [kgrzybek modular monolith](https://github.com/kgrzybek/modular
 
 ### Towards functionservices
 
-Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the defninitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps serverless hosting solutions will help solidify this style.
+Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the defninitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) solutions will help solidify this style.
+
+## What problems does microservices solve
+
+Note the focus on the following keywords: decentralized, autonomous, loosely coupled, single responsibility.
+
+Splitting a system into separate parts can help with making it easier for developers to reason about smaller parts (given that they are sufficiently independent). It's easier to have semantic alignment in a smaller corpus.
+
+It's harder to keep a big system consistent with new patterns compared to keeping smaller parts consistent locally. A heterogenous solution can thus imply easier local upgrades.
+
+## What problems does microservices not solve
+
+- How to componentize a system
+- Scaling or uptime issues
+- Spaghetti code
+- Sliced toast bread
+
+In order to solve these problems you need to architect your system\[s\] in such a way that these issues are feasible to address.
 
 ## Conclusion
 
-Expect further confusion around the concept. We will probably see the emergence of "modular monolith" or other architectural patterns that are defined in opposition of some definition of "microservices". Some tools and patterns might become very popular creating a few competing solutions.
+Expect further confusion around the concept as previously [seen around SOA](https://martinfowler.com/bliki/ServiceOrientedAmbiguity.html). We will probably see the emergence of "modular monolith" or other architectural patterns that are defined in opposition of some definition of "microservices". Some tools and patterns might become very popular creating a few competing solutions.
