@@ -29,7 +29,7 @@ The characterization is that microservices are
 - loosely coupled
 - control all access to their data
 
-### [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/?_ga=2.66845933.273541594.1566813515-782116681.1564161587)
+### [Sam Newman](https://www.oreilly.com/library/view/building-microservices/9781491950340/)
 
 > Microservices are small, autonomous services that work together.
 
