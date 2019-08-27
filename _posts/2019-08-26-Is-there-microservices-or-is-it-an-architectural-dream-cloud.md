@@ -84,7 +84,7 @@ Instead of going towards bigger things we will probably also see a move towards 
 
 Note the focus on the following keywords: decentralized, autonomous, loosely coupled, single responsibility.
 
-Splitting a system into separate parts can help with making it easier for developers to reason about smaller parts (given that they are sufficiently independent).
+Splitting a system into separate parts can help with making it easier for developers to reason about smaller parts (given that they are sufficiently independent). It's easier to have semantic alignment in a smaller corpus.
 
 It's harder to keep a big system consistent with new patterns compared to keeping smaller parts consistent locally. A heterogenous solution can thus imply easier local upgrades.
 
