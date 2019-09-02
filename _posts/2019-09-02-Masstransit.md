@@ -5,6 +5,8 @@ date: 2019-09-02T12:09:59+03:00
 tags: microservices
 ---
 
+[Masstransit](https://github.com/MassTransit/) is a wrapper around message queues in order to simplify work on distributed applications using .NET.
+
 ## What is it good for
 
 One common task is to make sure that services react to relevant events. Instead of polling you can tie your system together using async events.
@@ -31,13 +33,9 @@ Transaction lock on multiple databases is a known costly affair. There are a cou
 
 Another way is to think about data in a slightly different way: For instance by storing events and later on generate the resulting relational view of data at one point in time.
 
-## Cost
-
-Masstransit is open source and free. RabbitMQ requires hosting. See Azure pricing for the cost of Azure Service bus.
-
 ## Setup
 
-If you are on Azure then Azure Service bus is simple to setup. Otherwise you have hosted RabbitMQ that you can use. Easiest way to start using RabbitMQ is to write a docker-compose file such as:
+If you are on Azure then Azure Service bus is simple to setup. On AWS you can use AmazonSQS. Easiest way to start locally is to use RabbitMQ by writing a docker-compose file:
 
 ```yml
 version: '3.4'
@@ -50,6 +48,10 @@ services:
       - "5672:5672"
 ```
 
+## Cost
+
+Masstransit is open source and free. RabbitMQ requires hosting. See AWS and Azure for pricing of their offerings.
+
 ## Conclusion
 
-Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, Azure Service Bus it is fairly easy to have it up and running. It is a leaky abstraction when you are going towards a heterogenous environment (but reimplementing subsets of Masstransit can be good enough).
+Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, AWS or Azure native message queues it is fairly easy to have it up and running. It is a leaky abstraction when you are going towards a heterogenous environment (but reimplementing subsets of Masstransit can be good enough).
