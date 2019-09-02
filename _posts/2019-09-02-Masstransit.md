@@ -21,6 +21,8 @@ Having message queue allows you decouple services. If you publish an event, ther
 
 RabbitMQ et.c. throws away the messages after they have been successfully processed. If you want to be able replay old events, then this is not for you.
 
+Masstransit (and similar wrappers) makes assumptions about how you want to deal with failures, what kind of format and how send vs publish works. This can mean that there are some discrepancies when implementing publishers and receivers in other languages than c#. Going towards a more heterogenous environment you will probably need to invest more into getting to know your message queue. In a previous project there was a need to invest in [adjusting an AMQP wrapper](https://github.com/carable/MassTransit.js/pulls?q=is%3Apr+is%3Aclosed) for nodejs since the existing wrapper was out of date and did not implement the correct error handling. There is a [Java port](https://github.com/amhest/MassTransit-CrossTown) where the author mentions that he only needed a subset of features available from Masstransit in Java.
+
 If you want to send out events on a very granular high volume, say each time someone views a page on a very popular site, then this is probably not for you. You should look at alternatives like Kafka.
 
 ## Problems with distributed transactions
@@ -50,4 +52,4 @@ services:
 
 ## Conclusion
 
-Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, Azure Service Bus it is fairly easy to have it up and running.
+Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, Azure Service Bus it is fairly easy to have it up and running. It is a leaky abstraction when you are going towards a heterogenous environment (but reimplementing subsets of Masstransit can be good enough).
