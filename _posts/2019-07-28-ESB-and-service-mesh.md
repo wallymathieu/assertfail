@@ -2,6 +2,7 @@
 layout: post
 title: ESB and service mesh
 date: 2019-07-28T20:58:14+02:00
+tags: microservices
 ---
 
 ## Service mesh

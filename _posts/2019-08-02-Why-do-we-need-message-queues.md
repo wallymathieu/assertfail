@@ -2,6 +2,7 @@
 layout: post
 title: Why do we need message queues?
 date: 2019-08-02T10:06:01+02:00
+tags: microservices
 ---
 
 ## HTTP might be good enough
