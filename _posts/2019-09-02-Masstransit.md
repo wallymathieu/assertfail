@@ -33,6 +33,21 @@ Another way is to think about data in a slightly different way: For instance by 
 
 Masstransit is open source and free. RabbitMQ requires hosting. See Azure pricing for the cost of Azure Service bus.
 
+## Setup
+
+If you are on Azure then Azure Service bus is simple to setup. Otherwise you have hosted RabbitMQ that you can use. Easiest way to start using RabbitMQ is to write a docker-compose file such as:
+
+```yml
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+```
+
 ## Conclusion
 
 Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, Azure Service Bus it is fairly easy to have it up and running.
