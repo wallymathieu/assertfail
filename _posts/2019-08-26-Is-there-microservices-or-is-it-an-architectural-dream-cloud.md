@@ -97,6 +97,16 @@ It's harder to keep a big system consistent with new patterns compared to keepin
 
 In order to solve these problems you need to architect your system\[s\] in such a way that these issues are feasible to address.
 
+## Comparison with SOA
+
+I've heard people reject some implementations as SOA. This does not make sense since you need to qualify both microservices and SOA and then end up in a straw man argument.
+
+Note that some SOA vs microservices presentations can be used to sell a migration project from an existing SOA implementation.
+
+## Making it clearer
+
+Since there is no common definition of microservices, you need to define what you mean. One way to make it clearer is to offer one of the known definitions. Another way is to pick parts from others and create your own.
+
 ## Conclusion
 
 Expect further confusion around the concept as previously [seen around SOA](https://martinfowler.com/bliki/ServiceOrientedAmbiguity.html). We will probably see the emergence of "modular monolith" or other architectural patterns that are defined in opposition of some definition of "microservices". Some tools and patterns might become very popular creating a few competing solutions.
