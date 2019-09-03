@@ -5,7 +5,7 @@ date: 2019-09-02T12:09:59+03:00
 tags: microservices
 ---
 
-[Masstransit](https://github.com/MassTransit/) is a wrapper around message queues in order to simplify work on distributed applications using .NET.
+[Masstransit](https://github.com/MassTransit/) is a wrapper around message queues, such as [RabbitMQ](https://www.rabbitmq.com/),in order to simplify work on distributed applications using .NET.
 
 ## What is it good for
 
@@ -35,7 +35,7 @@ Another way is to think about data in a slightly different way: For instance by 
 
 ## Setup
 
-If you are on Azure then Azure Service bus is simple to setup. On AWS you can use AmazonSQS. Easiest way to start locally is to use RabbitMQ by writing a docker-compose file:
+If you are on Azure then Azure Service bus is simple to setup. There are also NuGet packages to use Masstransit with [AmazonSQS](https://www.nuget.org/packages/MassTransit.AmazonSQS) and [ActiveMQ](https://www.nuget.org/packages/MassTransit.ActiveMQ) but these are more recent than the [RabbitMQ](https://www.nuget.org/packages/MassTransit.RabbitMQ) and [Azure Service bus](https://www.nuget.org/packages?q=masstransit+azure) packages. Easiest way to start locally is to use RabbitMQ by writing a docker-compose file:
 
 ```yml
 version: '3.4'
