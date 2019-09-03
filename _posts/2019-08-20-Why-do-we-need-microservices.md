@@ -2,6 +2,7 @@
 layout: post
 title: Why do we need microservices
 date: 2019-08-20T10:08:49+02:00
+tags: microservices
 ---
 
 ## Polyglot

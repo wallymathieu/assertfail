@@ -2,6 +2,7 @@
 layout: post
 title: Why do we need message queues?
 date: 2019-08-02T10:06:01+02:00
+tags: microservices
 ---
 
 ## HTTP might be good enough
@@ -12,7 +13,7 @@ A webhook can be good enough. It all depends on your architecture and business s
 
 ## What good is a message queue
 
-A message queue is good for dealing with asynchronous messages not expected to be dealt with immediately. A message queue does not work well for request/response scenarios.
+A message queue is good for dealing with asynchronous messages not expected to be dealt with immediately. You can also use a message queue to create loosely coupled systems.
 
 ### PUB/SUB
 
