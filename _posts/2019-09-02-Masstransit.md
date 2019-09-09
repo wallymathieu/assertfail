@@ -19,6 +19,8 @@ Another usage is to handle long running tasks without the user waiting on them. 
 
 Having message queue allows you decouple services. If you publish an event, there isn't a strict need for a specific receiver. This allows you to start work on "basket" service before a "catalog" service is fully finished (then wire up logic to deal with inconsistencies later on).
 
+Masstransit wraps common message queues and presents you with an uniform API. This is similar to what we have with entity framework for SQL.
+
 ## What is it not good for
 
 RabbitMQ et.c. throws away the messages after they have been successfully processed. If you want to be able replay old events, then this is not for you.
