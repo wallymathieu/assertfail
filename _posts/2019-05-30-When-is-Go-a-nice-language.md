@@ -11,7 +11,7 @@ Many years ago I met Douglas Crockford. At that point I was looking into low lev
 
 - If you make a JVM language with goto people will start coding web apps in it.
 
-The comment was in a way prophetic since that's sort of what has happened with Go.
+The comment was in a way prophetic since that's sort of what has happened with Go. In the sense that people started using what is essentially a low level language to write web applications.
 
 ## The good
 
@@ -33,6 +33,8 @@ Go has short compilation time. This can improve developer happiness (reduce the 
 
 Compared to some other more mature languages like c# and Java: Go produces smaller docker deliverables. Though if you really care about the size of your deliverables Go might not be the optimal language (but perhaps good enough).
 
+If you are concerned about the size of your deliverables, then you could write web apps in c with say [kore](https://kore.io/).
+
 ### Code formatter
 
 I like that Go comes bundled with a [code formatter](https://blog.golang.org/go-fmt-your-code), since c languages otherwise leans towards bike shedding when it comes to formatting.
@@ -47,13 +49,9 @@ In order to implement an interface you use the fact that Go has a [structural ty
 
 ## The bad
 
-### Rudimentary type safety
-
-When dealing with large code repositories I've found that it is generally preferable to have the compiler assist you. You can get away with a looser type system by adding enough tests and being very meticulous.
-
 ### Missing parts
 
-One of the notable things in Go is that there are no exceptions. This is however a half truth. Note for instance [Matt Kleins post on Medium](https://medium.com/@mattklein123/exceptional-go-1dd1488a6a47), about how you can get around this limitation in a way perhaps frowned upon by the designers of the language.
+One of the notable things in Go is that there are no exceptions. This is however a half truth. There are exception like functionality as can be seen on [Matt Kleins post on Medium](https://medium.com/@mattklein123/exceptional-go-1dd1488a6a47). It's not used that often, why usage of it may be frowned upon by the designers of the language.
 
 ## Conclusion
 
