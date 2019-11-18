@@ -5,7 +5,7 @@ date: 2015-02-22T12:20:38+01:00
 tags: db
 ---
 
-When I first started using entity framework (one of the earlier versions) it was not ready yet (some serious performance issues). A few years later I hear good things about it from other developers. 
+When I first started using entity framework (one of the earlier versions) it was not ready yet (some serious performance issues). A few years later I hear good things about it from other developers.
 
 In order to try to get a feel for how the state of entity persistance is today I've ported an old [nhibernate](http://nhibernate.info/) test [project](https://github.com/wallymathieu/nhibernate-studies) to a test [project](https://github.com/wallymathieu/entity-framework-studies)
  for [entity framework](https://msdn.microsoft.com/en-us/data/ef.aspx).

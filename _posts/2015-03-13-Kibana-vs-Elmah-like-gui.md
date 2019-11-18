@@ -6,7 +6,7 @@ date: 2015-03-13T23:05:13+01:00
 
 The nice thing about using [Kibana](https://www.elastic.co/products/kibana) for your logs is that you get nice custom filtering. Thus it's very easy for  others to only view errors they feel that are relevant to them.
 
-If you have a many systems (gui's, services, etc) where you pipe a lot of log data into the same log database, then it can be benefitial to to filter out systems that you're not coding anything in. 
+If you have a many systems (gui's, services, etc) where you pipe a lot of log data into the same log database, then it can be benefitial to to filter out systems that you're not coding anything in.
 
 The downside of having easy filters is that it's really easy to ignore errors. A screen with the graph of all errors could perhaps mitigate that.
 

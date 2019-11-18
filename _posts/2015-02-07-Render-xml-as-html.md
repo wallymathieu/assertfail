@@ -30,7 +30,7 @@ To render all the child-nodes we do the following:
 ...
 ~~~
 
-Any attributes? By using @* we can pick out the xml attributes. If they show different intent it could be that we want to style them differently. 
+Any attributes? By using @* we can pick out the xml attributes. If they show different intent it could be that we want to style them differently.
 
 ~~~ xml
 <xsl:if test="@*">
@@ -45,6 +45,7 @@ Any child nodes?
 One thing you could do is to pass along the nesting as a parameter to the templates. Then you can add a different class to depending on how deep the element is.
 
 If you want to call a template with parameters:
+
 ~~~ xml
 <xsl:call-template name="some-template">
     <xsl:with-param name="value" select="."/>
@@ -56,6 +57,5 @@ If you want to call a template with parameters:
     <xsl:param name="value"/>
     ...
 ~~~
-
 
 Xml style sheets are a bit weird to work with. Theyshould probably be avoided for many tasks. However, for some problems they can be quite useful.

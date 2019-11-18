@@ -49,7 +49,7 @@ Object.defineProperty(self, 'isBusy', {
 <div data-bind="visible:isBusy" ></div>
 ~~~
 
-Option 2 
+Option 2
 
 ~~~ javascript
 this.isBusy = function() {
@@ -60,9 +60,11 @@ this.isBusy = function() {
 ~~~ html
 <div data-bind="visible:isBusy()" ></div>
 ~~~
+
 Notice '()'
 
 ## Life cycle
+
 How long does the computed that knockout creates live?
 
 A bit simplified if you read the code for KO you find that knockout makes new computed (internally dependent observable) with option:
@@ -75,5 +77,5 @@ When you know the life span of the computed you have created.
 
 ## Why is it generally bad to use computed willy nilly
 
-It is generally hard to reason about when they will be disposed. It is easy to access exposed ko.computed from different objects in the system with different life span.  
+It is generally hard to reason about when they will be disposed. It is easy to access exposed ko.computed from different objects in the system with different life span.
 

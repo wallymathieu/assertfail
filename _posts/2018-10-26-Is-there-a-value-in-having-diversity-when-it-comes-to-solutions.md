@@ -10,18 +10,18 @@ date: 2018-10-26T13:01:51+02:00
 A suburb that started out with lots of very similar houses can end up with divergent colors, additions suited for different people, gardens with personal style. This should not be seen as a negative thing, it shows the history of the area and give a sense of identity to the neighborhood.
 
 In programming we often have a drive towards standardization.
- - perhaps in order to increase the industrial or engineering nature of it? 
- - To make it easy to get people from other teams to understand the code due to similarities in style
 
+- perhaps in order to increase the industrial or engineering nature of it?
+- To make it easy to get people from other teams to understand the code due to similarities in style
 
-## Having different styles/architectures/programming language?
+## Having different styles/architectures/programming language
 
 Since different software components suite different purposes, they should have style suited for different application / purpose.
-When you use components from different companies and open source initiatives, they will not fit your style: they can help you deliver, so don't ignore things that don't fit your style (since they can help you deliver).
+When you use components from different companies and open source initiatives, they will not fit your style but they will help you deliver.
 
 ### One language to rule them all
 
-There is talk about having a single language for frontend and backend. This type of talk has been going on for as long as I've been a developer. I've worked in such solutions: C#, Java or C++ as the single language. I've seen JavaScript on both client and server. This can be very helpful for people starting out. They use the same language that they are very familiar with in both settings. For one team this can be a good thing and help them deliver. 
+There is talk about having a single language for frontend and backend. This type of talk has been going on for as long as I've been a developer. I've worked in such solutions: C#, Java or C++ as the single language. I've seen JavaScript on both client and server. This can be very helpful for people starting out. They use the same language that they are very familiar with in both settings. For one team this can be a good thing and help them deliver.
 
 However compiling Java or C# to JavaScript have had some interesting challenges. The debugging experience, error handling, diagnosing errors. Source maps and other tools have helped make this less of an issue. Though since most frontend web libraries are written in JavaScript, it is often better to be familiar with JavaScript.
 
@@ -41,24 +41,23 @@ Note however, if you write mobile apps or desktop applications, you can do that 
 
 ### Hiring people
 
-How do you hire ok frontend web people? You go with JavaScript (since that's the mainstream web frontend language right now). 
+How do you hire ok frontend web people? You go with JavaScript (since that's the mainstream web frontend language right now).
 
-How do you hire ok backend people? You go with Java, PHP or C# (since they are the mainstream backend languages right now).
+How do you hire ok backend people? You go with Java, Python, C# or even PHP (since they are the mainstream backend languages right now).
 
-How do you find great developers? One way is to go a bit niche. Interested developers will want to learn new things. If you have 'cool' tech you can attract some of these guys.  
+How do you find great developers? One way is to go a bit niche. Interested developers will want to learn new things. If you have 'cool' tech you can [attract interested developers](https://blog.ploeh.dk/2015/12/03/the-rules-of-attraction-language/).
 
-#### Niche language:
+#### Niche language
 
- - possible to hire great developers who have sought out the language in order to level up
- - harder to convince other people that they can work in such a language
+- possible to hire great developers who have sought out the language in order to level up
+- harder to convince other people that they can work in such a language
 
-#### very common language:
+#### very common language
 
- - easier to recruit people directly from school (since it's common, schools target the language)
- - easier to recruit people from other parts of the industry
- - normal people, going to work and then going home, also called 9-5:ers or [dark matter developers](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx)
- 
-## Where should you have homogeneity?
+- easier to recruit people directly from school (since it's common, schools target the language)
+- easier to recruit people from other parts of the industry
+- normal people, going to work and then going home, also called 9-5:ers or [dark matter developers](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx)
+
+## Where should you have homogeneity
 
 You need people to make sure that components (libraries/services) have internally uniform style. Having a good structure will make it easier to read the code. What kind of structure? I would say that it depends on the project and people working on it.
-

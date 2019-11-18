@@ -7,7 +7,7 @@ tags: teamcity sql-server
 
 So, for the N-th time I'm helping out by configuring a build server. This time it was a bit different since we where restoring an old build teamcity server and agent from a crashed server.
 
-There where some gothas as usual. 
+There where some gothas as usual.
 
 In order to restore teamcity we had to do some digging to find the data directory .
 
@@ -32,9 +32,9 @@ SQL server was installed with only database engine and management studio.
 
 When SQL was installed we only enabled windows authentication. Since teamcity connects through a tcp port, it started complaining about not being able to connect even though we had attached the old databse added the expected user.
 
-If we tried to connect the same was as teamcity through the command line tool "sqlcmd" we could more quickly iterate over the configuration. 
+If we tried to connect the same was as teamcity through the command line tool "sqlcmd" we could more quickly iterate over the configuration.
 The first problem was that sqlcmd could not connect to the expected port.
-In SQL Server configuration manager we had to enter the sub section "SQL server network configuration" and enable tcp. 
+In SQL Server configuration manager we had to enter the sub section "SQL server network configuration" and enable tcp.
 This got us a bit further. Now our problem was that the user could not connect with the user.
 We had created a user under main security in SQL server with the correct password. Problem was that the attached database still had a user with the same name. We removed that user and did "associate user with database". We also needed to make sure that that user had the same permissions set as before.
 
@@ -53,9 +53,9 @@ You need the SDK.
 
 I noticed that some of the builds where failing due to missing AL.exe (assembly linker). I installed the SDK associated with the version of windows installed Win2008. I forgot to check the error message closer. It was complaining about not finding "v8.0A" if you look at the error message. I had installed an earlier version if you look at the registry settings.
 
-~~~
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(2863,5): error MSB3086: 
-  Task could not find "AL.exe" using the SdkToolsPath "" or the registry key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86". Make sure the SdkToolsPath is set and the tool exists in the correct processor specific location under the SdkToolsPath and that the Microsoft Windows SDK is installed 
+~~~cmd
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(2863,5): error MSB3086:
+  Task could not find "AL.exe" using the SdkToolsPath "" or the registry key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86". Make sure the SdkToolsPath is set and the tool exists in the correct processor specific location under the SdkToolsPath and that the Microsoft Windows SDK is installed
 ~~~
 
 So I needed to install another SDK, the one called "Windows 8 SDK".
@@ -64,7 +64,7 @@ The names of the SDK's are a bit confusing.
 
 Another project tried to build a web site. It was failing due to missing an imported msbuild targets file.
 
-~~~
+~~~cmd
 WebSite.csproj(190,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\WebApplications\Microsoft.WebApplication.targets"
  was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
 ~~~
@@ -75,8 +75,8 @@ The common solution here is to copy the targets for web applications from a deve
 
 Next day we ran into trouble with using port 80 for teamcity. Probably because the machine had slept during the night ;) . Turns out "system" is binding on port 80:
 
-~~~
-Powershell> netstat -anbo  | where {$_.contains("80")}
+~~~Powershell
+netstat -anbo  | where {$_.contains("80")}
 ~~~
 
 When we searched to find some answer we found [stackoverflow](http://stackoverflow.com/questions/12492025/windows-8-nt-kernel-and-system-using-port-80).

@@ -11,21 +11,22 @@ Problem was that it was not possible to just clone the repository using git svn.
 
 The command I used was something like:
 
-```
+```bash
 git svn clone -r 10327 --username=oskar.gewalli http://company.com/scm/svn/Project project  --stdlayout --prefix=svn/
 ```
 
 In order to fetch changes I did:
-```
-git svn rebase 
+
+```bash
+git svn rebase
 ```
 
 And to push changes:
-```
+
+```bash
 git svn dcommit
 ```
 
 Since I could not clone the repository and get the full branches, I had to add branches manually. It took little bit of work but was described on [stackoverflow](http://stackoverflow.com/questions/296975/how-do-i-tell-git-svn-about-a-remote-branch-created-after-i-fetched-the-repo).
-
 
 The value of this work is that merging branches is far easier in git compared to svn.

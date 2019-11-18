@@ -6,7 +6,7 @@ date: 2015-02-23T00:30:11+01:00
 
 Dijkstra wrote the [following](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html). I agree with his reasoning.
 
-However, goto is useful in certain lower level domains. 
+However, goto is useful in certain lower level domains.
 
 The difficulty of reading code with goto statements is that it's hard to follow the program flow.
 
@@ -38,20 +38,20 @@ How do you emulate the above code in a language without goto? You could use a wh
 	someMethod(){
 		// some state
 		going = true;
-	
+
 		while(going){
 		  switch (goTo){
-		  case 1: going=false; 
+		  case 1: going=false;
 		  	doStuff(); break
-		  case 2: going=false; 
+		  case 2: going=false;
 		    if (condition){
 		      	going=true; goTo=1;
 		    }else{
 		    	doOtherStuff();
 			}
 		    break;
-		  case 3: goin =false; 
-		  	doSomeDifferentThings(); 
+		  case 3: goin =false;
+		  	doSomeDifferentThings();
 			break;
 		...
 		  }
@@ -66,7 +66,7 @@ How do you emulate the above goto in a language with objects but without switch?
 			line_1();
 			...
 		}
-		
+
 		private line_1(){
 			doStuff();
 		}
@@ -75,7 +75,7 @@ How do you emulate the above goto in a language with objects but without switch?
 		      	line_1();
 		    }else{
 		    	doOtherStuff();
-			} 
+			}
 		}
 		private l_3(){
 			doSomeDifferentThings();
@@ -114,7 +114,7 @@ This translates into:
 		public someMethod(){
 			line_0();
 		}
-		
+
 		private line_0(){
 			doSomething();
 			line_1();
