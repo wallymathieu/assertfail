@@ -21,3 +21,7 @@ but for the UK langauge you add the US keyboard layout that you prefer:
 In my case it was the standard US keyboard layout:
 
  ![expected output](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/expected-output.png)
+
+## UTF-8 issues in git-bash
+
+A somewhat related issue is that you can have issues around locale in git bash. Following the [instructions on stackoverflow](https://stackoverflow.com/questions/10651975/unicode-utf-8-with-git-bash) should suffice.
