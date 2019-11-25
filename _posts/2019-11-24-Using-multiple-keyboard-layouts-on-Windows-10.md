@@ -25,3 +25,16 @@ In my case it was the standard US keyboard layout:
 ## UTF-8 issues in git-bash
 
 A somewhat related issue is that you can have issues around locale in git bash. Following the [instructions on stackoverflow](https://stackoverflow.com/questions/10651975/unicode-utf-8-with-git-bash) should suffice.
+
+## Ok, so now Windows has updated and I've got three keyboard layouts
+
+ ![extra keyboard in menu](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/extra-keyboard-in-menu.png)
+
+Note the extra keyboard layout and locale, could be for instance "English (United Kingdom)", and add that locale and keyboard in the Language parts of settings.
+
+Add the extra keyboard so that you end up with the extra keyboard:
+
+ ![temporary english UK and US keyboards](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/temporary-english-uk-and-us-keyboard.png)
+
+Then go ahead and delete that keyboard while making sure that your currently selected keyboard is not that one.
+
