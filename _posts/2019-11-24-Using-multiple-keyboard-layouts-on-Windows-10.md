@@ -37,4 +37,3 @@ Add the extra keyboard so that you end up with the extra keyboard:
  ![temporary english UK and US keyboards](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/temporary-english-uk-and-us-keyboard.png)
 
 Then go ahead and delete that keyboard while making sure that your currently selected keyboard is not that one.
-
