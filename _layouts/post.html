@@ -5,12 +5,24 @@ layout: minimal
 <p class="meta">{{ page.date | date_to_string }}</p>
 {{ content }}
 <h3>Tags</h3>
-<ul class="tagList">
+<ul class="tags">
 {% for cat in page.tags %}
 <li>{{ cat }}</li>
 {% endfor %}
 </ul>
-<br>
+<div class="comments">
+  <hr>
+  <h3>Comments</h3>
+  <ul>
+  {% for comment in page.comments %}
+    <li class="comment">
+      <b class="author">{{ comment.author }}</b>
+      <div class="content">{{ comment.content }}</div>
+      <div class="date">{{ comment.date | date_to_string }}</div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
 <p>
 Comments or errors?
 <a href="https://github.com/wallymathieu/wallymathieu.github.io/tree/master/{{page.path}}">Fork this post and do a pull request on github</a>
