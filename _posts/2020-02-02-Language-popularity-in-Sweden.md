@@ -10,26 +10,26 @@ I've written a simple project in f# to read puplic information from the job agen
 
 | Number of listings | Language |
 | --------------|----------|
-| 6960 | java |
-| 6077 | javascript |
-| 5715 | c# |
-| 3896 | python |
-| 3355 | c++ |
-| 2597 | c |
-| 1355 | php |
+| 6964 | java |
+| 6085 | javascript |
+| 5727 | c# |
+| 3929 | python |
+| 3359 | c++ |
+| 2600 | c |
+| 1360 | php |
+| 1230 | golang |
 | 1151 | typescript |
 | 589 | matlab |
 | 442 | bash |
 | 420 | kotlin |
 | 381 | r |
-| 341 | scala |
+| 344 | scala |
 | 332 | perl |
-| 310 | ruby |
+| 318 | ruby |
 | 220 | ada |
-| 174 | golang |
-| 154 | erlang |
+| 157 | erlang |
 | 118 | groovy |
-| 76 | rust |
+| 78 | rust |
 | 71 | cobol |
 | 63 | tcl |
 | 61 | f# |
@@ -37,6 +37,7 @@ I've written a simple project in f# to read puplic information from the job agen
 | 48 | scheme |
 | 47 | elixir |
 | 44 | haskell |
+| 39 | clojure |
 
 the numbers should be read as there has been 6960 unique listings for Java. This does not tell you if its a republished job advertisement. Most companies do not publish source code, why keyword search on job ads offer a way to give an estimate of demand.
 
@@ -56,7 +57,7 @@ I've filtered out some languages since my guess is that without further analysis
 - " som Go,"
 - "• Go"
 
-indicate a mention of the language Go. We can estimate that Go is about as popular as Ada or Erlang in the Swedish marketplace. There is a lot of talk about Go, but the actual demand seems to be somewhat niche.
+indicate a mention of the language Go. We can estimate that Go is about as popular as Ada or Erlang in the Swedish marketplace. There is a lot of talk about Go.
 
 I've done some adjustments for C# since there are a some aliases such as "csharp" or "c #".
 
@@ -77,6 +78,8 @@ C++ is roughly 1/2 as popular as Java as well. I've heard from people working in
 One of the interesting things found in this list is that PHP seems to be still somewhat prevalent on the market but waning if you compare to for instance Python.
 
 Typescript is used more widely than I would have assumed. At work we use Typescript in order to make Javascript programming easier when dealing with larger code bases. I've seen some confusion around what is runtime types and compile time types when it comes to Typescript programmers. Though Javascript seems to confuse programmers in many different ways. My personal opinion is that you should combine Javascript with heavy use of linters.
+
+Golang seems to have risen sharply in the Swedish marketplace. Talking with a programmer focused on embedded development, I've heard that it's a nice language for junior embedded developers. Since Golang is very similar to other C style languages it's probably not hard introduce developers to the language.
 
 ### Mainstream languages
 
