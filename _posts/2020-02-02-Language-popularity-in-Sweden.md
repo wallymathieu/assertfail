@@ -57,7 +57,7 @@ I've filtered out some languages since my guess is that without further analysis
 - " som Go,"
 - "• Go"
 
-indicate a mention of the language Go. We can estimate that Go is about as popular as Ada or Erlang in the Swedish marketplace. There is a lot of talk about Go.
+indicate a mention of the language Go. We can estimate how popular Go is.
 
 I've done some adjustments for C# since there are a some aliases such as "csharp" or "c #".
 
