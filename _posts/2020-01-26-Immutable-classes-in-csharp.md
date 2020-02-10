@@ -5,6 +5,11 @@ date: 2020-01-26T17:42:35+01:00
 tags: c#
 ---
 
+## Problems
+
+- How do you create an instance of a given readonly class?
+- How do you get a new instance but with given fields with different values?
+
 ## Writing readonly record classes 2007
 
 Around 2007 I wrestled with writing immutable classes in c#. One of the key painpoints was that the constructor parameters for a class representing a database row for a specific table ended up with around 68 parameters.
