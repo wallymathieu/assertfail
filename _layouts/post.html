@@ -17,7 +17,7 @@ layout: minimal
   {% for comment in page.comments %}
     <li class="comment">
       <b class="author">{{ comment.author }}</b>
-      <div class="content">{{ comment.content }}</div>
+      <div class="content">{{ comment.content | markdownify }}</div>
       <div class="date">{{ comment.date | date_to_string }}</div>
     </li>
   {% endfor %}
