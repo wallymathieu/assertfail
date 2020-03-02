@@ -3,6 +3,10 @@ layout: post
 title: Immutable classes in c#
 date: 2020-01-26T17:42:35+01:00
 tags: c#
+comments:
+  author: Oskar Gewalli
+  content: I've had [some trouble](https://github.com/wallymathieu/ImmutableObjectGraph-studies/pull/4) in getting ImmutableObjectGraph to work well in newer versions, but it looks very similar to the LanguageExt type of generation, why you could use that instead.
+  date: 
 ---
 
 ## Problems
