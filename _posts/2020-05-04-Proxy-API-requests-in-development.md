@@ -81,7 +81,7 @@ You can avoid having an installed NGINX by using [docker-compose.yml](https://do
 
 ### IIS
 
-If you instead work on a Windows machine you can use IIS as a proxy.
+If you instead work on a Windows machine you can use IIS as a proxy. Hanselman has a [nice introduction](https://www.hanselman.com/blog/ASPNETMVCAndTheNewIIS7RewriteModule.aspx).
 
 ## When can it be of use
 
