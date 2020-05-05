@@ -7,7 +7,9 @@ tags: javascript
 
 ## Usage
 
-One of the nice things my coworkers showed me was a tool to [proxy API requests in development](https://create-react-app.dev/docs/proxying-api-requests-in-development/).
+### Create React App
+
+One of the nice things my coworkers showed me was how Create React App [proxies API requests in development](https://create-react-app.dev/docs/proxying-api-requests-in-development/). It's quite neat to have it integrated with the frontend development site.
 
 ### NGINX
 
@@ -41,17 +43,7 @@ server {
 }
 ```
 
-The main reason to go with NGINX is the available documentation compared with the other alternatives.
-
-### Envoy
-
-Envoy is a new kid on the block. It has some features around HTTP/2 and possibility for more advanced configuration. In order to use some of the features you might need to dig through github issues and envoy source code. Though since envoy has type specification for the configuration, you should be able to get a better experience if you use something like [skycfg](https://skycfg.fun/) to avoid yaml-overload.
-
-In order to get to know envoy you probably want to start out simple with [these docs](https://www.envoyproxy.io/learn/on-your-laptop).
-
-### Docker compose
-
-You can avoid having NGINX (or envoy) installed by using [docker-compose.yml](https://docs.docker.com/compose/compose-file/):
+You can avoid having NGINX installed by using [docker-compose.yml](https://docs.docker.com/compose/compose-file/):
 
 ```yaml
   nginx:
@@ -61,6 +53,14 @@ You can avoid having NGINX (or envoy) installed by using [docker-compose.yml](ht
   ports:
     - "8080:8080"
 ```
+
+The main reason to go with NGINX is the available documentation compared with the other alternatives.
+
+### Envoy
+
+Envoy is a new kid on the block. It has some features around HTTP/2 and possibility for more advanced configuration. In order to use some of the features you might need to dig through github issues and envoy source code. Though since envoy has type specification for the configuration, you should be able to get a better experience if you use something like [skycfg](https://skycfg.fun/) to avoid yaml-overload.
+
+In order to get to know envoy you probably want to start out simple with [these docs](https://www.envoyproxy.io/learn/on-your-laptop).
 
 ### IIS
 
