@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proxy API requests in development
-date: 2020-05-04T21:01:36+02:00
+date: 2020-05-05T21:01:36+02:00
 tags: javascript
 ---
 
@@ -11,64 +11,47 @@ One of the nice things my coworkers showed me was a tool to [proxy API requests 
 
 ### NGINX
 
-I've previously used NGINX to serve as a development proxy. The following nginx configuration illustrates a setup where you bind two different services to port 80 on the local machine:
+I've previously used NGINX to serve as a proxy. The following nginx configuration illustrates a setup where you bind frontend and backend services to port 8080 on the local machine:
 
 ```config
-worker_processes  1;
-
-events {
-  worker_connections  1024;
+upstream api-service {
+  server	127.0.0.1:5000;
+}
+upstream frontend-service {
+  server	127.0.0.1:3000;
 }
 
+server {
+  listen       8080;
+  server_name  localhost;
 
-http {
-  include       mime.types;
-  default_type  application/octet-stream;
-  sendfile        on;
-  keepalive_timeout  65;
-  proxy_set_header    Host             $host;
-  proxy_set_header    X-Real-IP        $remote_addr;
-  proxy_set_header    X-Forwarded-For  $proxy_add_x_forwarded_for;
-  proxy_set_header    X-Client-Verify  SUCCESS;
-  proxy_set_header    X-Client-DN      $ssl_client_s_dn;
-  proxy_set_header    X-SSL-Subject    $ssl_client_s_dn;
-  proxy_set_header    X-SSL-Issuer     $ssl_client_i_dn;
-  proxy_read_timeout 30s;
-  proxy_connect_timeout 30s;
-  proxy_http_version 1.1;
-  
-  server {
-    listen       80;
-    server_name  svc1.company.*;
-    location / {
-      proxy_pass          http://localhost:8112;
-    }
+
+  location / {
+    proxy_pass http://frontend-service;
+    proxy_redirect off;
   }
-  server {
-    listen       80;
-    server_name  svc2.company.*;
-    location / {
-      proxy_pass          http://localhost:8113;
-    }
+
+  location /api {
+
+    rewrite ^/api/?(.*) /$1 break;
+
+    proxy_pass http://api-service;
+    proxy_redirect off;
   }
-  include servers/*;
 }
-
 ```
 
-So then your hosts file would be something like:
+The main reason to go with NGINX is the available documentation compared with the other alternatives.
 
-```config
-127.0.0.1	svc1.api.test
-::1         svc1.api.test
+### Envoy
 
-127.0.0.1	svc2.api.test
-::1         svc2.api.test
-```
+Envoy is a new kid on the block. It has some features around HTTP/2 and possibility for more advanced configuration. In order to use some of the features you might need to dig through github issues and envoy source code. Though since envoy has type specification for the configuration, you should be able to get a better experience if you use something like [skycfg](https://skycfg.fun/) to avoid yaml-overload.
+
+In order to get to know envoy you probably want to start out simple with [these docs](https://www.envoyproxy.io/learn/on-your-laptop).
 
 ### Docker compose
 
-You can avoid having an installed NGINX by using [docker-compose.yml](https://docs.docker.com/compose/compose-file/):
+You can avoid having NGINX (or envoy) installed by using [docker-compose.yml](https://docs.docker.com/compose/compose-file/):
 
 ```yaml
   nginx:
@@ -76,18 +59,13 @@ You can avoid having an installed NGINX by using [docker-compose.yml](https://do
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
   ports:
-    - "80:80"
+    - "8080:8080"
 ```
 
 ### IIS
 
-If you instead work on a Windows machine you can use IIS as a proxy. Hanselman has a [nice introduction](https://www.hanselman.com/blog/ASPNETMVCAndTheNewIIS7RewriteModule.aspx).
+If you instead work on a Windows machine you can use IIS as a proxy. Hanselman has a [nice introduction](https://www.hanselman.com/blog/ASPNETMVCAndTheNewIIS7RewriteModule.aspx). When in a Windows shop you generally want to go with IIS for webserver and proxy needs.
 
-## When can it be of use
+## How has it been useful
 
-When your system is composed of multiple services
-
-## How has it been of use
-
-Simplified local development
-
+In most of the recent projects I've worked in there isn't a mix of frontend and backend. Some of the people work as frontend specialists and are more effective when they can work in a known environment (operating system, editor, et.c.). By having a remote hosted test service you can let frontend specialists focus on clientside work. There is a lot of complexity in modern frontend development when writing JavaScript applications with modern styling making it difficult to be master of all.
