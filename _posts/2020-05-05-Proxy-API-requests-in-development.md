@@ -5,11 +5,9 @@ date: 2020-05-05T21:01:36+02:00
 tags: javascript
 ---
 
-## Usage
+Create React App [proxies API requests in development](https://create-react-app.dev/docs/proxying-api-requests-in-development/).
 
-### Create React App
-
-One of the nice things my coworkers showed me was how Create React App [proxies API requests in development](https://create-react-app.dev/docs/proxying-api-requests-in-development/). It's quite neat to have it integrated with the frontend development site.
+## Alternatives
 
 ### NGINX
 
