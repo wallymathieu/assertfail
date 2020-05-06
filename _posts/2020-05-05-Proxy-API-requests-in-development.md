@@ -23,6 +23,8 @@ At Lundalogik I was part of a team writing a web CRM system. The amount of code 
 
 If you instead work on a Windows machine you can use IIS as a proxy. Hanselman has a [nice introduction](https://www.hanselman.com/blog/ASPNETMVCAndTheNewIIS7RewriteModule.aspx). When in a Windows shop you usually go with IIS for webserver and proxy needs. Since there wasn't any need for any proxy-configuration we used IIS only to rewrite urls.
 
+Around this time it became clear that it's impossible to avoid JavaScript (in some form or another). At the same time browser standardisation and library adapters made JS more palatable.
+
 ### Around 2017
 
 At the startup Boolean & Brace we worked in two teams, backend and frontend. The codebase was split up into backend and frontend. The structure of the frontend was completely separated from the backend. The frontend code was structured into React components where some have routes and some components are used from other components. This mimics more the experience of developing desktop applications and was the goal of aspx (before JavaScript had matured).
