@@ -7,6 +7,8 @@ tags: javascript
 
 ## The road towards frontend and backend separation
 
+Or at least why you should care about proxies when dealing with web applications.
+
 ### Around 2005
 
 I studied computer science at Lund university. One of the professors warned us about two things: JavaScript and Sharepoint. The web programming I got aquinted with at university was mainly Java servlets and Python CGI apps.
