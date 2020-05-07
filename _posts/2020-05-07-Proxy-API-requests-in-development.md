@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proxy API requests in development
-date: 2020-05-05T21:01:36+02:00
+date: 2020-05-07T08:38:36+02:00
 tags: javascript
 ---
 
