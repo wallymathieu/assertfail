@@ -7,6 +7,9 @@ comments:
   - author: Oskar Gewalli
     content: I've had [some trouble](https://github.com/wallymathieu/ImmutableObjectGraph-studies/pull/4) in getting ImmutableObjectGraph to work well in newer versions, but it looks very similar to the LanguageExt type of generation, why you could use that instead.
     date: 2020-03-02T11:57:35+01:00
+  - author: Oskar Gewalli
+    content: With the introduction of [c# 9 features](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/) we will probably help bring immutability even more into the mainstream.
+    date: 2020-05-23T18:55:05+01:00
 ---
 
 ## Problems
