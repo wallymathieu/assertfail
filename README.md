@@ -14,6 +14,14 @@
 - ```gem install bundler```
 - ```bundle install```
 
+you might need to do the following:
+
+```sh
+gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+```
+
+when you get [can't find gem bundler with executable bundle](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html)
+
 ## Comments
 
 In order to add comments to a post, simply add a comment in the following manner in the yml post file:

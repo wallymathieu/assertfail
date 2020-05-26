@@ -8,3 +8,4 @@ encoding: utf-8
 exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project, requirements.txt]
 plugins:
   - jekyll-seo-tag
+  - jekyll-jupyter-notebook
