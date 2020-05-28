@@ -129,4 +129,4 @@ In order to decompose a much larger system into smaller parts in order to let pe
 
 ## TLDR
 
-If you want to hedge your bets (in order to be able to swap out parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations.
+If you want to hedge your bets (in order to be able to swap out parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations. It might not be that easy though.
