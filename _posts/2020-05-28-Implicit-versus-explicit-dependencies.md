@@ -78,7 +78,7 @@ Hickups could be:
 - What happens when you send an `typeof(IEnumerable<T>)` to `GetService` of `IServiceProvider`? Will the same thing happen for all implementations of IServiceProvider? The [assumption is that it should](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L98-L118).
 - What happens when you have multiple registrations of `T`?
 
-if we look at the previous implementation of `GetRequiredService` (an extension of `IServiceProvider`) we note some interesting behaviour:
+if we look at the previous implementation of [`GetRequiredService`](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54) (an extension of `IServiceProvider`) we note some interesting behaviour:
 
 ```c#
 public static object GetRequiredService(this IServiceProvider provider, Type serviceType)
@@ -93,8 +93,6 @@ public static object GetRequiredService(this IServiceProvider provider, Type ser
     var service = provider.GetService(serviceType);
     ...
 ```
-
-[from](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54)
 
 The implication is that different implementations of `IServiceProvider` can have different levels of compatibility with each other.
 
