@@ -7,7 +7,7 @@ tags: c# java core dotnet
 
 Let us start out by asking the question, what is an explicit dependency in your software?
 
-How should we define a dependency? The easiest way to define a dependency would be there is an explicit reference to a library. That is a somewhat weaker dependency since if your software works with the dependency removed, then the code didn't have an explicit dependency on the library. In order to qualify the reasoning let us call define it as a reference to library that with explicit usage of the library API.
+How should we define a dependency? The easiest way to define a dependency would be there is an explicit package reference to a library. If you can remove the explicit pacakge reference, does the code still work? In order to qualify the reasoning let us define it as a reference to library that with explicit usage of the library API.
 
 How does explicit dependency look in Java?
 
@@ -98,7 +98,7 @@ For instance, for libraries there are a couple of logging alternatives in the .n
 
 Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. The downside of this is that it can tie you to the major releases of .net core. I've seen that I've needed to revisit old libraries due to breaking changes in between major versions. This can be a minor thing or a big thing depending on the amount of library code you have (potentially creating problems with tight deadlines).
 
-Why my preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with the following for logging:
+That's why preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with the following for logging:
 
 ```c#
 using LogError = Action<string, Exception>;
