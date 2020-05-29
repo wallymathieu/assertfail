@@ -125,6 +125,16 @@ Using many smaller parts can give you emergent behaviour. I'm reminded of Linus 
 
 In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore the details of the complicated parts when they don't need to deal with them helps.
 
+## Standards
+
+The reason I'm interested in how tightly coupled code is to specific framework without intending to be, is due to the fact that I've seen different approaches to dealing with growing software.
+
+I've seen standardisations on logging for .net come and go. In the early parts of my career Log4Net was good enough and useful enough that it made sense to standardise on that. The latest thing I've seen is standardisations on SeriLog and Microsoft Extensions Logging (in various mixtures).
+
+Any organisation will take a look at the libraries they maintain and consider if it's worth the effort of maintaing them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
+
+The current iteration of patterns are focused on Web MVC style applications with a focus on good OO patterns. The good thing about that is that it is patterns have been adopted years ago (Rails popularised the pattern around 2006). Even though old code might use slightly different API's they still share a lot of patterns familiar from earlier iterations.
+
 ## TLDR
 
 If you want to hedge your bets (in order to be able to swap out parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations. It might not be that easy though.
