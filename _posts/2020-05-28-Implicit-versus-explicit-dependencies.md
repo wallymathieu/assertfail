@@ -103,13 +103,17 @@ using LogDebug = Action<string>;
 
 you don't really need to worry too much about different future logging implementations. The above definition might not be enough for your needs (why a larger abstraction is warranted).
 
-### Dangers of implicit dependencies
+## Leaky abstractions
+
+Leaky abstractions are somewhat related to implicit dependencies in that the abstractions still cause tight coupling to specific implementations.
+
+### Dangers
 
 Having a lowest common interface restricts possibilites. Having defined an interface you might tie your software to a specific implemenation implicitly (making you pay for the abstraction without giving you ability to swap out implementation).
 
-### Value of implicit dependencies
+### Value
 
-In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore the details of the complicated parts when they don't need to deal with them helps.
+In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore a lot of the implementation details can still provide value even though it might be a leaky abstraction.
 
 ## TLDR
 
