@@ -119,13 +119,11 @@ you don't really need to worry too much about different future logging implement
 
 Having a lowest common interface restricts possibilites. Having defined an interface you might tie your software to a specific implemenation implicitly (making you pay for the abstraction without giving you ability to swap out implementation).
 
-Using many smaller parts can give you emergent behaviour. I'm reminded of Linus Torwalds gripe "I broke things, so now I will jiggle things randomly until they unbreak" (see [wikiquote](https://en.wikiquote.org/wiki/Linus_Torvalds)).
-
 ### Value of implicit dependencies
 
 In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore the details of the complicated parts when they don't need to deal with them helps.
 
-## Standards
+## Fleeting standards
 
 The reason I'm interested in how tightly coupled code is to specific framework without intending to be, is due to the fact that I've seen different approaches to dealing with growing software.
 
@@ -133,8 +131,8 @@ I've seen standardisations on logging for .net come and go. In the early parts o
 
 Any organisation will take a look at the libraries they maintain and consider if it's worth the effort of maintaing them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
 
-The current iteration of patterns are focused on Web MVC style applications with a focus on good OO patterns. The good thing about that is that it is patterns have been adopted years ago (Rails popularised the pattern around 2006). Even though old code might use slightly different API's they still share a lot of patterns familiar from earlier iterations.
+The current iteration of patterns are focused on Web MVC style applications with a focus on good OO patterns. The good thing about that is that it is patterns have been adopted years ago (Rails popularised the pattern around 2006). Even though old code might use slightly different API's they still share a lot of patterns familiar from earlier iterations. The code might require significant effort for it to work, but the concepts should not have changed significantly.
 
 ## TLDR
 
-If you want to hedge your bets (in order to be able to swap out parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations. It might not be that easy though.
+If you want to hedge your bets (in order to be able to swap out small parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations (when there is a reason for it).
