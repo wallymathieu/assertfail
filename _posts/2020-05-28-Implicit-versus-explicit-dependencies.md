@@ -7,7 +7,7 @@ tags: c# core dotnet
 
 These are musings related to the question what kind of libraries resist the test of time.
 
-The reason I'm interested in how tightly coupled code is to specific framework without intending to be, is due to the fact that I've seen different approaches to dealing with internal and 3rd party libraries.
+How do library authors deal with [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell)?
 
 ## Explicit dependency
 
@@ -94,7 +94,7 @@ For instance, for libraries there are a couple of logging alternatives in the .n
 
 Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. I think there will be iterations in the future around logging (why major version changes will break your libraries). If you want to avoid having to upgrade everything at once and instead want to take it gradually, you probably want to avoid coupling your library to a major version of a common library causing dependency issues.
 
-That's why preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with the following for logging:
+That's why preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
 
 ```c#
 using LogError = Action<string, Exception>;
