@@ -2,40 +2,18 @@
 layout: post
 title: Implicit versus explicit dependencies
 date: 2020-05-28T18:30:50+02:00
-tags: c# java core dotnet
+tags: c# core dotnet
 ---
+
+These are musings related to the question what kind of libraries resist the test of time.
+
+## Explicit dependency
 
 Let us start out by asking the question, what is an explicit dependency in your software?
 
 How should we define a dependency? The easiest way to define a dependency would be there is an explicit package reference to a library. If you can remove the package reference, does the code still work? In order to make it clear, let us define it as a reference to a library and explicit usage of the library API.
 
-## Explicit dependency
-
-How does such an explicit dependency look in Java?
-
-```java
-...
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-...
-
-import java.util.concurrent.CompletableFuture;
-
-@RestController()
-public class CustomersController {
-    @Autowired
-    private Repository repository;
-    @Autowired
-    private CommandsHandler commandsHandler;
-    @RequestMapping(value = "/api/customers/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Customer> get(@PathVariable int id) {
-```
-
-Here we see an explicit dependency on spring in order to implement a controller.
-
-If you look at an example from C#:
+How does such an explicit dependency look in C#:
 
 ```c#
 using System.Linq;
