@@ -7,6 +7,8 @@ tags: c# core dotnet
 
 These are musings related to the question what kind of libraries resist the test of time.
 
+The reason I'm interested in how tightly coupled code is to specific framework without intending to be, is due to the fact that I've seen different approaches to dealing with internal and 3rd party libraries.
+
 ## Explicit dependency
 
 Let us start out by asking the question, what is an explicit dependency in your software?
@@ -78,13 +80,19 @@ If your library can avoid a dependency injection framework and instead present a
 
 We see similar implications around logging frameworks. Say that you have wrapped the logging in your own API surface in order for your library logging to work. The API surface has grown to incorporate various features needed over the years (keeping it in tandem with the logging infrastructure). Say that the organisation behind the logging framework goes bust. How much work is it to adapt what is now a fairly large API surface in order to be able to still use old libraries? Since the interfaces you have defined match the features of the old logging infrastructure, you could have trouble adopting a new logging infrastructure (even though you have your own interfaces).
 
+### Fleeting standards
+
+Any organisation will take a look at the libraries they maintain and consider if it's worth the effort of maintaing them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
+
+I've seen standardisations on logging for .net come and go. In the early parts of my career Log4Net was good enough and useful enough that it made sense to standardise on that. The latest thing I've seen is standardisations on SeriLog and Microsoft Extensions Logging (in various mixtures).
+
 For instance, for libraries there are a couple of logging alternatives in the .net space:
 
 - [Microsoft Extensions Logging](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging)
 - [logary](https://github.com/logary/logary#using-logary-in-a-library)
 - [FsLibLog](https://github.com/TheAngryByrd/FsLibLog)
 
-Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. The downside of this is that it can tie you to the major releases of .net core. I've seen that I've needed to revisit old libraries due to breaking changes in between major versions. This can be a minor thing or a big thing depending on the amount of library code you have (potentially creating problems with tight deadlines).
+Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. I think there will be iterations in the future around logging (why major version changes will break your libraries). If you want to avoid having to upgrade everything at once and instead want to take it gradually, you probably want to avoid coupling your library to a major version of a common library causing dependency issues.
 
 That's why preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with the following for logging:
 
@@ -103,16 +111,6 @@ Having a lowest common interface restricts possibilites. Having defined an inter
 
 In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore the details of the complicated parts when they don't need to deal with them helps.
 
-## Fleeting standards
-
-The reason I'm interested in how tightly coupled code is to specific framework without intending to be, is due to the fact that I've seen different approaches to dealing with growing software.
-
-I've seen standardisations on logging for .net come and go. In the early parts of my career Log4Net was good enough and useful enough that it made sense to standardise on that. The latest thing I've seen is standardisations on SeriLog and Microsoft Extensions Logging (in various mixtures).
-
-Any organisation will take a look at the libraries they maintain and consider if it's worth the effort of maintaing them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
-
-The current iteration of patterns are focused on Web MVC style applications with a focus on good OO patterns. The good thing about that is that it is patterns have been adopted years ago (Rails popularised the pattern around 2006). Even though old code might use slightly different API's they still share a lot of patterns familiar from earlier iterations. The code might require significant effort for it to work, but the concepts should not have changed significantly.
-
 ## TLDR
 
-If you want to hedge your bets (in order to be able to swap out small parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations (when there is a reason for it).
+If you want to hedge your bets (in order to be able to swap out small parts) use small abstractions and small interfaces in order to avoid coupling your code to a specific implementations (when there is a reason for it). Taking as few dependencies as possible is usually the best thing for any library, since it helps making it more resilient against other libraries using different versions of the dependency.
