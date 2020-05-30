@@ -74,6 +74,8 @@ public static object GetRequiredService(this IServiceProvider provider, Type ser
 
 The implication is that different implementations of `IServiceProvider` can have different levels of compatibility with each other.
 
+If your library can avoid a dependency injection framework and instead present a simple API for consumers of the library, it will make it more resilient against future changes. If your target audience is C# enterprise applications, then Microsoft Extensions Dependency Injection could be currently standard enough. That's at least a decision that was made for libraries at Carable. This turned out that we needed to upgrade some libraries due to breaking changes between major versions.
+
 We see similar implications around logging frameworks. Say that you have wrapped the logging in your own API surface in order for your library logging to work. The API surface has grown to incorporate various features needed over the years (keeping it in tandem with the logging infrastructure). Say that the organisation behind the logging framework goes bust. How much work is it to adapt what is now a fairly large API surface in order to be able to still use old libraries? Since the interfaces you have defined match the features of the old logging infrastructure, you could have trouble adopting a new logging infrastructure (even though you have your own interfaces).
 
 For instance, for libraries there are a couple of logging alternatives in the .net space:
