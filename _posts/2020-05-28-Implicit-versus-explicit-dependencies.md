@@ -5,9 +5,7 @@ date: 2020-05-28T18:30:50+02:00
 tags: c# core dotnet
 ---
 
-These are musings related to the question what kind of libraries resist the test of time.
-
-How do library authors deal with [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell)?
+These are musings related to the question what kind of libraries resist the test of time. Some of it is related to issues encountered due to [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell).
 
 ## Explicit dependency
 
@@ -92,16 +90,18 @@ For instance, for libraries there are a couple of logging alternatives in the .n
 - [logary](https://github.com/logary/logary#using-logary-in-a-library)
 - [FsLibLog](https://github.com/TheAngryByrd/FsLibLog)
 
-Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. I think there will be iterations in the future around logging (why major version changes will break your libraries). If you want to avoid having to upgrade everything at once and instead want to take it gradually, you probably want to avoid coupling your library to a major version of a common library causing dependency issues.
+Note that for C#, there is a defacto standard in the form of Microsoft Extensions Logging. For the transition between major versions 1 and 2 there was some breaking changes. For the current iterations 2 to 3 I've not seen any breaking changes (around logging). Instead I've seen (for internal libraries at work) that for the iteration 2 to 3 EF Core has been source compatible but binary incompatible. This has meant that we had to keep the internal libraries in lockstep.
 
-That's why preference when it comes to library logging is to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
+If you want to avoid having to upgrade everything at once and instead want to take it gradually, you probably want to avoid coupling your library to a major version of a common library causing dependency issues.
+
+That's why preference when it comes to for example library logging to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
 
 ```c#
 using LogError = Action<string, Exception>;
 using LogDebug = Action<string>;
 ```
 
-you don't really need to worry too much about different future logging implementations. The above definition might not be enough for your needs (why a larger abstraction is warranted).
+You don't really need to worry too much about different future implementations. The above definition might not be enough for your needs (why a larger abstraction is warranted).
 
 ## Leaky abstractions
 
