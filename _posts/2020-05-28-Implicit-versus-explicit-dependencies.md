@@ -5,7 +5,7 @@ date: 2020-05-28T18:30:50+02:00
 tags: c# core dotnet
 comments:
   - author: Oskar Gewalli
-    content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that behaviour has changed. 
+    content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that [behaviour has changed](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/data-points-backing-field-and-owned-entity-changes-in-ef-core-3-0). 
     date: 2020-06-01T10:15:35+01:00
 ---
 
