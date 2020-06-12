@@ -7,6 +7,10 @@ comments:
   - author: Oskar Gewalli
     content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that [behaviour has changed](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/data-points-backing-field-and-owned-entity-changes-in-ef-core-3-0). 
     date: 2020-06-01T10:15:35+01:00
+  - author: Oskar Gewalli
+    content: Changed the minimal logging abstraction to match a structured loggin approach since the current logging providers support it. The standard [messagetemplates](https://messagetemplates.org/) is used and implemented in various libraries such as [messagetemplates f#](https://github.com/messagetemplates/messagetemplates-fsharp).
+    date: 2020-06-12T15:55:35+01:00
+
 ---
 
 These are musings related to the question what kind of libraries resist the test of time. Some of it is related to issues encountered due to [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell).
@@ -101,8 +105,8 @@ If you want to avoid having to upgrade everything at once and instead want to ta
 That's why preference when it comes to for example library logging to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
 
 ```c#
-using LogError = Action<string, Exception>;
-using LogDebug = Action<string>;
+using LogError = Action<string, Exception, object[]>;
+using LogDebug = Action<string, object[]>;
 ```
 
 You don't really need to worry too much about different future implementations. The above definition might not be enough for your needs (why a larger abstraction is warranted).
