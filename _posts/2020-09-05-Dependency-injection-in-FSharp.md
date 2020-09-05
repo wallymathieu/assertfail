@@ -65,10 +65,8 @@ let addShoppingListM (getUser: string -> Async<string>) (addShoppingList:string 
 
 let composeAddShoppingListM ()=
     let env = Env()
-    let userRepository=env :> IUserRepository
-    let shoppingListRepository=env :> IShoppingListRepository
-    let getUser = getUser userRepository
-    let addShoppingList = addShoppingList shoppingListRepository
+    let getUser = getUser (env :> IUserRepository)
+    let addShoppingList = addShoppingList (env :> IShoppingListRepository)
     addShoppingListM getUser addShoppingList
 
 let addToShoppingListC = composeAddShoppingListM ()
@@ -79,12 +77,12 @@ addToShoppingListC "a@a"
     } |> Async.Start
 ```
 
-In the above example we reused the same class `Env` in order to keep the code shorter.
+In the above example we reused the same class `Env` in order to keep the code shorter. You need to have some glue, why it might not be suitable for a solution where you have a lot of functions with a lot of dependencies.
 
 Since F# allows for nice OO programming you can use dependency injection via constructor injection:
 
 ```f#
-type ShoppingService (userRepository:IUserRepository, shoppingListRepository:IShoppingListRepository)=
+type Shopping (userRepository:IUserRepository, shoppingListRepository:IShoppingListRepository)=
 
     let getUser email = userRepository.GetUser email
 
@@ -97,15 +95,13 @@ type ShoppingService (userRepository:IUserRepository, shoppingListRepository:ISh
     }
 
 let env = Env()
-let userRepository=env :> IUserRepository
-let shoppingListRepository=env :> IShoppingListRepository
-let shoppingService = ShoppingService (userRepository, shoppingListRepository)
+let shopping = Shopping (env :> IUserRepository, env :> IShoppingListRepository)
 
-shoppingService.AddShoppingListM "a@a"
+shopping.AddShoppingListM "a@a"
 |> fun listA -> async {
     let! list = listA
     printfn "%A" list
 } |> Async.Start
 ```
 
-I usually write F# with a mix of currying and constructor injection, but using `ReaderT` seems like a nice alternative.
+I usually write F# with a mix of currying and constructor injection and have not tried out using `ReaderT` for service dependencies. The use of `ReaderT` lets you remove the amount of parameters you might otherwise need to pass around, why it can be helpful as another tool in your toolbelt to decompose your code.
