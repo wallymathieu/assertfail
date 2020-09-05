@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency injection in FSharp
-date: 2020-09-05T11:19:06+02:00
+date: 2020-09-05T17:11:06+02:00
 tags: f#
 ---
 
