@@ -50,7 +50,9 @@ ReaderT.run (addShoppingListM "a@a")  (Env())
 } |> Async.Start
 ```
 
-Another way to decompose your program is to use currying:
+There is also a post about using [reader monad for dependency injection](https://bartoszsypytkowski.com/dealing-with-complex-dependency-injection-in-f/) but without using more advanced techniques such as monad transformers.
+
+Another way to decompose your program is to use currying as seen on [f# for fun and profit](https://fsharpforfunandprofit.com/posts/dependency-injection-1/):
 
 ```f#
 let getUser (repo:IUserRepository) email = repo.GetUser email
@@ -104,4 +106,4 @@ shopping.AddShoppingListM "a@a"
 } |> Async.Start
 ```
 
-I usually write F# with a mix of currying and constructor injection and have not tried out using `ReaderT` for service dependencies. The use of `ReaderT` lets you remove the amount of parameters you might otherwise need to pass around, why it can be helpful as another tool in your toolbelt to decompose your code.
+I usually write F# with a mix of currying and constructor injection and have not tried out using reader monad for service dependencies. The use of `ReaderT` lets you remove the amount of parameters you might otherwise need to pass around. One of the neat things about using a monad transformer is that you can then compose it with your base monad that you otherwise use extensively such as `async`.
