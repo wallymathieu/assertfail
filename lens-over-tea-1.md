@@ -269,13 +269,13 @@ Hm, sorry, I'm not explaining very clearly. So, again:
   * And you for whatever reason need 1000 lists, all differing in *one*
     element, like this:
 
-    ~~~ haskell
-    --                      ↓
-    [ [6, 1, 0, 3, 2, ..., 100, 8, 1, 0, ...]
-    , [6, 1, 0, 3, 2, ..., 233, 8, 1, 0, ...]
-    , [6, 1, 0, 3, 2, ..., 754, 8, 1, 0, ...]
-    , [6, 1, 0, 3, 2, ..., 138, 8, 1, 0, ...]
-    -- and so on
+    ~~~ F#
+    //                     ↓
+    [ [6; 1; 0; 3; 2; ...; 100; 8; 1; 0; ...]
+      [6; 1; 0; 3; 2; ...; 233; 8; 1; 0; ...]
+      [6; 1; 0; 3; 2; ...; 754; 8; 1; 0; ...]
+      [6; 1; 0; 3; 2; ...; 138; 8; 1; 0; ...]
+    // and so on
     ~~~
 
   * So, currently you'll have to call the lens 1000 times, and each time it
@@ -286,11 +286,8 @@ Hm, sorry, I'm not explaining very clearly. So, again:
 
 Let's change the `Lens` type again:
 
-~~~ haskell
--- This is needed so that we can have constraints in type synonyms.
-{-# LANGUAGE RankNTypes #-}
-
-type Lens s a = Monad m => (a -> m a) -> s -> (a, m s)
+~~~ F#
+type Lens <'s,'a,'monad> = ('a -> 'a 'monad) -> 's -> ('a* 's 'monad)
 ~~~
 
 How does it work? Well, everybody nowadays seems to know that `[]` is a monad
