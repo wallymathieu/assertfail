@@ -48,8 +48,6 @@ Being able to browse the history for the code of a business subdomain can allow 
 
 ## Conclusion
 
-Should you have a single repository for an entire organisation? That should depend on the organisation.
-
 Should you have a single repository for a team? I think it makes sense if the team only works on one product/system and the choice suits the system and the team.
 
 Probably you want to merge and split out repositories as time goes on. It's best to keep your options open and make a pragmatic choice for your team.
