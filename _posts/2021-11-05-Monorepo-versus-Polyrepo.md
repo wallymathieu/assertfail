@@ -61,5 +61,6 @@ trunkbaseddevelopment [Monorepos](https://trunkbaseddevelopment.com/monorepos/)
 #### [3]
 - [sourcelink](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink)
 - [symbol package](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages-snupkg)
+- [sourcelink issues](https://github.com/dotnet/sourcelink/issues)
 
 
