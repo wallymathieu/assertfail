@@ -16,7 +16,7 @@ The point about keeping third-party binary dependencies in source control was po
 
 ## Language & infrastructure
 
-Languages that do not have good package managers naturally lend themselves to creation of monorepos. The main languages that I've used that have this property are C, C++ and Go.
+Languages that do not have good package managers naturally lend themselves to creation of monorepos. The main languages that I've used that have this property are C and C++.
 
 ## Debugging
 
