@@ -46,11 +46,15 @@ Clear boundries borders that you don't need to cross can increase focus on a sin
 
 Being able to browse the history for the code of a business subdomain can allow people to know what's going on (too much noise drowns out the team).
 
+### Ownership
+
+Everybody has access to everything. Who reviews what?
+
 ## Conclusion
 
 Should you have a single repository for a team? I think it makes sense if the team only works on one product/system and the choice suits the system and the team.
 
-Probably you want to merge and split out repositories as time goes on. It's best to keep your options open and make a pragmatic choice for your team.
+Probably you want to merge and split out repositories as time goes on. It's best to keep your options open and make a pragmatic choice for your team. Keeping separate repositories can make it clear that the source is supposed to be separate.
 
 ## References
 
