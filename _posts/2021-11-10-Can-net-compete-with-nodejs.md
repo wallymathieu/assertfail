@@ -154,6 +154,8 @@ These templates have been published on the [minimal api marketing page](https://
 
 Building and starting a minimal .net API in C# takes a few seconds (around 4 seconds for .net 6 and around 7 seconds for .net 5 on my machine) while starting a minimal nodejs API on Windows takes at most 1 second. These numbers should be taken with a grain of salt. Once you have thousands of lines of TypeScript the performance to parse these can impose a significant overhead.
 
+F# has the REPL going for it so you might not have the same need for startup performance.
+
 ## Conclusion
 
 In a way the development experience when writing small web services has gotten significantly more along the lines of JavaScript. The experience is naturally different, but you can write code more in the same way.
