@@ -113,7 +113,7 @@ Keeping fewer layers means that there are fewer abstractions that people need to
 
 ## The dreaded Monolith
 
-In a sense many of the systems that you start to dread start out as small systems. Adding small parts to a system without looking for ways to decompose the system into smaller systems is how you end up with such a mess.
+In a sense many of the systems that you start to dread start out as small systems. Adding small parts to a system without looking for ways to decompose the system into smaller systems is how you end up with such a mess. There is no need to overengineer your system until the pain of maintaining the system gets impacted (though note [the boiling frog metaphor](https://en.wikipedia.org/wiki/Boiling_frog) when it comes to the gradual increase in technical debt).
 
 ## Conclusion
 
