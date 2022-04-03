@@ -6,3 +6,5 @@ _site
 
 .vscode
 .ionide
+
+.DS_Store
