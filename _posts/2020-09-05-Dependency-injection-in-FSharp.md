@@ -7,6 +7,9 @@ comments:
   - author: Oskar Gewalli
     content: The most educational source around F# and dependency injection is [F# for fun and profit](https://fsharpforfunandprofit.com/posts/dependencies/). It's part of the 2020 advent calendar and is a great source with links to other well written posts.
     date: 2021-02-07T13:05:43+01:00
+  - author: Oskar Gewalli
+    content: There is also this post that looks nice [Dealing with complex dependency injection in F#](https://bartoszsypytkowski.com/dealing-with-complex-dependency-injection-in-f/)
+    date: 2022-04-12T06:25:43+02:00
 ---
 
 One of the questions around how to write F# is how do we compose bigger business applications. In C# you generally use constructor injection.
