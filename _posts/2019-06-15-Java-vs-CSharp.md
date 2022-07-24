@@ -38,7 +38,7 @@ Both Maven and NuGet are mature and enable decomposition into libraries.
 
 The missing part that becomes quite obvious as you start working on any project in Java is the lack of auto properties. However, there is [Project Lombok](https://projectlombok.org) that removes a lot of boilerplate from your code.
 
-You would expect that in c# you'd use t4 template to reduce boilerplate.
+You would expect that in c# you'd use [t4 template](https://www.hanselman.com/blog/t4-text-template-transformation-toolkit-code-generation-best-kept-visual-studio-secret) (or [Roslyn Source generators](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview)) to reduce boilerplate.
 
 ### Missing features
 
