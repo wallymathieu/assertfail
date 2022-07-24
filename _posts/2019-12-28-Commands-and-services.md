@@ -22,7 +22,7 @@ If we start from the [command redux post by Ayende](https://ayende.com/blog/1599
   };
 ```
 
-we note that the limitations around using simple compositions of [commands](https://ayende.com/blog/159873/design-patterns-in-the-test-of-time-command). The beauty of the command pattern is more obvious when the entire user action can be encapsulated into a class such as. A service class in a DDD [could also](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) be called a command handler.
+we note that the limitations around using simple compositions of [commands](https://ayende.com/blog/159873/design-patterns-in-the-test-of-time-command). The beauty of the command pattern is more obvious when the entire user action can be encapsulated into a class such as a service class in DDD [could also](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) be called a command handler.
 
 
 ```c#
@@ -71,7 +71,7 @@ Read more about command handler in the [following README](https://github.com/wal
 
 ## Separation of database and domain logic
 
-Even though it is [good design to keep your domain logic ignorant of persistence](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice), dependency on ORM or a specific database concepts can create an implicit dependency on the persistence technology that you choose. In many simple scenarios it doesn't make sense to isolate persistence completely from the domain model. In Ruby on Rails the choice is to spin up a sqlite database for application unit tests. The same can be done with many modern ORM.
+Even though it is [good design to keep your domain logic ignorant of persistence](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice), dependency on ORM or a specific database concepts can create an implicit dependency on the persistence technology that you choose. In many simple scenarios it doesn't make sense to isolate persistence completely from the domain model. In Ruby on Rails the choice is to spin up a [sqlite database for small application tests](https://dhh.dk/2014/test-induced-design-damage.html). The same can be done with many modern ORM.
 
 An alternative approach is to have a database with the same schema available for testing and then either letting the database become "dirty" or put the entire test under a transaction that is rolled back so that the database is kept clean between tests.
 
