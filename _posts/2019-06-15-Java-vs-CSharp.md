@@ -44,6 +44,8 @@ You would expect that in c# you'd use [t4 template](https://www.hanselman.com/bl
 
 There isn't any generic support in the Java runtime. This leads to some weirdness around [type erasure](https://www.baeldung.com/java-type-erasure).
 
+There isn't any [anonymous interface implementation in C#](https://www.baeldung.com/java-anonymous-classes), but there is in Java (and [something similar in F#](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/object-expressions)). 
+
 ## Style
 
 ### Differences
