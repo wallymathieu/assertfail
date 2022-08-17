@@ -5,24 +5,29 @@ date: 2013-09-04T22:07:00+02:00
 tags: ruby unit-test
 ---
 
-We have written a lot of ruby code in the project I'm currently working in. There is a lot of code to help manage, build and schedule the program. We started out simple enough. Just one folder with helper scripts. After 2 years we have built up support for a wide variety of tasks.<br><h3>
-Command line tools</h3>
-We have used and abused<br><blockquote class="tr_bq">
-<span class="vg" style="background-color: white; color: teal; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">$:</span><span class="o" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; font-weight: bold; line-height: 17.99715805053711px; white-space: pre;">.</span><span class="n" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">unshift</span><span style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;"> </span><span class="no" style="background-color: white; color: teal; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">File</span><span class="o" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; font-weight: bold; line-height: 17.99715805053711px; white-space: pre;">.</span><span class="n" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">dirname</span><span class="p" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">(</span><span class="bp" style="background-color: white; color: #999999; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">__FILE__</span><span class="p" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 11.818181991577148px; line-height: 17.99715805053711px; white-space: pre;">)</span>
-</blockquote>
- and similar constructs far to much. This makes it hard to get a good overview of dependencies between files.<br><br>
-In order to get islands of related code we have turned to making local only gems. The gem structure helps to cut down on weird manipulations of the load path. It's easier to get an overview by having related files and their tests in a separate folder.<br><h3>
-Bundler</h3>
-Bundler turns out to have a lot of nice tasks (a coworker told me about it):<br><blockquote class="tr_bq">
-<span class="nb" style="background-color: white; color: #0086b3; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">require</span><span style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;"> </span><span class="s1" style="background-color: white; color: #dd1144; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">'bundler/gem_tasks'</span>
-</blockquote>
-Looking at the bundler code helps when using the <a href="https://github.com/bundler/bundler/blob/master/lib/bundler/gem_helper.rb">GemHelper</a> class. If we look at gem_tasks.rb we find:<br><blockquote class="tr_bq">
-<span class="nb" style="background-color: white; color: #0086b3; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">require</span><span style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;"> </span><span class="s1" style="background-color: white; color: #dd1144; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">'bundler/gem_helper'</span> </blockquote>
-<blockquote class="tr_bq">
-<span class="ss" style="background-color: white; color: #990073; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">Bundler</span><span class="p" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">:</span><span class="ss" style="background-color: white; color: #990073; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">:GemHelper</span><span class="o" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; font-weight: bold; line-height: 18px; white-space: pre;">.</span><span class="n" style="background-color: white; color: #333333; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 18px; white-space: pre;">install_tasks</span>
-</blockquote>
-The standard format for gemspecs usually make use of git ls-files. We got a lot of error messages from bundler and switched to use Dir.glob.<br><h3>
-Rails app turns into gem</h3>
-I've written a rails-app for a specific task. I started out with having most of the code in models, helpers in the rails app folder. This turned a bit sour after a while. In order to alleviate the code smell, I started moving the functionality into the lib folder. It turned out that we wanted to use the code in a different setting than as a web app. I moved the relevant tests and code from the lib folder into a new package/gem and added a dependency on this gem from the rails app.<br><br>
+We have written a lot of ruby code in the project I'm currently working in. There is a lot of code to help manage, build and schedule the program. We started out simple enough. Just one folder with helper scripts. After 2 years we have built up support for a wide variety of tasks.
+
+### Command line tools
+
+We have used and abused ```$:.unshift File.dirname(__FILE__)``` and similar constructs far to much. This makes it hard to get a good overview of dependencies between files.
+
+In order to get islands of related code we have turned to making local only gems. The gem structure helps to cut down on weird manipulations of the load path. It's easier to get an overview by having related files and their tests in a separate folder.
+
+### Bundler
+
+Bundler turns out to have a lot of nice tasks (a coworker told me about it):
+```require 'bundler/gem_tasks'```
+
+Looking at the bundler code helps when using the [GemHelper](https://github.com/bundler/bundler/blob/master/lib/bundler/gem_helper.rb) class. If we look at gem_tasks.rb we find:
+```
+require 'bundler/gem_helper' 
+Bundler::GemHelper.install_tasks
+```
+
+The standard format for gemspecs usually make use of git ls-files. We got a lot of error messages from bundler and switched to use Dir.glob.
+
+### Rails app turns into gem
+
+I've written a rails-app for a specific task. I started out with having most of the code in models, helpers in the rails app folder. This turned a bit sour after a while. In order to alleviate the code smell, I started moving the functionality into the lib folder. It turned out that we wanted to use the code in a different setting than as a web app. I moved the relevant tests and code from the lib folder into a new package/gem and added a dependency on this gem from the rails app.
+
 We have since stopped maintaining the rails app, and it has been removed.
-<div style="clear: both;"></div>
