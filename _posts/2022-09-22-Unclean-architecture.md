@@ -8,6 +8,8 @@ date: 2022-09-22T07:08:43+02:00
 
 From what I understand of [Clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) it's an iteration of [Hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) also known as Ports and Adapters (see the Wikipedia page).
 
+Why would you want architecture? The main purpose is to deliver a working solution to the customer. How do you arrive to that? Architecture is a tool that enables developers to reason about how the system works.
+
 ### Sample code
 
 A sample succinct implementation is the
