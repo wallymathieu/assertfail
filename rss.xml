@@ -5,8 +5,8 @@ layout: empty
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assert Fail</title>
-    <link>http://assertfail.gewalli.se/</link>
-    <atom:link href="http://assertfail.gewalli.se/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://assertfail.gewalli.se/</link>
+    <atom:link href="https://assertfail.gewalli.se/rss.xml" rel="self" type="application/rss+xml" />
     <description>Assert Fail</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,13 +15,13 @@ layout: empty
     {% for post in site.posts %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
-      <link>http://assertfail.gewalli.se{{ post.url }}</link>
+      <link>https://assertfail.gewalli.se{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>webmaster@gewalli.se (Oskar Gewalli)</author>
-      <guid>http://assertfail.gewalli.se{{ post.id }}</guid>
+      <guid>https://assertfail.gewalli.se{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
 
-  </channel> 
+  </channel>
 </rss>

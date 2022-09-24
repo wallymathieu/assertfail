@@ -5,7 +5,7 @@ date: 2019-12-28T18:29:08+01:00
 tags: core dotnet
 ---
 
-After writing the [previous posts](http://assertfail.gewalli.se/2018/09/05/Working-on-dotnet-core-on-Mac-OS-X-part-2.html) about getting some of the infrastructure working for non Windows systems, I've seen better ways of getting it to work. Instead of using a netfx.props file, you can use a [Directory.Build.props](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019) with platform specific configuration as seen [in for instance FSharp.Compiler.Service](https://github.com/fsharp/FSharp.Compiler.Service/blob/08daf6d5a0abb62c01a475ea442c2996b0e79335/FSharpBuild.Directory.Build.props#L39-L54):
+After writing the [previous posts](https://assertfail.gewalli.se/2018/09/05/Working-on-dotnet-core-on-Mac-OS-X-part-2.html) about getting some of the infrastructure working for non Windows systems, I've seen better ways of getting it to work. Instead of using a netfx.props file, you can use a [Directory.Build.props](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019) with platform specific configuration as seen [in for instance FSharp.Compiler.Service](https://github.com/fsharp/FSharp.Compiler.Service/blob/08daf6d5a0abb62c01a475ea442c2996b0e79335/FSharpBuild.Directory.Build.props#L39-L54):
 
 ```xml
 <Project>

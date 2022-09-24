@@ -8,3 +8,4 @@ _site
 .ionide
 
 .DS_Store
+.bundle/vendor

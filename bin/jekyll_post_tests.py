@@ -3,9 +3,8 @@ import unittest
 
 import jekyll_post
 import datetime
-#from datetime import date
 import time
-#from datetime import date
+
 class TIMEZONE(datetime.tzinfo):
     def utcoffset(self, dt):
       return datetime.timedelta(hours=+1)

@@ -3,12 +3,12 @@ layout: empty
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
   <title>Assert Fail</title>
-  <link href="http://assertfail.gewalli.se/"/>
-  <link type="application/atom+xml" rel="self" href="http://assertfail.gewalli.se/atom.xml"/>
+  <link href="https://assertfail.gewalli.se/"/>
+  <link type="application/atom+xml" rel="self" href="https://assertfail.gewalli.se/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://assertfail.gewalli.se/</id>
+  <id>https://assertfail.gewalli.se/</id>
   <author>
     <name>Oskar Gewalli</name>
     <email>webmaster@gewalli.se</email>
@@ -16,8 +16,8 @@ layout: empty
 
   {% for post in site.posts %}
   <entry>
-    <id>http://assertfail.gewalli.se{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://assertfail.gewalli.se{{ post.url }}"/>
+    <id>https://assertfail.gewalli.se{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="https://assertfail.gewalli.se{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
@@ -28,5 +28,5 @@ layout: empty
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
- 
+
 </feed>
