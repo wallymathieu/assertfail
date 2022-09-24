@@ -4,6 +4,8 @@ title: Unclean architecture
 date: 2022-09-22T07:08:43+02:00
 ---
 
+This post is a continuation of [Small and simple business applications using SQL](https://assertfail.gewalli.se/2022/04/03/small-and-simple-business-applications-using-sql.html).
+
 ## Clean architecture
 
 From what I understand of [Clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) it's an iteration of [Hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) also known as Ports and Adapters (see the Wikipedia page).
@@ -31,7 +33,7 @@ The most important such architecture must be Rails since you write code that is 
 
 As long as you keep your app relatively small, this can be quite OK. For larger solutions, you start feeling the pain. Your milage may vary.
 
-Another way of writing unclean applications is to use a [thin API wrapper around SQL](http://assertfail.gewalli.se/2022/04/03/small-and-simple-business-applications-using-sql.html). This style of untidy architecture can work well in some cases.
+Another way of writing unclean applications is to use a [thin API wrapper around SQL](https://assertfail.gewalli.se/2022/04/03/small-and-simple-business-applications-using-sql.html). This style of untidy architecture can work well in some cases.
 
 An example of small dirty app is to write a small service that does a mix of external and internal calls in order to have an app that can be in something like a smallish program wrapped by a docker container. The idea is that having an explicit dependency on one specific DB and no safety net does not matter as long as it's easy enough to recreate a development experience using containers.
 
