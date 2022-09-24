@@ -2,11 +2,9 @@
 
 ## Installing python environment
 
-- Install python 2 or 3
-- Install [setuptools](https://pypi.python.org/pypi/setuptools)
+- Install python 3
 - On windows add C:\PythonX\Scripts to environment path
-- ```easy_install pip```
-- ```pip install -r requirements.txt```
+- ```pip3 install -r requirements.txt```
 
 ## Installing ruby environment
 
