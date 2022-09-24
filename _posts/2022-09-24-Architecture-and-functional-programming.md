@@ -4,6 +4,8 @@ title: Architecture and functional programming
 date: 2022-09-24T14:59:11+02:00
 ---
 
+This post is a continuation of [Unclean architecture](https://assertfail.gewalli.se/2022/09/22/Unclean-architecture.html).
+
 ## Clean architecture
 
 From what I understand of [Clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) it's an iteration of [Hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)) also known as Ports and Adapters (see the Wikipedia page).
@@ -16,7 +18,7 @@ From what I understand of [Clean architecture](https://blog.cleancoder.com/uncle
 
 As we have seen around functional programming there are [many ways of dealing with dependencies](https://fsharpforfunandprofit.com/posts/dependencies/).
 
-### Compare to pure impure
+### Compare to pure and impure
 
 Compare [Impureim sandwich](https://blog.ploeh.dk/2020/03/02/impureim-sandwich/) with the hexagonal/clean/ports and adapters architecture
 
@@ -42,9 +44,5 @@ You could perhaps argue that when trying to come up with a clean architecture fo
 My guess is that the problem is that for many senior developers/programmers clean code is related to feelings of cleanliness, so will be apparent to programmers that have gotten a feeling for it (my guess being that you would teach that through literary workshops).
 
 ## Conclusion
-
-Clean code/architecture probably suffer from what Eric Normand denotes [The Christopher Alexander Effect](https://ericnormand.me/podcast/the-christopher-alexander-effect): that the advice around clean architecture/code is almost obvious to some senior programmers while unhelpful for others.
-
-In order to know when it's a good thing to accept an Unclean architecture, you want to have some ideas about what a Clean architecture is. I'm thinking [poetic license](https://en.wiktionary.org/wiki/poetic_licence) may apply for architecture as well. The main benefit of a somewhat unclean architecture is the reduced amount of code and ceremony (sometimes a very difficult choice to make).
 
 FP concepts have come to have a broad influence over many mainstream core frameworks (see the functional concepts in [Java](https://www.baeldung.com/java-functional-programming) and [C#](https://en.wikipedia.org/wiki/Language_Integrated_Query) base libraries). We can argue that these concepts give us tools and definitions that help remove the fluff around the definitions.
