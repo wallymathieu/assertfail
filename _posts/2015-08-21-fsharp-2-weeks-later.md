@@ -1,11 +1,11 @@
 ---
 layout: post
-title: f# 2 weeks later
+title: F# 2 weeks later
 date: 2015-08-21T17:17:39+02:00
 tags: f#
 ---
 
-Since I've been without an assingment I've had the time to look into f# more.
+Since I've been without an assingment I've had the time to look into F# more.
 
 ## Where did I find material?
 
@@ -15,7 +15,7 @@ Since I've been without an assingment I've had the time to look into f# more.
 
 ## Why did I start looking into f# again?
 
- I share the office with [Fredrik Forssen](https://github.com/wastaz). I find his love of f# inspiring.
+ I share the office with [Fredrik Forssen](https://github.com/wastaz). I find his love of F# inspiring.
 
 ## Things I've found that delighted me:
 
@@ -35,9 +35,9 @@ Since I've been without an assingment I've had the time to look into f# more.
 
  - If you forget to add an equals sign to a type or module declaration you get weird compiler errors
  - Gui tooling is still a bit alpha (the command line version works great)
- - It's easy to create a f# project where you need to manually edit the fsproj file in order to get it to work on mono and windows (this was a problem in the early days of NuGet)
- - Almost all the library methods in .net becomes a tuple parameter in f#, this is a bit confusing since it looks like an ordinary function call in c#
- - Exposing f# Option on your types makes it harder to interact with your f# code from c#
+ - It's easy to create a F# project where you need to manually edit the fsproj file in order to get it to work on mono and windows (this was a problem in the early days of NuGet)
+ - Almost all the library methods in .net becomes a tuple parameter in F#, this is a bit confusing since it looks like an ordinary function call in C#
+ - Exposing f# Option on your types makes it harder to interact with your F# code from C#
 
 ~~~ c#
     using OptionalUrl = Microsoft.FSharp.Core.FSharpOption<Customers.Url>;
