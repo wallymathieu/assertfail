@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Type matching in c#"
+title:  "Type matching in C#"
 date: 2012-11-22T19:27:00+01:00
 tags: c#
 ---
@@ -32,7 +32,7 @@ else {
 
 ### Small note
 
-This type of feature is now part of c# proper as:
+This type of feature is now part of C# proper as:
 ```c#
 switch (exception)
 {
