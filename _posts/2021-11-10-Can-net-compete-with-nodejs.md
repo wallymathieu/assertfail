@@ -6,6 +6,7 @@ tags: F# C# nodejs
 ---
 
 NodeJS applications can be a single file with minimal overhead:
+
 ```JavaScript
 const express = require('express')
 const app = express()
@@ -17,7 +18,7 @@ app.listen(3000, () => { })
 
 How does this compare to what we have seen in the .net world?
 
-## For .net 5 C#
+## For .net 5 C\#
 
 ### HelloWorld.csproj
 
