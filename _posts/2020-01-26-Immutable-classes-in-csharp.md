@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Immutable classes in c#
+title: Immutable classes in C#
 date: 2020-01-26T17:42:35+01:00
 tags: c#
 comments:
@@ -8,7 +8,7 @@ comments:
     content: I've had [some trouble](https://github.com/wallymathieu/ImmutableObjectGraph-studies/pull/4) in getting ImmutableObjectGraph to work well in newer versions, but it looks very similar to the LanguageExt type of generation, why you could use that instead.
     date: 2020-03-02T11:57:35+01:00
   - author: Oskar Gewalli
-    content: With the introduction of [c# 9 features](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/) we will probably help bring immutability even more into the mainstream.
+    content: With the introduction of [C# 9 features](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/) we will probably help bring immutability even more into the mainstream.
     date: 2020-05-23T18:55:05+01:00
 ---
 
@@ -19,7 +19,7 @@ comments:
 
 ## Writing readonly record classes 2007
 
-Around 2007 I wrestled with writing immutable classes in c#. One of the key painpoints was that the constructor parameters for a class representing a database row for a specific table ended up with around 68 parameters.
+Around 2007 I wrestled with writing immutable classes in C#. One of the key painpoints was that the constructor parameters for a class representing a database row for a specific table ended up with around 68 parameters.
 
 Note that we already had code generation of SQL Reader row deserialization based on SQL information tables.
 
@@ -39,7 +39,7 @@ Both of these approaches offered pros and cons. Main con of `with` was performan
 
 Since libraries such as NHibernate supports immutable records, you could benefit from modelling readonly objects.
 
-It was also fairly obvious that it was much easier to adopt a language that supports these concepts well out of the box (you might not be surprised that the somewhat mainstream language of choice then is f#). T4 templates where restricted to Windows, making some approaches nonportable.
+It was also fairly obvious that it was much easier to adopt a language that supports these concepts well out of the box (you might not be surprised that the somewhat mainstream language of choice then is F#). T4 templates where restricted to Windows, making some approaches nonportable.
 
 ## There are more options now (i.e. around 2019)
 
@@ -47,7 +47,7 @@ During 2019 I noticed how the implementation of many dependency injection contai
 
 Immutable Object Graph is still around and have merged pull requests.
 
-The new alternative can be found in [LanguageExt](https://github.com/louthy/language-ext) CodeGen. The main downside or upside of this collection of libraries is that it is very non idiomatic c#.
+The new alternative can be found in [LanguageExt](https://github.com/louthy/language-ext) CodeGen. The main downside or upside of this collection of libraries is that it is very non idiomatic C#.
 
 We see that you get immutable objects generated from [autorest](https://github.com/Azure/autorest) and [OpenAPI generator](https://github.com/OpenAPITools/openapi-generator).
 
@@ -136,4 +136,4 @@ We have seen a lot of interest around microservices style architectural patterns
 
 ## Conclusion
 
-Writing immutable classes have gotten better support in c# over the years. We see that you now have several options to pick from (without restrictions on operating system or performance).
+Writing immutable classes have gotten better support in C# over the years. We see that you now have several options to pick from (without restrictions on operating system or performance).
