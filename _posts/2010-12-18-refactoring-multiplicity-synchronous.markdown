@@ -2,7 +2,7 @@
 layout: post
 title:  "Refactoring multiplicity, synchronous versus asynchonous"
 date: 2010-12-18T13:00:00+01:00
-tags: programming  C# JavaScript
+tags: programming C# JavaScript
 ---
 
 Sometimes change hurts.

@@ -2,7 +2,7 @@
 layout: post
 title: What makes for happy C#?
 date: 2018-03-16T11:51:45+01:00
-tags:  C# ruby
+tags: C# ruby
 ---
 
 One of the questions I've started asking myself is what makes for happy C#? After a few years getting a bit more understanding of ML like languages like F# I've started to realise that C# is not built to write the kind of code that you write in an ML. Instead, you are happier when you embrace the Ruby-like patterns in C#. If you look at C# sort of like a typed Ruby like language: Object orientation, mutability first and meta programming using reflection. When you see that this is shared between the two languages then more things make sense. I've noticed that good Ruby code translates very easily to good C# (although [not always](https://github.com/wallymathieu/csharp_ukanren)). Same is not true for good F# or Haskell.

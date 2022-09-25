@@ -13,4 +13,4 @@ We have used [EF Core 1-2](https://docs.microsoft.com/en-us/ef/core/). I've prev
 
 What has worked well has been to use [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore). It helps with keeping documentation in sync and cuts down on the need for hand written API cruft.
 
-A lot of the API's have been improved in asp.net core. Default dependency injection and logging abstraction, et.c. has made the  C# code more pleasant to work with. That the configuration is using dependency injection instead of global values makes it easier to reason about configuration.
+A lot of the API's have been improved in asp.net core. Default dependency injection and logging abstraction, et.c. has made the C# code more pleasant to work with. That the configuration is using dependency injection instead of global values makes it easier to reason about configuration.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Type matching in C#"
 date: 2012-11-22T19:27:00+01:00
-tags:  C#
+tags: C#
 ---
 
 I was thinking about how nice you have it in some languages where you can do a case statement for types. Thing is, we have a lot of [compiler goodness in C# already](https://gist.github.com/4132433).

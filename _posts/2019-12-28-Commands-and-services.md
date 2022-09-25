@@ -2,7 +2,7 @@
 layout: post
 title: Commands and services
 date: 2019-12-28T10:13:25+01:00
-tags:  C#
+tags: C#
 ---
 
 ## Command handlers are services

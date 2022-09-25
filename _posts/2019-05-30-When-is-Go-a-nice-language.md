@@ -27,11 +27,11 @@ There are rudimentary reflection capabilities, why you could implement some stan
 
 ### Compilation time
 
-Go has short compilation time. This can improve developer happiness (reduce the code/compile/try cycle). It is also easy to use in non standard editors (as opposed to  C#/Java).
+Go has short compilation time. This can improve developer happiness (reduce the code/compile/try cycle). It is also easy to use in non standard editors (as opposed to C#/Java).
 
 ### Size of docker deliverables
 
-Compared to some other more mature languages like  C# and Java: Go produces smaller docker deliverables. Though if you really care about the size of your deliverables Go might not be the optimal language (but perhaps good enough).
+Compared to some other more mature languages like C# and Java: Go produces smaller docker deliverables. Though if you really care about the size of your deliverables Go might not be the optimal language (but perhaps good enough).
 
 If you are concerned about the size of your deliverables, then you could write web apps in c with say [kore](https://kore.io/).
 

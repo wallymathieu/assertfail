@@ -2,11 +2,11 @@
 layout: post
 title: webforms and confusion
 date: 2015-10-30T12:41:16+01:00
-tags: webforms  C# asp.net JavaScript
+tags: webforms C# asp.net JavaScript
 ---
 ## webforms and 3000 lines of codebehind
 
-I've noticed that the common failures while using asp.net webforms is related to people getting confused about the asp.net page and control life cycle. Since there are so many different events to keep in mind, it's easy to place code in the wrong place and get something that sort of works (but does not work in all cases). If you are stressed, you might add a small if statement to fix this problem in the special case, increasing complexity in the code behind file. This then turns into 1000-3000 lines of hard to read  C#. I've found that building small user controls that are built according to how you should build user controls, can help you avoid this mess (the technical lead at Macom when I worked there pushed for this). This requires you to learn how to write user controls though.
+I've noticed that the common failures while using asp.net webforms is related to people getting confused about the asp.net page and control life cycle. Since there are so many different events to keep in mind, it's easy to place code in the wrong place and get something that sort of works (but does not work in all cases). If you are stressed, you might add a small if statement to fix this problem in the special case, increasing complexity in the code behind file. This then turns into 1000-3000 lines of hard to read C#. I've found that building small user controls that are built according to how you should build user controls, can help you avoid this mess (the technical lead at Macom when I worked there pushed for this). This requires you to learn how to write user controls though.
 
 I get the feeling that it's not unusual for developers have a hard time understanding how to interact with different components written in different files. Maybe this is why junior developers using this type of code can create a hard to change architecture: large files with a lot of interconnected logic inside each file.
 
@@ -16,7 +16,7 @@ Writing asp.net mvc is conceptually easier (there are fewer things to learn, sin
 
 ## JavaScript maturity
 
-I find that the difference between  C# and java is relatively minor right now. The main feature I missed in java has been lambdas (or lambda like syntax). Ruby, python and php all are similar in the sense that they have sort a class concept and that you can inherit from other classes. There is something like "this", so that you can access the object. In JavaScript however, "this" does not mean the current object (it can be, but it's not always the case). However, since most serverside developers are forced to learn JavaScript in order to complete most assignemnts, I would imagine that many developers know JavaScript and one of the other languages that are more similar.
+I find that the difference between C# and java is relatively minor right now. The main feature I missed in java has been lambdas (or lambda like syntax). Ruby, python and php all are similar in the sense that they have sort a class concept and that you can inherit from other classes. There is something like "this", so that you can access the object. In JavaScript however, "this" does not mean the current object (it can be, but it's not always the case). However, since most serverside developers are forced to learn JavaScript in order to complete most assignemnts, I would imagine that many developers know JavaScript and one of the other languages that are more similar.
 
 We see many concepts that have been promoted serverside entering clientside applications as well. When working with a larger JavaScript codebase then the problems that you face will be familiar to working with a large serverside codebase.
 

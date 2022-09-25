@@ -23,7 +23,7 @@ tags: unit-test
 
 1. Make sure that everybody uses database versioning tool. Preferably some form of migrations. It's trivially easy to get into a inconsistent database state otherwise.
 
-2. Make sure to have test coverage of any part of the code you're unsure of how it works or any brittle parts. Things that are brittle is for instance the use of SqlCommand against stored procedures (SP). As the SP's are changed code may stop to work without you knowing it. Make sure to have tests of the connection between  C# and the sql database. Make sure that your tests are as terse as possible. Don't be afraid to throw old tests away that are wrong and not needed. You can read about tests in the post: [why automed tests](/2011/03/31/why-automated-tests.html).
+2. Make sure to have test coverage of any part of the code you're unsure of how it works or any brittle parts. Things that are brittle is for instance the use of SqlCommand against stored procedures (SP). As the SP's are changed code may stop to work without you knowing it. Make sure to have tests of the connection between C# and the sql database. Make sure that your tests are as terse as possible. Don't be afraid to throw old tests away that are wrong and not needed. You can read about tests in the post: [why automed tests](/2011/03/31/why-automated-tests.html).
 
 3. Be really careful of hiding exceptions (catch the right exception). If something goes wrong, [it should explode](http://ferd.ca/the-zen-of-erlang.html). It's really hard to find errors if you have written something like: ``` try{ ... } catch(Exception){} ```
 

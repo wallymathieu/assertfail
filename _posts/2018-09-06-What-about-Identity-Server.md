@@ -2,7 +2,7 @@
 layout: post
 title: What about Identity Server?
 date: 2018-09-06T07:52:29+02:00
-tags: asp.net mvc core dotnet  C#
+tags: asp.net mvc core dotnet C#
 ---
 
 # So what has been my experience using [Identity Server](https://github.com/IdentityServer/IdentityServer4)?

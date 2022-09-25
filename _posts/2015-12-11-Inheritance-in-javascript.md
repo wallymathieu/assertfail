@@ -31,7 +31,7 @@ function Mammal(name){
     this._old_name = name; // this value will be immutable
 
     // we want for the object to implement the same interface
-    // this is a way to make objects more like java or  C# objects
+    // this is a way to make objects more like java or C# objects
     Object.freeze(this);
 }
 

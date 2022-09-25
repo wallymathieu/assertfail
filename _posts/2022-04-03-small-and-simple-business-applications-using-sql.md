@@ -2,7 +2,7 @@
 layout: post
 title: Small and simple business applications using SQL
 date: 2022-04-03T09:42:31+01:00
-tags: SQL  C# nodejs
+tags: SQL C# nodejs
 ---
 
 Say that you want to write a minimal API as seen in [Can .net compete with NodeJS](/2021/11/10/Can-net-compete-with-nodejs.html). How would you structure such an application? You would end up with something like 0-1 layers in your application.

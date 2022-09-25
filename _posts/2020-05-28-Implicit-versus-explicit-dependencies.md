@@ -2,13 +2,13 @@
 layout: post
 title: Implicit versus explicit dependencies
 date: 2020-05-28T18:30:50+02:00
-tags:  C# core dotnet
+tags: C# core dotnet
 comments:
   - author: Oskar Gewalli
     content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that [behaviour has changed](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/data-points-backing-field-and-owned-entity-changes-in-ef-core-3-0).
     date: 2020-06-01T10:15:35+01:00
   - author: Oskar Gewalli
-    content: Changed the minimal logging abstraction to match a structured loggin approach since the current logging providers support it. The standard [messagetemplates](https://messagetemplates.org/) is used and implemented in various libraries such as [messagetemplates  F#](https://github.com/messagetemplates/messagetemplates-fsharp).
+    content: Changed the minimal logging abstraction to match a structured loggin approach since the current logging providers support it. The standard [messagetemplates](https://messagetemplates.org/) is used and implemented in various libraries such as [messagetemplates F#](https://github.com/messagetemplates/messagetemplates-fsharp).
     date: 2020-06-12T15:55:35+01:00
 
 ---

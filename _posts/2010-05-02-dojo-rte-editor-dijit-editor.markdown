@@ -55,4 +55,4 @@ As you can see, I opted for the more declarative way.
 
 There were some pitfalls. I could not use the editor directly for instance. I had to define a hidden element for the content and post that element. Also, the declarative statement looks kind of ugly since we have to add the full name of the editor plugins.
 
-The first thing you notice of dojo is that the api isn't as slick as jquery. That is expected since dojo spans more functionality. dojo shines however in one position: dojo.require. Like the import statement in java and python or the using statement in  C#.
+The first thing you notice of dojo is that the api isn't as slick as jquery. That is expected since dojo spans more functionality. dojo shines however in one position: dojo.require. Like the import statement in java and python or the using statement in C#.

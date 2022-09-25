@@ -22,5 +22,5 @@ There are lots of closed source code that I'm proud of. That code is not visible
 The code that you can see that I'm proud of is for example
 
 - [Isop](https://github.com/wallymathieu/isop). Isop has been helpful for many years when implementing console apps. The intent was to provide a controller scheme similar to asp.net MVC but without using inheritance.
-- [With](https://github.com/wallymathieu/with). With is a library where I've explored some of the possibilities of  C#. I've also added helpful extensions to the library. I'm removing parts of the library as more of it is possible to do in  C#.
+- [With](https://github.com/wallymathieu/with). With is a library where I've explored some of the possibilities of C#. I've also added helpful extensions to the library. I'm removing parts of the library as more of it is possible to do in C#.
 - [Zander](https://github.com/fsprojects/Zander). Implementation of regular expression for matrix information. This is a reimplementation of an old idea.

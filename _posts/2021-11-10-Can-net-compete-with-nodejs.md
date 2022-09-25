@@ -2,7 +2,7 @@
 layout: post
 title: Can .net compete with nodejs
 date: 2021-11-10T07:42:31+01:00
-tags:  F#  C# nodejs
+tags: F# C# nodejs
 ---
 
 NodeJS applications can be a single file with minimal overhead:

@@ -2,7 +2,7 @@
 layout: post
 title:  "Implementing Dispose method in .net"
 date: 2011-09-25T21:30:00+02:00
-tags:  C# memory_management
+tags: C# memory_management
 ---
 
 ### Dispose

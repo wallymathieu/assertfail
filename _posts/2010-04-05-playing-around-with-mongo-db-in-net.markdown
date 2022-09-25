@@ -2,7 +2,7 @@
 layout: post
 title:  "Playing around with mongo db in .net"
 date: 2010-04-05T15:51:00+02:00
-tags: asp.net_mvc  C# mongodb
+tags: asp.net_mvc C# mongodb
 ---
 
 Ever since I heard of the NoRM driver for MongoDB I had to try my hands on it. You can find it here:

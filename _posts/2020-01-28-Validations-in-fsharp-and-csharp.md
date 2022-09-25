@@ -2,14 +2,14 @@
 layout: post
 title: Validations in F# and C#
 date: 2020-01-28T08:21:31+01:00
-tags:  F#  C#
+tags: F# C#
 ---
 
 In order to give a nicer developer experience composing validation messages there are broad categories of libraries that either work well in a Java/C# style setting or work well when composing functions.
 
 ## Attribute based validation libraries
 
-The default style that can be seen in many java and  C# projects is the attribute based validation approach.
+The default style that can be seen in many java and C# projects is the attribute based validation approach.
 
 ``` C#
 public class Person
@@ -25,7 +25,7 @@ public class Person
 
 it offers some nice advantages. Many frameworks integrate with these style of validations. You are somewhat limited in how you can apply validations, but it can be good enough.
 
-In  F# it looks the following way:
+In F# it looks the following way:
 
 ``` F#
 type Person = {
