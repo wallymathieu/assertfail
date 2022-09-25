@@ -5,8 +5,6 @@ date: 2012-06-10T14:21:00+02:00
 tags: programming
 ---
 
-**
-
 ## Refusing?
 
 As a developer, assume that you are given technology or tool X and told that you need to create Y using it. Sometime it's just getting down to business and getting it done. Sometimes you realize that using said technology is a mistake. It could be that the technology isn't appropriate for the task. It could be that there are simpler cheaper solutions (things that take less of your time). It could also be that you feel that it's outside of your job: Like asking an accountant to do the floors.
