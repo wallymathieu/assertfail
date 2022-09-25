@@ -1,20 +1,20 @@
 ---
 layout: post
-title: f# 2 years later
+title: F# 2 years later
 date: 2018-09-08T21:30:26+02:00
 tags: f#
 ---
 
-## What's the lure of f#?
+## What's the lure of F#?
 
-The main lure of f# is that it's a surprisingly competent [ML](https://en.wikipedia.org/wiki/ML_(programming_language)) style language that transcends some of the limitations of [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language).
+The main lure of F# is that it's a surprisingly competent [ML](https://en.wikipedia.org/wiki/ML_(programming_language)) style language that transcends some of the limitations of [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language).
 
-From my point of view, the main distinguishing feature for f# is [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters). It's a feature you don't want to see in business code (same as reflection in c#), but something that enables libraries to take f# to [the next level](https://github.com/fsprojects/FSharpPlus). Compare this to [type classes](http://learnyouahaskell.com/types-and-typeclasses) in Haskell and what is called [functors](https://v1.realworldocaml.org/v1/en/html/functors.html) in OCaml.
+From my point of view, the main distinguishing feature for F# is [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters). It's a feature you don't want to see in business code (same as reflection in c#), but something that enables libraries to take F# to [the next level](https://github.com/fsprojects/FSharpPlus). Compare this to [type classes](http://learnyouahaskell.com/types-and-typeclasses) in Haskell and what is called [functors](https://v1.realworldocaml.org/v1/en/html/functors.html) in OCaml.
 
 ## What has delighted me?
 
  - The editor tooling for f# has grown more stable.
- - That f# has another perspective (compared to c#).
+ - That F# has another perspective (compared to C#).
  - Type providers can simplify one-off "scripting".
 
 ## What has been annoying?
