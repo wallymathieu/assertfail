@@ -2,13 +2,13 @@
 layout: post
 title: Implicit versus explicit dependencies
 date: 2020-05-28T18:30:50+02:00
-tags: c# core dotnet
+tags:  C# core dotnet
 comments:
   - author: Oskar Gewalli
-    content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that [behaviour has changed](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/data-points-backing-field-and-owned-entity-changes-in-ef-core-3-0). 
+    content: An implicit dependency in our POCO models on EF core 2 was that we assumed that EF core would create non null owned properties, while in EF core 3 that [behaviour has changed](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/data-points-backing-field-and-owned-entity-changes-in-ef-core-3-0).
     date: 2020-06-01T10:15:35+01:00
   - author: Oskar Gewalli
-    content: Changed the minimal logging abstraction to match a structured loggin approach since the current logging providers support it. The standard [messagetemplates](https://messagetemplates.org/) is used and implemented in various libraries such as [messagetemplates f#](https://github.com/messagetemplates/messagetemplates-fsharp).
+    content: Changed the minimal logging abstraction to match a structured loggin approach since the current logging providers support it. The standard [messagetemplates](https://messagetemplates.org/) is used and implemented in various libraries such as [messagetemplates  F#](https://github.com/messagetemplates/messagetemplates-fsharp).
     date: 2020-06-12T15:55:35+01:00
 
 ---
@@ -23,7 +23,7 @@ How should we define a dependency? The easiest way to define a dependency would 
 
 How does such an explicit dependency look in C#:
 
-```c#
+``` C#
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -52,11 +52,11 @@ The cost of standardisation is the loss of agility when there is value in being 
 
 ## Implicit dependency
 
-In order to look for an example of a implicit dependency of code we could look at how different [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) works when using [POCO](https://en.wikipedia.org/wiki/Plain_old_CLR_object) or [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object). When you use a restricted amount of features from Entity Framework, your code will work with other frameworks. 
+In order to look for an example of a implicit dependency of code we could look at how different [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) works when using [POCO](https://en.wikipedia.org/wiki/Plain_old_CLR_object) or [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object). When you use a restricted amount of features from Entity Framework, your code will work with other frameworks.
 
 Since the behaviour of any ORM will necessitate that you follow the patterns and conventions assumed by the framework. For instance if you decide to use strongly typed keys, will these work in another ORM? Does your usage of inheritance work with another ORM? These small things tie subsets of your code implicitly to a specific library or framework.
 
-Another example of implicit dependency is if you follow the advice of [Mark Seeman on composition root location](https://blog.ploeh.dk/2019/06/17/composition-root-location/), you could have used say one specific dependency injection framework only in your composition root. How could that tie your other code to that then? A specific implementation of a dependency injection framework will have sometimes subtle differences in how things are created when you resolve the code. You might have unintentionally created code that works when initialised in a particular way but will break when you switch to another framework. Microsoft has used [IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.iserviceprovider) as the least common denominator. 
+Another example of implicit dependency is if you follow the advice of [Mark Seeman on composition root location](https://blog.ploeh.dk/2019/06/17/composition-root-location/), you could have used say one specific dependency injection framework only in your composition root. How could that tie your other code to that then? A specific implementation of a dependency injection framework will have sometimes subtle differences in how things are created when you resolve the code. You might have unintentionally created code that works when initialised in a particular way but will break when you switch to another framework. Microsoft has used [IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.iserviceprovider) as the least common denominator.
 
 Hickups could be:
 
@@ -66,7 +66,7 @@ Hickups could be:
 
 if we look at the previous implementation of [`GetRequiredService`](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54) (an extension of `IServiceProvider`) we note some interesting behaviour:
 
-```c#
+``` C#
 public static object GetRequiredService(this IServiceProvider provider, Type serviceType)
 {
     ...
@@ -104,7 +104,7 @@ If you want to avoid having to upgrade everything at once and instead want to ta
 
 That's why preference when it comes to for example library logging to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
 
-```c#
+``` C#
 using LogError = Action<string, Exception, object[]>;
 using LogDebug = Action<string, object[]>;
 ```

@@ -24,6 +24,6 @@ lrwxr-xr-x  1 mathieu  admin  48 Sep 12 21:56 /usr/local/bin/mono -> /Library/Fr
 
 I've found that there is a [stackoverflow answer](http://stackoverflow.com/questions/32806615/xamarins-f-interactive-pad-cannot-find-mono). I opted for a somewhat different approach and created a file in my ~/bin folder with essentially the same fix (this was before the stackoverflow answer, so it's not exactly alike). You can find it [here](https://gist.github.com/wallymathieu/99d20a5090f9691e38e0).
 
-After that I changed the xamarin studio f# interactive settings so that the path is ~~~/Users/mathieu/bin/fsharpi~~~.
+After that I changed the xamarin studio  F# interactive settings so that the path is ~~~/Users/mathieu/bin/fsharpi~~~.
 
 I'm thinking that later on I want to change the settings for fsharpi and fsharp to point to a local nuget repository (containg a paket.dependencies file) with [FSharp.Compiler.Tools](https://www.nuget.org/packages/FSharp.Compiler.Tools) installed.

@@ -2,14 +2,14 @@
 layout: post
 title: Commands and services
 date: 2019-12-28T10:13:25+01:00
-tags: c#
+tags:  C#
 ---
 
 ## Command handlers are services
 
 If we start from the [command redux post by Ayende](https://ayende.com/blog/159969/design-patterns-in-the-test-of-time-command-redux). In actual shopping scenarios we need to deal with not a clear script of actions that can be executed in a sequential manner. Instead we have a unidirectional wizard-style flow where the customer is redirected from the shopping site to payment provider and back. Let us ignore these complexities and look at the following:
 
-```c#
+``` C#
   var placeOrderCommand = new CompositeCommand(
     new RegisterOrderCommand(),
     new ReserveStockCommand(),
@@ -25,7 +25,7 @@ If we start from the [command redux post by Ayende](https://ayende.com/blog/1599
 we note that the limitations around using simple compositions of [commands](https://ayende.com/blog/159873/design-patterns-in-the-test-of-time-command). The beauty of the command pattern is more obvious when the entire user action can be encapsulated into a class such as a service class in DDD [could also](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) be called a command handler.
 
 
-```c#
+``` C#
   public class PlaceOrderService
   {
     private readonly BusinessDbContext _dbcontext;

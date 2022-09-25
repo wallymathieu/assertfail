@@ -2,20 +2,21 @@
 layout: post
 title:  "web api's"
 date: 2009-07-18T20:00:00+02:00
-tags: javascript greasemonkey
+tags: JavaScript greasemonkey
 ---
 
 ### Local procedure calls
 
-Given the scripting nature of the web non-obfuscated javascript code presents itself to the technical user almost as a public API. You can try it out yourself by writing:
+Given the scripting nature of the web non-obfuscated JavaScript code presents itself to the technical user almost as a public API. You can try it out yourself by writing:
 
-~~~ javascript
+~~~ JavaScript
 for (x in document){console.log(x);}
 ~~~
 
-in your browser javascript console. For more persistent changes to a sites behavior tools like Greasemonkey can be used. Last.fm and Spotify have done some integration by releasing a [Greasemonkey script for last.fm](https://www.spotify.com/blog/archives/2008/12/18/spotify-scrobbles/).
+in your browser JavaScript console. For more persistent changes to a sites behavior tools like Greasemonkey can be used. Last.fm and Spotify have done some integration by releasing a [Greasemonkey script for last.fm](https://www.spotify.com/blog/archives/2008/12/18/spotify-scrobbles/).
 
 ### Remote procedure calls
+
 By using [fiddler](http://www.fiddler2.com/fiddler2/) or Firefox Firebug you can watch the client/server interaction (ajax calls made by a modern web app). The stateless nature of the web and ajax calls promotes a simple design of this "API". This means that programming/scripting against your site can be easily done by, hopefully authorized, users.
 
 ### Conclusion

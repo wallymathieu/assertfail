@@ -2,7 +2,7 @@
 layout: post
 title: Proxy API requests in development
 date: 2020-05-07T08:38:36+02:00
-tags: javascript
+tags: JavaScript
 ---
 
 ## The road towards frontend and backend separation
@@ -13,13 +13,13 @@ Or at least why you should care about proxies when dealing with web applications
 
 I studied computer science at Lund university. One of the professors warned us about two things: JavaScript and Sharepoint. The web programming I got aquinted with at university was mainly Java servlets and Python CGI apps.
 
-I started working at MaCom in Denmark as a system developer. The amount of JavaScript needed could easily fit in a small single file. Most of the application was written in asp.net using aspx and c#. Pages written in aspx is a mix of HTML and c# code and composed as into components called "pages" and "user controls".
+I started working at MaCom in Denmark as a system developer. The amount of JavaScript needed could easily fit in a small single file. Most of the application was written in asp.net using aspx and  C#. Pages written in aspx is a mix of HTML and  C# code and composed as into components called "pages" and "user controls".
 
 There was no need for a separation of frontend and backend since most of the code executed on the server.
 
 ### Around 2010
 
-At Lundalogik I was part of a team writing a web CRM system. The amount of code in the codebase was around half c# and half JavaScript. In order to structure the code we had a large amount of JavaScript files. The server parts was developed in tandem with the clientside parts. As we expanded the team we got a frontend specialist that wanted to focus on JavaScript only. From that persons point of view it was a hassle to be forced to use Visual Studio to edit the frontend code.
+At Lundalogik I was part of a team writing a web CRM system. The amount of code in the codebase was around half  C# and half JavaScript. In order to structure the code we had a large amount of JavaScript files. The server parts was developed in tandem with the clientside parts. As we expanded the team we got a frontend specialist that wanted to focus on JavaScript only. From that persons point of view it was a hassle to be forced to use Visual Studio to edit the frontend code.
 
 If you instead work on a Windows machine you can use IIS as a proxy. Hanselman has a [nice introduction](https://www.hanselman.com/blog/ASPNETMVCAndTheNewIIS7RewriteModule.aspx). When in a Windows shop you usually go with IIS for webserver and proxy needs. Since there wasn't any need for any proxy-configuration we used IIS only to rewrite urls.
 

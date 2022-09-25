@@ -2,16 +2,16 @@
 layout: post
 title: Validations in F# and C#
 date: 2020-01-28T08:21:31+01:00
-tags: f# c#
+tags:  F#  C#
 ---
 
 In order to give a nicer developer experience composing validation messages there are broad categories of libraries that either work well in a Java/C# style setting or work well when composing functions.
 
 ## Attribute based validation libraries
 
-The default style that can be seen in many java and c# projects is the attribute based validation approach.
+The default style that can be seen in many java and  C# projects is the attribute based validation approach.
 
-```c#
+``` C#
 public class Person
 {
   [MinLength(1,ErrorMessage ="NameBetween1And50"), MaxLength(50,ErrorMessage ="NameBetween1And50")]
@@ -25,9 +25,9 @@ public class Person
 
 it offers some nice advantages. Many frameworks integrate with these style of validations. You are somewhat limited in how you can apply validations, but it can be good enough.
 
-In f# it looks the following way:
+In  F# it looks the following way:
 
-```f#
+``` F#
 type Person = {
   [<MinLength(1,ErrorMessage ="NameBetween1And50"); MaxLength(50,ErrorMessage ="NameBetween1And50")>]Name : string
   [<EmailAddress(ErrorMessage ="EmailMustContainAtChar")>]Email : string
@@ -41,7 +41,7 @@ The main downside of this approach is that it is somewhat rudimentary and can re
 
 We notice that using [FluentValidation](https://github.com/JeremySkinner/FluentValidation) we can separate the validation from the type declaration:
 
-```c#
+``` C#
 public class PersonValidator : AbstractValidator<Person>
 {
   public PersonValidator()
@@ -67,7 +67,7 @@ public class BookingValidator : AbstractValidator<Booking>
 
 In F# this style of validations could look the following:
 
-```f#
+``` F#
 [<AutoOpen>]
 module ValidationsMod=
   type IRuleBuilder<'T,'Property> with
@@ -102,7 +102,7 @@ The fluent validations approach seems like a OK way to express your validations 
 The fluent style of building validators is somewhat clunky in F#, why you might want to wrap some of it in computation expression builders as can be seen in [AccidentalFish](https://github.com/JamesRandall/AccidentalFish.FSharp.Validation):
 
 
-```f#
+``` F#
 let containsAt (s:string)= s.Contains("@")
 let validateEmail (property:string) (value:string)=
   if (containsAt value)
@@ -128,7 +128,7 @@ You could also define a CE builder for FluentValidator (though that we leave as 
 
 Using applicative composition based libraries such as [F#+](https://github.com/fsprojects/FSharpPlus/) you are not limited to the API limitations above. You can have a strict type for validation errors that composes well.
 
-```f#
+``` F#
 
 type Name = { unName : String }
 with static member create s={unName=s}

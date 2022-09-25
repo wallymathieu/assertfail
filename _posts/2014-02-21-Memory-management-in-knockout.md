@@ -2,14 +2,14 @@
 layout: post
 title: Memory management in knockout
 date: 2014-02-21T21:21:50+01:00
-tags: javascript knockout
+tags: JavaScript knockout
 ---
 
 ## Explicit use of computed?
 
 What does a computed expression like this:
 
-~~~ javascript
+~~~ JavaScript
 this.isBusy = ko.computed(function() {
     return self._isBusy() || self._queryIsBusy();
 });
@@ -37,7 +37,7 @@ You have two main options:
 
 Option 1
 
-~~~ javascript
+~~~ JavaScript
 Object.defineProperty(self, 'isBusy', {
     get: function() {
            return _isBusy() || _queryIsBusy();
@@ -51,7 +51,7 @@ Object.defineProperty(self, 'isBusy', {
 
 Option 2
 
-~~~ javascript
+~~~ JavaScript
 this.isBusy = function() {
     return _isBusy() || _queryIsBusy();
 };

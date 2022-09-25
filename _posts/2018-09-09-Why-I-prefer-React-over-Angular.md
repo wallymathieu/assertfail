@@ -2,7 +2,7 @@
 layout: post
 title: Why I prefer React over Angular
 date: 2018-09-09T10:18:42+02:00
-tags: javascript angularjs react knockout
+tags: JavaScript angularjs react knockout
 ---
 
  - React has a smaller scope than Angular.

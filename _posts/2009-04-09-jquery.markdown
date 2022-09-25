@@ -2,12 +2,12 @@
 layout: post
 title:  "jquery"
 date: 2009-04-09T00:17:00+02:00
-tags: javascript jquery
+tags: JavaScript jquery
 ---
 
 I've come to admire the simplicity and style of jquery. There are some cons to it's approach of using context (as can be seen as this in the for instance "each"):
 
-```
+```js
 jQuery("#table tr").each(function(){
     jQuery(this).DoStuffPlugin();
 });
@@ -15,7 +15,7 @@ jQuery("#table tr").each(function(){
 
 This wreaks havoc with some object oriented programming techniques:
 
-```
+```js
 var classSmurf = function(){
     this.name = "smurfette";
     this.SmurfAround = function(){ alert("Smurf: "+this.name); }
@@ -24,7 +24,7 @@ var classSmurf = function(){
 
 This is a simplified example that is broken by jquery's use of context. There is a simple work around for this:
 
-```
+```js
 var classSmurf = function(){
     this.name = "smurfette";
     var that = this;

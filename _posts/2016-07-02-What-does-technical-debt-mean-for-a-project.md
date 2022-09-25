@@ -44,7 +44,7 @@ The complexity and difficulties to deliver, can along with demands for quick del
 Static code analysis can help identify problem areas. For example .net are:
 
 - [NDepend](http://www.ndepend.com/)
-- [sonarqube](http://www.sonarqube.org/) is able to analyse c# code (with some effort).
+- [sonarqube](http://www.sonarqube.org/) is able to analyse  C# code (with some effort).
 - [Resharper](https://www.jetbrains.com/resharper/features/command-line.html)
 - Selected rules in StyleCop
 

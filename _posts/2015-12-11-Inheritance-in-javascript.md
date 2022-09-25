@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Inheritance in javascript
+title: Inheritance in JavaScript
 date: 2015-12-11T17:06:44+01:00
-tags: javascript
+tags: JavaScript
 ---
 
-# How do you inherit from a "class" in javascript
+# How do you inherit from a "class" in JavaScript
 
 Especially if you have a class that is a mix of constructor function and prototype methods and properties.
 
-~~~ javascript
+~~~ JavaScript
 "use strict";
 function getSeq(start){
  return function next(){
@@ -18,9 +18,9 @@ function getSeq(start){
 }
 var getId = getSeq(1);
 
-function Mammal(name){  
+function Mammal(name){
     var self = this;
-    var id = getId(); // private variable 
+    var id = getId(); // private variable
     this.getId = function(){
         return id;
     };
@@ -31,7 +31,7 @@ function Mammal(name){
     this._old_name = name; // this value will be immutable
 
     // we want for the object to implement the same interface
-    // this is a way to make objects more like java or c# objects
+    // this is a way to make objects more like java or  C# objects
     Object.freeze(this);
 }
 
@@ -42,19 +42,19 @@ Mammal.prototype.says = function(){ // but we can still add functions by adding 
 
 ## Some notes about the above code
 
-We (me and [Peter Wilhelmsson](https://github.com/2hdddg/)) have found that the usage of "use strict" together with Object.freeze and Object.defineProperty can some javascript confusion (accidentally setting a new variable when you want to set an existing, hard to find initialization of objects). Usually as with many old languages with many features (c++, perl) you should choose a subset of that language to simplify for other developers.
+We (me and [Peter Wilhelmsson](https://github.com/2hdddg/)) have found that the usage of "use strict" together with Object.freeze and Object.defineProperty can some JavaScript confusion (accidentally setting a new variable when you want to set an existing, hard to find initialization of objects). Usually as with many old languages with many features (c++, perl) you should choose a subset of that language to simplify for other developers.
 
 By modifying the prototype you can always add methods even if the object itself is frozen.
 
 ## How do you create an instance of this "class"?
 
-~~~ javascript
+~~~ JavaScript
 var m = new Mammal('Missan');
 ~~~
 
 ## How do we inherit from this "class"?
 
-~~~ javascript
+~~~ JavaScript
 "use strict";
 function Feline(name){
     var self = this;
@@ -75,23 +75,23 @@ Cat.prototype = Object.create(Feline.prototype);
 Cat.prototype.constructor = Cat;
 ~~~
 
-## Naming of javascript classes
+## Naming of JavaScript classes
 
-Note that when you write: 
+Note that when you write:
 
-~~~ javascript
-namespace.Name = function (){ } 
+~~~ JavaScript
+namespace.Name = function (){ }
 ~~~
 
 This becomes an anonymous function (in many browsers). In order to give it a name we need to write it like:
 
-~~~ javascript
-namespace.Name = function namespace_Name(){ } 
+~~~ JavaScript
+namespace.Name = function namespace_Name(){ }
 ~~~
 
 This can be done as a post processing step in your grunt or gulp with logic similar to the following:
 
-~~~ javascript
+~~~ JavaScript
 "namespace.FunctionName = function() {};".replace(
  /namespace.([^ ]+) *\= *function *\(/, function (str, gr){
    return "namespace."+gr+" = fucntion namespace_"+gr+"(";

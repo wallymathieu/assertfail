@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Regarding javascript namespaces"
+title:  "Regarding JavaScript namespaces"
 date: 2012-04-07T09:22:00+02:00
-tags: javascript
+tags: JavaScript
 ---
 
 There seems that the there is a shift from the Crockford style global variables to lower case namespaces or mixed case.

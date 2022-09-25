@@ -2,7 +2,7 @@
 layout: post
 title: What about Identity Server?
 date: 2018-09-06T07:52:29+02:00
-tags: asp.net mvc core dotnet c#
+tags: asp.net mvc core dotnet  C#
 ---
 
 # So what has been my experience using [Identity Server](https://github.com/IdentityServer/IdentityServer4)?
@@ -18,11 +18,11 @@ The main reason why we started to consider it was due to the main business goals
  - To have a single provider of identity and accounts.
  - To have the provider of identity and accounts as a micro service.
 
-We noticed that asp.net identity together with Identity Server satisfies a lot of the specific business requirements. 
+We noticed that asp.net identity together with Identity Server satisfies a lot of the specific business requirements.
 
 ## Initial experience
 
-We got something working quite fast that satisfied the requirements. We had an login, authentication and OAuth solution within days.  
+We got something working quite fast that satisfied the requirements. We had an login, authentication and OAuth solution within days.
 
 ## What happened next
 
