@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Simple object oriented javascript"
+title:  "Simple object oriented JavaScript"
 date: 2010-07-30T09:48:00+02:00
 tags: javascript jquery
 ---
 
-The jQuery approach is to avoid object orientation. This is an excellent way of avoiding bloat for small javascript hacks. If you're starting to build javascript heavy applications then you might need to start organizing your code. The first thing you should learn is how to write jQuery plugins. Later on you will need to learn some simple object orientation. Here's how:
+The jQuery approach is to avoid object orientation. This is an excellent way of avoiding bloat for small JavaScript hacks. If you're starting to build JavaScript heavy applications then you might need to start organizing your code. The first thing you should learn is how to write jQuery plugins. Later on you will need to learn some simple object orientation. Here's how:
 
 ~~~ javascript
 function TigerType(name){
@@ -33,4 +33,4 @@ You might also want to look into:
 - [http://www.crockford.com/javascript/inheritance.html](http://www.crockford.com/javascript/inheritance.html)
 - [http://bolinfest.com/javascript/inheritance.php](http://bolinfest.com/javascript/inheritance.php)
 
-Try to avoid object orientation when writing javascript. If you're doing small things then there is no need for the added complexity of object orientation (in javascript). 
+Try to avoid object orientation when writing JavaScript. If you're doing small things then there is no need for the added complexity of object orientation (in JavaScript). 
