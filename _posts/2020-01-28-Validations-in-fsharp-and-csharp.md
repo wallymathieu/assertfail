@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Validations in f# and c#
+title: Validations in F# and C#
 date: 2020-01-28T08:21:31+01:00
 tags: f# c#
 ---
 
-In order to give a nicer developer experience composing validation messages there are broad categories of libraries that either work well in a java/c# style setting or work well when composing functions.
+In order to give a nicer developer experience composing validation messages there are broad categories of libraries that either work well in a Java/C# style setting or work well when composing functions.
 
 ## Attribute based validation libraries
 
@@ -65,7 +65,7 @@ public class BookingValidator : AbstractValidator<Booking>
 }
 ```
 
-In f# this style of validations could look the following:
+In F# this style of validations could look the following:
 
 ```f#
 [<AutoOpen>]
@@ -95,11 +95,11 @@ module Person=
 
 We add a custom property `__` in order to end the fluent chain.
 
-The fluent validations approach seems like a OK way to express your validations in c#, it's somewhat less elegant in f#, but looks OK.
+The fluent validations approach seems like a OK way to express your validations in C#, it's somewhat less elegant in F#, but looks OK.
 
 ## Computation Expression based configuration builders
 
-The fluent style of building validators is somewhat clunky in f#, why you might want to wrap some of it in computation expression builders as can be seen in [AccidentalFish](https://github.com/JamesRandall/AccidentalFish.FSharp.Validation):
+The fluent style of building validators is somewhat clunky in F#, why you might want to wrap some of it in computation expression builders as can be seen in [AccidentalFish](https://github.com/JamesRandall/AccidentalFish.FSharp.Validation):
 
 
 ```f#
@@ -122,7 +122,7 @@ let validatePerson = createValidatorFor<Person>() {
 }
 ```
 
-You could also define a CE builder for FluentValidator (though that we leave as an exercise to the reader). We could see the CE approach as an f# specific alternative to using fluent builder pattern.
+You could also define a CE builder for FluentValidator (though that we leave as an exercise to the reader). We could see the CE approach as an F# specific alternative to using fluent builder pattern.
 
 ## Applicative composition based libraries
 
@@ -179,4 +179,4 @@ This approach allows you to strictly define the kind of validation errors that a
 
 ## Conclusion
 
-Validations can be expressed in different ways. There are a few main ways of encoding the validators. For f# we see an additional way of composing functions instead of using builder patterns or gluing attributes to the types that you want to validate. My impression is that it's not a clear choice unless you add preferences to the mix.
+Validations can be expressed in different ways. There are a few main ways of encoding the validators. For F# we see an additional way of composing functions instead of using builder patterns or gluing attributes to the types that you want to validate. My impression is that it's not a clear choice unless you add preferences to the mix.
