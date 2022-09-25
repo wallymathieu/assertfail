@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What makes for happy c#?
+title: What makes for happy C#?
 date: 2018-03-16T11:51:45+01:00
 tags: c# ruby 
 ---
@@ -21,5 +21,5 @@ Having relatively small services (but not to small), means that it can be easier
 
 ## Deviations 
 
-Since we have static analysis available through the compiler, we can use that to define value types and wrap strings, ints, et.c. when dealing with many different small id-types or values that are easy to mix up. I.e. value types of a single value. In Haskell you call this a [Newtype](https://wiki.haskell.org/Newtype). In c# you need to do a bit [more work](https://github.com/NewtonsoftJsonExt/Saithe/blob/master/CSharpTypes/ProductId.cs). If you have many of these types, you might want to create a [t4-template](https://en.wikipedia.org/wiki/Text_Template_Transformation_Toolkit) for it. In Ruby you would (due to the dynamic nature of the language) not need a template for it.
+Since we have static analysis available through the compiler, we can use that to define value types and wrap strings, ints, et.c. when dealing with many different small id-types or values that are easy to mix up. I.e. value types of a single value. In Haskell you call this a [Newtype](https://wiki.haskell.org/Newtype). In C# you need to do a bit [more work](https://github.com/NewtonsoftJsonExt/Saithe/blob/master/CSharpTypes/ProductId.cs). If you have many of these types, you might want to create a [t4-template](https://en.wikipedia.org/wiki/Text_Template_Transformation_Toolkit) for it. In Ruby you would (due to the dynamic nature of the language) not need a template for it.
 
