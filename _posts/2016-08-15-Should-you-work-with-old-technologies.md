@@ -5,7 +5,7 @@ date: 2016-08-15T07:49:37+02:00
 tags: meta
 ---
 
-## Why should a coder avoid old technologies? 
+## Why should a coder avoid old technologies?
 
 ### Large complicated systems are often written in older technologies
 
@@ -15,9 +15,9 @@ Newer technologies can mean assignments with fewer lines of code and more greenf
 
 In order to sell consulting services, many people will push for new tech.
 
-Since the market value of a coder is related to experience with the current technologies in use, knowing and working with new technologies is a good policy to stay competitive. This means that even regular employees will push for new technologies. 
+Since the market value of a coder is related to experience with the current technologies in use, knowing and working with new technologies is a good policy to stay competitive. This means that even regular employees will push for new technologies.
 
-New tech may shift how you develop. For instance javascript performance improvements have made it feasible to run more logic browser side, causing a drive towards writing code more like regular server side code using ko, angular, react et.c.. Virtual machines performance that is close to native performance ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine), [CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime)) and the use of GC can simplify a lot of code (easier to work with) and create demand for different skills.
+New tech may shift how you develop. For instance JavaScript performance improvements have made it feasible to run more logic browser side, causing a drive towards writing code more like regular server side code using ko, angular, react et.c.. Virtual machines performance that is close to native performance ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine), [CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime)) and the use of GC can simplify a lot of code (easier to work with) and create demand for different skills.
 
 ### Writing new libraries
 

@@ -2,22 +2,22 @@
 layout: post
 title:  "Using readonly objects in C#"
 date: 2013-10-18T19:39:00+02:00
-tags: c#
+tags: C#
 ---
 
-One thing I like about f# is the ability to use readonly objects in a way that does not require a lot of code. I've done a small lib inspired by this ability of F#: [with](https://github.com/wallymathieu/with)
+One thing I like about F# is the ability to use readonly objects in a way that does not require a lot of code. I've done a small lib inspired by this ability of F#: [with](https://github.com/wallymathieu/with)
 
 The syntax is a bit special since I assume that the properties have a private set.
 
 ## versions prior to 5
 
-```c#
+``` C#
 myobject.With(m => m.Property1 == 3 && m.Property2 == "3")
 ```
 
 ## With 5+
 
-```c#
+``` C#
 using With;
 ...
 public class SomeClass

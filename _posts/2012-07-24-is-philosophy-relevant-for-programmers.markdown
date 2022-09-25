@@ -2,7 +2,7 @@
 layout: post
 title:  "Is philosophy relevant for programmers?"
 date: 2012-07-24T20:30:00+02:00
-tags: 
+tags:
 ---
 
 Many programmers and engineers I've met say when asked about philosophy:
@@ -35,7 +35,7 @@ What kind of shift of reality do you experience when you change environment? For
 - Between desktop and web programming
 - Between server and client programming
 
-When shifting between these environments, it's also a shift in how you solve problems. Different programmers value different writing experiences. Compare the static typing of java to write client applications in Google Web Toolkit to scripting using javascript. It's a reflection of how you think about programming.
+When shifting between these environments, it's also a shift in how you solve problems. Different programmers value different writing experiences. Compare the static typing of java to write client applications in Google Web Toolkit to scripting using JavaScript. It's a reflection of how you think about programming.
 
 How do you evaluate a library? If it's commercial, you try to guess how long it will be maintained by the company making it. If it's open source, you try to ascertain how well maintained it is. If it is currently maintained et.c.. You try to guess the quality of the library. Also there is such aspects as cost and licence. Can you afford to use the library? Does the library have a licence so that you can use it together with your proprietary code base?
 

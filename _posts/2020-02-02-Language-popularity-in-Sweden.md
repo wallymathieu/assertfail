@@ -6,19 +6,19 @@ date: 2020-02-02T17:28:01+01:00
 
 ### Raw numbers
 
-I've written a simple project in f# to read puplic information from the job agency in Sweden:
+I've written a simple project in F# to read puplic information from the job agency in Sweden:
 
 | Number of listings | Language |
 | --------------|----------|
 | 6964 | java |
-| 6085 | javascript |
-| 5727 | c# |
+| 6085 | JavaScript |
+| 5727 | C# |
 | 3929 | python |
 | 3359 | c++ |
 | 2600 | c |
 | 1360 | php |
 | 1230 | golang |
-| 1151 | typescript |
+| 1151 | TypeScript |
 | 589 | matlab |
 | 442 | bash |
 | 420 | kotlin |
@@ -32,7 +32,7 @@ I've written a simple project in f# to read puplic information from the job agen
 | 78 | rust |
 | 71 | cobol |
 | 63 | tcl |
-| 61 | f# |
+| 61 | F# |
 | 49 | ecmascript |
 | 48 | scheme |
 | 47 | elixir |

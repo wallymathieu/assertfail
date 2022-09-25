@@ -2,7 +2,7 @@
 layout: post
 title: Using functional programming to optimize frontend code
 date: 2021-06-06T11:59:41+02:00
-tags: javascript react typescript
+tags: JavaScript react TypeScript
 ---
 
 ## Intro

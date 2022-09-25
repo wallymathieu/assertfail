@@ -2,7 +2,7 @@
 layout: post
 title: Can .net compete with nodejs
 date: 2021-11-10T07:42:31+01:00
-tags: f# c# nodejs
+tags: F# C# nodejs
 ---
 
 NodeJS applications can be a single file with minimal overhead:
@@ -33,7 +33,7 @@ How does this compare to what we have seen in the .net world?
 
 ### Program.cs
 
-```c#
+``` C#
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -92,7 +92,7 @@ the amount of ceremony has been reduced significantly compared to [asp.net 4](ht
 
 In the F# space we have seen such libraries as [Suave](https://suave.io/), where you can write an fsx file containing:
 
-```f#
+``` F#
 #r "nuget: Suave, 2.6.1"
 open Suave
 
@@ -107,7 +107,7 @@ In [Giraffe](https://giraffe.wiki/) there has been a larger fluent configuration
 
 For C# the overhead of writing a minimal HTTP API would even more ceremony compared to F#. Perhaps due to the fact that there is competition in a wider world we see initiatives such as [Feather HTTP](https://github.com/featherhttp/framework) where you have:
 
-```c#
+``` C#
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -140,7 +140,7 @@ This style of application has been adopted into .net 6 where you then can have t
 
 ### Program.cs
 
-```c#
+``` C#
 var app = WebApplication.Create(args);
 
 app.MapGet("/", () => "Hello World");

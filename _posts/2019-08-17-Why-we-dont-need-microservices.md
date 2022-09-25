@@ -11,7 +11,7 @@ If the system you are developing is intended to be delivered by a single team (o
 
 If you still will want to structure your code in separate parts with clear API boundries between them you can define request/response, publish:
 
-```c#
+``` C#
     /// <summary>
     /// Defines a mediator to encapsulate request/response and publishing interaction patterns
     /// </summary>

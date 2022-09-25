@@ -2,22 +2,25 @@
 layout: post
 title:  "Type matching in C#"
 date: 2012-11-22T19:27:00+01:00
-tags: c#
+tags: C#
 ---
 
-I was thinking about how nice you have it in some languages where you can do a case statement for types. Thing is, we have a lot of <a href="https://gist.github.com/4132433">compiler goodness in C# already</a>.
+I was thinking about how nice you have it in some languages where you can do a case statement for types. Thing is, we have a lot of [compiler goodness in C# already](https://gist.github.com/4132433).
 
 By being explicit about the type and using type inference we can have a generic Case statement of a maximum length (depends on how many if else you think are ok to add).
 
 I find it pretty sweet to write code like this:
-```c#
+
+``` C#
 TypeMatch.Case(exception,
   (GnarlyType e) => { HandleGnarly(e); },
   (FuncyType e1) => { HandleFunky(e1); },
   () => { Explode(); });
 ```
+
 Instead of:
-```c#
+
+``` C#
 var e = exception as GnarlyType;
 if (e!=null){ HandleGnarly(e); }
 else {
@@ -33,7 +36,8 @@ else {
 ### Small note
 
 This type of feature is now part of C# proper as:
-```c#
+
+``` C#
 switch (exception)
 {
   case GnarlyType e: HandleGnarly(e); break;

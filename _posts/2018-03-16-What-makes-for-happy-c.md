@@ -2,7 +2,7 @@
 layout: post
 title: What makes for happy C#?
 date: 2018-03-16T11:51:45+01:00
-tags: c# ruby 
+tags: C# ruby
 ---
 
 One of the questions I've started asking myself is what makes for happy C#? After a few years getting a bit more understanding of ML like languages like F# I've started to realise that C# is not built to write the kind of code that you write in an ML. Instead, you are happier when you embrace the Ruby-like patterns in C#. If you look at C# sort of like a typed Ruby like language: Object orientation, mutability first and meta programming using reflection. When you see that this is shared between the two languages then more things make sense. I've noticed that good Ruby code translates very easily to good C# (although [not always](https://github.com/wallymathieu/csharp_ukanren)). Same is not true for good F# or Haskell.
@@ -19,7 +19,7 @@ Writing micro services is another way of splitting up your code base. However, y
 
 Having relatively small services (but not to small), means that it can be easier to reason about mutable first procedural code. I find it very difficult to try to reason about large a large code base with mutable instances.
 
-## Deviations 
+## Deviations
 
 Since we have static analysis available through the compiler, we can use that to define value types and wrap strings, ints, et.c. when dealing with many different small id-types or values that are easy to mix up. I.e. value types of a single value. In Haskell you call this a [Newtype](https://wiki.haskell.org/Newtype). In C# you need to do a bit [more work](https://github.com/NewtonsoftJsonExt/Saithe/blob/master/CSharpTypes/ProductId.cs). If you have many of these types, you might want to create a [t4-template](https://en.wikipedia.org/wiki/Text_Template_Transformation_Toolkit) for it. In Ruby you would (due to the dynamic nature of the language) not need a template for it.
 

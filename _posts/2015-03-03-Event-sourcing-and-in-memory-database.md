@@ -13,7 +13,7 @@ OrigoDb is a bit easier to setup compared to NEvent store. NEvent store is more 
 
 Since OrigoDb assumes that you want help with making absolutely sure that your in memory data is not corrupted by a assignment of on an object you need to interact with the it in a slightly different manner (from [OrigoDb CustomerDataTests](https://github.com/wallymathieu/origodb-studies/blob/master/Tests/CustomerDataTests.cs#L28) ):
 
-~~~ c#
+~~~  C#
         [Test]
         public void CanGetCustomerByFirstname()
         {
@@ -29,4 +29,3 @@ Storing your events in an append manner on the filesystem is the easiest approac
 
 The problem with using the filesystem directly is that it's not ACID. However, you get ACID [using OrigoDb](http://dev.origodb.com/docs/transactions/).
 
- 

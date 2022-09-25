@@ -5,8 +5,9 @@ date: 2011-09-19T22:26:00+02:00
 tags: windows
 ---
 
-I like the look of windows 8. For touch devices it will be sweet. What confounds me is that the start menu is replaced by the "Metro" application launcher. That sounds exceedingly annoying when on standard hardware. Where is the love for an ordinary PC?<br><br>
-The reason for the weird usability is that it is intended for touch enabled computers:<br>
-http://www.youtube.com/watch?v=ntSdfGzF60M&amp;feature=player_embedded#!<br><br>
+I like the look of windows 8. For touch devices it will be sweet. What confounds me is that the start menu is replaced by the "Metro" application launcher. That sounds exceedingly annoying when on standard hardware. Where is the love for an ordinary PC?
+
+The reason for the weird usability is that it is intended for touch enabled computers:
+[![iPad iOS 5 vs Windows 8 Slate](https://img.youtube.com/vi/ntSdfGzF60M/0.jpg)](https://www.youtube.com/watch?v=ntSdfGzF60M)
+
 I'm confused about the talk about the name Windows 8. Is it supposed to be a general windows?
-<div style="clear: both;"></div>

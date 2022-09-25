@@ -2,7 +2,7 @@
 layout: post
 title: Dependency injection in FSharp
 date: 2020-09-05T17:11:06+02:00
-tags: f#
+tags: F#
 comments:
   - author: Oskar Gewalli
     content: The most educational source around F# and dependency injection is [F# for fun and profit](https://fsharpforfunandprofit.com/posts/dependencies/). It's part of the 2020 advent calendar and is a great source with links to other well written posts.
@@ -16,7 +16,7 @@ One of the questions around how to write F# is how do we compose bigger business
 
 Let us start by defining some base functions types and environment that we will use in later code samples:
 
-```f#
+``` F#
 open FSharpPlus
 open FSharpPlus.Data
 
@@ -37,7 +37,7 @@ type Env() =
 One example is to use ReaderT in to be able to provide a bag of dependencies as seen [on gitter](https://gitter.im/fsprojects/FSharpPlus?at=5eba11635a0bc5394637de8e
 ) and [here](https://www.youtube.com/watch?v=pxJCHJgG8ws&ab_channel=F%23Online):
 
-```f#
+``` F#
 let getUser email =
     ReaderT(fun (env : #IUserRepository) -> env.GetUser email )
 
@@ -59,9 +59,9 @@ ReaderT.run (addShoppingListM "a@a")  (Env())
 
 There is also a post about using [reader monad for dependency injection](https://bartoszsypytkowski.com/dealing-with-complex-dependency-injection-in-f/) but without using more advanced techniques such as monad transformers.
 
-Another way to decompose your program is to use currying as seen on [f# for fun and profit](https://fsharpforfunandprofit.com/posts/dependency-injection-1/):
+Another way to decompose your program is to use currying as seen on [ F# for fun and profit](https://fsharpforfunandprofit.com/posts/dependency-injection-1/):
 
-```f#
+``` F#
 let getUser (repo:IUserRepository) email = repo.GetUser email
 
 let addShoppingList (repo : IShoppingListRepository) shoppingList = async { return repo.Add shoppingList }
@@ -90,7 +90,7 @@ In the above example we reused the same class `Env` in order to keep the code sh
 
 Since F# allows for nice OO programming you can use dependency injection via constructor injection:
 
-```f#
+``` F#
 type Shopping (userRepository:IUserRepository, shoppingListRepository:IShoppingListRepository)=
 
     let getUser email = userRepository.GetUser email

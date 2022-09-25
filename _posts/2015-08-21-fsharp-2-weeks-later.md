@@ -2,7 +2,7 @@
 layout: post
 title: F# 2 weeks later
 date: 2015-08-21T17:17:39+02:00
-tags: f#
+tags: F#
 ---
 
 Since I've been without an assingment I've had the time to look into F# more.
@@ -13,7 +13,7 @@ Since I've been without an assingment I've had the time to look into F# more.
  - [functional programming on slack](http://fpchat.com/)
  - stackoverflow
 
-## Why did I start looking into f# again?
+## Why did I start looking into F# again?
 
  I share the office with [Fredrik Forssen](https://github.com/wastaz). I find his love of F# inspiring.
 
@@ -23,7 +23,7 @@ Since I've been without an assingment I've had the time to look into F# more.
  - Easier to compose things (for instance if you want to create a chain in order to use many different classes together for an import)
  - Monad support (and yes, I know that these things can very easily be abused)
  - Package manager and Build tool that works well together ([paket](https://github.com/fsprojects/Paket) and [fake](https://github.com/fsharp/FAKE)).
- - Records defined in f# are like hand coded readonly classes with IEquatable and IComparable implemented
+ - Records defined in F# are like hand coded readonly classes with IEquatable and IComparable implemented
 
 ## I've previously found the following sweet when looking at the language:
 
@@ -37,9 +37,9 @@ Since I've been without an assingment I've had the time to look into F# more.
  - Gui tooling is still a bit alpha (the command line version works great)
  - It's easy to create a F# project where you need to manually edit the fsproj file in order to get it to work on mono and windows (this was a problem in the early days of NuGet)
  - Almost all the library methods in .net becomes a tuple parameter in F#, this is a bit confusing since it looks like an ordinary function call in C#
- - Exposing f# Option on your types makes it harder to interact with your F# code from C#
+ - Exposing F# Option on your types makes it harder to interact with your F# code from C#
 
-~~~ c#
+~~~ C#
     using OptionalUrl = Microsoft.FSharp.Core.FSharpOption<Customers.Url>;
     ...
        var customer = new Customer(

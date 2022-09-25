@@ -25,9 +25,9 @@ when you get [can't find gem bundler with executable bundle](https://bundler.io/
 In order to add comments to a post, simply add a comment in the following manner in the yml post file:
 
 ```yml
-title: Immutable classes in c#
+title: Immutable classes in C#
 date: 2020-01-26T17:42:35+01:00
-tags: c#
+tags: C#
 comments:
   - author: Oskar
     content: How often do you really use them?
