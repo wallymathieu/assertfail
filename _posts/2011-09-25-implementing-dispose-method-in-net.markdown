@@ -17,8 +17,8 @@ So what is an unmanaged resource? It is simply resources that the CLR does not m
 
 Msdn gives a rather clear [answer](http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx).
 
- - You need to implement the IDisposable interface.
- - If you have implemented a finalizer as well then you need to add a call to ```GC.SuppressFinalize``` inside the dispose method. This is to avoid that the finalize method is called for the object.
+- You need to implement the IDisposable interface.
+- If you have implemented a finalizer as well then you need to add a call to ```GC.SuppressFinalize``` inside the dispose method. This is to avoid that the finalize method is called for the object.
 
 ### When is it unsafe to call both dispose and finalize?
 
