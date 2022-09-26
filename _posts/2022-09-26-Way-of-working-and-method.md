@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Way of working and method
-date: 2022-09-24T11:04:22+02:00
+date: 2022-09-26T18:24:22+02:00
 ---
 
 ## How do we develop software
@@ -14,6 +14,8 @@ How do we arrive at working software? Some of the ways I've seen are:
 - Manual testing with a debugger in order to verify that smaller parts works as intended.
 - Automatic tests: program executes small parts of the program in a somewhat controlled manner to verify that it works as intended (and that no regressions have occured).
 - Divide and conquer: Split a system into smaller parts in order to make it easier to make the individual parts.
+
+Not every software shop agrees on how to test software. GUI software is usually dealt with in a different manner compared to server software.
 
 ### Restrictions
 
@@ -29,6 +31,8 @@ Common social methods (that I know of) used to restrict a solution are:
 - Freezing code: avoid any change of parts of the written code
 - Need approval before applying changes
 
+These methods are not applied in every codebase.
+
 #### Mechanical restrictions
 
 Common tools to restrict what the code is allowed to do and how it is written are:
@@ -38,6 +42,8 @@ Common tools to restrict what the code is allowed to do and how it is written ar
 - Social conventions that restrict a solution
 - Executable tests
 - Architectural analysis tools
+
+I do mean that not all of these restrictions are applied in every development shop.
 
 ### Scientific method
 
@@ -76,6 +82,8 @@ This gets us into the question how do you write.
 - Structuring the code in order to be able to be able to find different parts.
 - Strategy around important and less important text.
 - Splitting up the code into smaller chunks that are meaningful on their own.
+
+This is mostly my interpretation of written code. I usually try to understand the code and the context it was written in. Many words and patterns make sense if you know the background of the programmers involved.
 
 ## Conclusion
 
