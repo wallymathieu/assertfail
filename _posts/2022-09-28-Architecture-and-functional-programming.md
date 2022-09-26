@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Architecture and functional programming
-date: 2022-09-24T14:59:11+02:00
+date: 2022-09-28T14:59:11+02:00
 ---
 
 This post is a continuation of [Unclean architecture](https://assertfail.gewalli.se/2022/09/22/Unclean-architecture.html).
