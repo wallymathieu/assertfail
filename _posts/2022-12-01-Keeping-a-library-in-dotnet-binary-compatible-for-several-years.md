@@ -105,3 +105,5 @@ module Builders =
 ## Conclusion
 
 Using these facts of F# we have been able to keep a major version going for way longer than I would have thought possible while still being able to accomodate significant changes.
+
+This also goes to show that F#+ has been the library that keeps on showing interesting usages of .net that one might not think possible (in .net).
