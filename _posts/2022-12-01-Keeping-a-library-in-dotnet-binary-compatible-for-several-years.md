@@ -61,9 +61,11 @@ Note the reference to both the project that references F#+ 1 and a reference to 
 
 This will allow us to see binary incompatibilities between v1.0.0 and the current version.
 
-## Binary compatibility with SRTP
+In order to read up on why this works you can read [NuGet package resolution](https://learn.microsoft.com/en-us/nuget/concepts/dependency-resolution).
 
-Since there is a lot of SRTP, the compiled version of F#+ will actually be binary compatible due to usage of SRTP being erased after compilation.
+## Binary compatibility with Statically Resolved Type Parameters (SRTP)
+
+Since there is a lot of [Statically Resolved Type Parameters (SRTP)](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters), the compiled version of F#+ will actually be binary compatible due to usage of SRTP being erased after compilation.
 
 Since a lot of the API's are not used directly by the user, but gets referenced by the compiled code we can declare overloads that are not used (by SRTP) in later minor versions of F#+.
 
@@ -86,9 +88,20 @@ but that the new versions have the following signature:
     static member MapIndexed ((x: 'T []      , f            ), [<Optional>]_impl: MapIndexed) = Array.mapi f x
 ```
 
-Note the extra paranthesis. The compat members are referenced by the v1 version, while an updated version with overload fixes uses the lower form. Since user code will reference select the right overload through SRTP, the compiled code just need to have one of the above.
+Note the extra paranthesis. The compat members are referenced by the v1 version, while an updated version with overload fixes uses the lower form. Since user code will reference select the correct overload through SRTP, the compiled code just need to have one of the above.
 
-This has allowed us to do what normally would mean an incompatible change of the API, but let us keep the compiled binary signature (minus SRTP usage).
+Why does it get inlined? It gets inlined due to the fact that we use to select the correct overload is marked with [the keyword inline in F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/inline-functions). The method that is use to select the correct overload is the following:
+
+```f#
+    static member inline Invoke (mapping: 'K->'T->'U) (source: '``Indexable<'T>``) =
+        let inline call_2 (a: ^a, b: ^b, f) = ((^a or ^b) : (static member MapIndexed : (_*_)*_ -> _) (b, f), a)
+        let inline call (a: 'a, b: 'b, f) = call_2 (a, b, f)
+        call (Unchecked.defaultof<MapIndexed>, source, mapping)
+```
+
+The above code picks either the type `Indexable` contract from the incoming type or from one of the overloads defined in the `MapIndexed` class. In F# you don't have method overloading for modules. For classes we do have it. The reason why is that F# needs to be compatible with C# parameter overloading for classes.
+
+This has allowed us to do what normally would mean an incompatible change of the API, but let us keep the compiled binary signature (minus SRTP usage through say `Invoke`).
 
 ## Hiding but keeping old APIs
 
@@ -104,6 +117,14 @@ module Builders =
 
 ## Conclusion
 
-Using these facts of F# we have been able to keep a major version going for way longer than I would have thought possible while still being able to accomodate significant changes.
+Using these facts of F#:
+
+- Statically Resolved Type Parameters in F#
+- Inline methods in F#
+- Implementation of C# overloading in F#
+- EditorBrowsable
+- NuGet package resolution
+
+we have been able to keep a major version going for way longer than I would have thought possible while still being able to accomodate significant changes.
 
 This also goes to show that F#+ has been the library that keeps on showing interesting usages of .net that one might not think possible (in .net).
