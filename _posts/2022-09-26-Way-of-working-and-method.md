@@ -74,7 +74,7 @@ It is not difficult to arrive at working software that no one can read. I've see
 
 This gets us into the question how do you write.
 
-- Known language
+- Known language. An example of this is [Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html).
 - Known patterns that help people understand what the program is intended to do.
   - map/filter/reduce or select/where/join
   - factory/observable/command et.c.
