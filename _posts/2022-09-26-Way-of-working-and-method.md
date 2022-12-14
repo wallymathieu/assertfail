@@ -25,11 +25,11 @@ Developers can be helped in their reasoning by restricting what the code and dev
 
 Common social methods (that I know of) used to restrict a solution are:
 
-- Avoiding mutable state
-- Avoiding hidden side effects (such as through global static variables)
+- Avoiding mutable state : As seen on [Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/write-safe-efficient-code) and [Oracle](https://blogs.oracle.com/javamagazine/post/java-immutable-objects-strings-date-time-records)
+- Avoiding hidden side effects (such as through global static variables).
 - Consensus around architecture of a solution
-- Freezing code: avoid any change of parts of the written code
-- Need approval before applying changes
+- Freezing code: avoid any change of parts of the written code. You can employ the pattern for longer than is suggested on the article about [Freeze on Wikipedia](https://en.wikipedia.org/wiki/Freeze_(software_engineering)).
+- Need approval before applying changes. See [Pull requests section on Distributed Version Control](https://en.wikipedia.org/wiki/Distributed_version_control).
 
 These methods are not applied in every codebase.
 
@@ -37,11 +37,10 @@ These methods are not applied in every codebase.
 
 Common tools to restrict what the code is allowed to do and how it is written are:
 
-- Static type system
-- Static analysis tools
-- Social conventions that restrict a solution
-- Executable tests
-- Architectural analysis tools
+- Statically-typed languages such as C#, Java as opposed to for instance JavaScript. There are [many such languages](https://en.wikipedia.org/wiki/Category:Statically_typed_programming_languages).
+- Static code analysis tools. It is common to use linters for JavaScript and TypeScript, but [there are others](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis).
+- Executable tests. For instance [Unit Testing](https://en.wikipedia.org/wiki/Unit_testing).
+- Architectural analysis tools. We have seen the use of specifications as tests in [ArchUnit](https://www.archunit.org).
 
 I do mean that not all of these restrictions are applied in every development shop.
 
@@ -75,10 +74,10 @@ It is not difficult to arrive at working software that no one can read. I've see
 
 This gets us into the question how do you write.
 
-- Known language
+- Known language. An example of this is [Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html).
 - Known patterns that help people understand what the program is intended to do.
   - map/filter/reduce or select/where/join
-  - factory/observable/command et.c.
+  - factory/observable/command et.c. inspired in part by [Gang of Four](https://martinfowler.com/bliki/GangOfFour.html).
 - Structuring the code in order to be able to be able to find different parts.
 - Strategy around important and less important text.
 - Splitting up the code into smaller chunks that are meaningful on their own.
