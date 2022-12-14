@@ -77,7 +77,7 @@ This gets us into the question how do you write.
 - Known language. An example of this is [Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html).
 - Known patterns that help people understand what the program is intended to do.
   - map/filter/reduce or select/where/join
-  - factory/observable/command et.c.
+  - factory/observable/command et.c. inspired in part by [Gang of Four](https://martinfowler.com/bliki/GangOfFour.html).
 - Structuring the code in order to be able to be able to find different parts.
 - Strategy around important and less important text.
 - Splitting up the code into smaller chunks that are meaningful on their own.
