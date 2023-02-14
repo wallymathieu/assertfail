@@ -42,7 +42,7 @@ For very large repositories we see that organisations use source control systems
 
 ### Focus
 
-Clear boundries borders that you don't need to cross can increase focus on a single business subdomain.
+Clear boundaries that you don't need to cross can increase focus on a single business subdomain.
 
 Being able to browse the history for the code of a business subdomain can allow people to know what's going on (too much noise drowns out the team).
 
