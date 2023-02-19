@@ -26,14 +26,14 @@ During retrospectives the team expressed frustration with the amount of unnecces
 
 ## Time to merge
 
-We decided to merge the repositories into a shared repository for the .net code. This meant that we changed the NuGet packages to project references.
+We decided to merge the repositories into a shared repository for the .net code. This meant that we changed the [NuGet packages](https://en.wikipedia.org/wiki/NuGet) to [project references](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-reference).
 
 We also needed to support work on two major branches. For this particular business, there is a need to get legal to sign off on any major release. When we develop a major version we also bugfix the previous major version.
 
 ## Git magic
 
-We looking into using git submodule. We decided that it was not the right choice for the team: everyone would need to learn how to use it.
-We noticed was that you can use git subtree in similar way as git submodule. Difference is that only a few persons need to learn it.
+We looking into using [git submodule](https://git-scm.com/docs/git-submodule). We decided that it was not the right choice for the team: everyone would need to learn how to use it.
+We noticed was that you can use [git subtree](https://www.atlassian.com/git/tutorials/git-subtree) in similar way as git submodule. Difference is that only a few persons need to learn it.
 
 You can fetch changes from different repositories into a merged repository.
 
