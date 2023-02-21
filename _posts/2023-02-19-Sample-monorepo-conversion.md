@@ -15,7 +15,7 @@ This is a story about a project I worked on. We had some pain points related to 
 - Many services that dealt with different subdomains that uses a few shared libraries
 - Very complicated requirements with lots of nuances
 - Different persons had different areas of expertise
-- Most of the different services are loose coupled to each other
+- Generally the services are loose coupled
 - Thought out structure for each service and uniform style
 
 At first, we thought that the shared code would stabilize. This did not happen. This meant a large number of pull requests with only package version changes.
@@ -32,8 +32,8 @@ We also needed to support work on two major branches. For this particular busine
 
 ## Git magic
 
-We looked into using [git submodule](https://git-scm.com/docs/git-submodule). We decided that it was not the right choice for the team: everyone would need to learn how to use it.
-We noticed was that you can use [git subtree](https://www.atlassian.com/git/tutorials/git-subtree) in similar way as git submodule. Difference is that only a few persons need to learn it.
+We looked into using [git submodule](https://git-scm.com/docs/git-submodule). We decided that it was not the right choice for the team: everyone would need to learn how to use it. Git submodule requires the team to learn additional commands to do pull and push in the main repository.
+We noticed was that you can use [git subtree](https://www.atlassian.com/git/tutorials/git-subtree) in similar way as git submodule. Difference is that only a few persons need to learn the extra commands.
 
 You can fetch changes from different repositories into a merged repository.
 
