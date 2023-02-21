@@ -32,7 +32,7 @@ We also needed to support work on two major branches. For this particular busine
 
 ## Git magic
 
-We looked into using [git submodule](https://git-scm.com/docs/git-submodule). We decided that it was not the right choice for the team: everyone would need to learn how to use it. Git submodule requires the team to learn additional commands to do pull and push in the main repository.
+We looked into using [git submodule](https://git-scm.com/docs/git-submodule). We decided that it was not the right choice for the team: everyone would need to learn how to use it. Git submodule requires the team to learn additional commands to do [pull and checkout](https://stackoverflow.com/questions/1030169/pull-latest-changes-for-all-git-submodules) in the main repository.
 We noticed was that you can use [git subtree](https://www.atlassian.com/git/tutorials/git-subtree) in similar way as git submodule. Difference is that only a few persons need to learn the extra commands.
 
 You can fetch changes from different repositories into a merged repository.
