@@ -98,7 +98,7 @@ www.listen(8080,function () {
 
 based on [kubernetes bootcamp server.js](https://github.com/wallymathieu/k8s-bootcamp/blob/gh-pages/code/docker/v1/server.js)
 
-My first instinct was to simply build the image and be done with it. But that is not as fun as going deeper.
+My first instinct was to simply build the image and be done with it. But that is not as fun as going deeper. To take it further I wanted to grow the bananas to be used in the smoothie!
 
 First I tried:
 
@@ -130,31 +130,23 @@ docker buildx create --name multiarch --driver docker-container --use
 
 I could then build the images and push them to docker hub, as can be [seen here](https://hub.docker.com/repository/docker/wallymathieu/kubernetes-bootcamp/general).
 
-Now I could continue on the kubernetes bootcamp tutorial using the custom images:
+Now I could continue on the kubernetes bootcamp tutorial using the custom images.
 
-So instead of:
-
-```sh
-kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
-```
-
-I did:
+So instead of using the default 7 year old image (gcr.io/google-samples/kubernetes-bootcamp:v1) I wanted my shining new multi platform image built using the same code as in [jocatalin/kubernetes-bootcamp](https://github.com/jocatalin/bootcamp):
 
 ```sh
 kubectl create deployment kubernetes-bootcamp --image=wallymathieu/kubernetes-bootcamp:v1
 ```
 
-And instead of [upgrade your app](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/) using the old image:
-
-```sh
-kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
-```
-
-I used the custom built image:
+And instead of [upgrade your app](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/) using the old image, I used the custom built v2 image:
 
 ```sh
 kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=wallymathieu/kubernetes-bootcamp:v2
 ```
+
+### Sidenote
+
+One thing that struck me was that why did they use `gcr.io/google-samples/kubernetes-bootcamp:v1` instead of `jocatalin/kubernetes-bootcamp:v1`, I did get my answer when I tried using that image and could not connect to port 8080 on that image since the [code assumes port 8081](https://github.com/jocatalin/bootcamp/blob/gh-pages/code/docker/v1/server.js#L15) while the [dockerfile says port 8080](https://github.com/jocatalin/bootcamp/blob/gh-pages/code/docker/Dockerfile) perhaps to have a reason to patch the image?
 
 ## Conclusion
 
