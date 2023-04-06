@@ -4,7 +4,7 @@ title: Running minikube on M1 and K8S tutorial
 date: 2023-04-05T20:00:00+03:00
 ---
 
-As previously mentioned in the blog I use a M1 mac.
+As previously [mentioned in the blog I use a M1 mac](https://assertfail.gewalli.se/2023/02/06/Running-SQL-Server-on-Docker-with-an-M1ARM-CPU.html).
 
 In order to help introduce others to Kubernetes I have done some testing of the [K8S tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/).
 
