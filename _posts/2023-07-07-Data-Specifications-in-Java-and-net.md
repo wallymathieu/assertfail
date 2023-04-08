@@ -57,7 +57,7 @@ public class InvoiceSpecifications
   public static JPAQuery<Invoice> overDue(JPAQuery<Invoice> query)
   {
     QInvoice invoice= QInvoice.invoice;
-    return query.where(invoice.payDeadline.lastname.lt(LocalDateTime.now());
+    return query.from(invoice).where(invoice.payDeadline.lastname.lt(LocalDateTime.now());
   }
 }
 ```
