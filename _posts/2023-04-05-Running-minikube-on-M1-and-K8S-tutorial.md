@@ -42,7 +42,7 @@ Since we are not binding all of the ports for minikube docker instance, the expo
 Instead you can do:
 
 ```sh
-minikube services kubernetes-bootcamp --url
+minikube service kubernetes-bootcamp --url
 ```
 
 to get the url to the service.
