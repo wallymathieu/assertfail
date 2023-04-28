@@ -1,4 +1,4 @@
 #!/bin/bash
 pushd $(dirname "${0}") > /dev/null
 cd ..
-jekyll serve
+bundle exec jekyll serve
