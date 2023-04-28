@@ -4,8 +4,10 @@ name: Assert Fail
 markdown: kramdown
 highlighter: rouge
 encoding: utf-8
+url: "https://assertfail.gewalli.se"
 
 exclude: [Gemfile, Gemfile.lock, bin, README.md, assertfail.sublime-project, requirements.txt]
 plugins:
   - jekyll-seo-tag
   - jekyll-jupyter-notebook
+  - jekyll-sitemap
