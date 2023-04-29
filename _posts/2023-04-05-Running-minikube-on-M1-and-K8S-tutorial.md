@@ -22,12 +22,16 @@ minikube start --driver docker
 
 Running the first part part of the tutorial works fine. You can [create a deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/), you can [view pods and nodes](https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/). The weird part starts when you forget that minikube is now running in a docker container instance and run:
 
+{% raw %}
+
 ```sh
 kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
 #...
-export NODE_PORT="$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')"
+export NODE_PORT="$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort }}')"
 echo "NODE_PORT=$NODE_PORT"
 ```
+
+{% endraw %}
 
 Then try to do:
 
