@@ -19,7 +19,7 @@ The comment was in a way prophetic since that's sort of what has happened with G
 
 Go fits procedural programmers naturally: Since many programmers start out thinking procedurally and debugging code in order to understand it, it should come naturally to many developers.
 
-There are few conceptual components of Go. Like C, it's not really a difficult language to learn (though there are some constructs related to goroutines that looks like false friends).
+There are few conceptual components of Go. Like C, it's not really a difficult language to learn (though there are some constructs related to GoRoutines that looks like false friends).
 
 ### Simple reflection
 

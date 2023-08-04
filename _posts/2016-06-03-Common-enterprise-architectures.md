@@ -3,6 +3,10 @@ layout: post
 title: Common enterprise architectures
 date: 2016-06-03T20:24:52+02:00
 tags: meta
+comments:
+  - author: Oskar Gewalli
+    content: See the [Microsoft docs on common web application architectures](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures).
+    date: 2023-08-04T10:30:43+01:00
 ---
 
 Some patterns I've usually encountered while working code bases written by .net developers. You can also read more on [msdn](https://msdn.microsoft.com/en-us/library/ee658117.aspx).

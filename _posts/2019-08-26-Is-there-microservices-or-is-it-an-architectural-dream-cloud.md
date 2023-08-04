@@ -7,7 +7,7 @@ tags: microservices
 
 ## What is a microservice
 
-There isn't a clear definition of microservices architecture unless you pick one persons strongly held beleif. This can mean that what someone considers microservices, someone else considers to be something else.
+There isn't a clear definition of microservices architecture unless you pick one persons strongly held belief. This can mean that what someone considers microservices, someone else considers to be something else.
 
 To summarize a few of the available characterizations and definitions:
 
@@ -56,7 +56,7 @@ She then mentions Jet.com's guidelines:
 
 Note for instance some of the styles presented in the these examples:
 
-- [Microsofts eShop on containers](https://github.com/dotnet-architecture/eShopOnContainers)
+- [Microsoft's eShop on containers](https://github.com/dotnet-architecture/eShopOnContainers)
 - [Google Hipster shop](https://github.com/GoogleCloudPlatform/microservices-demo)
 
 ## The future of microservices
@@ -79,7 +79,7 @@ See for instance [kgrzybek modular monolith](https://github.com/kgrzybek/modular
 
 ### Towards functionservices
 
-Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the defninitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) solutions will help solidify this style.
+Instead of going towards bigger things we will probably also see a move towards smaller services. Some of the definitions above hint at a microservices view that is more around writing very small things that resemble functions instead of being built around a bounded context. Perhaps [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) solutions will help solidify this style.
 
 ## What problems does microservices solve
 
@@ -91,7 +91,7 @@ It's harder to keep a big system consistent with new patterns compared to keepin
 
 ## What problems does microservices not solve
 
-- How to componentize a system
+- How to split a system into components
 - Scaling or uptime issues
 - Spaghetti code
 - Sliced toast bread

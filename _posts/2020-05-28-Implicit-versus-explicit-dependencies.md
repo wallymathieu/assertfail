@@ -54,17 +54,17 @@ The cost of standardisation is the loss of agility when there is value in being 
 
 In order to look for an example of a implicit dependency of code we could look at how different [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) works when using [POCO](https://en.wikipedia.org/wiki/Plain_old_CLR_object) or [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object). When you use a restricted amount of features from Entity Framework, your code will work with other frameworks.
 
-Since the behaviour of any ORM will necessitate that you follow the patterns and conventions assumed by the framework. For instance if you decide to use strongly typed keys, will these work in another ORM? Does your usage of inheritance work with another ORM? These small things tie subsets of your code implicitly to a specific library or framework.
+Since the behavior of any ORM will necessitate that you follow the patterns and conventions assumed by the framework. For instance if you decide to use strongly typed keys, will these work in another ORM? Does your usage of inheritance work with another ORM? These small things tie subsets of your code implicitly to a specific library or framework.
 
-Another example of implicit dependency is if you follow the advice of [Mark Seeman on composition root location](https://blog.ploeh.dk/2019/06/17/composition-root-location/), you could have used say one specific dependency injection framework only in your composition root. How could that tie your other code to that then? A specific implementation of a dependency injection framework will have sometimes subtle differences in how things are created when you resolve the code. You might have unintentionally created code that works when initialised in a particular way but will break when you switch to another framework. Microsoft has used [IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.iserviceprovider) as the least common denominator.
+Another example of implicit dependency is if you follow the advice of [Mark Seeman on composition root location](https://blog.ploeh.dk/2019/06/17/composition-root-location/), you could have used say one specific dependency injection framework only in your composition root. How could that tie your other code to that then? A specific implementation of a dependency injection framework will have sometimes subtle differences in how things are created when you resolve the code. You might have unintentionally created code that works when initialized in a particular way but will break when you switch to another framework. Microsoft has used [IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.iserviceprovider) as the least common denominator.
 
-Hickups could be:
+Hiccups could be:
 
 - How are concrete classes resolved, do they need to be explicitly registered?
 - What happens when you send an `typeof(IEnumerable<T>)` to `GetService` of `IServiceProvider`? Will the same thing happen for all implementations of IServiceProvider? The [assumption is that it should](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L98-L118).
 - What happens when you have multiple registrations of `T`?
 
-if we look at the previous implementation of [`GetRequiredService`](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54) (an extension of `IServiceProvider`) we note some interesting behaviour:
+if we look at the previous implementation of [`GetRequiredService`](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54) (an extension of `IServiceProvider`) we note some interesting behavior:
 
 ``` C#
 public static object GetRequiredService(this IServiceProvider provider, Type serviceType)
@@ -84,13 +84,13 @@ The implication is that different implementations of `IServiceProvider` can have
 
 If your library can avoid a dependency injection framework and instead present a simple API for consumers of the library, it will make it more resilient against future changes. If your target audience is C# enterprise applications, then Microsoft Extensions Dependency Injection could be currently standard enough. That's at least a decision that was made for libraries at Carable. This turned out that we needed to upgrade some libraries due to breaking changes between major versions.
 
-We see similar implications around logging frameworks. Say that you have wrapped the logging in your own API surface in order for your library logging to work. The API surface has grown to incorporate various features needed over the years (keeping it in tandem with the logging infrastructure). Say that the organisation behind the logging framework goes bust. How much work is it to adapt what is now a fairly large API surface in order to be able to still use old libraries? Since the interfaces you have defined match the features of the old logging infrastructure, you could have trouble adopting a new logging infrastructure (even though you have your own interfaces).
+We see similar implications around logging frameworks. Say that you have wrapped the logging in your own API surface in order for your library logging to work. The API surface has grown to incorporate various features needed over the years (keeping it in tandem with the logging infrastructure). Say that the organization behind the logging framework goes bust. How much work is it to adapt what is now a fairly large API surface in order to be able to still use old libraries? Since the interfaces you have defined match the features of the old logging infrastructure, you could have trouble adopting a new logging infrastructure (even though you have your own interfaces).
 
 ### Fleeting standards
 
-Any organisation will take a look at the libraries they maintain and consider if it's worth the effort of maintaing them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
+Any organization will take a look at the libraries they maintain and consider if it's worth the effort of maintaining them. Microsoft is no exception. While we see Microsoft backing, some of the libraries get a huge boon. Question is what happens in 10-15 years? Will there be a new iteration of software in order to deal with the competition from other ecosystems?
 
-I've seen standardisations on logging for .net come and go. In the early parts of my career Log4Net was good enough and useful enough that it made sense to standardise on that. The latest thing I've seen is standardisations on SeriLog and Microsoft Extensions Logging (in various mixtures).
+I've seen standardizations on logging for .net come and go. In the early parts of my career Log4Net was good enough and useful enough that it made sense to standardize on that. The latest thing I've seen is standardizations on SeriLog and Microsoft Extensions Logging (in various mixtures).
 
 For instance, for libraries there are a couple of logging alternatives in the .net space:
 
@@ -117,11 +117,11 @@ Leaky abstractions are somewhat related to implicit dependencies in that the abs
 
 ### Dangers
 
-Having a lowest common interface restricts possibilites. Having defined an interface you might tie your software to a specific implemenation implicitly (making you pay for the abstraction without giving you ability to swap out implementation).
+Having a lowest common interface restricts possibilities. Having defined an interface you might tie your software to a specific implementation implicitly (making you pay for the abstraction without giving you ability to swap out implementation).
 
 ### Value
 
-In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore a lot of the implementation details can still provide value even though it might be a leaky abstraction.
+In order to decompose a much larger system into smaller parts in order to let people focus on subsets, having boundaries can be helpful. You might not be able to easily swap out the implementation of a complicated part of your system. Letting people ignore a lot of the implementation details can still provide value even though it might be a leaky abstraction.
 
 ## TLDR
 

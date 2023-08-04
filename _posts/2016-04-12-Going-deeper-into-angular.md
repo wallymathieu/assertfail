@@ -21,4 +21,4 @@ Once you have read these things, you should be able to make some sense of the [n
 
 There is a lot of focus on [components](https://docs.angularjs.org/guide/component) in angular2. In earlier versions (prior to ng 1.5) you can achieve similar type of code by creating directives composed of template and controller.
 
-My guess is that angularjs will have a sort of stable position (but it's definatelly not hip anymore).
+My guess is that angularjs will have a sort of stable position (but it's definitely not hip anymore).

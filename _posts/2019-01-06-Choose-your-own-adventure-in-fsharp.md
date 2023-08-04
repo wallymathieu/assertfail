@@ -53,7 +53,7 @@ Some constructs that are easy to use in F# need more work or make for weird C#.
 - Immutable constructs ( F# tries to steer you into immutable by default and has constructs to help you). In C# you need something like [With](https://github.com/wallymathieu/with) or [Immutable Object Graph](https://github.com/AArnott/ImmutableObjectGraph)
 - Computation expressions (builders that can help you write composable abstractions)
 - Discriminated unions (in C# your best bet is to look at [OneOf](https://github.com/mcintyre321/OneOf) or use [FSharpX](https://github.com/fsprojects/FSharpx.Extras/blob/master/src/FSharpx.Extras/CSharpCompat.fs#L297))
-- Type providers (in C# it's better to generate source code using something like t4 templates, though that can become cludgy)
+- Type providers (in C# it's better to generate source code using something like t4 templates, though that can become awkward)
 - [Statically Resolved Type Parameters](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters) (can be used to avoid using reflection)
 
 ### Prefer C# over F# in the case when ...
@@ -61,10 +61,10 @@ Some constructs that are easy to use in F# need more work or make for weird C#.
 Some constructs that are easy to use in C# need more work or make for weird F#
 
 - Unsafe code, Native pointers (it's possible in F#, but is more verbose)
-- Goto (generally seen as an antipattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
-- Deep type hierarchies (generally seen as an antipattern and in F# the language tries to steer you away from these patterns, though in certain cases they can be useful)
+- Goto (generally seen as an anti-pattern but is really useful when writing highly optimized code: think core parts of asp.net MVC)
+- Deep type hierarchies (generally seen as an anti-pattern and in F# the language tries to steer you away from these patterns, though in certain cases they can be useful)
 - Code generation (due to type providers, there is less need for it in F#)
-- Implicit type conversions (generally seen as an antipattern, you can explicitly use [implicit operator](https://github.com/fsprojects/FSharpPlus/blob/35eb4c1b0646e4e07701c48ea4b2bdef2067caa5/src/FSharpPlus/Operators.fs#L717-L718) in F#)
+- Implicit type conversions (generally seen as an anti-pattern, you can explicitly use [implicit operator](https://github.com/fsprojects/FSharpPlus/blob/35eb4c1b0646e4e07701c48ea4b2bdef2067caa5/src/FSharpPlus/Operators.fs#L717-L718) in F#)
 
 There is also a certain mainstream appeal of c style languages, why you might choose to code in C# despite being fluent in F#. I'm not fluent enough in VB.net to know when to use that language.
 
@@ -123,7 +123,7 @@ There are two main paths of F# testing (that I've seen). One is the *Unit style 
 #### *Unit
 
 - [NUnit](https://nunit.org) classic unit testing framework for .net.
-- [XUnit](https://xunit.github.io) is rearchitected testing framework by some of the original team from NUnit made to make unit testing more accessible and safe (i.e. trying to steer away from antipatterns).
+- [XUnit](https://xunit.github.io) is rearchitected testing framework by some of the original team from NUnit made to make unit testing more accessible and safe (i.e. trying to steer away from anti-patterns).
 
  If you go down this path you should check out [FsUnit](https://fsprojects.github.io/FsUnit/) that provides some extensions to make testing in F# more enjoyable.
 
@@ -132,7 +132,7 @@ There are two main paths of F# testing (that I've seen). One is the *Unit style 
 #### Composable testing
 
 - [Fuchu](https://github.com/mausch/Fuchu)
-- [Expecto](https://github.com/haf/expecto) forked from Fuchu and rearchitected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
+- [Expecto](https://github.com/haf/expecto) forked from Fuchu and re-architected. This style of testing framework is based on lists of functions/methods instead of attributes. This makes it easier to compose your test code.
 
 I'm somewhat ambivalent to XUnit vs composable testing.
 

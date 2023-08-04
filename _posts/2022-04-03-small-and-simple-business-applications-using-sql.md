@@ -13,7 +13,7 @@ Some of my previous coworkers embrace these patterns in order to focus on busine
 
 One way to write simple API's is to embrace SQL when you feel that it's appropriate. See for instance [It's Time To Get Over That Stored Procedure Aversion You Have](https://rob.conery.io/2015/02/21/its-time-to-get-over-that-stored-procedure-aversion-you-have/).
 
-If you have need a low ceremony application that does not need much in the way of server side logic, there is no need to overeengineer the application.
+If you have need a low ceremony application that does not need much in the way of server side logic, there is no need to over-engineer the application.
 
 There is a sample in [NodeJs](https://github.com/dtao/todo-backend-express) that is also ported to [TypeScript](https://github.com/wallymathieu/todo-backend-express). Just make sure to [keep things parameterized](https://owasp.org/www-community/attacks/SQL_Injection).
 
@@ -105,7 +105,7 @@ In the .net world:
 
 In the Ruby world:
 
-- [Rails migrations](https://guides.rubyonrails.org/v3.2/migrations.html) : Nice migration framework that make it easy write simple reversable migrations when you use their API for simple enough migrations.
+- [Rails migrations](https://guides.rubyonrails.org/v3.2/migrations.html) : Nice migration framework that make it easy write simple reversible migrations when you use their API for simple enough migrations.
 
 ## Abstractions and schema
 
@@ -113,8 +113,8 @@ Keeping fewer layers means that there are fewer abstractions that people need to
 
 ## The dreaded Monolith
 
-In a sense many of the systems that you start to dread start out as small systems. Adding small parts to a system without looking for ways to decompose the system into smaller systems is how you end up with such a mess. There is no need to overengineer your system until the pain of maintaining the system gets impacted (though note [the boiling frog metaphor](https://en.wikipedia.org/wiki/Boiling_frog) when it comes to the gradual increase in technical debt).
+In a sense many of the systems that you start to dread start out as small systems. Adding small parts to a system without looking for ways to decompose the system into smaller systems is how you end up with such a mess. There is no need to over-engineer your system until the pain of maintaining the system gets impacted (though note [the boiling frog metaphor](https://en.wikipedia.org/wiki/Boiling_frog) when it comes to the gradual increase in technical debt).
 
 ## Conclusion
 
-There are some security implications of embracing SQL, but those can be managed. As long as you keep the system smallish you can have nice enough time for developer written tests. There are as always a challange around knowing when something has grown too big.
+There are some security implications of embracing SQL, but those can be managed. As long as you keep the system smallish you can have nice enough time for developer written tests. There are as always a challenge around knowing when something has grown too big.

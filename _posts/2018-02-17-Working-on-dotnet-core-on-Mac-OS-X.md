@@ -20,4 +20,3 @@ export FrameworkPathOverride=$(dirname $(which mono))/../lib/mono/4.5/
 ```
 
 This has made it possible to open for instance [Giraffe](https://github.com/giraffe-fsharp/Giraffe) without doing any [other workaround](https://github.com/wallymathieu/Giraffe/tree/mono) to have it working.
-

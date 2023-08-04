@@ -6,7 +6,7 @@ date: 2020-02-02T17:28:01+01:00
 
 ### Raw numbers
 
-I've written a simple project in F# to read puplic information from the job agency in Sweden:
+I've written a simple project in F# to read public information from the job agency in Sweden:
 
 | Number of listings | Language |
 | --------------|----------|
@@ -67,7 +67,7 @@ Most of the analysis is keyword matching in text corpus.
 
 ### High level analysis
 
-Most of the top langagues are not surprising. The language that surprised me was Python, since it is considered niche in the subset of companies that I've worked in.
+Most of the top languages are not surprising. The language that surprised me was Python, since it is considered niche in the subset of companies that I've worked in.
 
 In the mainstream category of languages we see that Java, JavaScript and C# dominate. This should not be surprising since these are used to write business applications and web applications.
 
@@ -103,8 +103,8 @@ Some interesting groups of languages are:
 - [ML style languages](https://en.wikipedia.org/wiki/ML_(programming_language)) such as Haskell, F# and OCaml
 - [Logic programming](https://en.wikipedia.org/wiki/Logic_programming) such as Prolog and MiniKanren.
 
-Perhaps we will see some languages such as Rust and ReasonML, where you have some ML style typesystem features togheter with C style syntax, gain popularity? Java was heavily marketed and has huge market adoption. C# has a strong corporate sponsor. My guess is that neither of these languages will be usurped in the medium term (5-10 years). Mozilla and Facebook have not marketed Rust or ReasonML heavily in order to further widespread adoption.
+Perhaps we will see some languages such as Rust and ReasonML, where you have some ML style type-system features together with C style syntax, gain popularity? Java was heavily marketed and has huge market adoption. C# has a strong corporate sponsor. My guess is that neither of these languages will be usurped in the medium term (5-10 years). Mozilla and Facebook have not marketed Rust or ReasonML heavily in order to further widespread adoption.
 
 ### Conclusion
 
-New programmers looking for entry level jobs will probably find ample opportunities in mainstream langauges such as Java/C#, Javascript and Python. Knowing C style languages seems to be a sure bet short term and long term.
+New programmers looking for entry level jobs will probably find ample opportunities in mainstream languages such as Java/C#, Javascript and Python. Knowing C style languages seems to be a sure bet short term and long term.

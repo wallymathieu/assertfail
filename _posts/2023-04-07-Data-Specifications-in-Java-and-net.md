@@ -72,4 +72,4 @@ public class InvoiceSpecifications
 
 ## Conclusion
 
-The choice of using a class for a single specification or a method depends on how visible you want these specifications to be. By having a class in a separate file with a single specification, it becomes browsable. Some might argue that this introduces ceremony, but that depends on the preferences of the team (as can be seen in the eShopOnWeb example).
+The choice of using a class for a single specification or a method depends on how visible you want these specifications to be. By having a class in a separate file with a single specification, it becomes possible to browse in file system viewer. Some might argue that this introduces ceremony, but that depends on the preferences of the team (as can be seen in the eShopOnWeb example).

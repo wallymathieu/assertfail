@@ -12,7 +12,7 @@ In order to try to get a feel for how the state of entity persistance is today I
 
 I initially had some trouble due to my choice of sql express to test the mappings. Once I managed to get EF to use sqlite the testing got much easier.
 
-Both ORM's support automapping of POCO objects to the database enteties. The fluent automapping for NHibernate looks like it can figure out many to many relations.
+Both ORM's support auto-mapping of POCO objects to the database entities. The fluent auto-mapping for NHibernate looks like it can figure out many to many relations.
 
 The setup of NHibernate is a bit easier since you are not dependant on that web or app config factory settings. You get less confusion in the documentation for the NHibernate xml configuration. It looks like the people behind EF is aware of the problem and [working on it](https://msdn.microsoft.com/en-us/data/jj680699.aspx).
 

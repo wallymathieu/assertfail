@@ -20,7 +20,7 @@ How does this compare to what we have seen in the .net world?
 
 ## For .net 5 C\#
 
-### HelloWorld.csproj
+### HelloWorld.csproj (1)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -32,7 +32,7 @@ How does this compare to what we have seen in the .net world?
 </Project>
 ```
 
-### Program.cs
+### Program.cs (1)
 
 ``` C#
 using Microsoft.AspNetCore.Builder;
@@ -89,7 +89,7 @@ namespace HelloWorld
 
 the amount of ceremony has been reduced significantly compared to [asp.net 4](https://docs.microsoft.com/en-us/aspnet/web-forms/).
 
-## .net 5 F#
+## .net 5 F\#
 
 In the F# space we have seen such libraries as [Suave](https://suave.io/), where you can write an fsx file containing:
 
@@ -125,7 +125,7 @@ await app.RunAsync();
 
 This style of application has been adopted into .net 6 where you then can have the following
 
-### HelloWorld.csproj
+### HelloWorld.csproj (2)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -139,7 +139,7 @@ This style of application has been adopted into .net 6 where you then can have t
 </Project>
 ```
 
-### Program.cs
+### Program.cs (2)
 
 ``` C#
 var app = WebApplication.Create(args);

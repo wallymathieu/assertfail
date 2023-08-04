@@ -9,7 +9,7 @@ tags: JavaScript react TypeScript
 
 During 2019 I started on the current project. At this project I'm working on, we are building a enterprise system for a government customer. When I got in significant parts had been developed of the frontend and backend system. My role when I started in the project was in order to help develop test automation software for the system. Since I've worked on both frontend and backend parts in other systems, I'm able to help out in various parts of the system.
 
-I'm going to talk about one particular issue in the frontend code. When I got into the project, the frontend used mainly [Formik](https://formik.org) for forms. There is significant complexity in the frontend code. Some of the forms are quite complicated and have a lot of behaviour. While debugging we noticed that the frontend started to slow down significantly for the bigger forms. Since the end users was not affected, we hoped that it would be fine. As new requirements got implemented the slowdown during development started to manifest during end user testing.
+I'm going to talk about one particular issue in the frontend code. When I got into the project, the frontend used mainly [Formik](https://formik.org) for forms. There is significant complexity in the frontend code. Some of the forms are quite complicated and have a lot of behavior. While debugging we noticed that the frontend started to slow down significantly for the bigger forms. Since the end users was not affected, we hoped that it would be fine. As new requirements got implemented the slowdown during development started to manifest during end user testing.
 
 ## Solutions
 
@@ -23,7 +23,7 @@ These options are not very palatable. Changing the design and requirements would
 
 We started evaluating different libraries. Problem with that approach is that it requires a lot of changes in the frontend code in order to evaluate if the other library would improve the performance. This could potentially end up eating a significant amount of trial and error (potentially costing weeks of effort).
 
-While looking at the Formik code base in order to optimize it, we noticed that there is a lot of historical luggage that shows up in the code making optmizations quite difficult.
+While looking at the Formik code base in order to optimize it, we noticed that there is a lot of historical luggage that shows up in the code making optimizations quite difficult.
 
 ## Lazy reimplementation
 
@@ -50,7 +50,7 @@ There is a lot of code that gets executed during render instead of in the reduce
 Since React is heavily inspired by functional programming, we could apply
 
 - We could apply [defunctionalization](https://blog.sigplan.org/2019/12/30/defunctionalization-everybody-does-it-nobody-talks-about-it/): instead of executing code in the Field array we send messages to be executed in the reducer.
-- Immutable data and lenses: Instead of guarding against developers not following React best practises we could assume in the implementation that the data is immutable and reuse an existing lens implementation in order to get a faster copy updates.
+- Immutable data and lenses: Instead of guarding against developers not following React best practices we could assume in the implementation that the data is immutable and reuse an existing lens implementation in order to get a faster copy updates.
 
 ## Conclusion
 

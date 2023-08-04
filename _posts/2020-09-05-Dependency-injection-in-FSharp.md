@@ -59,7 +59,7 @@ ReaderT.run (addShoppingListM "a@a")  (Env())
 
 There is also a post about using [reader monad for dependency injection](https://bartoszsypytkowski.com/dealing-with-complex-dependency-injection-in-f/) but without using more advanced techniques such as monad transformers.
 
-Another way to decompose your program is to use currying as seen on [ F# for fun and profit](https://fsharpforfunandprofit.com/posts/dependency-injection-1/):
+Another way to decompose your program is to use currying as seen on [F# for fun and profit](https://fsharpforfunandprofit.com/posts/dependency-injection-1/):
 
 ``` F#
 let getUser (repo:IUserRepository) email = repo.GetUser email

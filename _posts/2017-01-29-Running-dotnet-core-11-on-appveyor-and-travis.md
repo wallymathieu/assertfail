@@ -13,9 +13,9 @@ Running .net core on appveyor turned out to be quite easy. They have already ins
 
 ## .net core official .travis documentation
 
-The first thing I tried was to try out a configuration based on the [travis documentation](https://docs.travis-ci.com/user/languages/csharp/#Choosing-runtime-and-version-to-test-against) about running .net core on travis. This should work for a 1.0.0 version, however, I had depencies on core 1.1.0. Note that this type of configuration is also used by [Enrico Sada in the dotnet docs](https://github.com/dotnet/docs/blob/master/.travis.yml):
+The first thing I tried was to try out a configuration based on the [travis documentation](https://docs.travis-ci.com/user/languages/csharp/#Choosing-runtime-and-version-to-test-against) about running .net core on travis. This should work for a 1.0.0 version, however, I had dependencies on core 1.1.0. Note that this type of configuration is also used by [Enrico Sada in the dotnet docs](https://github.com/dotnet/docs/blob/master/.travis.yml):
 
-```
+```bash
 $ dotnet test
 Project Tests (.NETCoreApp,Version=v1.1) was previously compiled. Skipping compilation.
 The specified framework 'Microsoft.NETCore.App', version '1.1.0' was not found.
@@ -30,13 +30,13 @@ The specified framework 'Microsoft.NETCore.App', version '1.1.0' was not found.
 
 I tried with a later travis dotnet version:
 
-```
+```bash
 dotnet: 1.0.0-preview2.1-003155
 ```
 
 This resulted in:
 
-```
+```bash
 $ dotnet test
 Project Tests (.NETCoreApp,Version=v1.0) was previously compiled. Skipping compilation.
 The specified framework 'Microsoft.NETCore.App', version '1.1.0' was not found.
@@ -55,7 +55,7 @@ I tried to run a setup based on the [.travis.yml in the EF repository](https://g
 
 I tried running scripts found on [Andrew Locks blog](http://andrewlock.net/adding-travis-ci-to-a-net-core-app/). These failed with:
 
-```
+```bash
 /home/travis/build/wallymathieu/entity-framework-studies/.dotnetcli/sdk/1.0.0-rc4-004706/NuGet.targets(210,5): warning MSB3202: The project file "/home/travis/build/wallymathieu/entity-framework-studies/Web/Web.xsproj" was not found. [/home/travis/build/wallymathieu/entity-framework-studies/entity-framework-studies.sln]
 /home/travis/build/wallymathieu/entity-framework-studies/.dotnetcli/sdk/1.0.0-rc4-004706/NuGet.targets(210,5): warning MSB3202: The project file "/home/travis/build/wallymathieu/entity-framework-studies/Tests/Tests.xsproj" was not found. [/home/travis/build/wallymathieu/entity-framework-studies/entity-framework-studies.sln]
 /home/travis/build/wallymathieu/entity-framework-studies/.dotnetcli/sdk/1.0.0-rc4-004706/NuGet.targets(97,5): warning : Unable to find a project to restore! [/home/travis/build/wallymathieu/entity-framework-studies/entity-framework-studies.sln]
@@ -63,7 +63,7 @@ I tried running scripts found on [Andrew Locks blog](http://andrewlock.net/addin
 
 and
 
-```
+```bash
 /home/travis/build/wallymathieu/entity-framework-studies/Tests/Tests.xproj(7,3): error MSB4019: The imported project "/home/travis/build/wallymathieu/entity-framework-studies/.dotnetcli/sdk/1.0.0-rc4-004706/Microsoft/VisualStudio/v14.0/DotNet/Microsoft.DotNet.Props" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
 ```
 
@@ -73,7 +73,7 @@ Probably due to being for a previous version of dotnet core.
 
 Instead of trying out travis specific instructions I tried to copy the [instructions found for installing net core on ubuntu](https://www.microsoft.com/net/core#linuxubuntu). Since these instructions are probably maintained, they worked without a glitch. I ended up with this version of .travis.yml:
 
-```
+```yaml
 language: csharp
 sudo: required
 dist: trusty
@@ -109,7 +109,7 @@ script:
 
 Note that the version I referenced while trying out the install documentation is higher than the version I tried out. Trimming the yml resulted in the following travis yml:
 
-```
+```yaml
 language: csharp
 sudo: false
 dist: trusty
@@ -121,4 +121,3 @@ os:
 script: 
 ...
 ```
-

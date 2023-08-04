@@ -36,6 +36,6 @@ It could be that a change of requirements can make the technology or tool a bett
 * Refusing in front of others. This might require your manager to save face.
 * Talking about the technical reason to a non technical manager or customer. This will sound like an excuse to a non technical person. You should give an easy to understand summary.
 * Fooling yourself into believing that technology Y, that you have not tried yet, is better. It might be better in some aspects. It might also be that it’s got different problems.
-* Fooling yourself into believing that technology Z, that you usually use, is better. If you don’t know technology X, then an outright dismissal of it is without grounds. That said, you should be sceptical of any technology that you hear fearful rumours about.
+* Fooling yourself into believing that technology Z, that you usually use, is better. If you don’t know technology X, then an outright dismissal of it is without grounds. That said, you should be skeptical of any technology that you hear fearful rumours about.
 * Fooling yourself into believing that you can roll your own framework that does it better.
 * Fooling yourself into believing that you need a framework when all you need is a bit of code.

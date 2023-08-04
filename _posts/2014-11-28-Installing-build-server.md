@@ -30,7 +30,7 @@ From the teamcity configuration we could deduce how it connected to SQL server.
 
 SQL server was installed with only database engine and management studio.
 
-When SQL was installed we only enabled windows authentication. Since teamcity connects through a tcp port, it started complaining about not being able to connect even though we had attached the old databse added the expected user.
+When SQL was installed we only enabled windows authentication. Since teamcity connects through a tcp port, it started complaining about not being able to connect even though we had attached the old database added the expected user.
 
 If we tried to connect the same was as teamcity through the command line tool "sqlcmd" we could more quickly iterate over the configuration.
 The first problem was that sqlcmd could not connect to the expected port.

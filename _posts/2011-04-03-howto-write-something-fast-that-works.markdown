@@ -9,13 +9,13 @@ tags: unit-test
 
 1. Make sure that you're always doing the right thing (Erik Arnwald). Try to understand as much as possible of the domain you're working on.
 
-2. Trim furiously in the specifications and in the code. Make sure to identify the key benefit for the customer and focus solely on implementing this part. Additional wishes and demands tends to change rapidly and might not be necesary at all. The most common reason to break of deadlines and malfunctions is too complex specifications which are changed after the project has been started. (Carsten Hersom)
+2. Trim furiously in the specifications and in the code. Make sure to identify the key benefit for the customer and focus solely on implementing this part. Additional wishes and demands tends to change rapidly and might not be necessary at all. The most common reason to break of deadlines and malfunctions is too complex specifications which are changed after the project has been started. (Carsten Hersom)
 
 ## Avoid coding
 
 1. Sometimes you do not need to any custom code but can use standard components coupled with some education of the customer. For instance a standard CMS module. (Carsten Hersom)
 
-2. Make sure to use stable and well tested third party tools and libraries for your core effort.  For instance. The guys maintaining Nhibernate have extensive test coverage of the library. Avoid any tool that is not either really stable and old (and is used by many) or has a good test coverage.
+2. Make sure to use stable and well tested third party tools and libraries for your core effort.  For instance. The guys maintaining NHibernate have extensive test coverage of the library. Avoid any tool that is not either really stable and old (and is used by many) or has a good test coverage.
 
 3. The same criteria as for other tools apply to JavaScript frameworks and libraries.
 
@@ -23,7 +23,7 @@ tags: unit-test
 
 1. Make sure that everybody uses database versioning tool. Preferably some form of migrations. It's trivially easy to get into a inconsistent database state otherwise.
 
-2. Make sure to have test coverage of any part of the code you're unsure of how it works or any brittle parts. Things that are brittle is for instance the use of SqlCommand against stored procedures (SP). As the SP's are changed code may stop to work without you knowing it. Make sure to have tests of the connection between C# and the sql database. Make sure that your tests are as terse as possible. Don't be afraid to throw old tests away that are wrong and not needed. You can read about tests in the post: [why automed tests](/2011/03/31/why-automated-tests.html).
+2. Make sure to have test coverage of any part of the code you're unsure of how it works or any brittle parts. Things that are brittle is for instance the use of SqlCommand against stored procedures (SP). As the SP's are changed code may stop to work without you knowing it. Make sure to have tests of the connection between C# and the sql database. Make sure that your tests are as terse as possible. Don't be afraid to throw old tests away that are wrong and not needed. You can read about tests in the post: [why automated tests](/2011/03/31/why-automated-tests.html).
 
 3. Be really careful of hiding exceptions (catch the right exception). If something goes wrong, [it should explode](http://ferd.ca/the-zen-of-erlang.html). It's really hard to find errors if you have written something like: ``` try{ ... } catch(Exception){} ```
 

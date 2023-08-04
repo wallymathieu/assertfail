@@ -5,7 +5,7 @@ date: 2015-08-21T17:17:39+02:00
 tags: F#
 ---
 
-Since I've been without an assingment I've had the time to look into F# more.
+Since I've been without an assignment I've had the time to look into F# more.
 
 ## Where did I find material?
 

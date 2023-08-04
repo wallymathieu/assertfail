@@ -9,7 +9,7 @@ tags: microservices
 
 If the system you are developing is intended to be delivered by a single team (or a single backend team), there might be less need for a decomposed solution where parts can be deployed separately. This also applies if you are starting out on something relatively small and don't have the operations setup for doing microservices.
 
-If you still will want to structure your code in separate parts with clear API boundries between them you can define request/response, publish:
+If you still will want to structure your code in separate parts with clear API boundaries between them you can define request/response, publish:
 
 ``` C#
     /// <summary>
@@ -45,7 +45,7 @@ How would you wire up such a solution? My instinct would be to use plugin archit
 
 - In for instance [Jenkins](https://jenkins.io/) you have the ability to write [plugins](https://wiki.jenkins.io/display/JENKINS/Plugin+tutorial).
 - [MEF](https://docs.microsoft.com/en-us/dotnet/framework/mef/) is used by Lucene.net in order to create docs plugins
-- CMS systems usually support plugins in order to extend the functionality. See [Wordpress plugins](https://wordpress.org/plugins/) or [Sharepoint addin](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+- CMS systems usually support plugins in order to extend the functionality. See [Wordpress plugins](https://wordpress.org/plugins/) or [Sharepoint add-in](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 If we contrast microservices to plugins what do we find?
 
@@ -57,13 +57,13 @@ There is an operations overhead for using several deployments (though that can b
 
 ### Modularized monolith
 
-Another approach is to avoid the plugin style and create a repository with subfolders for separate modules, then a single delivery project that aggregates all of the modules. You still have questions also seen for plugins. One benefit is that you avoid needing to define extensibility points in order to allow plugin development.
+Another approach is to avoid the plugin style and create a repository with sub-folders for separate modules, then a single delivery project that aggregates all of the modules. You still have questions also seen for plugins. One benefit is that you avoid needing to define extensibility points in order to allow plugin development.
 
 One example of this approach can be found in [SimplCommerce](https://github.com/simplcommerce/SimplCommerce). Note the use of both frontend and backend parts per module.
 
 ## Serverless
 
-As we see on [martinfowler](https://martinfowler.com/articles/serverless.html) this type of solution can be thought of as a style of microservices solution.
+As we see on [Martin Fowler](https://martinfowler.com/articles/serverless.html) this type of solution can be thought of as a style of microservices solution.
 
 We see that there is vendor specific solutions and open source versions in this space. The most interesting things I've seen here are open source implementations of serverless on top of Kubernetes.
 

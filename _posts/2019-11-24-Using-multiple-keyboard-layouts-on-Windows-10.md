@@ -15,7 +15,7 @@ I started out by adding English (US) and then Swedish (Sweden) however, I ended 
 What I wanted was this configuration
  ![preferred languages](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/preferred-languages.png)
 
-but for the UK langauge you add the US keyboard layout that you prefer:
+but for the UK language you add the US keyboard layout that you prefer:
  ![language options](/img/2019-11-24-Using-multiple-keyboard-layouts-on-Windows-10/language-options.png)
 
 In my case it was the standard US keyboard layout:

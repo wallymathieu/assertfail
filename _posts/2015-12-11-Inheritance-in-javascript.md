@@ -5,7 +5,7 @@ date: 2015-12-11T17:06:44+01:00
 tags: JavaScript
 ---
 
-# How do you inherit from a "class" in JavaScript
+## How do you inherit from a "class" in JavaScript
 
 Especially if you have a class that is a mix of constructor function and prototype methods and properties.
 
@@ -40,19 +40,19 @@ Mammal.prototype.says = function(){ // but we can still add functions by adding 
 };
 ~~~
 
-## Some notes about the above code
+### Some notes about the above code
 
 We (me and [Peter Wilhelmsson](https://github.com/2hdddg/)) have found that the usage of "use strict" together with Object.freeze and Object.defineProperty can some JavaScript confusion (accidentally setting a new variable when you want to set an existing, hard to find initialization of objects). Usually as with many old languages with many features (c++, perl) you should choose a subset of that language to simplify for other developers.
 
 By modifying the prototype you can always add methods even if the object itself is frozen.
 
-## How do you create an instance of this "class"?
+### How do you create an instance of this "class"?
 
 ~~~ JavaScript
 var m = new Mammal('Missan');
 ~~~
 
-## How do we inherit from this "class"?
+### How do we inherit from this "class"?
 
 ~~~ JavaScript
 "use strict";
@@ -75,7 +75,7 @@ Cat.prototype = Object.create(Feline.prototype);
 Cat.prototype.constructor = Cat;
 ~~~
 
-## Naming of JavaScript classes
+### Naming of JavaScript classes
 
 Note that when you write:
 
@@ -98,6 +98,6 @@ This can be done as a post processing step in your grunt or gulp with logic simi
  });
 ~~~
 
-## Using pure prototype inheritance
+### Using pure prototype inheritance
 
 If you are using a library that does the right thing when it comes to "this", then you can add methods to the prototype instead of "this" as a captured variable named "self".

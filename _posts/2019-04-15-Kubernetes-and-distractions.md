@@ -9,7 +9,7 @@ There are many cool projects you can install into Kubernetes. However before buy
 
 ## Start with few components
 
-You can start by following Alex Ellis guide on howto [move your project to kubernetes](https://blog.alexellis.io/move-your-project-to-kubernetes/).
+You can start by following Alex Ellis guide on HowTo [move your project to kubernetes](https://blog.alexellis.io/move-your-project-to-kubernetes/).
 
 One thing to take away from [Julia Evans talk: High Reliability Infrastructure Migrations](https://jvns.ca/blog/2018/12/15/new-talk--high-reliability-infrastructure-migrations/) is:
 

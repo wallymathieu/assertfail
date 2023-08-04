@@ -7,7 +7,7 @@ tags: mono xamarin
 
 After installing OS X El Capitan on my computer I noticed that fsharp interactive failed to start because it failed to locate mono:
 
-~~~
+~~~bash
 /Library/Frameworks/Mono.framework/Versions/4.0.4/bin/fsharpi: line 24: exec: mono: not found
 
 Session termination detected. Press Enter to restart.
@@ -15,7 +15,7 @@ Session termination detected. Press Enter to restart.
 
 If we look at the file at that position we find that it assumes that mono is in the path. I checked /etc/paths, and it looked correct (i.e. based on the paths file, mono should have been in the path):
 
-~~~
+~~~bash
 mathieu$ which mono
 /usr/local/bin/mono
 mathieu$ ls -la /usr/local/bin/mono

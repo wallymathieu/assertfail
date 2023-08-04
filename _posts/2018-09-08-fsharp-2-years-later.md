@@ -13,15 +13,15 @@ From my point of view, the main distinguishing feature for F# is [Statically Res
 
 ## What has delighted me?
 
- - The editor tooling for F# has grown more stable.
- - That F# has another perspective (compared to C#).
- - Type providers can simplify one-off "scripting".
+- The editor tooling for F# has grown more stable.
+- That F# has another perspective (compared to C#).
+- Type providers can simplify one-off "scripting".
 
 ## What has been annoying?
 
 Personally most of the pain points have been in dealing with .net core.
 
- - Type providers have recently (2018/05/08) [been fixed to work in .net core](https://blogs.msdn.microsoft.com/dotnet/2018/05/08/f-language-and-tools-update-for-visual-studio-2017-version-15-7/).
- - Using libraries intended to be consumed in C# that uses `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Options` requires ceremony to use.
+- Type providers have recently (2018/05/08) [been fixed to work in .net core](https://blogs.msdn.microsoft.com/dotnet/2018/05/08/f-language-and-tools-update-for-visual-studio-2017-version-15-7/).
+- Using libraries intended to be consumed in C# that uses `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Options` requires ceremony to use.
 
  These are minor things. For the most part I don't need dependency injection heavy code in the F# I've been writing.

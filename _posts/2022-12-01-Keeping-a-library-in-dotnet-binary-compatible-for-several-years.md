@@ -88,7 +88,7 @@ but that the new versions have the following signature:
     static member MapIndexed ((x: 'T []      , f            ), [<Optional>]_impl: MapIndexed) = Array.mapi f x
 ```
 
-Note the extra paranthesis. The compat members are referenced by the v1 version, while an updated version with overload fixes uses the lower form. Since user code will reference select the correct overload through SRTP, the compiled code just need to have one of the above.
+Note the extra parenthesis. The compatibility members are referenced by the v1 version, while an updated version with overload fixes uses the lower form. Since user code will reference select the correct overload through SRTP, the compiled code just need to have one of the above.
 
 Why does it get inlined? It gets inlined due to the fact that we use to select the correct overload is marked with [the keyword inline in F#](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/inline-functions). The method that is use to select the correct overload is the following:
 
@@ -125,6 +125,6 @@ Using these facts of F#:
 - EditorBrowsable
 - NuGet package resolution
 
-we have been able to keep a major version going for way longer than I would have thought possible while still being able to accomodate significant changes.
+we have been able to keep a major version going for way longer than I would have thought possible while still being able to accommodate significant changes.
 
 This also goes to show that F#+ has been the library that keeps on showing interesting usages of .net that one might not think possible (in .net).

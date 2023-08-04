@@ -38,7 +38,7 @@ When you branch. It's actually simpler to merge using git svn ... but that adds 
 
 ## Why use Git (or mercurial et.c.)?
 
-Can be an easy sourcesafe like experience if you are a single developer. If you have lots of developer, it's easier to work together using git.
+Can be an easy Sourcesafe like experience if you are a single developer. If you have lots of developer, it's easier to work together using git.
 
 When mentioning git, you cant avoid mentioning github. Git is version control. Github is hosting for that version control. Github has added some nice features as well.
 
@@ -60,7 +60,7 @@ Why is this sweet? Most of the time the devs behind the library does not care th
 
 ## Usability of git?
 
-The command line version of git can be a bit complicated. However, when used by a single dev you can use [Github for windows](http://windows.github.com/) in order to work in a manner similar to sourcesafe (simple gui).
+The command line version of git can be a bit complicated. However, when used by a single dev you can use [Github for windows](http://windows.github.com/) in order to work in a manner similar to Sourcesafe (simple gui).
 
 A more advanced gui is the [Atlassian SourceTree](http://www.sourcetreeapp.com/).
 

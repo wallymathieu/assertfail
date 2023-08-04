@@ -25,7 +25,7 @@ There is talk about having a single language for frontend and backend. This type
 
 However compiling Java or C# to JavaScript have had some interesting challenges. The debugging experience, error handling, diagnosing errors. Source maps and other tools have helped make this less of an issue. Though since most frontend web libraries are written in JavaScript, it is often better to be familiar with JavaScript.
 
-Writing JavaScript on the backend has had some challences. The developers I've worked with have had it easier to work with C# (when it comes to deliver stable features). For simple services, JavaScript can be a good choice. There are also more mature libraries for Java and C# that fits more of server side development (for historical reasons).
+Writing JavaScript on the backend has had some challenges. The developers I've worked with have had it easier to work with C# (when it comes to deliver stable features). For simple services, JavaScript can be a good choice. There are also more mature libraries for Java and C# that fits more of server side development (for historical reasons).
 
 Limiting yourself to one language also means limiting your recruitment base. Once people have started working, they usually pick up the other commonly used languages (in order to be able to modify other parts).
 

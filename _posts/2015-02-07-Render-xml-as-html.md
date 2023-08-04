@@ -58,4 +58,4 @@ If you want to call a template with parameters:
     ...
 ~~~
 
-Xml style sheets are a bit weird to work with. Theyshould probably be avoided for many tasks. However, for some problems they can be quite useful.
+Xml style sheets are a bit weird to work with. They should probably be avoided for many tasks. However, for some problems they can be quite useful.

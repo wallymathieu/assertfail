@@ -19,7 +19,7 @@ comments:
 
 ## Writing readonly record classes 2007
 
-Around 2007 I wrestled with writing immutable classes in C#. One of the key painpoints was that the constructor parameters for a class representing a database row for a specific table ended up with around 68 parameters.
+Around 2007 I wrestled with writing immutable classes in C#. One of the key pain-points was that the constructor parameters for a class representing a database row for a specific table ended up with around 68 parameters.
 
 Note that we already had code generation of SQL Reader row deserialization based on SQL information tables.
 
@@ -35,11 +35,11 @@ In order to simplify working with readonly classes I made a library around 2013 
 
 You could also implement a t4 template in order to generate code.
 
-Both of these approaches offered pros and cons. Main con of `with` was performance (though for I/O bound tasks, it's not going to be noticable). The main downside of the code generator was finicky to use.
+Both of these approaches offered pros and cons. Main con of `with` was performance (though for I/O bound tasks, it's not going to be noticeable). The main downside of the code generator was finicky to use.
 
 Since libraries such as NHibernate supports immutable records, you could benefit from modelling readonly objects.
 
-It was also fairly obvious that it was much easier to adopt a language that supports these concepts well out of the box (you might not be surprised that the somewhat mainstream language of choice then is F#). T4 templates where restricted to Windows, making some approaches nonportable.
+It was also fairly obvious that it was much easier to adopt a language that supports these concepts well out of the box (you might not be surprised that the somewhat mainstream language of choice then is F#). T4 templates where restricted to Windows, making some approaches non-portable.
 
 ## There are more options now (i.e. around 2019)
 
@@ -97,6 +97,7 @@ public partial class TodoItem
 ```
 
 while openapi-tools generates an empty constructor:
+
 ``` C#
 /// <summary>
 /// TodoItem

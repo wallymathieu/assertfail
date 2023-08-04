@@ -9,9 +9,9 @@ tags: meta
 
 ### Large complicated systems are often written in older technologies
 
-Newer technologies can mean assignments with fewer lines of code and more greenfield development. Since the amount of code is proportional to the amount of time and people spent working on that code. Greenfield development is easier than working with millions of lines of code. It can however be an interesting challange to [rewrite an older system](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
+Newer technologies can mean assignments with fewer lines of code and more greenfield development. Since the amount of code is proportional to the amount of time and people spent working on that code. Greenfield development is easier than working with millions of lines of code. It can however be an interesting challenge to [rewrite an older system](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
 
-### Market value.
+### Market value
 
 In order to sell consulting services, many people will push for new tech.
 

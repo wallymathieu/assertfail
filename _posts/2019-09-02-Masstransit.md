@@ -5,7 +5,7 @@ date: 2019-09-02T12:09:59+03:00
 tags: microservices
 ---
 
-[Masstransit](https://github.com/MassTransit/) is a wrapper around message queues, such as [RabbitMQ](https://www.rabbitmq.com/),in order to simplify work on distributed applications using .NET.
+[MassTransit](https://github.com/MassTransit/) is a wrapper around message queues, such as [RabbitMQ](https://www.rabbitmq.com/),in order to simplify work on distributed applications using .NET.
 
 ## What is it good for
 
@@ -19,13 +19,13 @@ Another usage is to handle long running tasks without the user waiting on them. 
 
 Having message queue allows you decouple services. If you publish an event, there isn't a strict need for a specific receiver. This allows you to start work on "basket" service before a "catalog" service is fully finished (then wire up logic to deal with inconsistencies later on).
 
-Masstransit wraps common message queues and presents you with an uniform API. This is similar to what we have with entity framework for SQL.
+MassTransit wraps common message queues and presents you with an uniform API. This is similar to what we have with entity framework for SQL.
 
 ## What is it not good for
 
 RabbitMQ et.c. throws away the messages after they have been successfully processed. If you want to be able replay old events, then this is not for you.
 
-Masstransit (and similar wrappers) makes assumptions about how you want to deal with failures, what kind of format and how send vs publish works. This can mean that there are some discrepancies when implementing publishers and receivers in other languages than C#. Going towards a more heterogenous environment you will probably need to invest more into getting to know your message queue. In a previous project there was a need to invest in [adjusting an AMQP wrapper](https://github.com/carable/MassTransit.js/pulls?q=is%3Apr+is%3Aclosed) for nodejs since the existing wrapper was out of date and did not implement the correct error handling. There is a [Java port](https://github.com/amhest/MassTransit-CrossTown) where the author mentions that he only needed a subset of features available from Masstransit in Java.
+MassTransit (and similar wrappers) makes assumptions about how you want to deal with failures, what kind of format and how send vs publish works. This can mean that there are some discrepancies when implementing publishers and receivers in other languages than C#. Going towards a more heterogenous environment you will probably need to invest more into getting to know your message queue. In a previous project there was a need to invest in [adjusting an AMQP wrapper](https://github.com/carable/MassTransit.js/pulls?q=is%3Apr+is%3Aclosed) for nodejs since the existing wrapper was out of date and did not implement the correct error handling. There is a [Java port](https://github.com/amhest/MassTransit-CrossTown) where the author mentions that he only needed a subset of features available from MassTransit in Java.
 
 If you want to send out events on a very granular high volume, say each time someone views a page on a very popular site, then this is probably not for you. You should look at alternatives like Kafka.
 
@@ -37,7 +37,7 @@ Another way is to think about data in a slightly different way: For instance by 
 
 ## Setup
 
-If you are on Azure then Azure Service bus is simple to setup. There are also NuGet packages to use Masstransit with [AmazonSQS](https://www.nuget.org/packages/MassTransit.AmazonSQS) and [ActiveMQ](https://www.nuget.org/packages/MassTransit.ActiveMQ) but these are more recent than the [RabbitMQ](https://www.nuget.org/packages/MassTransit.RabbitMQ) and [Azure Service bus](https://www.nuget.org/packages?q=masstransit+azure) packages. Easiest way to start locally is to use RabbitMQ by writing a docker-compose file:
+If you are on Azure then Azure Service bus is simple to setup. There are also NuGet packages to use MassTransit with [AmazonSQS](https://www.nuget.org/packages/MassTransit.AmazonSQS) and [ActiveMQ](https://www.nuget.org/packages/MassTransit.ActiveMQ) but these are more recent than the [RabbitMQ](https://www.nuget.org/packages/MassTransit.RabbitMQ) and [Azure Service bus](https://www.nuget.org/packages?q=masstransit+azure) packages. Easiest way to start locally is to use RabbitMQ by writing a docker-compose file:
 
 ```yml
 version: '3.4'
@@ -56,4 +56,4 @@ Masstransit is open source and free. RabbitMQ requires hosting. See AWS and Azur
 
 ## Conclusion
 
-Masstransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since Masstransit allows you to use either RabbitMQ, AWS or Azure native message queues it is fairly easy to have it up and running. It is a leaky abstraction when you are going towards a heterogenous environment (but reimplementing subsets of Masstransit can be good enough).
+MassTransit (and similar) allows you to wire up loosely coupled distributed [mediator](https://en.wikipedia.org/wiki/Mediator_pattern). Since MassTransit allows you to use either RabbitMQ, AWS or Azure native message queues it is fairly easy to have it up and running. It is a leaky abstraction when you are going towards a heterogenous environment (but reimplementing subsets of MassTransit can be good enough).

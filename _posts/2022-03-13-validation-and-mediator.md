@@ -12,7 +12,7 @@ We also base some of the code around examples of `ValidationBehavior` found onli
 - [Stackoverflow](https://stackoverflow.com/questions/42283011/add-validation-to-a-mediatr-behavior-pipeline)
 - [CodeMaze](https://code-maze.com/cqrs-mediatr-fluentvalidation/)
 
-The reason why I've implemented these examples is in order to showcase how you can cut down on some of the ceremony around using a generic mediator interface implementation togheter with fluent validation logic (pipeline behavior in MediatR parlance).
+The reason why I've implemented these examples is in order to showcase how you can cut down on some of the ceremony around using a generic mediator interface implementation together with fluent validation logic (pipeline behavior in MediatR parlance).
 
 Note that I'm not making a value judgement around [if you should use MediatR or not](https://cezarypiatek.github.io/post/why-i-dont-use-mediatr-for-cqrs/), [if you should use AOP or not](https://en.wikipedia.org/wiki/Aspect-oriented_programming#Criticism).
 
@@ -22,7 +22,7 @@ We assume that we want to use some validation API (here we use FluentValidation)
 
 We assume that the domain have most of the business code in the entities.
 
-We assume that we want to use MediatR (you could subsitute MediatR with a messege queue abstraction).
+We assume that we want to use MediatR (you could substitute MediatR with a message queue abstraction).
 
 We assume that we use some sort of unit of work (if we use EF Core that would be DbContext, while it would be session if we use NHibernate).
 
@@ -67,7 +67,7 @@ See [FuncMutateCommandHandler](https://github.com/wallymathieu/validation-studie
 Note that the signature of the delegate is:
 `Func<TEntity, TCommand, IServiceProvider, TResponse>`
 
-The base responsibility for these classes will be to retreive and store the business entities as well as provide an opportunity to inject validation logic (since we implement a generic interface).
+The base responsibility for these classes will be to retrieve and store the business entities as well as provide an opportunity to inject validation logic (since we implement a generic interface).
 
 Since they take a func it's trivial to create a fluent API in order to register how the entities :
 
@@ -123,6 +123,6 @@ See [the implementation](https://github.com/wallymathieu/validation-studies/blob
 
 I've talked to some coworkers that have expressed a feeling that there is too much magic going on with a decomposed solution that uses generic interfaces. This is similar to the criticism around AOP.
 
-We have around 400 lines of infrastructure glue code to tie the code togheter. The main difficulty in the implementation is around writing Linq Expressions. The reflection code can be seen as similar to how you would write queries against a database, so might not be so far fetched. The Linq Expression code is somewhat abstract, that might be more difficult to understand.
+We have around 400 lines of infrastructure glue code to tie the code together. The main difficulty in the implementation is around writing Linq Expressions. The reflection code can be seen as similar to how you would write queries against a database, so might not be so far fetched. The Linq Expression code is somewhat abstract, that might be more difficult to understand.
 
 If you want to write C# such that you find MediatR useful, then the complexity could be hidden as library or framework code. You cut down on a lot of copy paste and ceremony for implementing command handlers.

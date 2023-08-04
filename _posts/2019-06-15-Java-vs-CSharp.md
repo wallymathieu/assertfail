@@ -5,9 +5,9 @@ date: 2019-06-15T19:37:10+02:00
 tags: java C#
 ---
 
-Java started out as a very object oriented language. One of the nice things with Java (as a language) has been that the syntax has been quite stable for a long time. C# competes with Java for mainstream developer mindshare. C# has pushed better tooling and more features but was primarily focused on Windows.
+Java started out as a very object oriented language. One of the nice things with Java (as a language) has been that the syntax has been quite stable for a long time. C# competes with Java for mainstream developer mind-share. C# has pushed better tooling and more features but was primarily focused on Windows.
 
-For the last few years we have seen .net becoming a truer cross platform language with the .net core project and Microsofts acquisition of Xamarin. Due to the push towards micro services and Docker this makes a lot of sense since we will probably see more large scale enterprise software use some sort of micro service architecture to allow scaling of development teams.
+For the last few years we have seen .net becoming a truer cross platform language with the .net core project and Microsoft's acquisition of Xamarin. Due to the push towards micro services and Docker this makes a lot of sense since we will probably see more large scale enterprise software use some sort of micro service architecture to allow scaling of development teams.
 
 ## Features
 
@@ -30,7 +30,7 @@ We see that Java uses standard generic class `Optional<>` with methods while C# 
 
 #### Tooling
 
-Using Visual Studio Code to develop Java feels very productive. Using Jetbrains Intellij is nicer. I'm not a fan of Eclipse. For C# I usually prefer Visual Studio while Visual Studio Code works and you get some more sweet refactorings in Rider (or through Resharper).
+Using Visual Studio Code to develop Java feels very productive. Using Jetbrains Intellij is nicer. I'm not a fan of Eclipse. For C# I usually prefer Visual Studio while Visual Studio Code works and you get some more sweet refactoring in Rider (or through Resharper).
 
 Both Maven and NuGet are mature and enable decomposition into libraries.
 

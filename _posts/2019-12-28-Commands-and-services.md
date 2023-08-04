@@ -58,7 +58,7 @@ Reference:
 - [IOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=dotnet-plat-ext-3.1)
 - [DbContext](https://docs.microsoft.com/en-us/ef/core/index)
 
-Since dbcontext in asp.net core Entity Framework implements [unit of work](https://www.martinfowler.com/eaaCatalog/unitOfWork.html) the command handler uses only one unit of work context. If you use a sql connection you could instead replicate this behaviour with a transaction.
+Since dbcontext in asp.net core Entity Framework implements [unit of work](https://www.martinfowler.com/eaaCatalog/unitOfWork.html) the command handler uses only one unit of work context. If you use a sql connection you could instead replicate this behavior with a transaction.
 
 
 You can then compose your code as following:

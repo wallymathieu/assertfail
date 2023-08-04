@@ -18,6 +18,3 @@ require_relative 'subfolder/file'
 ~~~
 
 in order to require files. You can also use a relative path in require (i.e. './subfolder/file').
-
-
-

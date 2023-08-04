@@ -7,7 +7,7 @@ tags: microservices
 
 ## Polyglot
 
-I've found that I'm way more productive in some languages compared to others. This is common enough occurance according to Thoughtworks that they mention polyglot programming under their tech radar in [techniques](https://www.thoughtworks.com/radar/techniques). It also allows the use of heterogenous teams that can bring different strenghts to the table. Sometimes a language/virtual machine has a library or framework especially suited for your problem/task.
+I've found that I'm way more productive in some languages compared to others. This is common enough occurrence according to ThoughtWorks that they mention polyglot programming under their tech radar in [techniques](https://www.thoughtworks.com/radar/techniques). It also allows the use of heterogenous teams that can bring different strengths to the table. Sometimes a language/virtual machine has a library or framework especially suited for your problem/task.
 
 ## Code chunks
 
@@ -21,7 +21,7 @@ One of the unintuitive facts of programming is that by restricting the possibili
 
 > Measuring software productivity by lines of code is like measuring progress on an airplane by how much it weighs
 
-Software estimation techniques show that the time and cost of software is closely related to the line count of the system where changes are made (see [Software Estimation](https://www.goodreads.com/book/show/93891.Software_Estimation)). This implies that having subsystems that can be resoned about in isolation means that it's easier to estimate and plan changes (as well as keep cost reasonable).
+Software estimation techniques show that the time and cost of software is closely related to the line count of the system where changes are made (see [Software Estimation](https://www.goodreads.com/book/show/93891.Software_Estimation)). This implies that having subsystems that can be reasoned about in isolation means that it's easier to estimate and plan changes (as well as keep cost reasonable).
 
 The cost of microservices has in fact decreased over the years. Note for instance that deploying a hosted Kubernetes solution with a light workload can cost you as little as around 30$ per months depending on your vendor. Deploying multiple sites into a single App Service on Azure can be quite cheap as well.
 

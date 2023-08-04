@@ -19,7 +19,7 @@ methods, classes (and instances of the classes), variables
 The most important execution constructs are:
 if, for
 
-Naming methods, classes and variables turns the execution into a meaningful flow. Mostly we are working with details surrounding execution of our concepts. A programmer is working a lot with detail management (much like a weaver of a tapestry have to manage the the threads in order to get a working picture). A very serious problem is that it's hard to find the right level of detail and abstraction to work with. The concepts above can be used to create detail at arbitrary levels. Kind of like lego versus duplo.
+Naming methods, classes and variables turns the execution into a meaningful flow. Mostly we are working with details surrounding execution of our concepts. A programmer is working a lot with detail management (much like a weaver of a tapestry have to manage the the threads in order to get a working picture). A very serious problem is that it's hard to find the right level of detail and abstraction to work with. The concepts above can be used to create detail at arbitrary levels. Kind of like Lego versus Duplo.
 
 For the most part, many tend to prefer immutable constructs: Specified classes that do not change their behavior after initialization. This greatly simplifies reasoning.
 

@@ -173,7 +173,7 @@ let mkPerson pName pEmail pAge =
 
 The main point comes from the `mkPerson` function that composes the different validation functions into a function that either returns `Success of Person` or `Failure of Error list`.
 
-The main downside of this approach is that it requires you to accept that you can glue functions toghether in this way. Since many validation libraries come prepared with some basic validations for strings and numbers, you might also want to define a collection of validation helper functions that suits your needs.
+The main downside of this approach is that it requires you to accept that you can glue functions together in this way. Since many validation libraries come prepared with some basic validations for strings and numbers, you might also want to define a collection of validation helper functions that suits your needs.
 
 This approach allows you to strictly define the kind of validation errors that a given part of your code can return. This has some really nice benefits when you want to communicate these to another team.
 

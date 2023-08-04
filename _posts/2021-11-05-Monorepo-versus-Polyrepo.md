@@ -10,7 +10,7 @@ Let us start by defining monorepo
 - Acquire as many third-party and in-house dependencies as possible for a build from the same source-control repository/branch, and in the same update/pull/sync operation. [2](#2)
 - Keep all teams in agreement on the versions of third-party and in-house dependencies via lock-step upgrades. [2](#2)
 
-## Plausable restrictions
+## Plausible restrictions
 
 The point about keeping third-party binary dependencies in source control was popular in the .net world before the [NuGet](https://www.nuget.org/) and in the Java world before [Maven Repositories](https://maven.apache.org/guides/introduction/introduction-to-repositories.html). We have come to the point where it's preferable to avoid this practice. Let us assume that only source code and similar sources are stored.
 
@@ -20,17 +20,17 @@ Languages that do not have good package managers naturally lend themselves to cr
 
 ## Debugging
 
-In order to debug binary packages that you don't have the source for some languages have support for different debug packages and source references. [3](#3) Even if these tools are available they might not work with your organisation source control or package repository.
+In order to debug binary packages that you don't have the source for some languages have support for different debug packages and source references. [3](#3) Even if these tools are available they might not work with your organization source control or package repository.
 
 If you write libraries for business code (spread domain knowledge in package artifacts that get referenced from an internal package repository), then having restrictions on how to debug the code can be a pain for developers.
 
-## Painpoints
+## Pain points
 
 Matt Klein makes us aware about having tight coupling and performance in [Monorepos: Please don’t!](https://medium.com/@mattklein123/monorepos-please-dont-e9a279be011b).
 
 ### Tight coupling
 
-You want to homogenise the use of internal or third party libraries. Is it OK for other teams that you refactor their code when they are busy with say a crunch and want to avoid unnecessary merge conflicts?
+You want to homogenize the use of internal or third party libraries. Is it OK for other teams that you refactor their code when they are busy with say a crunch and want to avoid unnecessary merge conflicts?
 
 Does changes of internal or third party libraries imply a subtle change in behavior? Even if the code is well tested on its own, usage of the code can break. You might want to have a gradual increase in the usage of a new version of a library.
 
@@ -38,7 +38,7 @@ One reason why you want to transform multiple repositories to fewer repositories
 
 ### Performance
 
-For very large repositories we see that organisations use source control systems that allow you to do "sparse checkouts" of only a subset of the repository since the amount of code takes too long to clone.
+For very large repositories we see that organizations use source control systems that allow you to do "sparse checkouts" of only a subset of the repository since the amount of code takes too long to clone.
 
 ### Focus
 
@@ -58,13 +58,16 @@ Probably you want to merge and split out repositories as time goes on. It's best
 
 ## References
 
-#### [1]
+### [1]
+
 Wikipedia [Monorepo](https://en.wikipedia.org/wiki/Monorepo)
-#### [2]
-trunkbaseddevelopment [Monorepos](https://trunkbaseddevelopment.com/monorepos/)
-#### [3]
+
+### [2]
+
+trunk based development [Monorepos](https://trunkbaseddevelopment.com/monorepos/)
+
+### [3]
+
 - [sourcelink](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink)
 - [symbol package](https://docs.microsoft.com/en-us/nuget/create-packages/symbol-packages-snupkg)
 - [sourcelink issues](https://github.com/dotnet/sourcelink/issues)
-
-

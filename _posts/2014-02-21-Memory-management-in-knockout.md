@@ -21,7 +21,7 @@ have to do with
 <div data-bind="visible: _isBusy() || _queryIsBusy()" ></div>
 ~~~
 
-Internally knockout creates a computed out of an expression in a bindinghandler. Ko does not parse the expression in the html above to register the variables _isBusy or _queryIsBusy.
+Internally knockout creates a computed out of an expression in a binding handler. Ko does not parse the expression in the html above to register the variables _isBusy or _queryIsBusy.
 
 ## Consequenses
 
@@ -69,7 +69,7 @@ How long does the computed that knockout creates live?
 
 A bit simplified if you read the code for KO you find that knockout makes new computed (internally dependent observable) with option:
 ```disposeWhenNodeIsRemoved```
-This means that knockout will remove the list of referenses to observables that the computed depends on when the DOM-node that the computed is associated with have been removed.
+This means that knockout will remove the list of references to observables that the computed depends on when the DOM-node that the computed is associated with have been removed.
 
 ## When is it safe to use a computed?
 
