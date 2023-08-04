@@ -29,6 +29,7 @@ function TigerWithTeethType(name){
 
 Since TigerType is a function, call and apply can be used to execute it with the "this" of TigerWithTeethType. This way has the advantage of being simple and jQuery safe.
 You might also want to look into:
+
 - [http://ejohn.org/blog/simple-javascript-inheritance/](http://ejohn.org/blog/simple-javascript-inheritance/)
 - [http://www.crockford.com/javascript/inheritance.html](http://www.crockford.com/javascript/inheritance.html)
 - [http://bolinfest.com/javascript/inheritance.php](http://bolinfest.com/javascript/inheritance.php)

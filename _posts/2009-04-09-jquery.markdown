@@ -13,23 +13,23 @@ jQuery("#table tr").each(function(){
 });
 ```
 
-This wreaks havoc with some object oriented programming techniques:
+This wreaks havoc with some object oriented programming techniques that uses `this` for the object reference:
 
 ```js
-var classSmurf = function(){
+function ClassSmurf(){
     this.name = "smurfette";
     this.SmurfAround = function(){ alert("Smurf: "+this.name); }
 };
 ```
 
-This is a simplified example that is broken by jquery's use of context. There is a simple work around for this:
+This is a simple example broken by jquery's use of context (that jQuery binds this). There is a simple work around:
 
 ```js
-var classSmurf = function(){
+function ClassSmurf(){
     this.name = "smurfette";
     var that = this;
     this.SmurfAround = function(){ alert("Smurf: "+that.name); }
 };
 ```
 
-But don't take me wrong. I love jquery. It's really easy to use. A designer (with some css and html knowledge) can learn how to use it. That shows how easy it is to work with.
+Note that we capture the object instance as a private variable. We do get some additional boilerplate in order to have jQuery safe "classes". Don't take me wrong. I love that we have jquery.

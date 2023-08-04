@@ -2,6 +2,10 @@
 layout: post
 title: Unclean architecture
 date: 2022-09-22T07:08:43+02:00
+comments:
+  - author: Oskar Gewalli
+    content: Unclean architecture might be the same as [vertical slice architecture](https://web.archive.org/web/20230328220230/https://jimmybogard.com/vertical-slice-architecture/) as seen in this [blog post](https://medium.com/design-microservices-architecture-with-patterns/the-problem-with-clean-architecture-vertical-slices-111537c0ffcb).
+    date: 2023-08-04T09:55:43+01:00
 ---
 
 This post is a continuation of [Small and simple business applications using SQL](https://assertfail.gewalli.se/2022/04/03/small-and-simple-business-applications-using-sql.html).
