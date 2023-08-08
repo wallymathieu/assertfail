@@ -19,7 +19,8 @@ Bundler turns out to have a lot of nice tasks (a coworker told me about it):
 ```require 'bundler/gem_tasks'```
 
 Looking at the bundler code helps when using the [GemHelper](https://github.com/bundler/bundler/blob/master/lib/bundler/gem_helper.rb) class. If we look at gem_tasks.rb we find:
-```
+
+```ruby
 require 'bundler/gem_helper' 
 Bundler::GemHelper.install_tasks
 ```

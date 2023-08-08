@@ -7,7 +7,7 @@ tags: teamcity sql-server
 
 So, for the N-th time I'm helping out by configuring a build server. This time it was a bit different since we where restoring an old build teamcity server and agent from a crashed server.
 
-There where some gothas as usual.
+There where some gotchas as usual.
 
 In order to restore teamcity we had to do some digging to find the data directory .
 

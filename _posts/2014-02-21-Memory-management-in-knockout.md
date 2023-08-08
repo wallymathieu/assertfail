@@ -23,7 +23,7 @@ have to do with
 
 Internally knockout creates a computed out of an expression in a binding handler. Ko does not parse the expression in the html above to register the variables _isBusy or _queryIsBusy.
 
-## Consequenses
+## Consequences
 
 What does this mean for your code?
 
@@ -78,4 +78,3 @@ When you know the life span of the computed you have created.
 ## Why is it generally bad to use computed willy nilly
 
 It is generally hard to reason about when they will be disposed. It is easy to access exposed ko.computed from different objects in the system with different life span.
-
