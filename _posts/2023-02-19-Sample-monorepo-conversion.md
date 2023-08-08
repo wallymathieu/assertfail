@@ -11,7 +11,7 @@ This is a continuation of [Monorepo versus Polyrepo](https://assertfail.gewalli.
 This is a story about a project I worked on. We had some pain points related to many different source repositories.
 
 - Shared business domain library that contained shared business types
-- Shared library with a base parent entity (with common behaviour)
+- Shared library with a base parent entity (with common behavior)
 - Many services that dealt with different subdomains that uses a few shared libraries
 - Very complicated requirements with lots of nuances
 - Different persons had different areas of expertise
@@ -22,7 +22,7 @@ At first, we thought that the shared code would stabilize. This did not happen. 
 
 We wanted to change code in the shared libraries along new core requirements.
 We had confusion around package versions due to the sheer amount of package changes.
-During retrospectives the team expressed frustration with the amount of unneccesary work.
+During retrospectives the team expressed frustration with the amount of unnecessary work.
 
 ## Time to merge
 

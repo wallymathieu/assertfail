@@ -12,7 +12,7 @@ How do we arrive at working software? Some of the ways I've seen are:
 - Use logical reasoning based on known properties of written code and the implied effect of changes.
 - Manual testing of business logic by a user or a tester or developer trying to act as a user in order to verify that the solution work.
 - Manual testing with a debugger in order to verify that smaller parts works as intended.
-- Automatic tests: program executes small parts of the program in a somewhat controlled manner to verify that it works as intended (and that no regressions have occured).
+- Automatic tests: program executes small parts of the program in a somewhat controlled manner to verify that it works as intended (and that no regressions have occurred).
 - Divide and conquer: Split a system into smaller parts in order to make it easier to make the individual parts.
 
 Not every software shop agrees on how to test software. GUI software is usually dealt with in a different manner compared to server software.

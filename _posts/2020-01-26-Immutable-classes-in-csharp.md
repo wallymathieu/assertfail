@@ -52,6 +52,7 @@ The new alternative can be found in [LanguageExt](https://github.com/louthy/lang
 We see that you get immutable objects generated from [autorest](https://github.com/Azure/autorest) and [OpenAPI generator](https://github.com/OpenAPITools/openapi-generator).
 
 If you specify
+
 ```json
 "readOnly":true
 ```

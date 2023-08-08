@@ -25,7 +25,7 @@ We started evaluating different libraries. Problem with that approach is that it
 
 While looking at the Formik code base in order to optimize it, we noticed that there is a lot of historical luggage that shows up in the code making optimizations quite difficult.
 
-## Lazy reimplementation
+## Lazy re-implementation
 
 Since there is a lot of luggage in Formik, but we only use selected parts, we realized that given around 20 hours work we could implement a library having the API surface that we use but with better performance. Since we could evaluate different implementation options for the existing code we could do some trial and error (using the existing frontend) without having to do extensive rewrites.
 
@@ -39,7 +39,7 @@ Due to the API surface that we used, it did not look as if it was suitable to us
 
 There is a lot of code that gets executed during render instead of in the reducer in Formik. There was some insights into getting more performant code:
 
-- There are posts such as [Kent C. Dodds blog on howto use react context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) talking about how having dispatch and state in the same React context can post impact performance.
+- There are posts such as [Kent C. Dodds blog on how-to use react context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) talking about how having dispatch and state in the same React context can post impact performance.
 - Code executing during render impacts the user experience more than if it's executed in the reducer
 - It is significantly easier to implement an existing API surface compared to writing from scratch
 - Existing unit tests can help speed up development by guiding development effort and lowering chances of regressions
