@@ -113,7 +113,7 @@ name="wallymathieu/kubernetes-bootcamp:$version"
 docker buildx build -t $name ./$version -f Dockerfile --platform=linux/arm64,linux/amd64 --push && echo "Image $name built"
 ```
 
-I got `Error: miltiple platforms feature is currently not supported for docker driver`.
+I got `Error: multiple platforms feature is currently not supported for docker driver`.
 
 When running The buildx ls environment looked like it could handle amd64:
 

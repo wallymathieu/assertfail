@@ -21,6 +21,8 @@ There are lots of closed source code that I'm proud of. That code is not visible
 
 The code that you can see that I'm proud of is for example
 
-- [Isop](https://github.com/wallymathieu/isop). Isop has been helpful for many years when implementing console apps. The intent was to provide a controller scheme similar to asp.net MVC but without using inheritance.
-- [With](https://github.com/wallymathieu/with). With is a library where I've explored some of the possibilities of C#. I've also added helpful extensions to the library. I'm removing parts of the library as more of it is possible to do in C#.
-- [Zander](https://github.com/fsprojects/Zander). Implementation of regular expression for matrix information. This is a reimplementation of an old idea.
+- [Isop](https://github.com/wallymathieu/isop). Isop has been helpful for many years when implementing console apps. The intent was to provide a controller scheme similar to asp.net MVC but without using inheritance. I've used Isop less and less over the years thanks to Swagger/OpenAPI and auth integration in that API interface.
+- [With](https://github.com/wallymathieu/with). With is a library where I've explored some of the possibilities of C#. I've also added helpful extensions to the library. I'm removing parts of the library as more of it is possible to do in C#. It is now obsolete with the introduction of C# 9.
+- [Zander](https://github.com/fsprojects/Zander). Implementation of regular expression for matrix information. This is a re-implementation of an old idea.
+- [Formik Reimagined](https://github.com/Decerno/formik-reimagined). Formik has some performance issues. I wrote a re-implementation of the Formik API that we needed to use in a project. This library is not needed for very simple forms. Another way would be to use another library such as [React Hook Form](https://www.react-hook-form.com/).
+- [F#+](https://github.com/fsprojects/FSharpplus). I've helped out and put some love into this library. I like how some of the F# code becomes more Python-like thanks to F#+.
