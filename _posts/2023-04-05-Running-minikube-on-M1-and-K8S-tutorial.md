@@ -107,7 +107,7 @@ My first instinct was to simply build the image and be done with it. But that is
 First I tried:
 
 ```sh
-rsion='v1'
+version='v1'
 name="wallymathieu/kubernetes-bootcamp:$version"
 
 docker buildx build -t $name ./$version -f Dockerfile --platform=linux/arm64,linux/amd64 --push && echo "Image $name built"
@@ -148,7 +148,7 @@ And instead of [upgrade your app](https://kubernetes.io/docs/tutorials/kubernete
 kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=wallymathieu/kubernetes-bootcamp:v2
 ```
 
-### Sidenote
+### Side-note
 
 One thing that struck me was that why did they use `gcr.io/google-samples/kubernetes-bootcamp:v1` instead of `jocatalin/kubernetes-bootcamp:v1`, I did get my answer when I tried using that image and could not connect to port 8080 on that image since the [code assumes port 8081](https://github.com/jocatalin/bootcamp/blob/gh-pages/code/docker/v1/server.js#L15) while the [dockerfile says port 8080](https://github.com/jocatalin/bootcamp/blob/gh-pages/code/docker/Dockerfile) perhaps to have a reason to patch the image?
 
