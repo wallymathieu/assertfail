@@ -3,6 +3,10 @@ layout: post
 title: Commands and services
 date: 2019-12-28T10:13:25+01:00
 tags: C#
+comments:
+  - author: Oskar Gewalli
+    content: See also [transaction scripts](https://www.youtube.com/watch?v=USSkidmaS6w).
+    date: 2023-08-19T13:32:45+03:00
 ---
 
 ## Command handlers are services
@@ -23,7 +27,6 @@ If we start from the [command redux post by Ayende](https://ayende.com/blog/1599
 ```
 
 we note that the limitations around using simple compositions of [commands](https://ayende.com/blog/159873/design-patterns-in-the-test-of-time-command). The beauty of the command pattern is more obvious when the entire user action can be encapsulated into a class such as a service class in DDD [could also](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) be called a command handler.
-
 
 ``` C#
   public class PlaceOrderService

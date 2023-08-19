@@ -45,4 +45,4 @@ My guess is that the problem is that for many senior developers/programmers clea
 
 ## Conclusion
 
-FP concepts have come to have a broad influence over many mainstream core frameworks (see the functional concepts in [Java](https://www.baeldung.com/java-functional-programming) and [C#](https://en.wikipedia.org/wiki/Language_Integrated_Query) base libraries). We can argue that these concepts give us tools and definitions that help remove the fluff around the definitions.
+FP concepts have come to have a broad influence over many mainstream core frameworks (see the functional concepts in [Java](https://www.baeldung.com/java-functional-programming) and [C#](https://en.wikipedia.org/wiki/Language_Integrated_Query) base libraries). We can argue that these concepts give us tools and definitions that help remove the fluff around the definitions. The downside is that the language of functional programming is often unfamiliar and feels foreign to many developers (why it makes sense to [use the concepts without explicitly mentioning mentioning them](https://fsharpforfunandprofit.com/about/#banned)).
