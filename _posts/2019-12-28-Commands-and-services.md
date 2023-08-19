@@ -6,7 +6,7 @@ tags: C#
 comments:
   - author: Oskar Gewalli
     content: See also [transaction scripts](https://www.youtube.com/watch?v=USSkidmaS6w).
-    date: 2023-08-19T13:32:45+03:00
+    date: 2023-08-19T11:32:45+03:00
 ---
 
 ## Command handlers are services

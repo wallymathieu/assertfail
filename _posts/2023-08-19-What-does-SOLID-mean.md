@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What does SOLID mean
-date: 2023-08-19T13:32:45+03:00
+date: 2023-08-19T11:32:45+03:00
 ---
 
 ## Sources
