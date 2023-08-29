@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
 
     <link rel="stylesheet" href="/css/minimal/styles.css">
     <link rel="stylesheet" href="/css/minimal/pygment_trac.css">
@@ -43,5 +44,17 @@
 
   gtag('config', 'G-1GSGK2BQB8');
 </script>
+<script>
+  var config = {
+      startOnLoad:true,
+      theme: 'forest',
+      flowchart:{
+              useMaxWidth:false,
+              htmlLabels:true
+          }
+  };
+  mermaid.initialize(config);
+  window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  </script>
   </body>
 </html>
