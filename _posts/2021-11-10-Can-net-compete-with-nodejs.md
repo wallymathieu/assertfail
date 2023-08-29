@@ -34,7 +34,7 @@ How does this compare to what we have seen in the .net world?
 
 ### Program.cs (1)
 
-``` C#
+```C#
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -108,7 +108,7 @@ In [Giraffe](https://giraffe.wiki/) there has been a larger fluent configuration
 
 For C# the overhead of writing a minimal HTTP API would even more ceremony compared to F#. Perhaps due to the fact that there is competition in a wider world we see initiatives such as [Feather HTTP](https://github.com/featherhttp/framework) where you have:
 
-``` C#
+```C#
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -141,7 +141,7 @@ This style of application has been adopted into .net 6 where you then can have t
 
 ### Program.cs (2)
 
-``` C#
+```C#
 var app = WebApplication.Create(args);
 
 app.MapGet("/", () => "Hello World");

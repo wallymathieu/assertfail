@@ -23,7 +23,7 @@ How should we define a dependency? The easiest way to define a dependency would 
 
 How does such an explicit dependency look in C#:
 
-``` C#
+```C#
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -66,7 +66,7 @@ Hiccups could be:
 
 if we look at the previous implementation of [`GetRequiredService`](https://github.com/aspnet/DependencyInjection/blob/af08243a95c61dcd2495066763344b0d59a3aa82/src/DI.Abstractions/ServiceProviderServiceExtensions.cs#L50-L54) (an extension of `IServiceProvider`) we note some interesting behavior:
 
-``` C#
+```C#
 public static object GetRequiredService(this IServiceProvider provider, Type serviceType)
 {
     ...
@@ -104,7 +104,7 @@ If you want to avoid having to upgrade everything at once and instead want to ta
 
 That's why preference when it comes to for example library logging to choose the amount of dependencies you feel that you can handle. If you can get away with something like the following for logging:
 
-``` C#
+```C#
 using LogError = Action<string, Exception, object[]>;
 using LogDebug = Action<string, object[]>;
 ```

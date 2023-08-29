@@ -11,7 +11,7 @@ By being explicit about the type and using type inference we can have a generic 
 
 I find it pretty sweet to write code like this:
 
-``` C#
+```C#
 TypeMatch.Case(exception,
   (GnarlyType e) => { HandleGnarly(e); },
   (FuncyType e1) => { HandleFunky(e1); },
@@ -20,7 +20,7 @@ TypeMatch.Case(exception,
 
 Instead of:
 
-``` C#
+```C#
 var e = exception as GnarlyType;
 if (e!=null){ HandleGnarly(e); }
 else {
@@ -37,7 +37,7 @@ else {
 
 This type of feature is now part of C# proper as:
 
-``` C#
+```C#
 switch (exception)
 {
   case GnarlyType e: HandleGnarly(e); break;

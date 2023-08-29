@@ -59,7 +59,7 @@ If you specify
 
 Autorest generates a constructor that takes the parameters:
 
-``` C#
+```C#
 public partial class TodoItem
 {
     /// <summary>
@@ -99,7 +99,7 @@ public partial class TodoItem
 
 while openapi-tools generates an empty constructor:
 
-``` C#
+```C#
 /// <summary>
 /// TodoItem
 /// </summary>

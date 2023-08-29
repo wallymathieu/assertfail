@@ -11,13 +11,13 @@ The syntax is a bit special since I assume that the properties have a private se
 
 ## versions prior to 5
 
-``` C#
+```C#
 myobject.With(m => m.Property1 == 3 && m.Property2 == "3")
 ```
 
 ## With 5+
 
-``` C#
+```C#
 using With;
 ...
 public class SomeClass

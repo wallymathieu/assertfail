@@ -35,7 +35,7 @@ First step is to create the classes that will implement the MediatR IRequestHand
 
 You could implement these classes in the following way:
 
-``` C#
+```C#
     class FuncMutateCommandHandler<TEntity, TCommand, TResponse> : IRequestHandler<TCommand, TResponse>
         where TCommand : ICommand<TResponse> where TEntity : IEntity
     {
@@ -87,7 +87,7 @@ Since we have the initial classes needed to write automatically created registra
 
 We note that what we need to achieve is to write code that registers the above handlers. Since we want to be efficient we write a Linq Expression that essentially does:
 
-``` C#
+```C#
     new FuncMutateCommandHandler<TEntity,TCommand,TResult>((entity, cmd, svcProvider) =>
         entity.`MethodInfo`(cmd, svcProvider), outerSvdProvider)
 ```
@@ -102,7 +102,7 @@ We have a solution that deals with `IServiceProvider` and a lambda. Since given 
 
 Since we have the building blocks we need to find places where we have registrations that matches the pattern:
 
-``` C#
+```C#
     [CommandHandler]
     public ... Handle(EditBookingCommand cmd, IAService services, ...) ...
 ```
@@ -111,7 +111,7 @@ In order to find such we can write some simple reflection based code (in the exa
 
 Then the heavy lifting is to write an expression that does:
 
-``` C#
+```C#
     new FuncMutateCommandHandler<TEntity,TCommand, TResult>((entity, cmd, svcProvider) => entity.`MethodInfo`(cmd,
         svcProvider.GetRequiredService<IAService>()
         ), outersvcProvider)

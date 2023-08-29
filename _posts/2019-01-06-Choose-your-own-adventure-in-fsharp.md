@@ -18,7 +18,7 @@ let sumOfSquares n =
 
 hey, that sort of looks like:
 
-``` C#
+```C#
 public static class Utils
 {
    public static int SumOfSquares(int n)

@@ -11,7 +11,7 @@ In order to give a nicer developer experience composing validation messages ther
 
 The default style that can be seen in many java and C# projects is the attribute based validation approach.
 
-``` C#
+```C#
 public class Person
 {
   [MinLength(1,ErrorMessage ="NameBetween1And50"), MaxLength(50,ErrorMessage ="NameBetween1And50")]
@@ -41,7 +41,7 @@ The main downside of this approach is that it is somewhat rudimentary and can re
 
 We notice that using [FluentValidation](https://github.com/JeremySkinner/FluentValidation) we can separate the validation from the type declaration:
 
-``` C#
+```C#
 public class PersonValidator : AbstractValidator<Person>
 {
   public PersonValidator()
