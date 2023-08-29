@@ -66,8 +66,11 @@ Since dbcontext in asp.net core Entity Framework implements [unit of work](https
 
 You can then compose your code as following:
 
-```
-Controller/Page/Http handler -> Command handler/Service -> Repository
+```mermaid
+flowchart TD
+
+Http[Controller/Page/Http handler] --> C[Command handler/Service]
+C --> Repository
 ```
 
 Read more about command handler in the [following README](https://github.com/wallymathieu/entity-framework-studies/tree/2583db455d37ff93230b1a181379ca09ac71b101/src/Web/Commands).
@@ -80,14 +83,20 @@ An alternative approach is to have a database with the same schema available for
 
 An alternative view is to avoid using an ORM and instead using a simpler mapper in order to put more of the [domain logic in the database](https://rob.conery.io/2015/02/23/embracing-sql-in-postgres/).
 
-```
-Controller/Page/Http handler -> Command handler/Service -> SQL
+```mermaid
+flowchart TD
+
+Http[Controller/Page/Http handler] --> C[Command handler/Service]
+C --> SQL
 ```
 
 You could even skip a layer and let the controller talk SQL directly if the service abstraction is not needed. You can still design your database such that stored procedures match what would otherwise be command handlers.
 
-```
-Controller/Page/Http handler -> Stored procedure -> SQL
+```mermaid
+flowchart TD
+
+Http[Controller/Page/Http handler] --> S[Stored procedure]
+S --> SQL
 ```
 
 The downside is that such a scheme complicates unit testing. If you have simple domain logic that seldom change, you might less need for an extensive test suite.
@@ -96,20 +105,28 @@ The downside is that such a scheme complicates unit testing. If you have simple 
 
 If you want to go further along the line of modular monolith or microservices you want to decompose parts such that:
 
-```
-? -> Domain Service in A -> Repository in A
-            |
-            \--> Mediator -> Domain Service in B -> Repository in B
+```mermaid
+flowchart TD
+
+Http[?] --> D_A[Domain Service in A]
+D_A --> R_A[Repository in A]
+D_A --> M[Mediator]
+M --> D_B[Domain Service in B]
+D_B --> R_B[Repository in B]
 ```
 
 In the modular monolith scenario A and B are seen as separate parts but are deployed at the same time.
 
 There is a cost/benefit of introducing loose coupling. Why a nicer approach could be to:
 
-```
-? -> Domain Service in A -> Repository in A
-            |
-            \--> named interface -> Domain Service in B -> Repository in B
+```mermaid
+flowchart TD
+
+Http[?] --> D_A[Domain Service in A]
+D_A --> R_A[Repository in A]
+D_A --> M[named interface]
+M --> D_B[Domain Service in B]
+D_B --> R_B[Repository in B]
 ```
 
 The cost of having a mediator pattern is that it makes it harder to follow the system logic.
