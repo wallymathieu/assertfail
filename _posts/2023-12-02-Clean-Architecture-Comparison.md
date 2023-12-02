@@ -31,20 +31,20 @@ There does not seem to be a clear consensus around the naming of layers. Some pr
 | [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | - | Specification |
 | [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | ICommandHandler | IQueryHandler |
 
-The solutions presented use a couple of different patterns. Most of the solutions use classes per action while some group all of the actions into one class per entity. 
+The solutions presented use a couple of different patterns. Most of the solutions use classes per action while some (such as eShopOnWeb) group all of the actions into one class per entity (in this case called service-classes).
 
 We see that [@jasontylerdev](https://github.com/jasontaylordev) in his sample marries the framework [MediatR](https://github.com/jbogard/MediatR). In the case of [@ardalis](https://github.com/ardalis) we note that he marries the framework [Ardalis.SharedKernel](https://github.com/ardalis/Ardalis.SharedKernel) in his sample. In the case of the dotnet architecture sample eShopOnWeb that solution marries [Ardalis.Specification](https://github.com/ardalis/Specification). We can only echo what Robert C. Martin writes in his book [Clean Architecture](https://www.goodreads.com/en/book/show/18043011) on page 292 that you have a extraordinarily asymmetric marriage when you take on a direct dependency on a framework. [@ardalis](https://github.com/ardalis) is aware of this fact and write in the about text on his SharedKernel project the following:
 
 > Some useful base classes, mainly used with the CleanArchitecture template. Also, a template to make your own SharedKernel nuget package.
 
-| Sample | Service class | Anemic domain entities |
-| ---- | ------------- | ---------------------- |
-| [@CanerPatir/aspnet-core-clean-arch](https://github.com/CanerPatir/aspnet-core-clean-arch) | No | Yes |
-| [@ivanpaulovich/clean-architecture-manga](https://github.com/ivanpaulovich/clean-architecture-manga) | No | Yes |
-| [@jasontaylordev/CleanArchitecture](https://github.com/jasontaylordev/CleanArchitecture) | No | No |
-| [@mattia-battiston/clean-architecture-example](https://github.com/mattia-battiston/clean-architecture-example) | Yes | No |
-| [@ardalis/CleanArchitecture](https://github.com/ardalis/CleanArchitecture) | No | No |
-| [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | Yes | No |
-| [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | No | No |
+| Sample | Anemic domain entities |
+| ---- | ---------------------- |
+| [@CanerPatir/aspnet-core-clean-arch](https://github.com/CanerPatir/aspnet-core-clean-arch) | Yes |
+| [@ivanpaulovich/clean-architecture-manga](https://github.com/ivanpaulovich/clean-architecture-manga) | Yes |
+| [@jasontaylordev/CleanArchitecture](https://github.com/jasontaylordev/CleanArchitecture) | No |
+| [@mattia-battiston/clean-architecture-example](https://github.com/mattia-battiston/clean-architecture-example) | No |
+| [@ardalis/CleanArchitecture](https://github.com/ardalis/CleanArchitecture) | No |
+| [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | No |
+| [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | No |
 
 The use of [anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html) is not uncommon. A dissenting view from what Martin Fowler teaches is that you should embrace manipulating data instead of coupling data and behavior as seen in the book [Data Oriented Programming](https://www.manning.com/books/data-oriented-programming).
