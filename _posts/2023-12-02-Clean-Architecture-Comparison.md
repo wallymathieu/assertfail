@@ -43,12 +43,12 @@ We see that [@jasontylerdev](https://github.com/jasontaylordev), [@kgrzybek](htt
 
 | Sample | Anemic domain entities |
 | ---- | ---------------------- |
-| [@CanerPatir/aspnet-core-clean-arch](https://github.com/CanerPatir/aspnet-core-clean-arch) | Yes |
-| [@ivanpaulovich/clean-architecture-manga](https://github.com/ivanpaulovich/clean-architecture-manga) | Yes |
-| [@jasontaylordev/CleanArchitecture](https://github.com/jasontaylordev/CleanArchitecture) | No |
-| [@mattia-battiston/clean-architecture-example](https://github.com/mattia-battiston/clean-architecture-example) | No |
-| [@ardalis/CleanArchitecture](https://github.com/ardalis/CleanArchitecture) | No |
-| [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | No |
-| [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | No |
+| [@CanerPatir/aspnet-core-clean-arch](https://github.com/CanerPatir/aspnet-core-clean-arch) | [No](https://github.com/CanerPatir/aspnet-core-clean-arch/blob/431e850fa5811690ad33841984d9dccb3a17bf16/src/Application/UseCases/AddContentToProduct/AddContentToProductCommandHandler.cs) |
+| [@ivanpaulovich/clean-architecture-manga](https://github.com/ivanpaulovich/clean-architecture-manga) | [No](https://github.com/ivanpaulovich/clean-architecture-manga/blob/4fe516c9067e37cb166d1b03b757e0a2104ba9a8/accounts-api/src/Application/UseCases/CloseAccount/CloseAccountUseCase.cs) |
+| [@jasontaylordev/CleanArchitecture](https://github.com/jasontaylordev/CleanArchitecture) | [Yes](https://github.com/jasontaylordev/CleanArchitecture/blob/cea275b3c5716fd48e1aaeda231f041f837e9be2/src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItem.cs) |
+| [@mattia-battiston/clean-architecture-example](https://github.com/mattia-battiston/clean-architecture-example) | [Yes](https://github.com/mattia-battiston/clean-architecture-example/blob/2335709aebd885a3b39d7a99e64dd6caeb914dfa/application/core/src/main/java/com/clean/example/core/entity/BroadbandAccessDevice.java) |
+| [@ardalis/CleanArchitecture](https://github.com/ardalis/CleanArchitecture) | [No](https://github.com/ardalis/CleanArchitecture/blob/3bc14b0ebedeb989ae63fe18e761adf12778dcf1/src/Clean.Architecture.UseCases/Contributors/Update/UpdateContributorHandler.cs) |
+| [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | [No](https://github.com/dotnet-architecture/eShopOnWeb/blob/f2bb10d5bd8e20bd8c5fc192738090ab33836aec/src/ApplicationCore/Services/BasketService.cs#L80) |
+| [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | [No](https://github.com/kgrzybek/modular-monolith-with-ddd/blob/ff54f9e6a2f8a672ea0aef5ffe7c163b0b8eb7b8/src/Modules/Payments/Application/MeetingFees/MarkMeetingFeeAsPaid/MarkMeetingFeeAsPaidCommandHandler.cs#L24) |
 
 The use of [anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html) is not uncommon. A dissenting view from what Martin Fowler teaches is that you should embrace manipulating data instead of coupling data and behavior as seen in the book [Data Oriented Programming](https://www.manning.com/books/data-oriented-programming). Note also that even though the domain might be too simple in many cases, I've given the authors the benefit of doubt.
