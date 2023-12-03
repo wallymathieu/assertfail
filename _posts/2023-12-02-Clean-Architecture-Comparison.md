@@ -2,7 +2,7 @@
 layout: post
 title: Clean Architecture Comparison
 date: 2023-12-02T20:07:01+02:00
-tags: C# Java
+tags: C# Java architecture
 ---
 
 High level image of the clean architecture from [Uncle Bobs blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html):

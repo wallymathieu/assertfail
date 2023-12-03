@@ -2,6 +2,7 @@
 layout: post
 title: Sample monorepo conversion
 date: 2023-02-19T13:47:28+02:00
+tags: architecture
 ---
 
 ## Project with many repositories

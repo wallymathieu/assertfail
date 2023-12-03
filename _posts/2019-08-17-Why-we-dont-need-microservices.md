@@ -2,7 +2,7 @@
 layout: post
 title: Why we don't need microservices
 date: 2019-08-17T10:02:01+02:00
-tags: microservices
+tags: microservices architecture
 ---
 
 ## Single deployment

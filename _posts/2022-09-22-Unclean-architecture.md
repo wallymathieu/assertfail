@@ -2,6 +2,7 @@
 layout: post
 title: Unclean architecture
 date: 2022-09-22T07:08:43+02:00
+tags: architecture
 comments:
   - author: Oskar Gewalli
     content: Unclean architecture might be the same as [vertical slice architecture](https://web.archive.org/web/20230328220230/https://jimmybogard.com/vertical-slice-architecture/) as seen in this [blog post](https://medium.com/design-microservices-architecture-with-patterns/the-problem-with-clean-architecture-vertical-slices-111537c0ffcb).

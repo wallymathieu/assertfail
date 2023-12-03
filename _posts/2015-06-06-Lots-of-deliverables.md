@@ -2,7 +2,7 @@
 layout: post
 title: Lots of deliverables
 date: 2015-06-06T21:31:41+02:00
-tags: .net
+tags: .net architecture
 ---
 
 The use of many assemblies has an appeal from an architectural standpoint. In order to separate dependencies you want different parts of your code to be able to load even though a certain version of visual studio sdk is not installed. To have a fixed api implemented by adapter assemblies for many different versions of a hard to install library dependency is a way to allow work on code without having to install every single version of the dependency.
