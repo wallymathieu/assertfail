@@ -5,6 +5,10 @@ date: 2023-12-02T20:07:01+02:00
 tags: C# Java
 ---
 
+High level image of the clean architecture from [Uncle Bobs blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html):
+
+![The Clean Architecture image](/img/2023-12-02-Clean-Architecture-Comparison/CleanArchitecture.jpg)
+
 Below is a comparison between clean architecture solutions in C# and Java. Most of the samples are in C#.
 
 Note also that the solutions I've picked are somewhat arbitrarily chosen. Some have a lot of attention on GitHub while I've kept my eyes on others for a longer time.
