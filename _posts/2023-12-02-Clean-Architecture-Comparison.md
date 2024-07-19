@@ -11,6 +11,15 @@ High level image of the clean architecture from [Uncle Bobs blog post](https://b
 
 Below is a comparison between clean architecture solutions in C# and Java. Most of the samples are in C#.
 
+## High level overview
+
+There are some similarities and some key differences between the samples. No general conclusions can be taken from this comparison since:
+
+- Closed source clean architectures are not represented (should represent the majority of the implementations).
+- Arbitrary samples based somewhat on GitHub popularity and what I have kept my eyes on.
+
+## Samples
+
 Note also that the solutions I've picked are somewhat arbitrarily chosen. Some have a lot of attention on GitHub while I've kept my eyes on others for a longer time.
 
 | Sample | Use of Libraries/Structure | Grouping/Vertical slice |
@@ -22,6 +31,8 @@ Note also that the solutions I've picked are somewhat arbitrarily chosen. Some h
 | [@ardalis/CleanArchitecture](https://github.com/ardalis/CleanArchitecture) | Web, Infrastructure, UseCases, Core libraries | Per use case grouping in Application |
 | [@dotnet-architecture/eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) | Web, PublicApi, Infrastructure, ApplicationCore libraries | Aggregate, "Service" |
 | [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | Api, Infrastructure, Application, Domain libraries | Per subdomain projects |
+
+## Comparison
 
 There does not seem to be a clear consensus around the naming of layers. Some projects are too simple to get into grouping into slices or subdomains, some of the projects (most notably modular monolith with ddd) shows how a more fleshed out structure could look (in the case that your web api only implements one bounded domain).
 
@@ -52,3 +63,11 @@ We see that [@jasontylerdev](https://github.com/jasontaylordev), [@kgrzybek](htt
 | [@kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd) | [No](https://github.com/kgrzybek/modular-monolith-with-ddd/blob/ff54f9e6a2f8a672ea0aef5ffe7c163b0b8eb7b8/src/Modules/Payments/Application/MeetingFees/MarkMeetingFeeAsPaid/MarkMeetingFeeAsPaidCommandHandler.cs#L24) |
 
 The use of [anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html) is not uncommon. A dissenting view from what Martin Fowler teaches is that you should embrace manipulating data instead of coupling data and behavior as seen in the book [Data Oriented Programming](https://www.manning.com/books/data-oriented-programming). Note also that even though the domain might be too simple in many cases, I've given the authors the benefit of doubt.
+
+## Conclusion
+
+From what I can see, there seems to be some convergence and some differences in naming conventions and patterns. These differences implies that it helps to document the source of your architecture and name conventions.
+
+We have not gone into the how different samples around how they marry frameworks but simply noted that some of them do couple the domain to a framework. From a clean architecture point of view, being overly dependant on a framework, introduce significant constraints and asymmetries.
+
+We could improve our understanding of how clean architecture is implemented by reaching out to different organizations implementing clean architecture, but that goes beyond the scope of a simple blog post.
