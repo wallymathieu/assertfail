@@ -10,7 +10,7 @@ tags:
 We have seen a rise in the use of non deterministic tools based on machine learning in recent years. Tools such as [GitHub Copilot](https://github.com/features/copilot) and [ChatGPT](https://platform.openai.com/docs/overview) have brought a change to how some programmers write code.
 
 We have the following article: [New GitHub Copilot Research Finds 'Downward Pressure on Code Quality'
-](https://visualstudiomagazine.com/articles/2024/01/25/copilot-research.aspx). You can find other papers around the impact of relying too much on such tools by searching for research papers.
+](https://web.archive.org/web/20240624133953/https://visualstudiomagazine.com/articles/2024/01/25/copilot-research.aspx). You can find other papers around the impact of relying too much on such tools by searching for research papers.
 
 My guess is that even though we have changes around tooling, that the impact will not be as large as the hype suggests.
 
