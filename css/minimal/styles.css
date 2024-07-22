@@ -245,23 +245,23 @@ footer {
   position:fixed;
   bottom:50px;
 }
-@media print, screen and (max-width: 1920px) {
+@media print, screen and (max-width: 1920px) and (min-width: 1681px){
   section {
     max-width: 85%;
   }
 }
 
-@media print, screen and (max-width: 1680px) {
+@media print, screen and (max-width: 1680px) and (min-width: 1281px){
   section {
     max-width: 80%;
   }
 }
-@media print, screen and (max-width: 1280px) {
+@media print, screen and (max-width: 1280px) and (min-width: 961px){
   section {
     max-width: 70%;
   }
 }
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 960px) and (min-width: 721px){
 
   div.wrapper {
     width:auto;
@@ -291,7 +291,7 @@ footer {
 
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 720px) and (min-width: 481px) {
   body {
     word-wrap:break-word;
   }
