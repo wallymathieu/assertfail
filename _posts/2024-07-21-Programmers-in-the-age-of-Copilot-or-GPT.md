@@ -51,7 +51,7 @@ With the introduction of [Stack Overflow](https://stackoverflow.com/), we notice
 
 We know that people copy paste from Stack Overflow into their own source code, as can be seen in [this article](https://www.sciencedirect.com/science/article/abs/pii/S0950584917303610). I've seen an example of using Stack Overflow answer that contained desktop style code into a .net framework web application. The code worked when the programmer tested it locally, but failed when more than one person accessed the application. This illustrates the importance of understanding the context and functionality of code snippets before using them.
 
-What I've seen over the years is that Stack Overflow has been a great resource for people to find answers to problems. We tend to forget that [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) made it difficult to find relevant information on the net even before the flood of machine generated content. You could argue that Stack Overflow fixed that since it promoted contributors.
+What I've seen over the years is that Stack Overflow has been a great resource for people to find answers to problems. We tend to forget that [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization) made it difficult to find relevant information on the net even before the flood of machine generated content. You could argue that Stack Overflow fixed that since it promoted contributors (since then the [site has gone downhill](https://www.youtube.com/watch?v=QDE7B_3jE9M)).
 
 ### GitHub
 
