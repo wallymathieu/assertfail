@@ -6,6 +6,14 @@
 - On windows add C:\PythonX\Scripts to environment path
 - ```pip3 install -r requirements.txt```
 
+Using venv:
+
+```sh
+python3 -m venv ~/.py/assertfail
+source ~/.py/assertfail/bin/activate
+pip3 install -r requirements.txt
+```
+
 ## Installing ruby environment
 
 - Install ruby
