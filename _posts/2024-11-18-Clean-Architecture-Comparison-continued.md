@@ -48,6 +48,6 @@ We still note that many choose to include such libraries in the domain and or ap
 
 ## Conclusion
 
-We see that at least one popular implementation called clean, choose to marry Entity Framework. Most of the implementations choose to include libraries. I would argue that marrying EF is something you need to be very much aware of in a Clean Architecture context. It can still be called clean, though with the addendum that it marries EF. We have a spectrum of clean depending on what [is practical for a team to implement](https://github.com/jasontaylordev/CleanArchitecture/discussions/482?sort=new#discussioncomment-6643279).
+We see that at least one popular implementation called clean, choose to marry Entity Framework. Most of the implementations choose to include libraries. I would argue that marrying EF is something you need to be very much aware of in a Clean Architecture context. It can still be called clean, though with the addendum that it marries EF. We have a spectrum of clean depending on what [is practical for a team to implement](https://github.com/jasontaylordev/CleanArchitecture/discussions/482?sort=new#discussioncomment-6643279). I interpret this as, that there are missing patterns or language features for C# that makes mainstream implementation of Clean Architecture more of a chore.
 
 Some of the libraries such as Result, SmartEnum and ErrorOr are needed because of missing language features in C#. These libraries are not needed in an F# solution.
