@@ -8,7 +8,7 @@ date: 2024-11-18T09:06:35+02:00
 
 A year ago I did a [clean architecture comparison](https://assertfail.gewalli.se/2023/12/02/Clean-Architecture-Comparison.html) for some clean architecture implementation samples online. One of the conclusions was that I did not look into how much each implementation chooses to marry different frameworks and libraries.
 
-Since then, we have seen some updates to existing solutions. We see one solution that has been archived [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb), that was deeply influenced by [@ardalis](https://github.com/ardalis), why we might assume that the spirit of that architecture lives on in [nimblepros/eShopOnWeb](https://github.com/nimblepros/eShopOnWeb). Some are not popular enough that it makes sense to keep them in this comparison. In this post we focus on C#.
+Since then, we have seen some updates to existing solutions. We see one solution that has been archived [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb), that was deeply influenced by [@ardalis](https://github.com/ardalis), that sample now lives on in [nimblepros/eShopOnWeb](https://github.com/nimblepros/eShopOnWeb). Some are not popular enough that it makes sense to keep them in this comparison. In this post we focus on C#.
 
 ## Overview
 
