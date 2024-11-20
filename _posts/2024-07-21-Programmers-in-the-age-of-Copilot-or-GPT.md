@@ -43,7 +43,7 @@ Before the internet, learning resources were limited to books or physical digita
 
 ### Code completion
 
-Code completion is considered the norm today. I remember people telling me that it rots your brain. If code completion really rots the brain or not has become moot at this point for many mainstream programmers as the context around how we develop has shifted into making them indispensible.
+Code completion is considered the norm today. I remember people telling me that it rots your brain. If code completion really rots the brain or not has become moot at this point for many mainstream programmers as the context around how we develop has shifted into making them indispensable.
 
 ### Stack Overflow
 
