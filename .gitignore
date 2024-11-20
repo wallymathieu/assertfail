@@ -4,7 +4,6 @@ _site
 *.sublime-workspace
 .jekyll-metadata
 
-.vscode
 .ionide
 
 .DS_Store
