@@ -15,7 +15,7 @@ Since then, we have seen some updates to existing solutions. We see one solution
 | Solution       | Domain/Core                   | Application/UseCases             | Comments  |
 |----------------|-------------------------------|----------------------------------|-----------|
 | [@amantinband](https://github.com/amantinband/clean-architecture/tree/582281115489ac69d048e47c7363c7832e5b425a)    | [SmartEnum](https://github.com/ardalis/SmartEnum), [error-or](https://github.com/amantinband/error-or), [MediatR](https://github.com/jbogard/MediatR), [throw](https://github.com/amantinband/throw) | FluentValidation                 | |
-| [@ardalis](https://github.com/ardalis/CleanArchitecture/tree/08ddd4f33f87b5f9e388d32c49f4c1d70f3ad24a)        | [SmartEnum](https://github.com/ardalis/SmartEnum), [SharedKernel](https://github.com/ardalis/Ardalis.SharedKernel), [Specification](https://github.com/ardalis/Specification), [Result](https://github.com/ardalis/Result), [MediatR](https://github.com/jbogard/MediatR)            | ... |  |
+| [@ardalis](https://github.com/ardalis/CleanArchitecture/tree/08ddd4f33f87b5f9e388d32c49f4c1d70f3ad24a)        | [SmartEnum](https://github.com/ardalis/SmartEnum), [SharedKernel](https://github.com/ardalis/Ardalis.SharedKernel), [Specification](https://github.com/ardalis/Specification), [Result](https://github.com/ardalis/Result), [GuardClauses](https://github.com/ardalis/GuardClauses), [MediatR](https://github.com/jbogard/MediatR)            | ... |  |
 | [@jasontaylordev](https://github.com/jasontaylordev/CleanArchitecture/tree/1b0aafdd0d10fda58d48004968343827923fd599) | [MediatR](https://github.com/jbogard/MediatR)                       | EF, FluentValidation, [AutoMapper](https://github.com/AutoMapper/AutoMapper) | database framework dependency |
 | [@kgrzybek](https://github.com/kgrzybek/sample-dotnet-core-cqrs-api/tree/2f00e194e72e9288dddd69af499fc97920cba86e)       | [MediatR](https://github.com/jbogard/MediatR)                       | Dapper, FluentValidation         | database framework dependency |
 | [@ivanpaulovich/clean-architecture-manga](https://github.com/ivanpaulovich/clean-architecture-manga/tree/23e3d00555e2f94f7399a21a27a193decace353b)  |  |  | Not updated |
@@ -40,6 +40,7 @@ Many of the popular implementations take a dependency on popular libraries by [@
 - [SharedKernel](https://github.com/ardalis/Ardalis.SharedKernel)
 - [SmartEnum](https://github.com/ardalis/SmartEnum)
 - [Specification](https://github.com/ardalis/Specification)
+- [GuardClauses](https://github.com/ardalis/GuardClauses)
 
 These libraries are lightweight in that there is not much code or functionality in them.
 
