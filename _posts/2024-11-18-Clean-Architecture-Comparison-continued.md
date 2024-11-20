@@ -29,8 +29,6 @@ Many of the popular implementations take a dependency on popular libraries by [@
 - [MediatR](https://github.com/jbogard/MediatR)
 - [AutoMapper](https://github.com/AutoMapper/AutoMapper)
 
-We note that as Clean Architecture is a rebranding of hexagonal architecture/ports and adapters, Jimmy Bogard has a re-branded Clean Architecture variant called Vertical Slice Architecture.
-
 [amantinband](https://github.com/amantinband) introduces:
 
 - [throw](https://github.com/amantinband/throw)
