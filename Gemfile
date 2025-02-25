@@ -6,3 +6,7 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-jupyter-notebook'
 gem 'jekyll-sitemap'
 gem 'webrick', '~> 1.9'
+
+group :development, :test do
+  gem 'rspec'
+end
