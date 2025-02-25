@@ -5,22 +5,32 @@ require 'date'
 require 'time'
 require_relative 'jekyll_post'
 
-# Custom timezone class to replicate Python's TIMEZONE
-class CustomTimezone < TZInfo::Timezone
+# Custom timezone implementation without TZInfo dependency
+class CustomTimezone
+  def initialize(offset_hours = 1)
+    @offset_seconds = offset_hours * 3600
+  end
+
   def utc_offset
-    3600  # +1 hour in seconds
+    @offset_seconds
   end
   
   def dst?
     false
   end
+  
+  def local_to_utc(time)
+    time - @offset_seconds
+  end
+  
+  def utc_to_local(time)
+    time + @offset_seconds
+  end
 end
 
 RSpec.describe JekyllPost do
   before do
-    # Create a timezone object
-    @timezone = CustomTimezone.new
-    # Create a datetime object with the custom timezone
+    # Create a datetime object with +01:00 timezone
     @date = DateTime.new(2014, 4, 9, 12, 30, 0, '+01:00')
   end
 

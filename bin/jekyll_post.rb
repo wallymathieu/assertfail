@@ -9,10 +9,7 @@ DEFAULT_EXT = 'md'
 
 class JekyllPost
   def self.format_date_for_file(date)
-    year = date.year.to_s
-    month = date.month.to_s.rjust(2, '0')
-    day = date.day.to_s.rjust(2, '0')
-    "#{year}-#{month}-#{day}"
+    date.strftime('%Y-%m-%d')
   end
 
   def self.today_or_parse_input(input)
@@ -23,19 +20,8 @@ class JekyllPost
     end
   end
 
-  def self.get_z_delta(date)
-    offset = date.offset
-    if offset == 0
-      '+00:00'
-    else
-      hours = (offset * 24).to_i
-      minutes = ((offset * 24 * 60) % 60).to_i
-      format('%+03d:%02d', hours, minutes)
-    end
-  end
-
   def self.format_for_date_field(date)
-    "#{date.strftime('%Y-%m-%dT%H:%M:%S')}#{date.strftime('%:z')}"
+    date.strftime('%Y-%m-%dT%H:%M:%S%:z')
   end
 
   def self.yaml_file(title, date, tags)
@@ -60,14 +46,7 @@ class JekyllPost
     dash_title = title.gsub(' ', '-')
     
     # clean up any special characters from the dash-title
-    temp_title = ''
-    dash_title.each_char do |char|
-      if char =~ /[a-zA-Z0-9]/ || char == '-'
-        temp_title += char
-      end
-    end
-    
-    temp_title
+    dash_title.gsub(/[^a-zA-Z0-9\-]/, '')
   end
 
   def self.main
