@@ -38,6 +38,23 @@ RSpec.describe JekyllPost do
       actual = JekyllPost.yaml_file("A pretty title", @date, nil)
       expect(actual).to eq(expected)
     end
+    it 'generates the correct YAML front matter with tags' do
+      expected = <<~YAML
+        ---
+        layout: post
+        title: A pretty title
+        date: 2014-04-09T12:30:00+01:00
+        categories:
+        - tag1
+        - tag2
+        ---
+
+
+      YAML
+      
+      actual = JekyllPost.yaml_file("A pretty title", @date, ['tag1', 'tag2'])
+      expect(actual).to eq(expected)
+    end
   end
   
   # Commented out as in the original Python code

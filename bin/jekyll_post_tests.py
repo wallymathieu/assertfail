@@ -35,6 +35,21 @@ date: 2014-04-09T12:30:00+01:00
 """
         self.assertEqual(expected, file)
 
+    def test_yaml_file_with_tags(self):
+        file = jekyll_post.yaml_file("A pretty title", self.date, ['tag1', 'tag2'])
+        expected = """---
+layout: post
+title: A pretty title
+date: 2014-04-09T12:30:00+01:00
+categories:
+- tag1
+- tag2
+---
+
+
+"""
+        self.assertEqual(expected, file)
+
     #def test_today(self):
         #today = jekyll_post.today_or_parse_input('')
         #formated = jekyll_post.format_for_date_field(today)
