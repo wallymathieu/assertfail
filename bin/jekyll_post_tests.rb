@@ -57,12 +57,4 @@ RSpec.describe JekyllPost do
     end
   end
   
-  # Commented out as in the original Python code
-  # describe '#today_or_parse_input' do
-  #   it 'returns today\'s date when empty string is provided' do
-  #     today = JekyllPost.today_or_parse_input('')
-  #     formatted = JekyllPost.format_for_date_field(today)
-  #     expect(formatted).to eq('2014-04-09T12:30:00+01:00')
-  #   end
-  # end
 end
