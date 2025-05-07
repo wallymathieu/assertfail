@@ -12,7 +12,7 @@ Since then we have learned some lessons. Also note that the monorepo conversions
 
 ### Subtree the good parts
 
-The good parts about using git subtree is that you can use regular `git merge` commands from old branches before the code became a monorepo. This is neat if can't synchronize around a code freeze for when the conversion is done.
+The good parts about using git subtree is that you can use regular `git merge` commands from old branches before the code became a monorepo. This is neat if you want to avoid a coordinated code freeze for when the conversion is done.
 
 In the conversions we wanted to keep the history in order for change tracking to work.
 
