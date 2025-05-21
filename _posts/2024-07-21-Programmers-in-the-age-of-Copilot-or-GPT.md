@@ -11,7 +11,7 @@ comments:
         From [New Atlassian research on developer experience highlights a major disconnect between developers and leaders](https://www.atlassian.com/blog/developer/developer-experience-report-2024).\n
         Suggesting that we are still in the early days of these tools.
         "
-    date: 2022-07-21T21:30:35+02:00
+    date: 2024-07-22T21:30:35+02:00
 ---
 
 ## Introduction
