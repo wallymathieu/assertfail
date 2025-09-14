@@ -38,7 +38,7 @@ DRY: Don't repeat yourself takes on a new meaning with LLMs, since many of them 
 
 Architecture and patterns: from what I've seen, LLMs perform better on common patterns and common looking source (style of code that looks like what is on GitHub). I've seen LLMs do well enough for common architectures. For more obscure patterns or in-house frameworks, the LLMs seem to have a much harder time to produce working code. This is probably the old new thing, as many prefer using common solutions over niche solutions.
 
-Another way to reduce the potential output of a program is to write tests.
+Another way to reduce the potential output of a program is to write tests. The LLMs cannot debug or test the end product in the same way as a human developer or tester, so having tests becomes more valuable in order to verify that the code does what it is supposed.
 
 These practices, tools and techniques are not new, but gain a new relevance.
 
