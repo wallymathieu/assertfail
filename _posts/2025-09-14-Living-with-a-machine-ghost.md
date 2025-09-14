@@ -40,7 +40,7 @@ Architecture and patterns: from what I've seen, LLMs perform better on common pa
 
 Another way to reduce the potential output of a program is to write tests. The LLMs cannot debug or test the end product in the same way as a human developer or tester, so having tests becomes more valuable in order to verify that the code does what it is supposed.
 
-These practices, tools and techniques are not new, but gain a new relevance.
+These practices, tools and techniques are not new, but gain a new relevance if you want a working solution without unintended side effects.
 
 - [Haskell LLM experiments](https://www.michaelpj.com/blog/2025/04/12/haskell-llm-experiments.html)
 - [Julien Billes experience with cursor and clojure](https://medium.com/@_jba/my-experience-with-cursor-and-clojure-mcp-6e323b90a6f3)
