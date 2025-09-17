@@ -32,7 +32,7 @@ How do we navigate this space? My feeling is that in order to use AI generated s
 
 The best is to use functional programming. You can have programmers reduce their degrees of freedom in source code in order to make the code as easy to audit as possible. Some of the lessons from functional programming can be applied to other languages, so you don't need to despair. Reduce the potential side effects and mutations. Use types and validations. You would need to figure out ways to constrain the LLM for languages like JavaScript and Clojure.
 
-Code smells: when using Roo Code or Aider, the LLM generally try to follow the patterns already in the source. Having complicated patterns or weirdness makes both you and the LLM confused.
+Code smells: when using Roo Code or Aider, the LLM generally tries to follow the patterns already in the source. Having complicated patterns or weirdness makes both you and the LLM confused.
 
 DRY: Don't repeat yourself takes on a new meaning with LLMs, since many of them like to repeat themselves.
 
