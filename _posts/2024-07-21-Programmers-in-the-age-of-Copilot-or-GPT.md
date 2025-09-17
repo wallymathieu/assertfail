@@ -31,7 +31,7 @@ I use the term programmer here broadly to mean anyone that writes code, implying
 
 ### Unit tests
 
-Unit tests ensure code performs as expected, catching errors early and facilitating refactoring. Despite their importance, many  overlook their usefulness.
+Unit tests ensure code performs as expected, catching errors early and facilitating refactoring. Despite their importance, many overlook their usefulness.
 
 You need to think about how you write your tests and the impact they have as can be [heard from DHH in test induced design damage](https://dhh.dk/2014/test-induced-design-damage.html).
 
