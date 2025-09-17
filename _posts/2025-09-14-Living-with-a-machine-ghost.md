@@ -46,3 +46,4 @@ These practices, tools and techniques are not new, but gain a new relevance if y
 - [Julien Billes experience with cursor and clojure](https://medium.com/@_jba/my-experience-with-cursor-and-clojure-mcp-6e323b90a6f3)
 - [AI friendly code design](https://www.thoughtworks.com/radar/techniques/ai-friendly-code-design)
 - [Pushing AI autonomy](https://www.martinfowler.com/articles/pushing-ai-autonomy.html)
+- [Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)
