@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Living with a machine ghost
-date: 2025-09-14T14:16:44+00:00
+date: 2025-09-17T08:16:44+00:00
 ---
 
 LLMs or vibing is one technology in a long row of technologies and products that have promised to make programming more accessible. LLMs from what I've read, seem more to be the ghost of a portion of the internet canned into a GPU-ready package.
@@ -41,6 +41,10 @@ Architecture and patterns: from what I've seen, LLMs perform better on common pa
 Another way to reduce the potential output of a program is to write tests. The LLMs cannot debug or test the end product in the same way as a human developer or tester, so having tests becomes more valuable in order to verify that the code does what it is supposed.
 
 These practices, tools and techniques are not new, but gain a new relevance if you want a working solution without unintended side effects.
+
+## Further reading
+
+Some texts I've read recently:
 
 - [Haskell LLM experiments](https://www.michaelpj.com/blog/2025/04/12/haskell-llm-experiments.html)
 - [Julien Billes experience with cursor and clojure](https://medium.com/@_jba/my-experience-with-cursor-and-clojure-mcp-6e323b90a6f3)
