@@ -18,7 +18,17 @@ A spreadsheet program is usually a very good tool for the intended purpose it ha
 
 Ideally we would only [deliver code that have been demonstrated to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/).
 
-Building guard rails in terms of infrastructure, software frameworks and new programming languages could make LLM-generated source code safe.
+Building guard rails in terms of infrastructure, software frameworks and new programming languages could make LLM-generated source code safe. Some of the tools to build with LLMs in a safer way are already known. Having vetted templates, locked down languages and locked down frameworks can help. Who remembers [ADsafe](https://github.com/douglascrockford/ADsafe)?
+
+## Productivity
+
+I've seen indications that [LLM coding tools make developers slower but they think they're faster](https://www.theregister.com/2025/07/11/ai_code_tools_slow_down/).
+
+The amount of lines of code has never been a good [measure for productivity](https://blog.ploeh.dk/2025/09/22/its-striking-so-quickly-the-industry-forgets-that-lines-of-code-isnt-a-measure-of-productivity/).
+
+Having machines write code that we don't understand means we will have interesting time bug fixing.
+
+It could be that even if smoking is bad for you, once you get addicted, it is hard to stop the slop?
 
 ## Disruption
 
