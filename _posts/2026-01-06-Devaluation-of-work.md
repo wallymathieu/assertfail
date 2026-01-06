@@ -22,15 +22,14 @@ Building guard rails in terms of infrastructure, software frameworks and new pro
 
 ## Productivity
 
-I've seen indications that [LLM coding tools make developers slower but they think they're faster](https://www.theregister.com/2025/07/11/ai_code_tools_slow_down/).
+I've seen indications that [LLM coding tools make developers slower but they think they're faster](https://www.theregister.com/2025/07/11/ai_code_tools_slow_down/). Besides the indication that even when measurements suggest faster task completion, we get [maintenance mess](https://web.archive.org/web/20240624133953/https://visualstudiomagazine.com/articles/2024/01/25/copilot-research.aspx)
 
 The amount of lines of code has never been a good [measure for productivity](https://blog.ploeh.dk/2025/09/22/its-striking-so-quickly-the-industry-forgets-that-lines-of-code-isnt-a-measure-of-productivity/).
-
-Having machines write code that we don't understand means we will have interesting time bug fixing.
-
-It could be that even if smoking is bad for you, once you get addicted, it is hard to stop the slop?
 
 ## Disruption
 
 Instead of an acceleration of software development we see a disruption, gets hinted in [Software Acceleration and Desynchronization](https://ferd.ca/software-acceleration-and-desynchronization.html). The ways we develop software changes (as it has done before). For instance code reviews in enterprise development was not a thing when I started working. It became more mainstream ca 5 years later (GitHub helped popularize review flow around 2010). We can expect the culture of software development to change in response to this new pressure.
 
+## Conclusion
+
+It could be that even if we know that smoking is bad for you, once you get addicted, it is hard to stop the slop?
