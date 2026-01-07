@@ -10,7 +10,7 @@ Instead of talking about how we ensure that the people who are tasked with doing
 
 ## The point of source code
 
-Another point is that programming is not about having code for the sake of code: Programming language text is to have a readable specifications of working software. Using languages like Python, TypeScript, JavaScript, Java or C# does not have any inherent value. The value of using common languages is that you have written text that can be modified and understood. Unreadable code is not a good thing. Machine generated code that no one wants to read, means you have [instant legacy software](https://codemanship.wordpress.com/2025/09/30/comprehension-debt-the-ticking-time-bomb-of-llm-generated-code/).
+Another point is that programming is not about having code for the sake of code: Programming language text is to have readable specifications of working software. Using languages like Python, TypeScript, JavaScript, Java or C# does not have any inherent value. The value of using common languages is that you have written text that can be modified and understood. Unreadable code is not a good thing. Machine generated code that no one wants to read, means you have [instant legacy software](https://codemanship.wordpress.com/2025/09/30/comprehension-debt-the-ticking-time-bomb-of-llm-generated-code/).
 
 ## Productivity
 
