@@ -6,7 +6,7 @@ date: 2026-01-06T17:55:39+00:00
 
 I have talked to multiple developers that have told me about getting LLM-generated pull requests. The pain is that we have a situation where you ignore the act of getting code to work and instead focusing on the optics of good enough looking code.
 
-Instead of talking about how we ensure that the people that are tasked with doing the work, actually do the work, we talk about adding more LLMs as a solution to the problem of unproven LLM generated code.
+Instead of talking about how we ensure that the people who are tasked with doing the work, actually do the work, we talk about adding more LLMs as a solution to the problem of unproven LLM generated code.
 
 ## The point of source code
 
