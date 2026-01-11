@@ -2,7 +2,7 @@
 layout: post
 title: Programmers in the age of Copilot or GPT
 date: 2024-07-21T21:17:16+02:00
-tags: 
+tags: LLM
 comments:
   - author: Oskar Gewalli
     content: "

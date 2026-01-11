@@ -2,6 +2,7 @@
 layout: post
 title: Living with a machine ghost
 date: 2025-09-17T06:00:59+00:00
+tags: LLM
 ---
 
 LLMs or vibing is one technology in a long row of technologies and products that have promised to make programming more accessible. LLMs from what I've read, seem more to be the ghost of a portion of the internet canned into a GPU-ready package.

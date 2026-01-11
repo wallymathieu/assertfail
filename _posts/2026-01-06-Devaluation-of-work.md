@@ -2,6 +2,7 @@
 layout: post
 title: Devaluation of work
 date: 2026-01-06T17:55:39+00:00
+tags: LLM
 ---
 
 I have talked to multiple developers that have told me about getting LLM-generated pull requests. The pain is that we have a situation where you ignore the act of getting code to work and instead focusing on the optics of good enough looking code.

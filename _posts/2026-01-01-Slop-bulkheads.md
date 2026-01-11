@@ -2,6 +2,7 @@
 layout: post
 title: Slop bulkheads
 date: 2026-01-01T21:47:34+00:00
+tags: LLM
 ---
 
 How can we ensure that we use the LLM to generate useful code/features and fix bugs?
