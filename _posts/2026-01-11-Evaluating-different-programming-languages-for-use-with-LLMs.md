@@ -5,7 +5,7 @@ date: 2026-01-11T18:52:08+00:00
 tags: LLM
 ---
 
-If we try to find some idea what language is better or worse for use with an LLM, we need to have some way of evaluating the different languages. I've done some small tests using different programming languages and gotten a rough estimate of performance.
+If we try to find some idea what language is better or worse for use with an LLM, we need to have some way of evaluating the different languages. I've done some small tests using different programming languages and gotten a rough estimate of how well LLMs work.
 
 ## Experiences 2025
 
