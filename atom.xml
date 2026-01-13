@@ -23,7 +23,6 @@ layout: empty
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
     <name>Oskar Gewalli</name>
-      <uri>https://twitter.com/ozzymcduff/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
