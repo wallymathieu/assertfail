@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: modern2025
 title: Assert Fail - About
 ---
 

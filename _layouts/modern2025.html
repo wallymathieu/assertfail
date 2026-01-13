@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name | default: "Assertfail" }}</title>
+  
+  <!-- Modern Clean Theme -->
+  <link rel="stylesheet" href="/css/modern2025.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
+  
+  {% seo %}
+</head>
+<body>
+  <div class="layout-container">
+    <header class="site-header">
+      <a href="/" class="site-title">{{ site.name | default: "Assertfail" }}</a>
+      <nav class="site-nav">
+        <a href="/" class="nav-link">Posts</a>
+        <a href="https://github.com/wallymathieu/wallymathieu.github.io" class="nav-link">GitHub</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/rss.xml" class="nav-link" target="_blank" rel="noopener noreferrer">RSS</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      {% if page.title %}
+        <article>
+          <header>
+            <h1>{{ page.title }}</h1>
+            {% if page.date %}
+              <p style="color: var(--text-muted); font-size: 0.9em;">
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                  {{ page.date | date: "%B %d, %Y" }}
+                </time>
+              </p>
+            {% endif %}
+          </header>
+          {{ content }}
+        </article>
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; {{ site.time | date: '%Y' }} 
+        <a href="https://github.com/wallymathieu" style="color: inherit; text-decoration: none;">Oskar Gewalli</a>.
+        Maintained with ❤️.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GSGK2BQB8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1GSGK2BQB8');
+  </script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    }
+  </script>
+</body>
+</html>
