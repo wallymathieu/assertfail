@@ -9,7 +9,7 @@ As I try out more and more of LLM assisted coding. The security issues feel like
 
 Using LLMs trains you in becoming desensitized towards getting huge chunks of text pushed in your face. Having software that you cannot vet, because the amount of code has exploded, means that potential issues can be hiding in the snow. In the long term we get to a [normalization of deviance](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/) make fertile ground for attackers. Or expressed differently there is a [lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/).
 
-Using LLM assisted coding has many challenges. The way people use the tools change as people discover ways that these tools can be made to work for them.
+Using LLM assisted coding has many challenges. The way people use the tools changes as people discover ways that these tools can be made to work for them.
 
 The interesting parts around security happens in how we use the tools. For instance there is docs around [sandboxing for Claude](https://code.claude.com/docs/en/sandboxing), [sandbox mode for Codex](https://developers.openai.com/codex/security/) and [security for GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent#built-in-security-protections).
 
