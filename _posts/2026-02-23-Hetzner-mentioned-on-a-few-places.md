@@ -8,4 +8,4 @@ I've seen news about [Lidl’s parent company launching a cloud unit](https://ne
 
 DHH is probably the most famous technologist writing about [moving away from using cloud providers](https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0).
 
-There is a cost of moving from one provider to another, especially when you have a more complicated setup that uses many of the platform services. You might have to rewrite your software to match new infrastructure, why the competetive advantages are missing for cheaper alternatives due to lock in.
+There is a cost of moving from one provider to another, especially when you have a more complicated setup that uses many of the platform services. You might have to rewrite your software to match new infrastructure, which is why the competitive advantages are missing for cheaper alternatives due to lock-in.
