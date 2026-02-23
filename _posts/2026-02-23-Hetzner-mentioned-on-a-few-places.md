@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hetzner mentioned on a few places
+title: Hetzner mentioned in a few places
 date: 2026-02-23T18:18:11+00:00
 ---
 
