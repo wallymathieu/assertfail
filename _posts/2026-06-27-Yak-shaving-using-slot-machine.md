@@ -5,7 +5,7 @@ date: 2026-06-27T15:58:28+02:00
 tags: LLM
 ---
 
-I try to use the slot machines to solve code-related issues. For some tasks, these machines work well, for some tasks we get a long line of "wiggle until it works" but the wiggling does not produce anything close to working. If you let the model provider auto select the model, you can get the flip-flopping of what looks like someone spinning around in circles. It is annoying to work with. Switch the model, throw some new things at it and put a few more coins in the slot.
+I try to use the slot machines to solve code-related issues. For some tasks, these machines work well, for some tasks we get a long line of "wiggle until it works" but the wiggling does not produce anything close to working. If you let the model provider auto-select a model, you can get the flip-flopping of what looks like someone spinning around in circles. It is annoying to work with. Switch the model, throw some new things at it and put a few more coins in the slot.
 
 If you wonder why I say yak shaving, it is because we get similar kind of pattern as seen in old stories such as [The Old Woman and Her Pig](https://web.archive.org/web/20260627143720/https://sites.pitt.edu/~dash/type2030.html). In order to get to the end you have to pass through a lot of hoops and loops.
 
