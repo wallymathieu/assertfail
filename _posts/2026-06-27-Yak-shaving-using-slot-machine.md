@@ -27,7 +27,7 @@ Can we ship it? The boss worries that this is a drive-by addition with extra mai
 
 In order to box in the more capable LLMs, add tests. Add a lot of tests to capture functionality, then once you are convinced Yak can be shaved without too much blood, let them rip. Using this we have managed to improve performance. Yes, it is mid, but we are babysitting neural networks for profit.
 
-What do I mean by tests? This means that a mixture of unit tests, property-based tests, testcontainer-backed integration tests and for added spice, mutation testing to test the tests. Not perfect by a long shot, but useful.
+What do I mean by tests? This means a mixture of unit tests, property-based tests, testcontainer-backed integration tests and for added spice, mutation testing to test the tests. Not perfect by a long shot, but useful.
 
 ### Going back to the future
 
