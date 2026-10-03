@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Setup pr agent on Azure DevOps with managed identity
+title: Set up PR Agent on Azure DevOps with a service principal
 date: 2026-08-22T08:19:30+00:00
 tags: LLM
 ---
 
-I tried out to follow the PR Agent [Azure installation](https://github.com/The-PR-Agent/pr-agent/blob/main/docs/docs/installation/azure.md). Normally you would use managed identity in order to avoid running things in user account, so I after a few sessions of edit, Claude, ChatGPT and observe the results we got a setup that deviated slightly from the documentation:
+I tried out to follow the PR Agent [Azure installation](https://github.com/The-PR-Agent/pr-agent/blob/main/docs/docs/installation/azure.md). I do want to avoid running things in a user account, so I after a few sessions of edit, Claude, ChatGPT and observe the results we got a setup that deviated slightly from the documentation:
 
 
 ```diff
