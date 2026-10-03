@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Setup pr agent on Azure DevOps with managed identity
+title: Set up PR Agent on Azure DevOps with a service principal
 date: 2026-08-22T08:19:30+00:00
 tags: LLM
 ---
 
-I tried out to follow the PR Agent [Azure installation](https://github.com/The-PR-Agent/pr-agent/blob/main/docs/docs/installation/azure.md). Normally you would use managed identity in order to avoid running things in user account, so I after a few sessions of edit, Claude, ChatGPT and observe the results we got a setup that deviated slightly from the documentation:
+I tried out to follow the PR Agent [Azure installation](https://github.com/The-PR-Agent/pr-agent/blob/main/docs/docs/installation/azure.md). I wanted to use an application identity rather than an individual user's PAT, so I after a few sessions of edit, Claude, ChatGPT and observe the results we got a setup that deviated slightly from the documentation. This example uses a Microsoft Entra service principal with a client secret, not managed identity. Avoiding an individual user's PAT does not make the setup managed identity:
 
 
 ```diff
@@ -39,4 +39,6 @@ I tried out to follow the PR Agent [Azure installation](https://github.com/The-P
 
 Note the addition to only trigger on pull request and avoid depending on other stages in the pipeline.
 
-You have to setup an Enterprise Application, create a secret and add that Enterprise Application account to the Azure DevOps organization with contributor access.
+Create an app registration in Microsoft Entra ID and a client secret for it. The app registration defines the application; its service principal is the identity shown under Enterprise Applications in the tenant. Add that service principal to the Azure DevOps organization and grant it the permissions PR Agent needs for the relevant projects and repositories.
+
+Store the client secret as a protected pipeline secret in the `pr_agent` variable group, monitor its expiry, and rotate it before it expires. Application-based authentication still requires credential management.
