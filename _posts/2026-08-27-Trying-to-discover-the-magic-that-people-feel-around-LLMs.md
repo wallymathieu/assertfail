@@ -2,6 +2,7 @@
 layout: post
 title: Trying to discover the magic that people feel around LLMs
 date: 2026-08-27T19:06:16+00:00
+tags: LLM
 ---
 
 I'm trying Aider with [Qwen3.8-27B](https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX) locally on an M1 MacBook Pro. It takes a bit of time, but it works through the task given. Going from natural language task to source code change translation is really neat. There is no getting around it.

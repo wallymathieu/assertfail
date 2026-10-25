@@ -2,6 +2,7 @@
 layout: post
 title: Semantic lightness and the rise of LLMs
 date: 2026-08-23T11:44:38+00:00
+tags: LLM
 ---
 
 If we look at using LLMs to write code and you have seen your fair share of similar technologies, there is an obvious reason why enterprise development seems suitable: semantic lightness to using architecture-heavy code. This has been parodied in Enterprise FizzBuzz. It wouldn’t be funny if there was no truth to it. Though, from working in enterprise environments I’ve also seen the opposite: under-engineering (sloppy and brittle code that has grown out of the simple stage into hard-to-maintain software). The semantic lightness in such codebases then becomes the amount of copy-paste due to the fear of breaking old code, leading to a sprawl of similar but slightly different versions of the same thing (sometimes to implement a new feature, sometimes to implement the same thing but with an added requirement). The lack of structure and organization also leads to accidental duplication.
